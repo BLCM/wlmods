@@ -805,10 +805,10 @@ Holey Spell-nade,Named Spell,Balance_Spell_HoleyHandGrenade,ENHANCEMENT,2,3,0.5,
 Holey Spell-nade,Named Spell,Balance_Spell_HoleyHandGrenade,ELEMENT,1,1,1,Part_SM_Element_Fire,,"Part_SM_CircleOfProtection_SelfCast, Part_SM_Fireball_Mod_05_Dark, Part_SM_IceSpike_Repeat, Part_SM_IceSpike_Simple, Part_SM_LightningBlast_Channel, Part_SM_LightningBlast_Repeat, Part_SM_LightningBlast_Simple, Part_SM_MagicMissile_Channel, Part_SM_MagicMissile_Repeat, Part_SM_MagicMissile_Simple"
 Holey Spell-nade,Named Spell,Balance_Spell_HoleyHandGrenade,RARITY,1,1,1,Part_SM_Rarity_03_Rare,,
 Holey Spell-nade,Named Spell,Balance_Spell_HoleyHandGrenade,MATERIAL,1,1,1,Part_SM_Material_03_Rare,,
-Ice Spike,Named Spell,Balance_S_IceSpike_FirstSpell,CAST TYPE,1,1,1,Part_SM_Cast_Simple,,
-Ice Spike,Named Spell,Balance_S_IceSpike_FirstSpell,DELIVERY,1,1,1,Part_SM_IceSpike_Simple,Part_SM_Cast_Simple,
-Ice Spike,Named Spell,Balance_S_IceSpike_FirstSpell,ELEMENT,1,1,1,Part_SM_Element_Cold,,"Part_SM_ElementalHawk_Channel, Part_SM_ElementalHawk_Simple, Part_SM_Eruption_Channel, Part_SM_Eruption_Repeating, Part_SM_Eruption_SelfCast, Part_SM_Eruption_Simple, Part_SM_Fireball_Channel, Part_SM_Fireball_Repeat, Part_SM_Fireball_Simple, Part_SM_Fissure_Self, Part_SM_LightningBlast_Channel, Part_SM_LightningBlast_Repeat, Part_SM_LightningBlast_Simple"
-Ice Spike,Named Spell,Balance_S_IceSpike_FirstSpell,RARITY,1,1,1,Part_SM_Rarity_01_Common,,
+Ice Spike (intro mission),Named Spell,Balance_S_IceSpike_FirstSpell,CAST TYPE,1,1,1,Part_SM_Cast_Simple,,
+Ice Spike (intro mission),Named Spell,Balance_S_IceSpike_FirstSpell,DELIVERY,1,1,1,Part_SM_IceSpike_Simple,Part_SM_Cast_Simple,
+Ice Spike (intro mission),Named Spell,Balance_S_IceSpike_FirstSpell,ELEMENT,1,1,1,Part_SM_Element_Cold,,"Part_SM_ElementalHawk_Channel, Part_SM_ElementalHawk_Simple, Part_SM_Eruption_Channel, Part_SM_Eruption_Repeating, Part_SM_Eruption_SelfCast, Part_SM_Eruption_Simple, Part_SM_Fireball_Channel, Part_SM_Fireball_Repeat, Part_SM_Fireball_Simple, Part_SM_Fissure_Self, Part_SM_LightningBlast_Channel, Part_SM_LightningBlast_Repeat, Part_SM_LightningBlast_Simple"
+Ice Spike (intro mission),Named Spell,Balance_S_IceSpike_FirstSpell,RARITY,1,1,1,Part_SM_Rarity_01_Common,,
 Inflammation,Named Spell,Balance_Spell_Inflammation,CAST TYPE,1,1,1,Part_SM_Cast_Repeat,,
 Inflammation,Named Spell,Balance_Spell_Inflammation,DELIVERY,1,1,1,Part_SM_Inflammation,,
 Inflammation,Named Spell,Balance_Spell_Inflammation,ENHANCEMENT,2,3,1,Part_SM_Enh_CooldownRate_Unique,,
@@ -891,10 +891,10 @@ Lovestruck Beau,Named Spell,Balance_Spell_InstantAmbush,ELEMENT,1,1,1,Part_SM_El
 Lovestruck Beau,Named Spell,Balance_Spell_InstantAmbush,ELEMENT,1,1,1,Part_SM_Element_Shock,,"Part_SM_Eruption_Channel, Part_SM_Eruption_Repeating, Part_SM_Eruption_SelfCast, Part_SM_Eruption_Simple, Part_SM_Fireball_Channel, Part_SM_Fireball_Repeat, Part_SM_Fireball_Simple, Part_SM_Fissure_Self, Part_SM_IceSpike_Repeat, Part_SM_IceSpike_Simple, Part_SM_Meteor_Simple"
 Lovestruck Beau,Named Spell,Balance_Spell_InstantAmbush,RARITY,1,1,1,Part_SM_Rarity_05_Legendary,,
 Lovestruck Beau,Named Spell,Balance_Spell_InstantAmbush,MATERIAL,1,1,1,Part_SM_Material_04_VeryRare,,
-Magic Barrage (intro mission),Named Spell,Balance_Spell_MagicMissile_IntroMission,CAST TYPE,1,1,1,Part_SM_Cast_Simple,,
-Magic Barrage (intro mission),Named Spell,Balance_Spell_MagicMissile_IntroMission,DELIVERY,1,1,1,Part_SM_MagicMissile_Simple,Part_SM_Cast_Simple,
-Magic Barrage (intro mission),Named Spell,Balance_Spell_MagicMissile_IntroMission,ELEMENT,1,1,1,Part_SM_Element_Cold,,"Part_SM_ElementalHawk_Channel, Part_SM_ElementalHawk_Simple, Part_SM_Eruption_Channel, Part_SM_Eruption_Repeating, Part_SM_Eruption_SelfCast, Part_SM_Eruption_Simple, Part_SM_Fireball_Channel, Part_SM_Fireball_Repeat, Part_SM_Fireball_Simple, Part_SM_Fissure_Self, Part_SM_LightningBlast_Channel, Part_SM_LightningBlast_Repeat, Part_SM_LightningBlast_Simple"
-Magic Barrage (intro mission),Named Spell,Balance_Spell_MagicMissile_IntroMission,RARITY,1,1,1,Part_SM_Rarity_01_Common,,
+Magic Barrage (intro mission),Named Spell,Balance_Spell_MagicMissile_IntroMission,CAST TYPE,1,1,1,Part_SM_Cast_Simple,,
+Magic Barrage (intro mission),Named Spell,Balance_Spell_MagicMissile_IntroMission,DELIVERY,1,1,1,Part_SM_MagicMissile_Simple,Part_SM_Cast_Simple,
+Magic Barrage (intro mission),Named Spell,Balance_Spell_MagicMissile_IntroMission,ELEMENT,1,1,1,Part_SM_Element_Cold,,"Part_SM_ElementalHawk_Channel, Part_SM_ElementalHawk_Simple, Part_SM_Eruption_Channel, Part_SM_Eruption_Repeating, Part_SM_Eruption_SelfCast, Part_SM_Eruption_Simple, Part_SM_Fireball_Channel, Part_SM_Fireball_Repeat, Part_SM_Fireball_Simple, Part_SM_Fissure_Self, Part_SM_LightningBlast_Channel, Part_SM_LightningBlast_Repeat, Part_SM_LightningBlast_Simple"
+Magic Barrage (intro mission),Named Spell,Balance_Spell_MagicMissile_IntroMission,RARITY,1,1,1,Part_SM_Rarity_01_Common,,
 Marshmallow,Named Spell,Balance_Spell_Marshmellow,CAST TYPE,1,1,1,Part_SM_Cast_Simple,,
 Marshmallow,Named Spell,Balance_Spell_Marshmellow,DELIVERY,1,1,1,Part_SM_Marshmellow,,
 Marshmallow,Named Spell,Balance_Spell_Marshmellow,ENHANCEMENT,2,3,1,Part_SM_Enh_CooldownRate_Unique,,

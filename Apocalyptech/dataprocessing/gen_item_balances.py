@@ -232,7 +232,7 @@ for (label, balance_name, melee_type) in [
         ("Goblin Pickaxe", '/Game/Gear/Melee/Axes/_Shared/_Design/_Unique/MiningPick/Balance_M_Axe_MiningPick', 'Axe'),
         ("Goblin's Bane", '/Game/Gear/Melee/Swords/_Shared/_Design/_Unique/GoblinsBane/Balance/Balance_M_Sword_GoblinsBane', 'Sword'),
         ("Greed Warden", '/Game/PatchDLC/Indigo3/Gear/Melee/_Shared/_Unique/ShieldBash/Balance_M_ShieldBash', 'Blunt'),
-        ("Hatchet", '/Game/Gear/Melee/Axes/_Shared/_Design/_Unique/FirstMelee/Balance_M_Axe_FirstMelee', 'Axe'),
+        ("Hatchet (intro mission)", '/Game/Gear/Melee/Axes/_Shared/_Design/_Unique/FirstMelee/Balance_M_Axe_FirstMelee', 'Axe'),
         ("LeChance's Last Leg", '/Game/Gear/Melee/Blunts/_Shared/_Design/_Unique/LeChancesLastLeg/Balance_M_Blunt_LeChancesLastLeg', 'Blunt'),
         ("Mage Staff", '/Game/Gear/Melee/Swords_2H/_Shared/_Design/_Unique/MageStaff/Balance_M_Sword2H_MageStaff', 'Sword2H'),
         ("Metal Lute", '/Game/Gear/Melee/Blunts/_Shared/_Design/_Unique/Minstrel/Balance/Balance_M_Blunt_Minstrel', 'Blunt'),
@@ -284,7 +284,6 @@ for obj_name in data.glob(glob_pattern):
         ))
 ward_balances.sort()
 for (wname, wobj) in [
-        ("(unknown - Vamp)", '/Game/Gear/Shields/_Design/_Uniques/Vamp/Balance/InvBalD_Shield_Legendary_Vamp'),
         ("Afterburner", '/Game/Gear/Shields/_Design/_Uniques/Afterburner/Balance/InvBalD_Shield_Afterburner'),
         ("Ancient Deity", '/Game/Gear/Shields/_Design/_Uniques/AncientDeity/Balance/InvBalD_Shield_AncientDeity'),
         ("Bad Egg", '/Game/Gear/Shields/_Design/_Uniques/BadEgg/Balance/InvBalD_Shield_BadEgg'),
@@ -311,6 +310,7 @@ for (wname, wobj) in [
         ("Transistor", '/Game/Gear/Shields/_Design/_Uniques/Transistor/Balance/InvBalD_Shield_Transistor'),
         ("Trick Mirror", '/Game/Gear/Shields/_Design/_Uniques/TrickMirror/Balance/InvBalD_Shield_TrickMirror'),
         ("Undead Pact", '/Game/Gear/Shields/_Design/_Uniques/UndeadPact/Balance/InvBalD_Shield_UndeadPAct'),
+        ("(unfinished, no name)", '/Game/Gear/Shields/_Design/_Uniques/Vamp/Balance/InvBalD_Shield_Legendary_Vamp'),
         ]:
     ward_balances.append((wname, 'Ward', 'Named Ward', wobj))
 
@@ -361,11 +361,11 @@ for (sname, sobj) in [
         ("Greatest Spell Ever", '/Game/Gear/SpellMods/_Unique/_MissionUniques/LavaGoodTime/Balance/Balance_Spell_LavaGoodTime'), # Other name "Eruption"
         ("Hellfire", '/Game/Gear/SpellMods/_Unique/_MissionUniques/DestructionRains/Balance/Balance_Spell_DestructionRains'), # Other possible name "Calamity"
         ("Holey Spell-nade", '/Game/Gear/SpellMods/_Unique/_MissionUniques/HoleyHandGrenade/Balance/Balance_Spell_HoleyHandGrenade'), # Other name "Elemental Blast"
-        ("Ice Spike", '/Game/Gear/SpellMods/IceSpike/_Shared/_Design/_Unique/FirstSpell/Balance_S_IceSpike_FirstSpell'),
+        ("Ice Spike (intro mission)", '/Game/Gear/SpellMods/IceSpike/_Shared/_Design/_Unique/FirstSpell/Balance_S_IceSpike_FirstSpell'),
         ("Inflammation", '/Game/Gear/SpellMods/_Unique/Inflammation/Balance/Balance_Spell_Inflammation'),
         ("Laserhand", '/Game/Gear/SpellMods/_Unique/Laserhand/Balance/Balance_Spell_Laserhand'),
         ("Lovestruck Beau", '/Game/PatchDLC/Indigo3/Gear/SpellMods/_Unique/InstantAmbush/Balance/Balance_Spell_InstantAmbush'),
-        ("Magic Barrage (intro mission)", '/Game/Gear/SpellMods/MagicMissile/_Shared/_Design/_Unique/Balance_Spell_MagicMissile_IntroMission'),
+        ("Magic Barrage (intro mission)", '/Game/Gear/SpellMods/MagicMissile/_Shared/_Design/_Unique/Balance_Spell_MagicMissile_IntroMission'),
         ("Marshmallow", '/Game/Gear/SpellMods/_Unique/Marshmellow/Balance/Balance_Spell_Marshmellow'),
         ("Rainbolt", '/Game/PatchDLC/Indigo1/Gear/SpellMods/_Unique/Rainbolt/Balance/Balance_Spell_Rainbolt'),
         ("Reviver", '/Game/Gear/SpellMods/_Unique/Reviver/Balance/Balance_Spell_Reviver'),
@@ -676,6 +676,10 @@ cur_row += 1
 
 # Changelog
 changelog = [
+        ('Jul 18, 2022', [
+            'Updated a few intro-mission items to reflect that',
+            'Verified that "Vamp" shield really has no name in-game, marked as incomplete',
+            ]),
         ('Jul 6, 2022', [
             'Updated with correct link to code which generates this sheet',
             ]),
