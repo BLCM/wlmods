@@ -80,7 +80,11 @@ if __name__ == '__main__':
     main()
 
     if False:
-        # Searching for a specific value
+        # Searching for specific values
+        values = {
+                3866544553,
+                2385008707,
+                }
         for dirpath, dirnames, filenames in os.walk('.'):
             for filename in filenames:
                 if filename.endswith('.uasset'):
@@ -88,7 +92,9 @@ if __name__ == '__main__':
                     last_bit = full_path.rsplit('/', 1)[-1]
                     full_obj = f'{full_path}.{last_bit}'
                     h = inventory_path_hash(full_obj)
-                    if h == 3866544553:
-                        print(full_obj)
-                        sys.exit(0)
+                    if h in values:
+                        print(f'{h} - {full_obj}')
+                        values.remove(h)
+                        if len(values) == 0:
+                            sys.exit(0)
 
