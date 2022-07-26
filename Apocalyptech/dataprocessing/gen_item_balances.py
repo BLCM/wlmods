@@ -171,7 +171,6 @@ for (label, balance_name) in [
         ("Skeep Prod", '/Game/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/_Unique/SkeepProd/Balance/Balance_SR_DAL_05_SkeepProd'),
         ("Stab-O-Matic", '/Game/PatchDLC/Indigo3/Gear/Weapons/Shotgun/Hyperion/_Shared/_Design/_Unique/FaceStabber/Balance/Balance_SG_HYP_FacePunch'),
         ("Sworderang", '/Game/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Unique/Sworderang/Balance/Balance_SG_Tediore_05_Sworderang'),
-        ("Swordruption", '/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Swordruption/Balance/Balance_SG_Torgue_Swordruption'),
         ("Swordsplosion", '/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Swordsplosion/Balance/Balance_SG_Torgue_05_Swordsplosion'),
         ("Throwable Hole", '/Game/Gear/Weapons/SMGs/Tediore/_Shared/_Design/_Unique/ThrowableHole/Balance/Balance_SM_TED_05_ThrowableHole'),
         ("Thumbsbane (intro mission)", '/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/IntroMission/Balance/Balance_DAL_PS_FirstGun'),
@@ -181,6 +180,7 @@ for (label, balance_name) in [
         ("Used Antique Greatbow", '/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Balance/Balance_SR_HYP_05_AntGreatBow_Used'),
         ("White Rider", '/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/WhiteRider/Balance/Balance_SM_DAHL_05_WhiteRider'),
         ("Wizard's Pipe", '/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/WizardPipe/Balance/Balance_SM_HYP_05_WizardsPipe'),
+        ("(Swordruption, broken)", '/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Swordruption/Balance/Balance_SG_Torgue_Swordruption'),
         ]:
     gun_balances.append((
         label,
@@ -243,7 +243,7 @@ for (label, balance_name, melee_type) in [
         ("Ragnarok", '/Game/Gear/Melee/Swords/_Shared/_Design/_Unique/Ragnarok/Balance_M_Sword_Ragnarok', 'Sword'),
         ("Salt and Battery", '/Game/PatchDLC/Indigo2/Gear/Melee/_Shared/_Unique/SaltnBattery/Balance/Balance_M_SaltnBatt', 'Blunt'),
         ("Slammin' Salmon", '/Game/Gear/Melee/Blunts/_Shared/_Design/_Unique/Fish/Balance_M_Blunt_Fish', 'Blunt'),
-        ("Smith's Pick", '/Game/Gear/Melee/Axes/_Shared/_Design/_Unique/SmithCharade/Balance/Balance_M_Axe_SmithCharade_MissionWeapon', 'Axe'),
+        ("Smith's Pick (mission)", '/Game/Gear/Melee/Axes/_Shared/_Design/_Unique/SmithCharade/Balance/Balance_M_Axe_SmithCharade_MissionWeapon', 'Axe'),
         ("Snake Stick", '/Game/Gear/Melee/Axes/_Shared/_Design/_Unique/SnakeStick/Balance_M_Axe_SnakeStick', 'Axe'),
         ("Spellblade", '/Game/Gear/Melee/Swords/_Shared/_Design/_Unique/SpellBlade/Balance_M_Sword_SpellBlade', 'Sword'),
         ("Storm Surge", '/Game/Gear/Melee/Swords_2H/_Shared/_Design/_Unique/Tidesorrow_leg/Balance/Balance_M_Sword_Tidesorrow_Leg', 'Sword2H'),
@@ -351,16 +351,16 @@ for (sname, sobj) in [
         ("Dazzler", '/Game/Gear/SpellMods/_Unique/Dazzler/Balance/Balance_Spell_Dazzler'),
         ("Dynamo", '/Game/PatchDLC/Indigo1/Gear/SpellMods/_Unique/Dynamo/Balance/Balance_Spell_Dynamo'),
         ("Elemental Blast (mission)", '/Game/Gear/SpellMods/_Unique/_MissionUniques/FirstDarkSpell/Balance_Spell_FirstDark'),
-        ("Flaming Spell", '/Game/Gear/SpellMods/_Unique/_MissionUniques/LittleBluePill/Balance/Balance_Spell_LittleBluePill'), # Other name "Elemental Blast"
-        ("Frostburn", '/Game/Gear/SpellMods/_Unique/_MissionUniques/Frostburn/Balance/Balance_Spell_Frostburn'), # Other possible name "Sigil"
+        ("Flaming Spell", '/Game/Gear/SpellMods/_Unique/_MissionUniques/LittleBluePill/Balance/Balance_Spell_LittleBluePill'),
+        ("Frostburn", '/Game/Gear/SpellMods/_Unique/_MissionUniques/Frostburn/Balance/Balance_Spell_Frostburn'),
         ("Frozen Orb", '/Game/Gear/SpellMods/_Unique/FrozenOrb/Balance/Balance_Spell_FrozenOrb'),
         ("Garlic Breath", '/Game/PatchDLC/Indigo2/Gear/SpellMods/_Unique/GarlicBreath/Balance/Balance_Spell_GarlicBreath'),
         ("Gelatinous Cube", '/Game/Gear/SpellMods/_Unique/GelSphere/Balance/Balance_Spell_GelSphere'),
         ("Glacial Cascade", '/Game/Gear/SpellMods/_Unique/GlacialCascade/Balance/Balance_Spell_GlacialCascade'),
-        ("Great Wake", '/Game/Gear/SpellMods/_Unique/_MissionUniques/JaggedToothCrew/Balance/Balance_Spell_JaggedTooth'), # Other name "Sunder"
-        ("Greatest Spell Ever", '/Game/Gear/SpellMods/_Unique/_MissionUniques/LavaGoodTime/Balance/Balance_Spell_LavaGoodTime'), # Other name "Eruption"
-        ("Hellfire", '/Game/Gear/SpellMods/_Unique/_MissionUniques/DestructionRains/Balance/Balance_Spell_DestructionRains'), # Other possible name "Calamity"
-        ("Holey Spell-nade", '/Game/Gear/SpellMods/_Unique/_MissionUniques/HoleyHandGrenade/Balance/Balance_Spell_HoleyHandGrenade'), # Other name "Elemental Blast"
+        ("Great Wake", '/Game/Gear/SpellMods/_Unique/_MissionUniques/JaggedToothCrew/Balance/Balance_Spell_JaggedTooth'),
+        ("Greatest Spell Ever", '/Game/Gear/SpellMods/_Unique/_MissionUniques/LavaGoodTime/Balance/Balance_Spell_LavaGoodTime'),
+        ("Hellfire", '/Game/Gear/SpellMods/_Unique/_MissionUniques/DestructionRains/Balance/Balance_Spell_DestructionRains'),
+        ("Holey Spell-nade", '/Game/Gear/SpellMods/_Unique/_MissionUniques/HoleyHandGrenade/Balance/Balance_Spell_HoleyHandGrenade'),
         ("Ice Spike (intro mission)", '/Game/Gear/SpellMods/IceSpike/_Shared/_Design/_Unique/FirstSpell/Balance_S_IceSpike_FirstSpell'),
         ("Inflammation", '/Game/Gear/SpellMods/_Unique/Inflammation/Balance/Balance_Spell_Inflammation'),
         ("Laserhand", '/Game/Gear/SpellMods/_Unique/Laserhand/Balance/Balance_Spell_Laserhand'),
@@ -676,6 +676,10 @@ cur_row += 1
 
 # Changelog
 changelog = [
+        ('Jul 26, 2022', [
+            'Marked Swordruption as broken -- cannot spawn in-game and is missing a body part',
+            "Marked Smith's Pick as a mission item",
+            ]),
         ('Jul 18, 2022', [
             'Updated a few intro-mission items to reflect that',
             'Verified that "Vamp" shield really has no name in-game, marked as incomplete',
@@ -707,6 +711,86 @@ for date, changes in changelog:
         br.merge(cur_row, block_col+1, cur_row, block_end_col, f' - {change}')
         cur_row += 1
 cur_row += 2
+
+# Wonderlands is *in general* pretty good about using DataTables for defining
+# MinGameStage parameters for parts + balances, when there's limitations,
+# but there's some exceptions which use hardcoded values.  Since this util was
+# already looping through all balances + parts, I figured it was as good a
+# place as any to do some reporting.  So if `check_early_bloomer` is set to
+# `True`, the util will report on possible hardcodes as it goes through,
+# omitting cases where it's using DataTables which my Early Bloomer mod is
+# already taking care of.
+check_early_bloomer = False
+early_bloomer_tables = {
+        '/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule',
+        '/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity',
+        '/Game/Gear/Melee/_Shared/_Design/GameplayAttributes/DataTable_WeaponBalance_Unique_Melee',
+        '/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_COV',
+        '/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL',
+        '/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP',
+        '/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK',
+        '/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_TED',
+        '/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_TOR',
+        '/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA',
+        '/Game/PatchDLC/Indigo1/Gear/Weapons/_Shared/DataTable_WeaponBalance_Unique_Indigo1',
+        '/Game/PatchDLC/Indigo2/Gear/Melee/_Shared/_Unique/Shared/DataTable_WeaponBalance_Unique_Melee_INDIGO02',
+        '/Game/PatchDLC/Indigo2/Gear/Weapons/_Shared/DataTable_WeaponBalance_Unique_Indigo2',
+        '/Game/PatchDLC/Indigo3/Gear/Melee/_Shared/_Unique/_Shared/DataTable_WeaponBalance_Unique_Melee_Indigo03',
+        '/Game/PatchDLC/Indigo3/Gear/Weapons/_Shared/DataTable_WeaponBalance_Unique_Indigo3',
+        '/Game/Gear/Pauldrons/_Shared/_Design/A_Data/Pauldron_GlobalData',
+        }
+def early_bloomer_check(data, export):
+    """
+    Given data in `export`, return `True` if we should report on the data (as in:
+    we think it might be restricting on MinGameStage), or `False` if we think
+    it's okay.  This expects a `MinGameStage` dict key right at the top level
+    of `export` (which doesn't have to be a top-level export, such as when
+    we're checking Balance objects specifically!)
+    """
+    global early_bloomer_tables
+
+    if 'MinGameStage' in export:
+
+        # We do see a couple of these; will cut back on reporting, anyway.
+        if export['MinGameStage'] == {'BaseValueConstant': 0.0}:
+            return False
+
+        # This one's common in Balance Manufacturer stanzas
+        if export['MinGameStage'] == {'BaseValueConstant': 1.0, 'DataTableValue': {'DataTable': {'export': 0}, 'RowName': 'None', 'ValueName': 'None'}, 'BaseValueAttribute': {'export': 0}, 'AttributeInitializer': {'export': 0}, 'BaseValueScale': 1.0}:
+            return False
+
+        # Slightly less common in Balance Manufacturer stanzas, but still a few hits
+        if export['MinGameStage'] == {'BaseValueConstant': 0.0, 'DataTableValue': {'DataTable': {'export': 0}, 'RowName': 'None', 'ValueName': 'None'}, 'BaseValueAttribute': {'export': 0}, 'AttributeInitializer': {'export': 0}, 'BaseValueScale': 1.0}:
+            return False
+
+        # Check for a direct DataTable reference that we know EB is handling.
+        if 'DataTableValue' in export['MinGameStage'] \
+                and 'DataTable' in export['MinGameStage']['DataTableValue'] \
+                and 'export' not in export['MinGameStage']['DataTableValue']['DataTable'] \
+                and export['MinGameStage']['DataTableValue']['DataTable'][1] in early_bloomer_tables:
+            # Okay, Early Bloomer is already taking care of this one, ignore it.
+            return False
+
+        # Check for an Attribute reference which then goes to a DataTable we know EB is handling.
+        if 'BaseValueAttribute' in export['MinGameStage'] \
+                and 'export' not in export['MinGameStage']['BaseValueAttribute']:
+            attr_name = export['MinGameStage']['BaseValueAttribute'][1]
+            attr_data = data.get_data(attr_name)
+            for attr_export in attr_data:
+                if attr_export['export_type'] == 'GbxAttributeData':
+                    value_export_idx = attr_export['ValueResolver']['export']
+                    value_export = attr_data[value_export_idx-1]
+                    if 'DataTableRow' in value_export \
+                            and 'DataTable' in value_export['DataTableRow'] \
+                            and 'export' not in value_export['DataTableRow']['DataTable'] \
+                            and value_export['DataTableRow']['DataTable'][1] in early_bloomer_tables:
+                        # Here, as well, Early Bloomer is already taking care of it
+                        return False
+                    break
+
+        return True
+    else:
+        return False
 
 # Loop through
 verbose = False
@@ -790,6 +874,17 @@ for (sheet_label, filename, filename_long, balances, man_col_name, type_col_name
                 # Grab a Balance object
                 bal = Balance.from_data(data, bal_name)
 
+                # Do some reporting for Early Bloomer mod construction, if told to do so.
+                if check_early_bloomer:
+                    for man_idx, man in enumerate(bal.raw_bal_data['Manufacturers']):
+                        if 'GameStageWeight' in man:
+                            if early_bloomer_check(data, man['GameStageWeight']):
+                                print('{} (man idx {}): {}'.format(
+                                    bal_name,
+                                    man_idx,
+                                    man['GameStageWeight']['MinGameStage'],
+                                    ))
+
                 # Loop through partlists
                 seen_labels = set()
                 for apl_idx, category in enumerate(bal.categories):
@@ -831,6 +926,16 @@ for (sheet_label, filename, filename_long, balances, man_col_name, type_col_name
                                 for export in part_data:
                                     if export['export_type'].startswith('BPInvPart_'):
                                         found_export = True
+
+                                        # Do some reporting for Early Bloomer mod construction, if told to do so.
+                                        if check_early_bloomer:
+                                            if early_bloomer_check(data, export):
+                                                print('{}: {}'.format(
+                                                    part_name,
+                                                    export['MinGameStage'],
+                                                    ))
+
+
                                         if 'Excluders' in export:
                                             for excluder in export['Excluders']:
                                                 if 'export' in excluder:
