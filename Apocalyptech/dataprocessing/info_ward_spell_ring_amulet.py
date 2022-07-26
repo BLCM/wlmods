@@ -286,6 +286,11 @@ for balance_name in args.balance_names:
 
     invbal = data.get_exports(balance_name, 'InventoryBalanceData')[0]
 
+    # Report on Rarity
+    if do_header:
+        rarity = invbal['RarityData'][0]
+        print('Rarity: {}'.format(rarity))
+
     # Get our InventoryData (which will eventually lead us to the correct NamingStrategy)
     inv_data_name = invbal['InventoryData'][1]
     if inv_data_name not in invdata_cache:

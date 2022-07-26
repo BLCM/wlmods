@@ -129,6 +129,11 @@ for balance_name in args.balance_names:
 
     invbal = data.get_exports(balance_name, 'InventoryBalanceData')[0]
 
+    # Report on Rarity
+    if do_header:
+        rarity = invbal['RarityData'][0]
+        print('Rarity: {}'.format(rarity))
+
     # Loop through to find any parts with a TitlePartList
     names = set()
     for part in invbal['RuntimePartList']['AllParts']:
