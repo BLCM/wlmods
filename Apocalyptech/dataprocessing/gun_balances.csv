@@ -6781,15 +6781,6 @@ Sworderang,,Named Weapon,Balance_SG_Tediore_05_Sworderang,ELEMENTAL,1,1,0.25,Par
 Sworderang,,Named Weapon,Balance_SG_Tediore_05_Sworderang,ELEMENTAL,1,1,0.25,Part_SG_TED_Ele_Shock,,
 Sworderang,,Named Weapon,Balance_SG_Tediore_05_Sworderang,ELEMENTAL,1,1,0.25,Part_SG_TED_Ele_DarkMagic,,Part_SG_TED_TypeMod_03_Hydra
 Sworderang,,Named Weapon,Balance_SG_Tediore_05_Sworderang,MATERIAL,1,1,1,Part_SG_TED_Material_04_VeryRare,,
-Swordruption,,Named Weapon,Balance_SG_Torgue_Swordruption,BODY,1,1,1,Part_SG_Torgue_Body,,
-Swordruption,,Named Weapon,Balance_SG_Torgue_Swordruption,BODY ACCESSORY,1,1,1,Part_SG_Torgue_Body_B,Part_SG_Torgue_Body,
-Swordruption,,Named Weapon,Balance_SG_Torgue_Swordruption,BARREL,1,1,1,Part_SG_Torgue_Barrel_Swordruption,,
-Swordruption,,Named Weapon,Balance_SG_Torgue_Swordruption,BARREL ACCESSORY,1,1,1,Part_SG_Torgue_Barrel_01_A,,"Part_SG_Torgue_Barrel_02, Part_SG_Torgue_Barrel_03, Part_SG_Torgue_Barrel_04"
-Swordruption,,Named Weapon,Balance_SG_Torgue_Swordruption,GRIP,1,1,1,Part_SG_Torgue_Grip_01,,
-Swordruption,,Named Weapon,Balance_SG_Torgue_Swordruption,FOREGRIP,1,1,1,Part_SG_Torgue_Foregrip_01,,
-Swordruption,,Named Weapon,Balance_SG_Torgue_Swordruption,MAGAZINE,1,1,1,Part_SG_Torgue_Magazine_03,,
-Swordruption,,Named Weapon,Balance_SG_Torgue_Swordruption,SCOPE,1,1,1,Part_SG_Torgue_Scope_01,,
-Swordruption,,Named Weapon,Balance_SG_Torgue_Swordruption,MATERIAL,1,1,1,Part_SG_Torgue_Material_Swordruption,,
 Swordsplosion,,Named Weapon,Balance_SG_Torgue_05_Swordsplosion,BODY,1,1,1,Part_SG_Torgue_Body,,
 Swordsplosion,,Named Weapon,Balance_SG_Torgue_05_Swordsplosion,BODY ACCESSORY,1,2,1,Part_SG_Torgue_Body_B,Part_SG_Torgue_Body,
 Swordsplosion,,Named Weapon,Balance_SG_Torgue_05_Swordsplosion,BARREL,1,1,1,Part_SG_Torgue_Barrel_Swordsplosion,,
@@ -6992,3 +6983,12 @@ Wizard's Pipe,,Named Weapon,Balance_SM_HYP_05_WizardsPipe,ELEMENTAL,1,1,0.25,Par
 Wizard's Pipe,,Named Weapon,Balance_SM_HYP_05_WizardsPipe,ELEMENTAL,1,1,0.25,Part_SM_HYP_Elemental_Shock,,"Part_SM_HYP_Barrel_Magic_Cryo, Part_SM_HYP_Barrel_Magic_Dark, Part_SM_HYP_Barrel_Magic_Fire, Part_SM_HYP_Barrel_Magic_Poison"
 Wizard's Pipe,,Named Weapon,Balance_SM_HYP_05_WizardsPipe,ELEMENTAL,1,1,0.25,Part_SM_HYP_Elemental_DarkMagic,,"Part_SM_HYP_Barrel_Magic_Cryo, Part_SM_HYP_Barrel_Magic_Fire, Part_SM_HYP_Barrel_Magic_Lightning, Part_SM_HYP_Barrel_Magic_Poison"
 Wizard's Pipe,,Named Weapon,Balance_SM_HYP_05_WizardsPipe,MATERIAL,1,1,1,Part_SM_HYP_Material_WizardPipe,,
+"(Swordruption, broken)",,Named Weapon,Balance_SG_Torgue_Swordruption,BODY,1,1,1,Part_SG_Torgue_Body,,
+"(Swordruption, broken)",,Named Weapon,Balance_SG_Torgue_Swordruption,BODY ACCESSORY,1,1,1,Part_SG_Torgue_Body_B,Part_SG_Torgue_Body,
+"(Swordruption, broken)",,Named Weapon,Balance_SG_Torgue_Swordruption,BARREL,1,1,1,Part_SG_Torgue_Barrel_Swordruption,,
+"(Swordruption, broken)",,Named Weapon,Balance_SG_Torgue_Swordruption,BARREL ACCESSORY,1,1,1,Part_SG_Torgue_Barrel_01_A,,"Part_SG_Torgue_Barrel_02, Part_SG_Torgue_Barrel_03, Part_SG_Torgue_Barrel_04"
+"(Swordruption, broken)",,Named Weapon,Balance_SG_Torgue_Swordruption,GRIP,1,1,1,Part_SG_Torgue_Grip_01,,
+"(Swordruption, broken)",,Named Weapon,Balance_SG_Torgue_Swordruption,FOREGRIP,1,1,1,Part_SG_Torgue_Foregrip_01,,
+"(Swordruption, broken)",,Named Weapon,Balance_SG_Torgue_Swordruption,MAGAZINE,1,1,1,Part_SG_Torgue_Magazine_03,,
+"(Swordruption, broken)",,Named Weapon,Balance_SG_Torgue_Swordruption,SCOPE,1,1,1,Part_SG_Torgue_Scope_01,,
+"(Swordruption, broken)",,Named Weapon,Balance_SG_Torgue_Swordruption,MATERIAL,1,1,1,Part_SG_Torgue_Material_Swordruption,,
