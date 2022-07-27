@@ -328,6 +328,7 @@ class Mod(object):
             contact=None, contact_email=None, contact_discord=None,
             quiet_meshes=False, quiet_streaming=False,
             aggressive_streaming=True,
+            comment_tags=True,
             ):
         """
         Initializes ourselves and starts writing the mod.
@@ -372,6 +373,12 @@ class Mod(object):
             hfinject.py, set it to `False` instead.  (Though is should be noted
             that there's not really any downside to always leaving it on, apart
             from some wasted hotfixes.)
+        `comment_tags` - This controls whether the BLIMP tags (mod metadata at
+            the top of the mod) are printed "inside" the triple-hash comments
+            that the rest of the mod comments use.  The BLIMP spec allows for
+            either.  If `True`, the default, the tags will be printed after the
+            hashes.  If `False`, they'll be printed on their own.
+
         """
         self.filename = filename
         self.title = title
@@ -393,6 +400,7 @@ class Mod(object):
         self.quiet_meshes = quiet_meshes
         self.quiet_streaming = quiet_streaming
         self.aggressive_streaming = aggressive_streaming
+        self.comment_tags = comment_tags
 
         # Some vars to help out with type-11 (streaming blueprint) hotfixes
         self.seen_streaming_warning = quiet_streaming
@@ -407,25 +415,29 @@ class Mod(object):
         if not self.df:
             raise Exception('Unable to write to {}'.format(self.filename))
 
-        print('###', file=self.df)
-        print('### @title {}'.format(self.title), file=self.df)
+        if self.comment_tags:
+            comment_prefix = '### '
+        else:
+            comment_prefix = ''
+        print(comment_prefix.strip(), file=self.df)
+        print(f'{comment_prefix}@title {self.title}', file=self.df)
         if self.version is not None:
-            print('### @version {}'.format(self.version), file=self.df)
-        print('### @author {}'.format(self.author), file=self.df)
+            print(f'{comment_prefix}@version {self.version}', file=self.df)
+        print(f'{comment_prefix}@author {self.author}', file=self.df)
         if self.contact:
-            print('### @contact {}'.format(self.contact), file=self.df)
+            print(f'{comment_prefix}@contact {self.contact}', file=self.df)
         if self.contact_email:
-            print('### @contact-email {}'.format(self.contact_email), file=self.df)
+            print(f'{comment_prefix}@contact-email {self.contact_email}', file=self.df)
         if self.contact_discord:
-            print('### @contact-discord {}'.format(self.contact_discord), file=self.df)
+            print(f'{comment_prefix}@contact-discord {self.contact_discord}', file=self.df)
         if self.homepage:
-            print('### @homepage {}'.format(self.homepage), file=self.df)
+            print(f'{comment_prefix}@homepage {self.homepage}', file=self.df)
         if self.categories:
             if type(self.categories) == list:
-                print('### @categories {}'.format(', '.join(self.categories)), file=self.df)
+                print('{}@categories {}'.format(comment_prefix, ', '.join(self.categories)), file=self.df)
             else:
-                print('### @categories {}'.format(self.categories), file=self.df)
-        print('###', file=self.df)
+                print(f'{comment_prefix}@categories {self.categories}', file=self.df)
+        print(comment_prefix.strip(), file=self.df)
 
         # Process license information, if it's been specified (complaint to the user
         # if it hasn't!)
@@ -449,11 +461,11 @@ class Mod(object):
         else:
             if self.lic in Mod.LIC_INFO:
                 lic_name, lic_url = Mod.LIC_INFO[self.lic]
-                print('### @license {}'.format(lic_name), file=self.df)
-                print('### @license-url {}'.format(lic_url), file=self.df)
+                print(f'{comment_prefix}@license {lic_name}', file=self.df)
+                print(f'{comment_prefix}@license-url {lic_url}', file=self.df)
             else:
-                print('### @license {}'.format(self.lic), file=self.df)
-            print('###', file=self.df)
+                print(f'{comment_prefix}@license {self.lic}', file=self.df)
+            print(comment_prefix.strip(), file=self.df)
 
         # Media links
         if ss or videos or urls or nexus:
@@ -461,23 +473,24 @@ class Mod(object):
                 if type(ss) != list:
                     ss = [ss]
                 for shot in ss:
-                    print('### @screenshot {}'.format(shot), file=self.df)
+                    print(f'{comment_prefix}@screenshot {shot}', file=self.df)
             if videos:
                 if type(videos) != list:
                     videos = [videos]
                 for video in videos:
-                    print('### @video {}'.format(video), file=self.df)
+                    print(f'{comment_prefix}@video {video}', file=self.df)
             if urls:
                 if type(urls) != list:
                     urls = [urls]
                 for url in urls:
-                    print('### @url {}'.format(url), file=self.df)
+                    print(f'{comment_prefix}@url {url}', file=self.df)
             if nexus:
-                print('### @nexus {}'.format(nexus), file=self.df)
-            print('###', file=self.df)
+                print(f'{comment_prefix}@nexus {nexus}', file=self.df)
+            print(comment_prefix.strip(), file=self.df)
 
         # Now continue on (basically just the description from here on out)
-        print('', file=self.df)
+        if self.comment_tags:
+            print('', file=self.df)
         print('###', file=self.df)
         for desc in self.description:
             if desc == '':
