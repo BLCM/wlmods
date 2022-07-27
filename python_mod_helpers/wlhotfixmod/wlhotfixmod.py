@@ -328,7 +328,7 @@ class Mod(object):
             contact=None, contact_email=None, contact_discord=None,
             quiet_meshes=False, quiet_streaming=False,
             aggressive_streaming=True,
-            comment_tags=True,
+            comment_tags=False,
             ):
         """
         Initializes ourselves and starts writing the mod.
@@ -376,8 +376,9 @@ class Mod(object):
         `comment_tags` - This controls whether the BLIMP tags (mod metadata at
             the top of the mod) are printed "inside" the triple-hash comments
             that the rest of the mod comments use.  The BLIMP spec allows for
-            either.  If `True`, the default, the tags will be printed after the
-            hashes.  If `False`, they'll be printed on their own.
+            either.  If `False`, the default, the tags will be printed on their
+            own.  If `True`, the tags will be printed after the usual hashes.
+            `True` more closely resembles the "old-style" tags we used to use.
 
         """
         self.filename = filename
