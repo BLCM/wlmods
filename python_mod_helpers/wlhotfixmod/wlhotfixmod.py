@@ -323,8 +323,9 @@ class Mod(object):
 
     def __init__(self, filename, title, author, description,
             v=None, lic=None, cats=None,
-            ss=None, videos=None, urls=None, nexus=None,
-            contact=None, contact_email=None, contact_url=None, contact_discord=None,
+            ss=None, videos=None, urls=None,
+            homepage=None, nexus=None,
+            contact=None, contact_email=None, contact_discord=None,
             quiet_meshes=False, quiet_streaming=False,
             aggressive_streaming=True,
             ):
@@ -343,10 +344,10 @@ class Mod(object):
         `ss` - Screenshot URL(s).  Can be a single string, or a list of strings
         `videos` - Video URL(s).  Can be a single string, or a list of strings
         `urls` - Extra URL(s).  Can be a single string, or a list of strings
+        `homepage` - Homepage, in case that exists
         `nexus` - Nexus Mods URL, in case you're uploading there as well
         `contact` - Generic contact info
         `contact_email` - Contact email address
-        `contact_url` - Contact URL
         `contact_discord` - Contact Discord info
 
         And then, some extra control parameters:
@@ -382,10 +383,10 @@ class Mod(object):
         self.ss = ss
         self.videos = videos
         self.urls = urls
+        self.homepage = homepage
         self.nexus = nexus
         self.contact = contact
         self.contact_email = contact_email
-        self.contact_url = contact_url
         self.contact_discord = contact_discord
         self.last_was_newline = True
         self.ensured_meshes = {}
@@ -407,23 +408,23 @@ class Mod(object):
             raise Exception('Unable to write to {}'.format(self.filename))
 
         print('###', file=self.df)
-        print('### Name: {}'.format(self.title), file=self.df)
+        print('### @title {}'.format(self.title), file=self.df)
         if self.version is not None:
-            print('### Version: {}'.format(self.version), file=self.df)
-        print('### Author: {}'.format(self.author), file=self.df)
+            print('### @version {}'.format(self.version), file=self.df)
+        print('### @author {}'.format(self.author), file=self.df)
         if self.contact:
-            print('### Contact: {}'.format(self.contact), file=self.df)
+            print('### @contact {}'.format(self.contact), file=self.df)
         if self.contact_email:
-            print('### Contact (Email): {}'.format(self.contact_email), file=self.df)
-        if self.contact_url:
-            print('### Contact (URL): {}'.format(self.contact_url), file=self.df)
+            print('### @contact-email {}'.format(self.contact_email), file=self.df)
         if self.contact_discord:
-            print('### Contact (Discord): {}'.format(self.contact_discord), file=self.df)
+            print('### @contact-discord {}'.format(self.contact_discord), file=self.df)
+        if self.homepage:
+            print('### @homepage {}'.format(self.homepage), file=self.df)
         if self.categories:
             if type(self.categories) == list:
-                print('### Categories: {}'.format(', '.join(self.categories)), file=self.df)
+                print('### @categories {}'.format(', '.join(self.categories)), file=self.df)
             else:
-                print('### Categories: {}'.format(self.categories), file=self.df)
+                print('### @categories {}'.format(self.categories), file=self.df)
         print('###', file=self.df)
 
         # Process license information, if it's been specified (complaint to the user
@@ -448,10 +449,10 @@ class Mod(object):
         else:
             if self.lic in Mod.LIC_INFO:
                 lic_name, lic_url = Mod.LIC_INFO[self.lic]
-                print('### License: {}'.format(lic_name), file=self.df)
-                print('### License URL: {}'.format(lic_url), file=self.df)
+                print('### @license {}'.format(lic_name), file=self.df)
+                print('### @license-url {}'.format(lic_url), file=self.df)
             else:
-                print('### License: {}'.format(self.lic), file=self.df)
+                print('### @license {}'.format(self.lic), file=self.df)
             print('###', file=self.df)
 
         # Media links
@@ -460,19 +461,19 @@ class Mod(object):
                 if type(ss) != list:
                     ss = [ss]
                 for shot in ss:
-                    print('### Screenshot: {}'.format(shot), file=self.df)
+                    print('### @screenshot {}'.format(shot), file=self.df)
             if videos:
                 if type(videos) != list:
                     videos = [videos]
                 for video in videos:
-                    print('### Video: {}'.format(video), file=self.df)
+                    print('### @video {}'.format(video), file=self.df)
             if urls:
                 if type(urls) != list:
                     urls = [urls]
                 for url in urls:
-                    print('### URL: {}'.format(url), file=self.df)
+                    print('### @url {}'.format(url), file=self.df)
             if nexus:
-                print('### Nexus: {}'.format(nexus), file=self.df)
+                print('### @nexus {}'.format(nexus), file=self.df)
             print('###', file=self.df)
 
         # Now continue on (basically just the description from here on out)
