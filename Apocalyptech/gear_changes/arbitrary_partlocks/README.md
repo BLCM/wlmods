@@ -12,13 +12,13 @@ later when I don't have a million READMEs to write), but hopefully it's
 self-explanatory enough.
 
 You *will* need to install the `colorama` Python module in order to run this,
-and it requires a working `bl3data` installation with access to extracted BL3
+and it requires a working `wldata` installation with access to extracted WL
 data (see the `python_mod_helpers` directory at the top of this repo).
 
 Changelog
 =========
 
-**v1.0.0** - *(unreleased)*
+**v1.0.0** - Jul 27, 2022
  * Initial WL release, based on v1.1.0 of the
    [BL3 version](https://github.com/BLCM/bl3mods/tree/master/Apocalyptech/gear_changes/arbitrary_partlocks)
  

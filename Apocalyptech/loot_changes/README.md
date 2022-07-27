@@ -1,18 +1,13 @@
-Apocalyptech's Gear-Related WL Mods
+Apocalyptech's Loot-Related WL Mods
 ===================================
-
-Note that for mods which change part lists for gear, the mod will only apply to
-*newly-dropped* items.
 
 See the individual mod folders for full READMEs.
 
-- **Uniques are Legendary** - Changes the rarity of unique (usually blue/purple) items
-  to be legendary instead.
-
-There's one directory in here which is an interactive utility, rather
-than a mod:
-
-- **Arbitrary Partlocks** - Given a balance object, interactively define partlocks for it.
+- **Early Bloomer**- Unlock all weapon types, elements, manufacturers,
+  enchantments, etc, from the very beginning of the game.
+- **Expanded Legendary Pools** - Adds all legendary/unique items to the world drop pools.
+- **Starting Gear** - Some alternate contents for the initial starting
+  gear pickups/chests, in Snoring Valley.
 
 Licenses
 ========

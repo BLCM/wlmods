@@ -14,17 +14,41 @@ of the mods you'll find in here, though:
 
 ## Gameplay Changes
 
+- **Movement Speed Cheats** - Move faster!
+
 ## Gear Changes
+
+- **Uniques are Legendary** - Changes the rarity of unique (usually blue/purple) items
+  to be legendary instead.
+
+There's one directory in here which is an interactive utility, rather
+than a mod:
+
+- **Arbitrary Partlocks** - Given a balance object, interactively define partlocks for it.
 
 ## Loot Changes
 
-## Mayhem Changes
+- **Early Bloomer**- Unlock all weapon types, elements, manufacturers,
+  enchantments, etc, from the very beginning of the game.
+- **Expanded Legendary Pools** - Adds all legendary/unique items to the world drop pools.
+- **Starting Gear** - Some alternate contents for the initial starting
+  gear pickups/chests, in Snoring Valley.
+
+## Chaos Changes
 
 ## Mission-Specific Changes
 
 ## Mod-Testing Mods
 
+- **Super Buff: Goblin Pickaxe** - Absurdly OP Goblin Pickaxe buffs.
+- **Super Buff: Manual Transmission** - Absurdly OP Manual Transmission shield.
+- **Super Buff: Transistor** - Absurdly OP Transistor shield.
+- **Testing Loot Drops** - Used to test drops and verify balance names.
+
 ## Quality of Life Mods
+
+- **Photo Mode Unlock** - Lets the camera in Photo Mode go extremely far, and
+  speeds up its movement.
 
 ## Deprecated/Broken Mods
 
