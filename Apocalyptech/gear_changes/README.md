@@ -6,6 +6,7 @@ Note that for mods which change part lists for gear, the mod will only apply to
 
 See the individual mod folders for full READMEs.
 
+- **Torgue AR Full-Auto** - Makes nearly all Torgue ARs full-auto.
 - **Uniques are Legendary** - Changes the rarity of unique (usually blue/purple) items
   to be legendary instead.
 
