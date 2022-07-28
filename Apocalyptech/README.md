@@ -52,6 +52,7 @@ than a mod:
 
 ## Quality of Life Mods
 
+- **Mega TimeSaver XL** - Speeds up slow animations throughout the game.
 - **Photo Mode Unlock** - Lets the camera in Photo Mode go extremely far, and
   speeds up its movement.
 
