@@ -6,6 +6,8 @@ See the individual mod folders for full READMEs.
 - **Early Bloomer**- Unlock all weapon types, elements, manufacturers,
   enchantments, etc, from the very beginning of the game.
 - **Expanded Legendary Pools** - Adds all legendary/unique items to the world drop pools.
+- **No Wasted Equipment** - Armor and Amulet parts will always match the player(s)
+  currently in the game.  Will eventually support Enchantments too, but that isn't done yet.
 - **Starting Gear** - Some alternate contents for the initial starting
   gear pickups/chests, in Snoring Valley.
 

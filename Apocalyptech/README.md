@@ -10,6 +10,9 @@ of the mods you'll find in here, though:
 
 ## Economy-Related Mods
 
+- **Free Respawn** - No charge for respawning after death.
+- **Free Respec** - No charge to respec your skills.
+
 ## Enemy Spawn Changes
 
 ## Gameplay Changes
@@ -31,6 +34,8 @@ than a mod:
 - **Early Bloomer**- Unlock all weapon types, elements, manufacturers,
   enchantments, etc, from the very beginning of the game.
 - **Expanded Legendary Pools** - Adds all legendary/unique items to the world drop pools.
+- **No Wasted Equipment** - Armor and Amulet parts will always match the player(s)
+  currently in the game.  Will eventually support Enchantments too, but that isn't done yet.
 - **Starting Gear** - Some alternate contents for the initial starting
   gear pickups/chests, in Snoring Valley.
 
