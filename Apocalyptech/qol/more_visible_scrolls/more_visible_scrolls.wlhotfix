@@ -8,6 +8,8 @@
 @license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 @license-url https://creativecommons.org/licenses/by-sa/4.0/
 
+@screenshot https://raw.githubusercontent.com/BLCM/wlmods/master/Apocalyptech/qol/more_visible_scrolls/scroll.png
+
 ###
 ### Alters the loot bar for scrolls (and coincidentally mission-related pickups,
 ### and anything else using that smallish cyan bar) so that it's *much* taller and

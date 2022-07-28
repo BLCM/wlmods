@@ -40,6 +40,7 @@ mod = Mod('more_visible_scrolls.wlhotfix',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
         cats='qol',
+        ss='https://raw.githubusercontent.com/BLCM/wlmods/master/Apocalyptech/qol/more_visible_scrolls/scroll.png',
         )
 
 # default: 85
