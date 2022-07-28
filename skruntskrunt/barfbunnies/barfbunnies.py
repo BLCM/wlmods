@@ -131,7 +131,7 @@ def gen_all_table(paths, params_tuple):
                     (Mod.ADDED, 'MatchAll'),
                     ]:
                 for notify in [True, False]:
-                    mod.reg_hotfix(hf_type, hf_target,
+                    mod.table_hotfix(hf_type, hf_target,
                             path,
                             k,
                             e,
@@ -143,20 +143,17 @@ mod.comment("Set loot amounts?")
 gen_all( paths, params)
                     
 nerf_paths = [
-    "/Game/GameData/Dungeon/Tables/ED_BalanceSheetData.ED_BalanceSheetData"
+    "/Game/GameData/Dungeon/Tables/ED_BalanceSheetData.ED_BalanceSheetData",
 ]
 nerf_params = [
-    ("RewardClearRoom","Value_5_17D63D114B0124D4D34B749AFEEC608C",max(20//discount)),
-    # 30 -> 45
-    ("RewardDice","Value_5_17D63D114B0124D4D34B749AFEEC608C",max(1,30//discount)),
-    # 25 -> 50
-    ("RewardBonusObjective","Value_5_17D63D114B0124D4D34B749AFEEC608C",max(1,25//discount)),
-    # 10 -> 20
-    ("RewardSwitch","Value_5_17D63D114B0124D4D34B749AFEEC608C",max(1,10//discount)),
+    ("RewardClearRoom","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,20//discount)}'),
+    ("RewardDice","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,30//discount)}'),
+    ("RewardBonusObjective","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,25//discount)}'),
+    ("RewardSwitch","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,10//discount)}'),
 ]
 
 mod.comment("Now we do reward discounts")
-gen_all_table(nerf_paths, params)
+gen_all_table(nerf_paths, nerf_params)
 
 # ItemPool_Amulets_EndlessDungeon.json        ItemPool_Heavy_EndlessDungeon.json    ItemPool_Rings_EndlessDungeon.json    ItemPool_SniperRifle_EndlessDungeon.json
 # ItemPool_Armor_EndlessDungeon.json          ItemPool_Melee_EndlessDungeon.json    ItemPool_Shields_EndlessDungeon.json  ItemPool_Spells_EndlessDungeon.json
@@ -179,6 +176,15 @@ item_pools = [
 
 mod.comment("Now we do Quantity Override")
 # quantity is derived from /Game/InteractiveObjects/_Dungeon/SpecializedChest/_Shared/Attribute/Att_TinaOfferingLootAmount
+#    "Quantity": {
+#      "AttributeInitializer": [
+#        "Att_TinaOfferingLootAmount_C",
+#        "/Game/InteractiveObjects/_Dungeon/SpecializedChest/_Shared/Attribute/Att_TinaOfferingLootAmount"
+#      ]
+#    },
+
+
+
 gen_all(item_pools, {
     # "Quantity":f"(BaseValueConstant={1*discount},BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)",
     "Quantity":f'(BaseValueConstant={1*discount},DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)'
