@@ -20,6 +20,10 @@ TODO
 Changelog
 =========
 
+**v1.0.1** - Jul 28, 2022
+ * Removed the Used Antique Greatbow from the legendary pools.  Hadn't realized
+   what that weapon's deal was, previously.
+
 **v1.0.0** - Jul 27, 2022
  * Initial version, based on v1.6.0 of
    [BL3's Expanded Legendary Pools](https://github.com/BLCM/bl3mods/wiki/Expanded%20Legendary%20Pools)

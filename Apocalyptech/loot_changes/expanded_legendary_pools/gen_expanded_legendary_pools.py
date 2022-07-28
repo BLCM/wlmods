@@ -63,7 +63,7 @@ mod = Mod('expanded_legendary_pools.wlhotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.0.1',
         cats='loot-system, enemy-drops',
         )
 
@@ -108,6 +108,12 @@ mod = Mod('expanded_legendary_pools.wlhotfix',
 # Reward for GTFO quests; pretty unremarkable, no unique abilities.
 #   Flaming Spell
 #       /Game/Gear/SpellMods/_Unique/_MissionUniques/LittleBluePill/Balance/Balance_Spell_LittleBluePill
+#
+# Kind of a joke balance -- if the Antique Greatbow is fired once, it turns into this lousy weapon.  No
+# reason to drop this one directly!  Also: lol, more of these shenanigans plz, GBX.
+#   Used Antique Greatbow
+#       /Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Balance/Balance_SR_HYP_05_AntGreatBow_Used
+#
 
 addition_scale = 0.6
 pools = [
@@ -313,11 +319,6 @@ pools = [
                 ('/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/Carrouser/Balance/Balance_SR_JAK_05_Carrouser', 1),
                 # Kao Khan
                 ('/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/KaoKhan/Balance/Balance_SR_HYP_KaoKhan', 1),
-
-                ### Base-game legendary, but not in pool.  In a weird collection of ItemPool_AntiqueGreatbow_Used_* pools.
-
-                # Used Antique Greatbow
-                ('/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Balance/Balance_SR_HYP_05_AntGreatBow_Used', 1),
 
                 ### Additions
 
