@@ -4,6 +4,8 @@ Apocalyptech's Quality of Life WL Mods
 See the individual mod folders for full READMEs.
 
 - **Mega TimeSaver XL** - Speeds up slow animations throughout the game.
+- **More Visible Scrolls** - Makes the scroll loot bars (and, incidentally,
+  mission items) far more visible
 - **Photo Mode Unlock** - Lets the camera in Photo Mode go extremely far, and
   speeds up its movement.
 
