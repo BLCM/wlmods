@@ -241,6 +241,14 @@ class WLData(object):
             print('')
             sys.exit(1)
 
+    def get_raw_file_path(self, path_name):
+        """
+        Returns the full filename to the specified `path_name`.  This can be used
+        to read in data like CSS files and the like which wouldn't make sense to
+        process with the rest of the class
+        """
+        return '{}{}'.format(self.data_dir, path_name)
+
     def get_data(self, obj_name):
         """
         Returns a JSON-serialized version of the object `obj_name`, if possible.
