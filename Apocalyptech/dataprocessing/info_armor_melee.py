@@ -47,9 +47,9 @@ hardcode_balance_names = [
         '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Tabula/Balance/Balance_Armor_Tabula',
 
         # DLC Armor (through DLC3)
-        #'/Game/PatchDLC/Indigo1/Gear/Pauldrons/_Shared/_Design/_Unique/CapeOfTides/Balance/Balance_Armor_CapeOfTides',
-        #'/Game/PatchDLC/Indigo2/Gear/Pauldrons/_Shared/_Design/_Unique/MiasmaChain/Balance/Balance_Armor_MiasmaChain',
-        #'/Game/PatchDLC/Indigo3/Gear/Pauldrons/_Shared/_Design/_Unique/Ascetic/Balance/Balance_Armor_05_Ascetic',
+        '/Game/PatchDLC/Indigo1/Gear/Pauldrons/_Shared/_Design/_Unique/CapeOfTides/Balance/Balance_Armor_CapeOfTides',
+        '/Game/PatchDLC/Indigo2/Gear/Pauldrons/_Shared/_Design/_Unique/MiasmaChain/Balance/Balance_Armor_MiasmaChain',
+        '/Game/PatchDLC/Indigo3/Gear/Pauldrons/_Shared/_Design/_Unique/Ascetic/Balance/Balance_Armor_05_Ascetic',
 
         # Base-game melee weapons
         #'/Game/Gear/Melee/Axes/_Shared/_Design/_Unique/BodySpray/Balance/Balance_M_Axe_BodySpray',
@@ -134,7 +134,7 @@ for balance_name in args.balance_names:
         rarity = invbal['RarityData'][0]
         print('Rarity: {}'.format(rarity))
 
-    # Loop through to find any parts with a TitlePartList
+    # Loop through to find any parts with a TitlePartList (and also Red Text!)
     names = set()
     for part in invbal['RuntimePartList']['AllParts']:
         if 'export' not in part['PartData']:
@@ -151,11 +151,31 @@ for balance_name in args.balance_names:
                         name_name = titlepart[1]
                         name = data.get_data(name_name)[0]
                         names.add(name['PartName']['string'])
-
+                if 'UIStats' in part:
+                    try:
+                        for uistat in part['UIStats']:
+                            if 'RedText' in uistat['UIStat'][1]:
+                                red_text_name = uistat['UIStat'][1]
+                                red_text_obj = data.get_exports(red_text_name, 'UIStatData_Text')[0]
+                                red_text = red_text_obj['Text']['string']
+                                break
+                    except:
+                        red_text_name = '(no red text found)'
+                        red_text = '(no red text found)'
 
     # Making all kinds of assumptions in here
     if args.redtext:
-        pass
+        if red_text:
+            name = ' / '.join(sorted(names))
+            red_text = red_text.replace('[Flavor]', '')
+            red_text = red_text.replace('[/Flavor]', '')
+            red_text = red_text.replace('"', '\\"')
+            print('            (_("{}"),'.format(name))
+            print('                \'{}\','.format(red_text_name))
+            print('                _("{}"),'.format(red_text))
+            print('                _("unknown")),')
+        else:
+            print('            # {}: NO RED TEXT!'.format(name))
     elif args.balancelist:
         if len(names) == 0:
             print(f'        # ERROR: No names detected for {balance_name}')
@@ -167,7 +187,12 @@ for balance_name in args.balance_names:
                 balance_name,
                 ))
     else:
-        for name in sorted(names):
-            print(f' - {name}')
+        if len(names) == 1:
+            print('Name: {}'.format(names.pop()))
+        else:
+            print('Names:')
+            for name in sorted(names):
+                print(f' - {name}')
+        print(f'Red Text: {red_text}')
         print('')
 
