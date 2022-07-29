@@ -64,6 +64,10 @@ for language in ['en']:
             lic=Mod.CC_BY_SA_40,
             v='1.0.0',
             cats=', '.join(cats),
+            ss=[
+                'https://raw.githubusercontent.com/BLCM/wlmods/master/Apocalyptech/gear_changes/red_text_explainer/automagic.png',
+                'https://raw.githubusercontent.com/BLCM/wlmods/master/Apocalyptech/gear_changes/red_text_explainer/great_wave.png',
+                ],
             )
 
     # Text in descriptions which get coloration tags applied to them
