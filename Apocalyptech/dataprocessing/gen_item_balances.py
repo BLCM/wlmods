@@ -447,6 +447,7 @@ for (rname, robj) in [
         ("Class Ring", '/Game/Gear/Rings/_Shared/_Unique/Cond_SkillCooldown/Balance_R_SkillCooldown'),
         ("Driftwood", '/Game/Gear/Rings/_Shared/_Unique/DriftwoodRing/Balance_Rings_DriftwoodRing'),
         ("Elder Wyvern's Ring", '/Game/Gear/Rings/_Shared/_Unique/ElderWyvern/Balance/Balance_Ring_ElderWyvern'),
+        ("Fealty Oath", '/Game/PatchDLC/Indigo3/Gear/Rings/BrandLoyalty/Balance/Balance_Ring_BrandLoyalty'),
         ("Finger Ward", '/Game/Gear/Rings/_Shared/_Unique/Cond_FullShield/Balance_R_FullShield'),
         ("Fingertip Pulse Oximeter", '/Game/Gear/Rings/_Shared/_Unique/Cond_LowHealth/Balance_R_LowHealth'),
         ("Insight Ring", '/Game/Gear/Rings/_Shared/_Unique/InsightRing/Balance/Balance_Rings_InsightRing'),
@@ -676,6 +677,9 @@ cur_row += 1
 
 # Changelog
 changelog = [
+        ('Jul 29, 2022', [
+            'Added the missing "Fealty Oath" ring from DLC3',
+            ]),
         ('Jul 26, 2022', [
             'Marked Swordruption as broken -- cannot spawn in-game and is missing a body part',
             "Marked Smith's Pick as a mission item",
