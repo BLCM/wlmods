@@ -13,6 +13,9 @@ possible that this mod buffs up some items here.
 Changelog
 =========
 
+**v1.0.1** - Jul 29, 2022
+ * Removed useless/unfinished "Big B Mittens" armor
+
 **v1.0.0** - Jul 27, 2022
  * Initial version, based on v1.0.0 of
    [BL3's Uniques Are Legendary](https://github.com/BLCM/bl3mods/wiki/Uniques%20Are%20Legendary)
