@@ -21,6 +21,7 @@ of the mods you'll find in here, though:
 
 ## Gear Changes
 
+- **Red Text Explainer** - Adds a description of weapon/spell special effects on the card.
 - **Torgue AR Full-Auto** - Makes nearly all Torgue ARs full-auto.
 - **Uniques are Legendary** - Changes the rarity of unique (usually blue/purple) items
   to be legendary instead.
