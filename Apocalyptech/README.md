@@ -66,6 +66,11 @@ than a mod:
 
 ## Deprecated/Broken Mods
 
+I've also got a folder to contain mods which are proofs-of-concept, or didn't
+work, or which are no longer needed (either because of changes to the game itself,
+or because it was obsoleted by one of my other mods).  There's a README in there
+which details most of those, so feel free to browse around if you want.
+
 ## Data Processing
 
 There's also a `dataprocessing` dir here, which is various utils that I use to
