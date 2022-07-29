@@ -11,3 +11,4 @@ SparkLevelPatchEntry,(1,2,0,EndlessDungeon_P),/Game/GameData/Dungeon/Tables/ED_B
 SparkLevelPatchEntry,(1,2,0,EndlessDungeon_P),/Game/GameData/Dungeon/Tables/ED_BalanceSheetData.ED_BalanceSheetData,RewardSwitch,Value_5_17D63D114B0124D4D34B749AFEEC608C,0,,1
 
 # TODO: 10X amounts
+      "LootAmount": 3,

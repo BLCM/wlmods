@@ -35,12 +35,9 @@ version = '0.0.1'
 def parse_args():
     parser = argparse.ArgumentParser(description=f'Uniq Dungeon Generator v{version}')
     parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
-    # parser.add_argument('--input', type=str, default='trial1.json',help='Trial Input JSON')
-    # parser.add_argument('--spawnoptions', type=str, default='spawnoptions.1.json',help='Spawn Options for the Trial')
-    # parser.add_argument('--overridespawn', action='store_true',help='Use the spawnoptions json to override spawn choices')
+    parser.add_argument('--lootmult', type=int, default=2, help='Loot multiplier')
+    parser.add_argument('--discount', type=int, default=10, help='Discount (divide crystals)')
     parser.add_argument('--output', type=str, default=OUTPUT, help='Hotfix output file')
-    # parser.add_argument('--spawnout',type=str, default=SPAWNOUT, help='SpawnOptions output file')
-    # parser.add_argument('--trial', type=int, default=1, help='Trial number {MISSION_NUMBERS}')
     return parser.parse_args()
 
 args = parse_args()
@@ -51,7 +48,7 @@ if our_seed is None:
 else:
     our_seed = int(our_seed)
 
-title = f'Barf Bunnies Dungeon: seed {our_seed}'
+title = f'Barf Bunnies Dungeon'
 
 random.seed(our_seed)
 
@@ -71,25 +68,29 @@ def get_bpchar(s):
     return s.split('/')[-1]
 
 partial_paths = [
-"/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_Amulet",
-"/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_Armor",
-"/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_AssaultRifle",
-"/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_Heavy",
-"/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_Melee",
-"/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_Pistol",
-"/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_Ring",
-"/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_Shield",
-"/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_Shotgun",
-"/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_SniperRifle",
-"/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_Spell",
-"/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_SubmachineGun",
+    "/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_Amulet",
+    "/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_Armor",
+    "/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_AssaultRifle",
+    "/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_Heavy",
+    "/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_Melee",
+    "/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_Pistol",
+    "/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_Ring",
+    "/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_Shield",
+    "/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_Shotgun",
+    "/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_SniperRifle",
+    "/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_Spell",
+    "/Game/InteractiveObjects/_Dungeon/SpecializedChest/IO_TinaOffering_SubmachineGun",
 ]       
 full_paths = [f"{path}.Default__{get_bpchar(path)}_C" for path in partial_paths]
 paths = full_paths + [
     "/Game/InteractiveObjects/_Dungeon/SpecializedChest/_Shared/IO_TinaOffering.Default__IO_TinaOffering_C",
 ]
 
-discount = 10
+discount = args.discount
+lootmult = args.lootmult
+
+mod.comment(f'discount: {discount}')
+mod.comment(f'lootmult: {lootmult}')
 
 params = {
     # these are disabled because they didn't work
@@ -97,20 +98,30 @@ params = {
     #"NbOfCookieToConsume":500,
     #"MaxCookie":1666,
     #"Cooldown spammer":0.001,
-    "LootAmount":3 * discount, # 10X
+    "LootAmount":int(3 * lootmult * discount), # 10X
+    "UsableComponent.HoldToUseSettings.HoldToUseTime":100.0,
+    "UsableComponent.Object..HoldToUseSettings.HoldToUseTime":50.0,
 }
 
-def gen_all(paths, params):
+def gen_all(paths, params, level=None):
+    targets = [
+        (Mod.PATCH, ''),
+        (Mod.LEVEL, 'MatchAll'),
+        (Mod.EARLYLEVEL, 'MatchAll'),
+        (Mod.POST, 'MatchAll'),
+        (Mod.ADDED, 'MatchAll'),
+    ]
+    if level is not None:
+        targets = targets + [
+            (Mod.LEVEL, level),
+            (Mod.EARLYLEVEL, level),
+            (Mod.POST, level),
+            (Mod.ADDED, level),
+        ]
     for path in paths:
         for param in params:
             v = params[param]
-            for hf_type, hf_target in [
-                    (Mod.PATCH, ''),
-                    (Mod.LEVEL, 'MatchAll'),
-                    (Mod.EARLYLEVEL, 'MatchAll'),
-                    (Mod.POST, 'MatchAll'),
-                    (Mod.ADDED, 'MatchAll'),
-                    ]:
+            for hf_type, hf_target in targets:
                 for notify in [True, False]:
                     mod.reg_hotfix(hf_type, hf_target,
                             path,
@@ -119,17 +130,25 @@ def gen_all(paths, params):
                             notify=notify,
                             )
 
-def gen_all_table(paths, params_tuple):
+def gen_all_table(paths, params_tuple, level=None):
+    targets = [
+        (Mod.PATCH, ''),
+        (Mod.LEVEL, 'MatchAll'),
+        (Mod.EARLYLEVEL, 'MatchAll'),
+        (Mod.POST, 'MatchAll'),
+        (Mod.ADDED, 'MatchAll'),
+    ]
+    if level is not None:
+        targets = targets + [
+            (Mod.LEVEL, level),
+            (Mod.EARLYLEVEL, level),
+            (Mod.POST, level),
+            (Mod.ADDED, level),
+        ]
     for path in paths:
         for param in params_tuple:
             (k,e,v) = param
-            for hf_type, hf_target in [
-                    (Mod.PATCH, ''),
-                    (Mod.LEVEL, 'MatchAll'),
-                    (Mod.EARLYLEVEL, 'MatchAll'),
-                    (Mod.POST, 'MatchAll'),
-                    (Mod.ADDED, 'MatchAll'),
-                    ]:
+            for hf_type, hf_target in targets:
                 for notify in [True, False]:
                     mod.table_hotfix(hf_type, hf_target,
                             path,
@@ -153,7 +172,7 @@ nerf_params = [
 ]
 
 mod.comment("Now we do reward discounts")
-gen_all_table(nerf_paths, nerf_params)
+gen_all_table(nerf_paths, nerf_params,level='EndlessDungeon_P')
 
 # ItemPool_Amulets_EndlessDungeon.json        ItemPool_Heavy_EndlessDungeon.json    ItemPool_Rings_EndlessDungeon.json    ItemPool_SniperRifle_EndlessDungeon.json
 # ItemPool_Armor_EndlessDungeon.json          ItemPool_Melee_EndlessDungeon.json    ItemPool_Shields_EndlessDungeon.json  ItemPool_Spells_EndlessDungeon.json
@@ -185,10 +204,49 @@ mod.comment("Now we do Quantity Override")
 
 
 
+
 gen_all(item_pools, {
     # "Quantity":f"(BaseValueConstant={1*discount},BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)",
-    "Quantity":f'(BaseValueConstant={1*discount},DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)'
+    "Quantity":f'(BaseValueConstant={1*lootmult*discount},DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)'
 })
+
+mod.comment("Now we'll look at the quality tiers, hopefully this doesn't bork it")
+
+# "/Game/InteractiveObjects/_Dungeon/SpecializedChest/_Shared/DataTable/Table_IO_TinaOffering_QualityTiers.json"
+item_key = "NumberOfLootItemsToSpawn_7_75A854754FFE8CDD338317B7A220DC0D"
+tables = [ "/Game/InteractiveObjects/_Dungeon/SpecializedChest/_Shared/DataTable/Table_IO_TinaOffering_QualityTiers.Table_IO_TinaOffering_QualityTiers" ]
+table_params = [
+    ("1", item_key,  int(lootmult*1*discount)),
+    ("2", item_key,  int(lootmult*1*discount)),
+    ("3", item_key,  int(lootmult*1*discount)),
+    ("4", item_key,  int(lootmult*2*discount)),
+    ("5", item_key,  int(lootmult*2*discount)),
+    ("6", item_key,  int(lootmult*2*discount)),
+    ("7", item_key,  int(lootmult*3*discount)),
+    ("8", item_key,  int(lootmult*3*discount)),
+    ("9", item_key,  int(lootmult*3*discount)),
+    ("10",item_key,  int(lootmult*4*discount)),
+]
+
+gen_all_table(tables, table_params,level='EndlessDungeon_P')
+
+
+# try to mess up the animation
+mod.comment("try to mess up the animation")
+# this doesn't work
+mess_paths = ["/Game/InteractiveObjects/_Dungeon/SpecializedChest/_Shared/IO_TinaOffering.IO_TinaOffering_C"]
+mess_params = {
+    "TimeLines.TimeLines[0].Object..TimelineLength":0.1,
+    # Timelines[2].Object..FloatTracks.FloatTracks[0].CurveFloat.Object..FloatCurve.Keys.Keys[2]
+    "TimeLines.TimeLines[0].Object..FloatTracks.FloatTracks[0].CurveFloat.Object..FloatCurve.Keys.Keys[1].Time":0.1,
+}
+gen_all( mess_paths, mess_params)
+
+mod.comment("Make the puking shorter?")
+# not sure if works
+gen_all(["/Game/InteractiveObjects/_Dungeon/SpecializedChest/_Shared/IO_TinaOffering.IO_TinaOffering_C:OakLootable_GEN_VARIABLE"],
+        {"TimeToSpawnLootOver":0.1})
+
 
 mod.close()
 
