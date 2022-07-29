@@ -3,6 +3,8 @@ Apocalyptech's Loot-Related WL Mods
 
 See the individual mod folders for full READMEs.
 
+- **Customization Drop Rate** - A set of mods to change the drop rates for customizations,
+  from none at all, to much more than usual.
 - **Early Bloomer**- Unlock all weapon types, elements, manufacturers,
   enchantments, etc, from the very beginning of the game.
 - **Expanded Legendary Pools** - Adds all legendary/unique items to the world drop pools.
