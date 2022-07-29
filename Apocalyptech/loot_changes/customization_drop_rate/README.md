@@ -23,7 +23,7 @@ tested super thoroughly, so there could be areas which need fixing up.
 Changelog
 =========
 
-**v1.0.0** - Jul 29, 202
+**v1.0.0** - Jul 29, 2022
  * Initial release, based loosely on v1.2.1 of
    [BL3's Customization Drop Rate](https://github.com/BLCM/bl3mods/wiki/Customization%20Drop%20Rate%3A%20None)
  
