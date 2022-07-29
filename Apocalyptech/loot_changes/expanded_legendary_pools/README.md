@@ -11,14 +11,16 @@ basically anything with red text.  This currently includes all items from:
 I recommend using this with my Uniques Are Legendary mod, which will make
 the red-text blue/purple gear more noticeable when they drop.
 
-TODO
-====
-
-* There are a few balances in here which are split up by Class.  It'd be nice
-  to use character-specific weighting to those, rather than our even probabilities.
-
 Changelog
 =========
+
+**v1.0.2** - Jul 29, 2022
+ * Added missing Fealty Oath ring, from DLC3.
+ * Removed useless/unfinished "Big B Mittens" armor
+ * Tweaked Armor That Sucks and Harmonious Dingledangle additions so that they
+   take advantage of class-weighting probabilities (they now play nicely with
+   No Wasted Gear).
+ * Cleared out duplicate DLC-gear entries from pools.
 
 **v1.0.1** - Jul 28, 2022
  * Removed the Used Antique Greatbow from the legendary pools.  Hadn't realized

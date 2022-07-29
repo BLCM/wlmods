@@ -21,33 +21,33 @@
 
 import sys
 sys.path.append('../../../python_mod_helpers')
-from wlhotfixmod.wlhotfixmod import Mod
+from wlhotfixmod.wlhotfixmod import Mod, ItemPool, BVCF
 
 ###
-### (This comment does not yet apply, since I haven't done a
-### manufacturer lock mod for WL yet)
 ### A lot of this mod is duplicated in gen_manufacturer_lock.py now.
 ### Be sure to update both when gear changes!
+### (This comment does not yet apply, since I haven't done a
+### manufacturer lock mod for WL yet)
 ###
-
-def get_full_object(obj_name):
-    if obj_name is None:
-        return None
-    endpart = obj_name.rsplit('/', 1)[-1]
-    if '.' in endpart:
-        return obj_name
-    else:
-        return '{}.{}'.format(obj_name, endpart)
 
 def set_pool(mod, pool_to_set, balances):
 
     parts = []
     for (bal, weight) in balances:
-        full_bal = get_full_object(bal)
-        part = '(InventoryBalanceData={},ResolvedInventoryBalanceData=InventoryBalanceData\'"{}"\',Weight=(BaseValueConstant={}))'.format(
-                full_bal, full_bal,
-                round(weight, 6),
-                )
+        full_bal = mod.get_full_cond(bal)
+        # New to support Armor That Sucks and Harmonious Dingledangle: check
+        # to see if the "balance" is actually an item pool.  Dumb check, but
+        # it should work fine.
+        if 'ItemPool' in full_bal:
+            part = '(ItemPoolData={},Weight=(BaseValueConstant={}))'.format(
+                    mod.get_full_cond(full_bal, 'ItemPoolData'),
+                    round(weight, 6),
+                    )
+        else:
+            part = '(InventoryBalanceData={},ResolvedInventoryBalanceData=InventoryBalanceData\'"{}"\',Weight=(BaseValueConstant={}))'.format(
+                    full_bal, full_bal,
+                    round(weight, 6),
+                    )
         parts.append(part)
     mod.reg_hotfix(Mod.PATCH, '',
             pool_to_set,
@@ -63,9 +63,37 @@ mod = Mod('expanded_legendary_pools.wlhotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.1',
+        v='1.0.2',
         cats='loot-system, enemy-drops',
         )
+
+# There are two bits of gear which have six separate balances -- one for each class.
+# Specifically:
+#
+#   * Armor That Sucks (/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_*)
+#   * Harmonious Dingledangle (/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_*)
+#
+# I want to add these in such a way that a mod like No Wasted Gear has the desired
+# effect and the user only gets "appropriate" gear.  We could do so right in these
+# ItemPools directly, but getting the weighting right is effectively impossible.
+# It could be balanced such that a single player with a secondary class would result
+# in a combined total weight of 1, but then if anyone else joins the game with
+# different classes, the total weight jumps up above 1.  And until the player unlocks
+# the second class, their total weight would be lower.
+#
+# So!  The Wonderlands data has a bunch of apparently-unused Item Pools in its data,
+# sitting there ready and waiting for an intrepid modder to make use of.  I'm going
+# to be just such a modder!  We'll call out to the pool with a weight of 1, and then
+# the pool itself can handle all the class-weighting attribute stuff.
+# https://github.com/BLCM/BLCMods/wiki/Wonderlands-Spare-Pool-Registry
+#
+# (This gear *does* also exist in their own ItemPools, which is what the game uses
+# to drop as plot-mission rewards, but I wanted to leave those alone because when
+# I eventually get around to Mission Reward Randomizer, I'll end up touching those
+# pools, and I'd like to be isolated from those changes.)
+
+armor_that_sucks_pool = '/Game/Automation/Maps/DPS/ItemPools/ItemPool_TESTONLY_CircleOfProtection_Mod1'
+dingledangle_pool = '/Game/Automation/Maps/DPS/ItemPools/ItemPool_TESTONLY_CircleOfProtection_Mod2'
 
 # Items Omitted:
 #
@@ -113,6 +141,12 @@ mod = Mod('expanded_legendary_pools.wlhotfix',
 # reason to drop this one directly!  Also: lol, more of these shenanigans plz, GBX.
 #   Used Antique Greatbow
 #       /Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Balance/Balance_SR_HYP_05_AntGreatBow_Used
+#
+# Some sort of unfinished gear, I guess...  Seems to do basically nothing.  Green-rarity.  I suspect
+# from looking at the data that it was maybe meant to be at least a visual gag -- mittens on your
+# character or something -- but even that isn't actually functional.  Not worth it!
+#   Big B Mittens
+#       /Game/Gear/Pauldrons/_Shared/_Design/_Uniques/BigBMittens/Balance/Balance_Armor_BigBMittens
 #
 
 addition_scale = 0.6
@@ -510,19 +544,19 @@ pools = [
                 ### Additions
 
                 # Armor That Sucks (Brr-Zerker)
-                ('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Barb', 1*addition_scale/6),
+                #('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Barb', 1*addition_scale/6),
                 # Armor That Sucks (Clawbringer)
-                ('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Knight', 1*addition_scale/6),
+                #('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Knight', 1*addition_scale/6),
                 # Armor That Sucks (Graveborn)
-                ('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Necro', 1*addition_scale/6),
+                #('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Necro', 1*addition_scale/6),
                 # Armor That Sucks (Spellshot)
-                ('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Mage', 1*addition_scale/6),
+                #('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Mage', 1*addition_scale/6),
                 # Armor That Sucks (Spore Warden)
-                ('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Ranger', 1*addition_scale/6),
+                #('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Ranger', 1*addition_scale/6),
                 # Armor That Sucks (Stabbomancer)
-                ('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Rogue', 1*addition_scale/6),
-                # Big B Mittens
-                ('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/BigBMittens/Balance/Balance_Armor_BigBMittens', 1*addition_scale),
+                #('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Rogue', 1*addition_scale/6),
+                # Armor That Sucks (combined custom pool)
+                (armor_that_sucks_pool, 1),
                 # Steel Gauntlets
                 ('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/SteelGauntlets/Balance/Balance_Armor_SteelGauntlets', 1*addition_scale),
 
@@ -641,6 +675,11 @@ pools = [
                 # Precious Jamstone
                 ('/Game/PatchDLC/Indigo2/Gear/Rings/_Shared/_Unique/PreciousJamstone/Balance/Balance_Ring_Jamstone', 1),
 
+                ### DLC3
+
+                # Fealty Oath
+                ('/Game/PatchDLC/Indigo3/Gear/Rings/BrandLoyalty/Balance/Balance_Ring_BrandLoyalty', 1),
+
                 ### Additions
 
                 # Driftwood
@@ -695,17 +734,19 @@ pools = [
                 ### Additions
 
                 # Harmonious Dingledangle (Brr-Zerker)
-                ('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Barb', 1*addition_scale/6),
+                #('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Barb', 1*addition_scale/6),
                 # Harmonious Dingledangle (Clawbringer)
-                ('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_KotC', 1*addition_scale/6),
+                #('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_KotC', 1*addition_scale/6),
                 # Harmonious Dingledangle (Graveborn)
-                ('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Necro', 1*addition_scale/6),
+                #('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Necro', 1*addition_scale/6),
                 # Harmonious Dingledangle (Spellshot)
-                ('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_GunMage', 1*addition_scale/6),
+                #('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_GunMage', 1*addition_scale/6),
                 # Harmonious Dingledangle (Spore Warden)
-                ('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Ranger', 1*addition_scale/6),
+                #('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Ranger', 1*addition_scale/6),
                 # Harmonious Dingledangle (Stabbomancer)
-                ('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Rogue', 1*addition_scale/6),
+                #('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Rogue', 1*addition_scale/6),
+                # Harmonious Dingledangle (combined custom pool)
+                (dingledangle_pool, 1),
                 # Rivote's Amulet
                 ('/Game/Gear/Amulets/_Shared/_Unique/RonRivote/Balance/Balance_Amulet_Unique_RonRivote', 1*addition_scale),
                 # Vorcanar's Cog
@@ -734,6 +775,43 @@ for (label, leg_gun_idx, pool, balances) in pools:
 
 mod.newline()
 
+mod.header('Custom drop pool for Armor That Sucks and Harmonious Dingledangle')
+class_attrs = [
+        '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Barb',
+        '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Knight',
+        '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Necro',
+        '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_GunMage',
+        '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Ranger',
+        '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Rogue',
+        ]
+for label, pool_name, balances in [
+        ('Armor That Sucks', armor_that_sucks_pool, [
+            '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Barb',
+            '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Knight',
+            '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Necro',
+            '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Mage',
+            '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Ranger',
+            '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Rogue',
+            ]),
+        ('Harmonious Dingledangle', dingledangle_pool, [
+            '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Barb',
+            '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_KotC',
+            '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Necro',
+            '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_GunMage',
+            '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Ranger',
+            '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Rogue',
+            ])
+        ]:
+    mod.comment(label)
+    pool = ItemPool(pool_name)
+    for balance, attr in zip(balances, class_attrs):
+        pool.add_balance(balance, BVCF(bva=attr))
+    mod.reg_hotfix(Mod.PATCH, '',
+            pool_name,
+            'BalancedItems',
+            pool)
+    mod.newline()
+
 mod.header('Redistribute legendary gun drops evenly')
 for idx, label, weight in sorted(legendary_weight_params):
     mod.comment('{}: {}%'.format(
@@ -744,6 +822,46 @@ for idx, label, weight in sorted(legendary_weight_params):
             '/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary',
             f'BalancedItems.BalancedItems[{idx}].Weight.BaseValueConstant',
             round(weight, 6))
+mod.newline()
+
+mod.header('Disable DLC ItemPoolExpansion Objects')
+for exp in [
+        # DLC1
+        '/Game/PatchDLC/Indigo1/GameData/PatchActor/EXPD_ItemPool_Indigo1_Amulets',
+        '/Game/PatchDLC/Indigo1/GameData/PatchActor/EXPD_ItemPool_Indigo1_Armor',
+        '/Game/PatchDLC/Indigo1/GameData/PatchActor/EXPD_ItemPool_Indigo1_Heavy',
+        '/Game/PatchDLC/Indigo1/GameData/PatchActor/EXPD_ItemPool_Indigo1_Rings',
+        '/Game/PatchDLC/Indigo1/GameData/PatchActor/EXPD_ItemPool_Indigo1_Shields',
+        '/Game/PatchDLC/Indigo1/GameData/PatchActor/EXPD_ItemPool_Indigo1_Shotguns',
+        '/Game/PatchDLC/Indigo1/GameData/PatchActor/EXPD_ItemPool_Indigo1_Spells',
+
+        # DLC2
+        '/Game/PatchDLC/Indigo2/GameData/PatchScripts/EXPD_ItemPool_Indigo2_Amulets',
+        '/Game/PatchDLC/Indigo2/GameData/PatchScripts/EXPD_ItemPool_Indigo2_Armor',
+        '/Game/PatchDLC/Indigo2/GameData/PatchScripts/EXPD_ItemPool_Indigo2_Melee',
+        '/Game/PatchDLC/Indigo2/GameData/PatchScripts/EXPD_ItemPool_Indigo2_Pistols',
+        '/Game/PatchDLC/Indigo2/GameData/PatchScripts/EXPD_ItemPool_Indigo2_Rings',
+        '/Game/PatchDLC/Indigo2/GameData/PatchScripts/EXPD_ItemPool_Indigo2_SMGs',
+        '/Game/PatchDLC/Indigo2/GameData/PatchScripts/EXPD_ItemPool_Indigo2_Spells',
+        '/Game/PatchDLC/Indigo2/GameData/PatchScripts/EXPD_ItemPool_Indigo2_Ward',
+
+        # DLC3
+        '/Game/PatchDLC/Indigo3/GameData/PatchScripts/EXPD_ItemPool_Indigo3_Amulets',
+        '/Game/PatchDLC/Indigo3/GameData/PatchScripts/EXPD_ItemPool_Indigo3_Armor',
+        '/Game/PatchDLC/Indigo3/GameData/PatchScripts/EXPD_ItemPool_Indigo3_ARs',
+        '/Game/PatchDLC/Indigo3/GameData/PatchScripts/EXPD_ItemPool_Indigo3_Melee',
+        '/Game/PatchDLC/Indigo3/GameData/PatchScripts/EXPD_ItemPool_Indigo3_Rings',
+        '/Game/PatchDLC/Indigo3/GameData/PatchScripts/EXPD_ItemPool_Indigo3_Shotguns',
+        '/Game/PatchDLC/Indigo3/GameData/PatchScripts/EXPD_ItemPool_Indigo3_Spells',
+        ]:
+    mod.reg_hotfix(Mod.PATCH, '',
+            exp,
+            'ItemPoolToExpand',
+            'None')
+    mod.reg_hotfix(Mod.PATCH, '',
+            exp,
+            'BalancedItems',
+            '()')
 mod.newline()
 
 mod.close()
