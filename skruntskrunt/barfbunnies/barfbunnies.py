@@ -37,6 +37,7 @@ def parse_args():
     parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
     parser.add_argument('--lootmult', type=int, default=2, help='Loot multiplier')
     parser.add_argument('--discount', type=int, default=10, help='Discount (divide crystals)')
+    parser.add_argument('--raiddiscount', type=int, default=4, help='Discount Raid Boss Bonues (divide crystals)')
     parser.add_argument('--output', type=str, default=OUTPUT, help='Hotfix output file')
     return parser.parse_args()
 
@@ -87,6 +88,7 @@ paths = full_paths + [
 ]
 
 discount = args.discount
+raid_discount = args.raiddiscount
 lootmult = args.lootmult
 
 mod.comment(f'discount: {discount}')
@@ -169,10 +171,97 @@ nerf_params = [
     ("RewardDice","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,30//discount)}'),
     ("RewardBonusObjective","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,25//discount)}'),
     ("RewardSwitch","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,10//discount)}'),
+    ("RewardBoss","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,40//discount)}'),
+    ("CorruptedCrystal","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,40//discount)}'),
+    # Reduce Elite Portal Costs
+    ("ElitePortalCost","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,50//discount)}'),
+    # Raid Bosses rewards
+    ("Reward_OneASpect","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,100//raid_discount)}'),
+    ("Reward_TwoAspects","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,283//raid_discount)}'),
+    ("Reward_ThreeAspects","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,800//raid_discount)}'),    
+    # Drop Chance for monsters (double it for fun?)
+    ("DropChanceForMobs","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(0,0.5)}'),
+    # BaseAltarCost
+    ("BaseAltarCost","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,10//discount)}'),
 ]
 
 mod.comment("Now we do reward discounts")
 gen_all_table(nerf_paths, nerf_params,level='EndlessDungeon_P')
+
+
+monster_paths = [
+    "/Game/GameData/Loot/ItemPools/EndlessDungeon/Item_PoolList_Cookies/Item_PoolList_MonsterDrop_Normal.Item_PoolList_MonsterDrop_Normal",
+    "/Game/GameData/Loot/ItemPools/EndlessDungeon/Item_PoolList_Cookies/Item_PoolList_MonsterDrop_Tough.Item_PoolList_MonsterDrop_Tough",
+    "/Game/GameData/Loot/ItemPools/EndlessDungeon/Item_PoolList_Cookies/Item_PoolList_MonsterDrop_Badass.Item_PoolList_MonsterDrop_Badass",
+    "/Game/GameData/Loot/ItemPools/EndlessDungeon/Item_PoolList_Cookies/Item_PoolList_MonsterDrop_SuperBadass.Item_PoolList_MonsterDrop_SuperBadass",
+    "/Game/GameData/Loot/ItemPools/EndlessDungeon/Item_PoolList_Cookies/Item_PoolList_MonsterDrop_Corrupted.Item_PoolList_MonsterDrop_Corrupted",
+    "/Game/GameData/Loot/ItemPools/EndlessDungeon/Item_PoolList_Cookies/Item_PoolList_MonsterDrop_UltimateBadass.Item_PoolList_MonsterDrop_UltimateBadass",
+]
+
+mod.comment("Now we monster cookie reward discounts")
+
+
+# # this is a guess
+# for (i, path) in enumerate(monster_paths):
+#     gen_all([path], {
+#         "ItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool":
+#         f'(BaseValueConstant={i},DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)',
+#     })
+#
+
+# the alternative is to use the scale and tone it down discount times?
+for (i, path) in enumerate(monster_paths):
+    gen_all([path], {
+        "ItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueScale":max(0.0001,1.0/discount)
+    })
+
+
+#          {
+#             "ItemPool" : [
+#                "ItemPool_MD_UltimateBadass_Cookie",
+#                "/Game/GameData/Loot/ItemPools/Currency/ItemPool_MD_UltimateBadass_Cookie"
+#             ],
+#             "NumberOfTimesToSelectFromThisPool" : {
+#                "AttributeInitializer" : [
+#                   "Ini_Att_CookieQuantity_C",
+#                   "/Game/GameData/Dungeon/Attribute/Ini_Att_CookieQuantity"
+#                ],
+#                "BaseValueAttribute" : {
+#                   "export" : 0
+#                },
+#                "BaseValueConstant" : 0,
+#                "BaseValueScale" : 1,
+#                "DataTableValue" : {
+#                   "DataTable" : {
+#                      "export" : 0
+#                   },
+#                   "RowName" : "None",
+#                   "ValueName" : "None"
+#                }
+#             },
+#             "PartSelectionOverrides" : [],
+#             "PoolProbability" : {
+#                "AttributeInitializer" : [
+#                   "Ini_Att_CookieRate_C",
+#                   "/Game/GameData/Dungeon/Attribute/Ini_Att_CookieRate"
+#                ],
+#                "BaseValueAttribute" : {
+#                   "export" : 0
+#                },
+#                "BaseValueConstant" : 0,
+#                "BaseValueScale" : 1,
+#                "DataTableValue" : {
+#                   "DataTable" : {
+#                      "export" : 0
+#                   },
+#                   "RowName" : "None",
+#                   "ValueName" : "None"
+#                }
+#             },
+#             "_jwp_arr_idx" : 0
+#          },
+
+
 
 # ItemPool_Amulets_EndlessDungeon.json        ItemPool_Heavy_EndlessDungeon.json    ItemPool_Rings_EndlessDungeon.json    ItemPool_SniperRifle_EndlessDungeon.json
 # ItemPool_Armor_EndlessDungeon.json          ItemPool_Melee_EndlessDungeon.json    ItemPool_Shields_EndlessDungeon.json  ItemPool_Spells_EndlessDungeon.json
