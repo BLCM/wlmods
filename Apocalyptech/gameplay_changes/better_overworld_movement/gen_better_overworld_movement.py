@@ -33,7 +33,7 @@ mod = Mod('better_overworld_movement.wlhotfix',
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
-        cats='qol',
+        cats='qol, cheat',
         )
 
 mod.header('Allow Sprint and Jump abilities')
