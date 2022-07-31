@@ -3,6 +3,7 @@ Apocalyptech's General Gameplay-Related WL Mods
 
 See the individual mod folders for full READMEs.
 
+- **Better Overworld Movement** - Allows sprinting and jumping in the Overworld
 - **Movement Speed Cheats** - Move faster!
 
 Licenses

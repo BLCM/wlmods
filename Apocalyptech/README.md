@@ -17,6 +17,7 @@ of the mods you'll find in here, though:
 
 ## Gameplay Changes
 
+- **Better Overworld Movement** - Allows sprinting and jumping in the Overworld
 - **Movement Speed Cheats** - Move faster!
 
 ## Gear Changes
