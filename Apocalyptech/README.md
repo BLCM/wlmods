@@ -10,6 +10,7 @@ of the mods you'll find in here, though:
 
 ## Economy-Related Mods
 
+- **Cheaper SDUs** - Vastly reduce the SDU costs.
 - **Free Respawn** - No charge for respawning after death.
 - **Free Respec** - No charge to respec your skills.
 

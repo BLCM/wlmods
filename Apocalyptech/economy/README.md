@@ -7,6 +7,7 @@ being used, which gives you far more Eridium than usual.
 
 See the individual mod folders for full READMEs.
 
+- **Cheaper SDUs** - Vastly reduce the SDU costs.
 - **Free Respawn** - No charge for respawning after death.
 - **Free Respec** - No charge to respec your skills.
 
