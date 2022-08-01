@@ -63,7 +63,9 @@ mod = Mod(output_filename,
           v=version,
           cats=['gameplay'],
 )
-mod.comment(f"Seed {our_seed}")
+
+# # disable seed for now
+# mod.comment(f"Seed {our_seed}")
 
 def get_bpchar(s):
     return s.split('/')[-1]
