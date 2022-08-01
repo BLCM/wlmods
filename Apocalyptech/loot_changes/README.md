@@ -3,6 +3,8 @@ Apocalyptech's Loot-Related WL Mods
 
 See the individual mod folders for full READMEs.
 
+- **Chaos Gear Spawns** - Alters how Chaos-infused gear (Chaotic, Volatile, Primordial,
+  or Ascended) are spawned in Chaos Mode.
 - **Customization Drop Rate** - A set of mods to change the drop rates for customizations,
   from none at all, to much more than usual.
 - **Early Bloomer**- Unlock all weapon types, elements, manufacturers,
