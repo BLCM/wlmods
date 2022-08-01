@@ -8,6 +8,10 @@ such shenanigans.
 Changelog
 =========
 
+**v1.0.1** - Jul 31, 2022
+ * Fixed a bug where the abilities wouldn't unlock properly when
+   initially loading a game *not* in the Overworld.
+
 **v1.0.0** - Jul 31, 2022
  * Initial release
  

@@ -32,7 +32,7 @@ mod = Mod('better_overworld_movement.wlhotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.0.1',
         cats='qol, cheat',
         )
 
@@ -52,7 +52,7 @@ abilities = [
         'PlayerAbility_Sprint',
         'PlayerAbility_Jump',
         ]
-mod.reg_hotfix(Mod.LEVEL, 'Overworld_P',
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Overworld',
         '/Game/PlayerCharacters/_Shared/_Design/Input/InputAbilities_Player_Overworld',
         'InputAbilityClasses',
         '({})'.format(','.join([

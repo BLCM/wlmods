@@ -1,6 +1,6 @@
 
 @title Better Overworld Movement
-@version 1.0.0
+@version 1.0.1
 @author Apocalyptech
 @contact https://apocalyptech.com/contact.php
 @categories qol, cheat
@@ -19,7 +19,7 @@
 ### Allow Sprint and Jump abilities
 ###
 
-SparkLevelPatchEntry,(1,1,0,Overworld_P),/Game/PlayerCharacters/_Shared/_Design/Input/InputAbilities_Player_Overworld.InputAbilities_Player_Overworld,InputAbilityClasses,0,,(BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_Use.PlayerAbility_Use_C"',BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_Weapon.PlayerAbility_Weapon_C"',BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_Mantle.PlayerAbility_Mantle_C"',BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_Move.PlayerAbility_Move_C"',BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_Look.PlayerAbility_Look_C"',BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_OWMelee.PlayerAbility_OWMelee_C"',BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_ActionSkill.PlayerAbility_ActionSkill_C"',BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_ow_camera_zoom.PlayerAbility_ow_camera_zoom_C"',BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_Sprint.PlayerAbility_Sprint_C"',BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_Jump.PlayerAbility_Jump_C"')
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Overworld),/Game/PlayerCharacters/_Shared/_Design/Input/InputAbilities_Player_Overworld.InputAbilities_Player_Overworld,InputAbilityClasses,0,,(BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_Use.PlayerAbility_Use_C"',BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_Weapon.PlayerAbility_Weapon_C"',BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_Mantle.PlayerAbility_Mantle_C"',BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_Move.PlayerAbility_Move_C"',BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_Look.PlayerAbility_Look_C"',BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_OWMelee.PlayerAbility_OWMelee_C"',BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_ActionSkill.PlayerAbility_ActionSkill_C"',BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_ow_camera_zoom.PlayerAbility_ow_camera_zoom_C"',BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_Sprint.PlayerAbility_Sprint_C"',BlueprintGeneratedClass'"/Game/PlayerCharacters/_Shared/_Design/Input/Abilities/PlayerAbility_Jump.PlayerAbility_Jump_C"')
 
 ###
 ### Allow Jumping on the BPChar
