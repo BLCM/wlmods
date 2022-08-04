@@ -9,13 +9,13 @@ the ability morphs to a wide range of gear instead of just Used Antique Greatbow
 
 There are currently three variants available:
 
- - **Legendaries**: The effect is applied to only legendary/unique guns
+ * **Legendaries**: The effect is applied to only legendary/unique guns
    (basically anything with red text).  The morphed gun will always be another
    legendary/unique.
- - **All Guns**: The effect is applied to literally every gun in the game.  In
+ * **All Guns**: The effect is applied to literally every gun in the game.  In
    this variant, there's an equal chance to "roll" each level of rarity.  So
    you should expect a legendary about every 1 in 5, a purple every 1 in 5, etc.
- - **World Drops**: The effect is applied to literally every gun in the game.
+ * **World Drops**: The effect is applied to literally every gun in the game.
    In this variant, the replacement is chosen by a world drop, so this will
    factor in your current Loot Luck, etc.  Early in a game, you'll have mostly
    whites+greens, but if you've been diligent with collecting Luck Dice, the
