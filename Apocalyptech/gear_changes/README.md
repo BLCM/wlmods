@@ -6,6 +6,8 @@ Note that for mods which change part lists for gear, the mod will only apply to
 
 See the individual mod folders for full READMEs.
 
+- **Morph-A-Gun™ 2000** - A set of mods to make guns morph into other guns the instant
+  they're fired.
 - **Red Text Explainer** - Adds a description of weapon/spell special effects on the card.
 - **Torgue AR Full-Auto** - Makes nearly all Torgue ARs full-auto.
 - **Uniques are Legendary** - Changes the rarity of unique (usually blue/purple) items
