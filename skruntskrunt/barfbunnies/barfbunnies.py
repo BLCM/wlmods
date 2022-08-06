@@ -49,7 +49,7 @@ if our_seed is None:
 else:
     our_seed = int(our_seed)
 
-title = f'Barf Bunnies Dungeon'
+title = f'Barf Bunnies Same Loot, Less Pulls'
 
 random.seed(our_seed)
 
@@ -58,7 +58,7 @@ output_filename = args.output
 mod = Mod(output_filename,
           title,
           'skruntskrunt',
-          ["Testing."],
+          ["Barf bunnies take too long. Speed up the loot room by reducing pulls but maintain the current level of loot. Reduce the total number of crystals to a meager sum, improve raid boss crystal drops, speed up barf bunnies slightly, with reduced crystals increase barf bunnies loot to match former levels."],
           lic=Mod.CC_BY_SA_40,
           v=version,
           cats=['gameplay'],
@@ -169,11 +169,14 @@ nerf_paths = [
     "/Game/GameData/Dungeon/Tables/ED_BalanceSheetData.ED_BalanceSheetData",
 ]
 nerf_params = [
-    ("RewardClearRoom","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,20//discount)}'),
+    # was 20 now 30
+    ("RewardClearRoom","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,(20+10)//discount)}'),
     ("RewardDice","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,30//discount)}'),
-    ("RewardBonusObjective","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,25//discount)}'),
+    # was 25, now moved to 40
+    ("RewardBonusObjective","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,(25+15)//discount)}'),
     ("RewardSwitch","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,10//discount)}'),
-    ("RewardBoss","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,40//discount)}'),
+    # was 40 now moved to 50
+    ("RewardBoss","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,(40+10)//discount)}'),
     ("CorruptedCrystal","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,40//discount)}'),
     # Reduce Elite Portal Costs
     ("ElitePortalCost","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,50//discount)}'),
@@ -181,8 +184,8 @@ nerf_params = [
     ("Reward_OneASpect","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,100//raid_discount)}'),
     ("Reward_TwoAspects","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,283//raid_discount)}'),
     ("Reward_ThreeAspects","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,800//raid_discount)}'),    
-    # Drop Chance for monsters (double it for fun?)
-    ("DropChanceForMobs","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(0,0.5)}'),
+    # Drop Chance for monsters (double it for fun?) 0.25 -> 0.75
+    ("DropChanceForMobs","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(0,0.75)}'),
     # BaseAltarCost
     ("BaseAltarCost","Value_5_17D63D114B0124D4D34B749AFEEC608C",f'{max(1,10//discount)}'),
 ]
