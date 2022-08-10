@@ -1,6 +1,6 @@
 
 @title Customization Drop Rate: None
-@version 1.0.0
+@version 1.0.1
 @author Apocalyptech
 @contact https://apocalyptech.com/contact.php
 @categories enemy-drops
@@ -29,4 +29,80 @@ SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/ItemPools/Table_SimpleLootDropChanc
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/ItemPools/Table_SimpleLootDropChances.Table_SimpleLootDropChances,Customization_MimicStandard,Drop_Chances_2_2811F91D40768DBD4FEBB791F8286836,0,,0.0
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/ItemPools/Table_SimpleLootDropChances.Table_SimpleLootDropChances,Customization_MimicBadass,Drop_Chances_2_2811F91D40768DBD4FEBB791F8286836,0,,0.0
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/ItemPools/Table_SimpleLootDropChances.Table_SimpleLootDropChances,Customization_StandardEnemy,Drop_Chances_2_2811F91D40768DBD4FEBB791F8286836,0,,0.0
+
+###
+### Removing Customization Drops from Lost Marbles
+###
+
+SparkLevelPatchEntry,(1,1,0,Abyss_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Abyss1.Default__Challenge_Crew_LostMarble_Abyss1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Abyss_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Abyss2.Default__Challenge_Crew_LostMarble_Abyss2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Beanstalk_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Beanstalk1.Default__Challenge_Crew_LostMarble_Beanstalk1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Beanstalk_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Beanstalk2.Default__Challenge_Crew_LostMarble_Beanstalk2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Climb_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Climb1.Default__Challenge_Crew_LostMarble_Climb1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Climb_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Climb2.Default__Challenge_Crew_LostMarble_Climb2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Goblin_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Goblin1.Default__Challenge_Crew_LostMarble_Goblin1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Goblin_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Goblin2.Default__Challenge_Crew_LostMarble_Goblin2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Hubtown_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Hubtown1.Default__Challenge_Crew_LostMarble_Hubtown1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Hubtown_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Hubtown2.Default__Challenge_Crew_LostMarble_Hubtown2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Intro_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Intro1.Default__Challenge_Crew_LostMarble_Intro1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Intro_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Intro2.Default__Challenge_Crew_LostMarble_Intro2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Mushroom_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Mushroom1.Default__Challenge_Crew_LostMarble_Mushroom1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Mushroom_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Mushroom2.Default__Challenge_Crew_LostMarble_Mushroom2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Oasis_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Oasis1.Default__Challenge_Crew_LostMarble_Oasis1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Oasis_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Oasis2.Default__Challenge_Crew_LostMarble_Oasis2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Pirate_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Pirate1.Default__Challenge_Crew_LostMarble_Pirate1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Pirate_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Pirate2.Default__Challenge_Crew_LostMarble_Pirate2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Pyramid_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Pyramid1.Default__Challenge_Crew_LostMarble_Pyramid1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Pyramid_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Pyramid2.Default__Challenge_Crew_LostMarble_Pyramid2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Sands_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Sands1.Default__Challenge_Crew_LostMarble_Sands1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Sands_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Sands2.Default__Challenge_Crew_LostMarble_Sands2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,SeaBed_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Seabed1.Default__Challenge_Crew_LostMarble_Seabed1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,SeaBed_P),/Game/GameData/Challenges/LostMarble/Challenge_Crew_LostMarble_Seabed2.Default__Challenge_Crew_LostMarble_Seabed2_C,CustomizationToEnsureOnLoad,0,,None
+
+###
+### Removing Customization Drops from Rune Switch Puzzles
+###
+
+SparkLevelPatchEntry,(1,1,0,Abyss_P),/Game/GameData/Challenges/RuneSwitch/Challenge_Crew_RuneSwitch_Abyss.Default__Challenge_Crew_RuneSwitch_Abyss_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Beanstalk_P),/Game/GameData/Challenges/RuneSwitch/Challenge_Crew_RuneSwitch_Beanstalk.Default__Challenge_Crew_RuneSwitch_Beanstalk_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Climb_P),/Game/GameData/Challenges/RuneSwitch/Challenge_Crew_RuneSwitch_Climb.Default__Challenge_Crew_RuneSwitch_Climb_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Goblin_P),/Game/GameData/Challenges/RuneSwitch/Challenge_Crew_RuneSwitch_Goblin.Default__Challenge_Crew_RuneSwitch_Goblin_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Hubtown_P),/Game/GameData/Challenges/RuneSwitch/Challenge_Crew_RuneSwitch_Hubtown.Default__Challenge_Crew_RuneSwitch_Hubtown_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Intro_P),/Game/GameData/Challenges/RuneSwitch/Challenge_Crew_RuneSwitch_Intro.Default__Challenge_Crew_RuneSwitch_Intro_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Mushroom_P),/Game/GameData/Challenges/RuneSwitch/Challenge_Crew_RuneSwitch_Mushroom.Default__Challenge_Crew_RuneSwitch_Mushroom_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Oasis_P),/Game/GameData/Challenges/RuneSwitch/Challenge_Crew_RuneSwitch_Oasis.Default__Challenge_Crew_RuneSwitch_Oasis_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Pirate_P),/Game/GameData/Challenges/RuneSwitch/Challenge_Crew_RuneSwitch_Pirate.Default__Challenge_Crew_RuneSwitch_Pirate_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Pyramid_P),/Game/GameData/Challenges/RuneSwitch/Challenge_Crew_RuneSwitch_Pyramid.Default__Challenge_Crew_RuneSwitch_Pyramid_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Sands_P),/Game/GameData/Challenges/RuneSwitch/Challenge_Crew_RuneSwitch_Sands.Default__Challenge_Crew_RuneSwitch_Sands_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,SeaBed_P),/Game/GameData/Challenges/RuneSwitch/Challenge_Crew_RuneSwitch_Seabed.Default__Challenge_Crew_RuneSwitch_Seabed_C,CustomizationToEnsureOnLoad,0,,None
+
+###
+### Removing Customization Drops from Poetry Page Pickups
+###
+
+SparkLevelPatchEntry,(1,1,0,Abyss_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Abyss1.Default__Challenge_Crew_LostPage_Abyss1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Abyss_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Abyss2.Default__Challenge_Crew_LostPage_Abyss2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Beanstalk_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Beanstalk.Default__Challenge_Crew_LostPage_Beanstalk_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Climb_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Climb.Default__Challenge_Crew_LostPage_Climb_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Goblin_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Goblin1.Default__Challenge_Crew_LostPage_Goblin1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Goblin_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Goblin2.Default__Challenge_Crew_LostPage_Goblin2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Hubtown_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Hubtown1.Default__Challenge_Crew_LostPage_Hubtown1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Hubtown_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Hubtown2.Default__Challenge_Crew_LostPage_Hubtown2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Intro_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Intro.Default__Challenge_Crew_LostPage_Intro_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Mushroom_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Mushroom.Default__Challenge_Crew_LostPage_Mushroom_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Oasis_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Oasis1.Default__Challenge_Crew_LostPage_Oasis1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Oasis_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Oasis2.Default__Challenge_Crew_LostPage_Oasis2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Overworld_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Overworld1.Default__Challenge_Crew_LostPage_Overworld1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Overworld_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Overworld2.Default__Challenge_Crew_LostPage_Overworld2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Overworld_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Overworld3.Default__Challenge_Crew_LostPage_Overworld3_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Overworld_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Overworld4.Default__Challenge_Crew_LostPage_Overworld4_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Overworld_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Overworld5.Default__Challenge_Crew_LostPage_Overworld5_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Pirate_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Pirate1.Default__Challenge_Crew_LostPage_Pirate1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Pirate_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Pirate2.Default__Challenge_Crew_LostPage_Pirate2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Pyramid_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Pyramid.Default__Challenge_Crew_LostPage_Pyramid_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Sands_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Sands1.Default__Challenge_Crew_LostPage_Sands1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Sands_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Sands2.Default__Challenge_Crew_LostPage_Sands2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,SeaBed_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Seabed1.Default__Challenge_Crew_LostPage_Seabed1_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,SeaBed_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Seabed2.Default__Challenge_Crew_LostPage_Seabed2_C,CustomizationToEnsureOnLoad,0,,None
+SparkLevelPatchEntry,(1,1,0,Tutorial_P),/Game/GameData/Challenges/LostPage/Challenge_Crew_LostPage_Tutorial.Default__Challenge_Crew_LostPage_Tutorial_C,CustomizationToEnsureOnLoad,0,,None
 

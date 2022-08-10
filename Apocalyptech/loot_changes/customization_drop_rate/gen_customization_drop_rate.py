@@ -19,9 +19,10 @@
 # along with this Wonderlands Hotfix Mod.  If not, see
 # <https://www.gnu.org/licenses/>.
 
+import re
 import sys
 sys.path.append('../../../python_mod_helpers')
-from wlhotfixmod.wlhotfixmod import Mod, BVC, BVCF
+from wlhotfixmod.wlhotfixmod import Mod, BVC, BVCF, LVL_CASE_NORM
 
 for (label, filename, multiplier, desc) in [
         ('None', 'none', 0, [
@@ -56,7 +57,7 @@ for (label, filename, multiplier, desc) in [
             desc,
             contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
-            v='1.0.0',
+            v='1.0.1',
             cats='enemy-drops',
             )
 
@@ -79,6 +80,115 @@ for (label, filename, multiplier, desc) in [
                 round(new_value, 6))
 
     mod.newline()
+
+    # Some extra processing for the special-case of having zero customizations
+    if multiplier == 0:
+
+        marble_level_re = re.compile(r'.*_(?P<base_level>\w+?)\d$')
+        mod.header('Removing Customization Drops from Lost Marbles')
+        for short_name in [
+                'Challenge_Crew_LostMarble_Abyss1',
+                'Challenge_Crew_LostMarble_Abyss2',
+                'Challenge_Crew_LostMarble_Beanstalk1',
+                'Challenge_Crew_LostMarble_Beanstalk2',
+                'Challenge_Crew_LostMarble_Climb1',
+                'Challenge_Crew_LostMarble_Climb2',
+                'Challenge_Crew_LostMarble_Goblin1',
+                'Challenge_Crew_LostMarble_Goblin2',
+                'Challenge_Crew_LostMarble_Hubtown1',
+                'Challenge_Crew_LostMarble_Hubtown2',
+                'Challenge_Crew_LostMarble_Intro1',
+                'Challenge_Crew_LostMarble_Intro2',
+                'Challenge_Crew_LostMarble_Mushroom1',
+                'Challenge_Crew_LostMarble_Mushroom2',
+                'Challenge_Crew_LostMarble_Oasis1',
+                'Challenge_Crew_LostMarble_Oasis2',
+                'Challenge_Crew_LostMarble_Pirate1',
+                'Challenge_Crew_LostMarble_Pirate2',
+                'Challenge_Crew_LostMarble_Pyramid1',
+                'Challenge_Crew_LostMarble_Pyramid2',
+                'Challenge_Crew_LostMarble_Sands1',
+                'Challenge_Crew_LostMarble_Sands2',
+                'Challenge_Crew_LostMarble_Seabed1',
+                'Challenge_Crew_LostMarble_Seabed2',
+                ]:
+            if match := marble_level_re.match(short_name):
+                level = '{}_P'.format(match.group('base_level'))
+            else:
+                raise RuntimeError(f"Couldn't find map name for {short_name}")
+            level = LVL_CASE_NORM[level.lower()]
+            mod.reg_hotfix(Mod.LEVEL, level,
+                    f'/Game/GameData/Challenges/LostMarble/{short_name}.Default__{short_name}_C',
+                    'CustomizationToEnsureOnLoad',
+                    'None')
+        mod.newline()
+
+        rune_level_re = re.compile(r'.*_(?P<base_level>\w+?)$')
+        mod.header('Removing Customization Drops from Rune Switch Puzzles')
+        for short_name in [
+                'Challenge_Crew_RuneSwitch_Abyss',
+                'Challenge_Crew_RuneSwitch_Beanstalk',
+                'Challenge_Crew_RuneSwitch_Climb',
+                'Challenge_Crew_RuneSwitch_Goblin',
+                'Challenge_Crew_RuneSwitch_Hubtown',
+                'Challenge_Crew_RuneSwitch_Intro',
+                'Challenge_Crew_RuneSwitch_Mushroom',
+                'Challenge_Crew_RuneSwitch_Oasis',
+                'Challenge_Crew_RuneSwitch_Pirate',
+                'Challenge_Crew_RuneSwitch_Pyramid',
+                'Challenge_Crew_RuneSwitch_Sands',
+                'Challenge_Crew_RuneSwitch_Seabed',
+                ]:
+            if match := rune_level_re.match(short_name):
+                level = '{}_P'.format(match.group('base_level'))
+            else:
+                raise RuntimeError(f"Couldn't find map name for {short_name}")
+            level = LVL_CASE_NORM[level.lower()]
+            mod.reg_hotfix(Mod.LEVEL, level,
+                    f'/Game/GameData/Challenges/RuneSwitch/{short_name}.Default__{short_name}_C',
+                    'CustomizationToEnsureOnLoad',
+                    'None')
+        mod.newline()
+
+        poetry_level_re = re.compile(r'.*_(?P<base_level>\w+?)\d?$')
+        mod.header('Removing Customization Drops from Poetry Page Pickups')
+        for short_name in [
+                'Challenge_Crew_LostPage_Abyss1',
+                'Challenge_Crew_LostPage_Abyss2',
+                'Challenge_Crew_LostPage_Beanstalk',
+                'Challenge_Crew_LostPage_Climb',
+                'Challenge_Crew_LostPage_Goblin1',
+                'Challenge_Crew_LostPage_Goblin2',
+                'Challenge_Crew_LostPage_Hubtown1',
+                'Challenge_Crew_LostPage_Hubtown2',
+                'Challenge_Crew_LostPage_Intro',
+                'Challenge_Crew_LostPage_Mushroom',
+                'Challenge_Crew_LostPage_Oasis1',
+                'Challenge_Crew_LostPage_Oasis2',
+                'Challenge_Crew_LostPage_Overworld1',
+                'Challenge_Crew_LostPage_Overworld2',
+                'Challenge_Crew_LostPage_Overworld3',
+                'Challenge_Crew_LostPage_Overworld4',
+                'Challenge_Crew_LostPage_Overworld5',
+                'Challenge_Crew_LostPage_Pirate1',
+                'Challenge_Crew_LostPage_Pirate2',
+                'Challenge_Crew_LostPage_Pyramid',
+                'Challenge_Crew_LostPage_Sands1',
+                'Challenge_Crew_LostPage_Sands2',
+                'Challenge_Crew_LostPage_Seabed1',
+                'Challenge_Crew_LostPage_Seabed2',
+                'Challenge_Crew_LostPage_Tutorial',
+                ]:
+            if match := poetry_level_re.match(short_name):
+                level = '{}_P'.format(match.group('base_level'))
+            else:
+                raise RuntimeError(f"Couldn't find map name for {short_name}")
+            level = LVL_CASE_NORM[level.lower()]
+            mod.reg_hotfix(Mod.LEVEL, level,
+                    f'/Game/GameData/Challenges/LostPage/{short_name}.Default__{short_name}_C',
+                    'CustomizationToEnsureOnLoad',
+                    'None')
+        mod.newline()
 
     mod.close()
 
