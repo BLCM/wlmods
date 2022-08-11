@@ -116,7 +116,7 @@ hardcode_balance_names = [
         #'/Game/PatchDLC/Indigo1/Gear/Rings/_Shared/_Unique/LethalCatch/Balance/Balance_Ring_LethalCatch',
         #'/Game/PatchDLC/Indigo1/Gear/Rings/_Shared/_Unique/SharkBane/Balance/Balance_Ring_SharkBane',
         #'/Game/PatchDLC/Indigo2/Gear/Rings/_Shared/_Unique/PreciousJamstone/Balance/Balance_Ring_Jamstone',
-        '/Game/PatchDLC/Indigo3/Gear/Rings/BrandLoyalty/Balance/Balance_Ring_BrandLoyalty',
+        #'/Game/PatchDLC/Indigo3/Gear/Rings/BrandLoyalty/Balance/Balance_Ring_BrandLoyalty',
 
         # Base-game Amulets
         #'/Game/Gear/Amulets/_Shared/_Unique/BlazeOfGlory/Balance/Balance_Amulet_Unique_BlazeOfGlory',
@@ -139,6 +139,12 @@ hardcode_balance_names = [
         #'/Game/PatchDLC/Indigo1/Gear/Amulets/_Shared/_Unique/SlipnStun/Balance/Balance_Amulet_Unique_SlipnStun',
         #'/Game/PatchDLC/Indigo2/Gear/Amulets/_Shared/_Unique/Barboload/Balance/Balance_Amulet_Unique_Barboload',
         #'/Game/PatchDLC/Indigo3/Gear/Amulets/_Shared/_Unique/PracticalFocus/Balance/Balance_Amulet_Unique_PracticalFocus',
+
+        # DLC4
+        #'/Game/PatchDLC/Indigo4/Gear/_Design/Amulets/_Shared/_Design/_Unique/HDD/Balance/Balance_Amulet_Unique_Plot05_HDD_Shaman',
+        #'/Game/PatchDLC/Indigo4/Gear/Rings/HexRevenge/Balance/Balance_Ring_HexRevenge',
+        '/Game/PatchDLC/Indigo4/Gear/SpellMods/_Unique/MineHail/Balance/Balance_Spell_MineHail',
+        '/Game/PatchDLC/Indigo4/Gear/SpellMods/_Unique/SomethingWicked/Balance/Balance_Spell_SomethingWicked',
 
         ]
 
@@ -205,6 +211,11 @@ output.add_argument('--balancelist',
         help='Output in a formate copy+pasteable to gen_item_balances.py',
         )
 
+output.add_argument('--expanded',
+        action='store_true',
+        help='Output in a formate copy+pasteable to gen_expanded_legendary_pools.py',
+        )
+
 parser.add_argument('balance_names',
         nargs='*',
         help='Balances to look up (will default to a hardcoded list if not specified)',
@@ -252,11 +263,13 @@ class NamingStrategySingle:
                 '/Game/PatchDLC/Indigo1/Gear/_Design/_GearExtension/NamingStrategies/Indigo01_SpellsNamingStrategy',
                 '/Game/PatchDLC/Indigo2/Gear/_Design/_GearExtension/NamingStrategies/Indigo02_SpellsNamingStrategy',
                 '/Game/PatchDLC/Indigo3/Gear/_Design/_GearExtension/NamingStrategy/Indigo03_SpellsNamingStrategy',
+                '/Game/PatchDLC/Indigo4/Gear/_Design/_GearExtension/NamingStrategies/Indigo04_SpellsNamingStrategy',
                 ],
             '/Game/Gear/Rings/_Shared/Design/NamingStrategy/RingNamingStrategy': [
                 '/Game/PatchDLC/Indigo1/Gear/_Design/_GearExtension/NamingStrategies/Indigo01_RingsNamingStrategy',
                 '/Game/PatchDLC/Indigo2/Gear/_Design/_GearExtension/NamingStrategies/Indigo02_RingsNamingStrategy',
                 '/Game/PatchDLC/Indigo3/Gear/_Design/_GearExtension/NamingStrategy/Indigo03_RingsNamingStrategy',
+                '/Game/PatchDLC/Indigo4/Gear/_Design/_GearExtension/NamingStrategies/Indigo04_RingsNamingStrategy',
                 ],
             '/Game/Gear/Amulets/_Shared/_Design/Naming/AmuletNamingStrategy': [
                 '/Game/PatchDLC/Indigo1/Gear/_Design/_GearExtension/NamingStrategies/Indigo01_AmuletsNamingStrategy',
@@ -280,6 +293,8 @@ class NamingStrategySingle:
             if export['export_type'] == 'OakInventoryNamingStrategyData':
                 found_naming = True
                 for single in export['SingleNames']:
+                    if 'export' in single['Part']:
+                        continue
                     name_part = self.data[single['NamePart']['export']-1]
                     name = name_part['PartName']['string']
                     if not name.startswith('of ') and name not in self.exceptions:
@@ -301,7 +316,7 @@ class NamingStrategySingle:
 
 # Whether to do headers, etc
 do_header = True
-if args.balancelist or args.redtext:
+if args.balancelist or args.redtext or args.expanded:
     do_header = False
 
 # Now process
@@ -400,6 +415,14 @@ for balance_name in args.balance_names:
                     ))
         if len(names) > 1 and args.extra_space_multi:
             print('')
+    elif args.expanded:
+        if len(names) == 0:
+            print(f'                # ERROR: No names detected for {balance_name}')
+        elif len(names) > 1:
+            print(f'                # NOTE: auto-detected more than one possible name for {balance_name}')
+        for name in sorted(names):
+            print(f'                # {name}')
+        print(f"                ('{balance_name}', 1),")
     elif args.redtext:
         if red_text:
             name = ' / '.join(sorted(names))

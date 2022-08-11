@@ -164,6 +164,7 @@ for (label, balance_name) in [
         ("Love Leopard", '/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/LovePanther/Balance/Balance_HW_COV_05_LovePanther'),
         ("Manual Transmission", '/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/ManualTransmission/Balance/Balance_AR_VLA_ManualTrans'),
         ("Masterwork Handbow", '/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/MasterworkCrossbow/Balance/Balance_PS_JAK_MasterworkCrossbow'),
+        ("Merlin's Razor", '/Game/PatchDLC/Indigo4/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/MerlinsRazor/Balance/Bal_SG_JAK_MerlinsRazor'),
         ("Message", '/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Message/Balance/Balance_PS_TOR_05_Message'),
         ("Mistrial", '/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Mistrial/Balance/Balance_DAL_AR_Mistrial'),
         ("Moleman", '/Game/Gear/Weapons/HeavyWeapons/Vladof/_Shared/_Design/_Unique/Moleman/Balance/Balance_HW_VLA_04_Moleman'),
@@ -180,6 +181,7 @@ for (label, balance_name) in [
         ("Ruby's Spite", '/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/RoisensSpite/Balance/Balance_DAL_PS_RoisensSpite'),
         ("Shadowfire", '/Game/Gear/Weapons/SMGs/Tediore/_Shared/_Design/_Unique/Shadowfire/Balance/Balance_SM_TED_05_Shadowfire'),
         ("Skeep Prod", '/Game/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/_Unique/SkeepProd/Balance/Balance_SR_DAL_05_SkeepProd'),
+        ("Sly Trivern", '/Game/PatchDLC/Indigo4/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/Tiabolt/Balance/Balance_SR_DAL_Tiabolt'),
         ("Stab-O-Matic", '/Game/PatchDLC/Indigo3/Gear/Weapons/Shotgun/Hyperion/_Shared/_Design/_Unique/FaceStabber/Balance/Balance_SG_HYP_FacePunch'),
         ("Sworderang", '/Game/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Unique/Sworderang/Balance/Balance_SG_Tediore_05_Sworderang'),
         ("Swordsplosion", '/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Swordsplosion/Balance/Balance_SG_Torgue_05_Swordsplosion'),
@@ -189,6 +191,7 @@ for (label, balance_name) in [
         ("Tootherator", '/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/Tootherator/Balance/Balance_SR_HYP_03_Tootherator'),
         ("Twisted Delugeon", '/Game/PatchDLC/Indigo1/Gear/Weapons/HeavyWeapons/Valdof/_Shared/_Design/_Unique/TwistDeluge/Balance/Bal_VLA_TwistDeluge'),
         ("Used Antique Greatbow", '/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Balance/Balance_SR_HYP_05_AntGreatBow_Used'),
+        ("Vengeance", '/Game/PatchDLC/Indigo4/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/_Unique/Vengeance/Balance/Bal_AR_TOR_Vengeance'),
         ("White Rider", '/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/WhiteRider/Balance/Balance_SM_DAHL_05_WhiteRider'),
         ("Wizard's Pipe", '/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/WizardPipe/Balance/Balance_SM_HYP_05_WizardsPipe'),
         ("(Swordruption, broken)", '/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Swordruption/Balance/Balance_SG_Torgue_Swordruption'),
@@ -251,6 +254,7 @@ for (label, balance_name, melee_type) in [
         ("Peg Leg", '/Game/Gear/Melee/Blunts/_Shared/_Design/_Unique/PegLeg/Balance_M_Blunt_PegLeg', 'Blunt'),
         ("Petty Tantrum", '/Game/PatchDLC/Indigo3/Gear/Melee/_Shared/_Unique/HammerQuake/Balance_M_HammerQuake', 'Blunt'),
         ("Pincushion", '/Game/Gear/Melee/Blunts/_Shared/_Design/_Unique/Pincushion/Balance_M_Blunt_Pincushion', 'Blunt'),
+        ("Rage Handle", '/Game/PatchDLC/Indigo4/Gear/Melee/_Shared/_Unique/FaceSmasher/Balance/Balance_M_RageHandle', 'Axe'),
         ("Ragnarok", '/Game/Gear/Melee/Swords/_Shared/_Design/_Unique/Ragnarok/Balance_M_Sword_Ragnarok', 'Sword'),
         ("Salt and Battery", '/Game/PatchDLC/Indigo2/Gear/Melee/_Shared/_Unique/SaltnBattery/Balance/Balance_M_SaltnBatt', 'Blunt'),
         ("Slammin' Salmon", '/Game/Gear/Melee/Blunts/_Shared/_Design/_Unique/Fish/Balance_M_Blunt_Fish', 'Blunt'),
@@ -359,6 +363,7 @@ for (sname, sobj) in [
         ("Barrelmaker", '/Game/Gear/SpellMods/_Unique/Barrelmaker/Balance/Balance_Spell_Barrelmaker'),
         ("Boltlash", '/Game/PatchDLC/Indigo2/Gear/SpellMods/_Unique/Boltlash/Balance/Balance_Spell_Boltlash'),
         ("Buffmeister", '/Game/Gear/SpellMods/_Unique/Buffmeister/Balance/Balance_Spell_Buffmeister'),
+        ("Curse of Malice", '/Game/PatchDLC/Indigo4/Gear/SpellMods/_Unique/MineHail/Balance/Balance_Spell_MineHail'),
         ("Dazzler", '/Game/Gear/SpellMods/_Unique/Dazzler/Balance/Balance_Spell_Dazzler'),
         ("Dynamo", '/Game/PatchDLC/Indigo1/Gear/SpellMods/_Unique/Dynamo/Balance/Balance_Spell_Dynamo'),
         ("Elemental Blast (mission)", '/Game/Gear/SpellMods/_Unique/_MissionUniques/FirstDarkSpell/Balance_Spell_FirstDark'),
@@ -388,6 +393,7 @@ for (sname, sobj) in [
         ("Tidebreaker", '/Game/PatchDLC/Indigo1/Gear/SpellMods/_Unique/Tidebreaker/Balance/Balance_Spell_Tidebreaker'),
         ("Time Skip", '/Game/Gear/SpellMods/_Unique/TimeSkip/Balance/Balance_Spell_TimeSkip'),
         ("Twister", '/Game/Gear/SpellMods/_Unique/Twister/Balance/Balance_Spell_Twister'),
+        ("Wicked Gossip", '/Game/PatchDLC/Indigo4/Gear/SpellMods/_Unique/SomethingWicked/Balance/Balance_Spell_SomethingWicked'),
         ]:
     spell_balances.append((sname, 'Spell', 'Named Spell', sobj))
 
@@ -421,6 +427,7 @@ for obj_name in data.glob(glob_pattern):
 armor_balances.sort()
 for (aname, aobj) in [
         ("Amalgam", '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Amalgam/Balance/Balance_Armor_Amalgam'),
+        ("Armor That Sucks (Blightcaller)", '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Shaman'),
         ("Armor That Sucks (Brr-Zerker)", '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Barb'),
         ("Armor That Sucks (Clawbringer)", '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Knight'),
         ("Armor That Sucks (Graveborn)", '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Necro'),
@@ -429,6 +436,7 @@ for (aname, aobj) in [
         ("Armor That Sucks (Stabbomancer)", '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Rogue'),
         ("Big B Mittens", '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/BigBMittens/Balance/Balance_Armor_BigBMittens'),
         ("Blank Slate", '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Tabula/Balance/Balance_Armor_Tabula'),
+        ("Brutal Stampede", '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Balance/Balance_Armor_BrutalStampede'),
         ("Calamity", '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Calamity/Balance/Balance_Armor_Calamity'),
         ("Cape of Tides", '/Game/PatchDLC/Indigo1/Gear/Pauldrons/_Shared/_Design/_Unique/CapeOfTides/Balance/Balance_Armor_CapeOfTides'),
         ("Claw", '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Claw/Balance/Balance_Armor_MantisClaw'), # Prefixes: Mantis / Scarlet / Storm / Tiger / Turquoise
@@ -437,6 +445,7 @@ for (aname, aobj) in [
         ("Diamond Gauntlets", '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/DiamondGauntlets/Balance/Balance_Armor_DiamondGauntlets'),
         ("Head of the Snake", '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/HeadOfTheSnake/Balance/Balance_Armor_HeadOfTheSnake'),
         ("Miasmic Mail", '/Game/PatchDLC/Indigo2/Gear/Pauldrons/_Shared/_Design/_Unique/MiasmaChain/Balance/Balance_Armor_MiasmaChain'),
+        ("Mosquito's Mantle", '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/MantleOfThorns/Balance/Balance_Armor_MantleThorn'),
         ("Pandemecium", '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Pandemecium/Balance/Balance_Armor_Pandemecium'),
         ("Selective Amnesia", '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/SelectiveAmnesia/Balance/Balance_Armor_SelectiveAmnesia'),
         ("Smart Armor", '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/SmartArmor/Balance/Balance_Armor_SmartArmor'),
@@ -456,6 +465,7 @@ ring_balances = [
 for (rname, robj) in [
         ("Championship Ring", '/Game/Gear/Rings/_Shared/_Unique/Cond_Boss/Balance_R_Boss'),
         ("Class Ring", '/Game/Gear/Rings/_Shared/_Unique/Cond_SkillCooldown/Balance_R_SkillCooldown'),
+        ("Daemon Blight", '/Game/PatchDLC/Indigo4/Gear/Rings/HexRevenge/Balance/Balance_Ring_HexRevenge'),
         ("Driftwood", '/Game/Gear/Rings/_Shared/_Unique/DriftwoodRing/Balance_Rings_DriftwoodRing'),
         ("Elder Wyvern's Ring", '/Game/Gear/Rings/_Shared/_Unique/ElderWyvern/Balance/Balance_Ring_ElderWyvern'),
         ("Fealty Oath", '/Game/PatchDLC/Indigo3/Gear/Rings/BrandLoyalty/Balance/Balance_Ring_BrandLoyalty'),
@@ -492,6 +502,7 @@ for (aname, aobj) in [
         ("Bradluck", '/Game/Gear/Amulets/_Shared/_Unique/Bradluck/Balance/Balance_Amulet_Unique_Bradluck'),
         ("Frenzied Wrath", '/Game/Gear/Amulets/_Shared/_Unique/Frenzied/Balance/Balance_Amulet_Unique_Frenzied'),
         ("Harbinger", '/Game/Gear/Amulets/_Shared/_Unique/Harbinger/Balance/Balance_Amulet_Unique_Harbinger'),
+        ("Harmonious Dingledangle (Blightcaller)", '/Game/PatchDLC/Indigo4/Gear/_Design/Amulets/_Shared/_Design/_Unique/HDD/Balance/Balance_Amulet_Unique_Plot05_HDD_Shaman'),
         ("Harmonious Dingledangle (Brr-Zerker)", '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Barb'),
         ("Harmonious Dingledangle (Clawbringer)", '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_KotC'),
         ("Harmonious Dingledangle (Graveborn)", '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Necro'),
@@ -688,6 +699,9 @@ cur_row += 1
 
 # Changelog
 changelog = [
+        ('Aug 11, 2022', [
+            'Updated with DLC4 data, and other patch fixes from today',
+            ]),
         ('Aug 7, 2022', [
             'Fixed various Amulet part weights',
             ]),
@@ -975,7 +989,9 @@ for (sheet_label, filename, filename_long, balances, man_col_name, type_col_name
                                                             }:
                                                         # Also, literally 211 Pauldron-related parts do this.  Whatever, ignore the lot.
                                                         if not part_name.startswith('/Game/Gear/Pauldrons/_Shared/_Design'):
-                                                            print('WARNING: {} Excluders references itself?'.format(part_name))
+                                                            # Also these DLC4 things
+                                                            if not part_name.startswith('/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/Parts/PlayerStat/Medium/Shaman'):
+                                                                print('WARNING: {} Excluders references itself?'.format(part_name))
                                                 else:
                                                     excluders.add(excluder[1])
                                         if 'Dependencies' in export:

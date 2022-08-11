@@ -70,7 +70,7 @@ class WLData(object):
     """
 
     # Data serialization version requirements
-    data_version = 24
+    data_version = 26
 
     # Hardcoded BVA values
     bva_values = {
@@ -87,6 +87,7 @@ class WLData(object):
             '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Necro': 0.25,
             '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Ranger': 0.25,
             '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Rogue': 0.25,
+            '/Game/PatchDLC/Indigo4/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Shaman': 0.25,
             }
 
     # Hardcoded part-category values
@@ -645,6 +646,9 @@ class WLData(object):
 
                 elif part_lower.endswith('/part_m_blunt_hammerquake'):
                     return self._cache_part_category_name(part_name, 'PETTY TANTRUM')
+
+                elif part_lower.endswith('/part_axe_blade_ragehandle'):
+                    return self._cache_part_category_name(part_name, 'RAGE HANDLE')
 
                 break
 
