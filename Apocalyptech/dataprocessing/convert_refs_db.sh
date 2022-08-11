@@ -9,7 +9,7 @@ echo "Dumping SQL first..."
 echo
 rm wlrefs.zip
 # Might have to make -p optional
-mysqldump -u ${USER} -p${FULLPASS} -h${HOST} -p{$PORT} wlrefs > wlrefs.sql
+mysqldump -u ${USER} -p${FULLPASS} -h${HOST} -P${PORT} wlrefs > wlrefs.sql
 zip wlrefs.zip wlrefs.sql
 rm wlrefs.sql
 echo
@@ -17,5 +17,5 @@ echo "Now doing SQLite dump/conversion..."
 echo
 rm wlrefs.sqlite3*
 # Might have to make -P optional
-${MYSQL2SQLITE} -f wlrefs.sqlite3 -d wlrefs -u ${USER} -h ${HOST} -P ${PORT} -V -p ${PASS} && zip wlrefs.sqlite3.zip wlrefs.sqlite3 && ls -lh wlrefs.sqlite3*
+${MYSQL2SQLITE} -f wlrefs.sqlite3 -d wlrefs -u ${USER} -h ${HOST} -P ${PORT} -V --mysql-password ${PASS} && zip wlrefs.sqlite3.zip wlrefs.sqlite3 && ls -lh wlrefs.sqlite3*
 ls -lh wlrefs.zip
