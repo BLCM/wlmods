@@ -79,7 +79,7 @@ curs = db.cursor()
 
 # Let's time this.  Obviously the ETA comparison will vary if you're not
 # on my machine.
-estimated_secs = 183
+estimated_secs = 546
 start_time = time.time()
 
 # Go ahead and auto-truncate first
@@ -110,19 +110,21 @@ def read_str(df):
 objects = {}
 toplevels = set()
 obj_count = 0
-
-for (dirpath, dirnames, filenames) in os.walk('extracted'):
+data_dir = config['filesystem']['data_dir'] 
+if data_dir[-1] != "/":
+    data_dir += "/"
+for (dirpath, dirnames, filenames) in os.walk( data_dir ): #os.walk('extracted'):
     for filename in filenames:
         if filename.endswith('.uasset') or filename.endswith('.umap'):
 
             refs = set()
             full_filename = os.path.join(dirpath, filename)
-
             # Get our object name
             if filename.endswith('.uasset'):
-                cur_obj_name = full_filename[9:-7]
+                cur_obj_name = full_filename[len(data_dir)-1:-7]
             else:
-                cur_obj_name = full_filename[9:-5]
+                cur_obj_name = full_filename[len(data_dir)-1:-5]
+            print(cur_obj_name)
             cur_obj_name_lower = cur_obj_name.lower()
             if cur_obj_name_lower in toplevels:
                 print('WARNING: Found duplicate name {} in {}'.format(cur_obj_name, full_filename))
