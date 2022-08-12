@@ -13,6 +13,10 @@ possible that this mod buffs up some items here.
 Changelog
 =========
 
+**v1.1.0** - Aug 12, 2022
+ * Updated with DLC4 items (just the Blightcaller versions of Armor That Sucks
+   and Harmonious Dingledangle)
+
 **v1.0.1** - Jul 29, 2022
  * Removed useless/unfinished "Big B Mittens" armor
 
