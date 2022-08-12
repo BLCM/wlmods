@@ -35,7 +35,7 @@ mod = Mod('early_bloomer.wlhotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='loot-system, gameplay',
         )
 
@@ -166,6 +166,8 @@ for obj_name in [
         '/Game/PatchDLC/Indigo2/Gear/Weapons/_Shared/DataTable_WeaponBalance_Unique_Indigo2',
         '/Game/PatchDLC/Indigo3/Gear/Melee/_Shared/_Unique/_Shared/DataTable_WeaponBalance_Unique_Melee_Indigo03',
         '/Game/PatchDLC/Indigo3/Gear/Weapons/_Shared/DataTable_WeaponBalance_Unique_Indigo3',
+        '/Game/PatchDLC/Indigo4/Gear/Melee/_Shared/_Unique/_Shared/DataTable_WeaponBalance_Unique_Melee_Indigo04',
+        '/Game/PatchDLC/Indigo4/Gear/Weapons/_Shared/DataTable_WeaponBalance_Unique_Indigo4',
         ]:
     obj = data.get_data(obj_name)[0]
     short = obj_name.rsplit('/')[-1]
@@ -199,8 +201,13 @@ mod.newline()
 # which mentions Early Bloomer in there -- flip it on, and it'll try to
 # ferret out this kind of thing.
 for label, balance, idx in [
-        ('Blank Slate', '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Tabula/Balance/Balance_Armor_Tabula', 0),
+        ("Blank Slate", '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Tabula/Balance/Balance_Armor_Tabula', 0),
         ("Smithy's Ire", '/Game/PatchDLC/Indigo3/Gear/SpellMods/_Unique/IllmarinensWrath/Balance/Balance_Spell_IllWrath', 0),
+        ("Sly Trivern", '/Game/PatchDLC/Indigo4/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/Tiabolt/Balance/Balance_SR_DAL_Tiabolt', 0),
+        ("Rage Handle", '/Game/PatchDLC/Indigo4/Gear/Melee/_Shared/_Unique/FaceSmasher/Balance/Balance_M_RageHandle', 0),
+        ("Wicked Gossip", '/Game/PatchDLC/Indigo4/Gear/SpellMods/_Unique/SomethingWicked/Balance/Balance_Spell_SomethingWicked', 0),
+        ("Brutal Stampede", '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Balance/Balance_Armor_BrutalStampede', 0),
+        ("Mosquito's Mantle", '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/MantleOfThorns/Balance/Balance_Armor_MantleThorn', 0),
         ]:
     mod.comment(f'Specific unlock for {label}')
     mod.reg_hotfix(Mod.PATCH, '',
@@ -225,6 +232,20 @@ for part in [
         '/Game/Gear/Amulets/_Shared/_Unique/SacSkeep/Part_Amulet_SacSkeep',
         '/Game/Gear/Amulets/_Shared/_Unique/Theruge/Parts/Part_Amulet_Theruge',
         '/Game/Gear/Amulets/_Shared/_Unique/UniversalSoldier/Parts/Part_Amulet_UniversalSoldier',
+        '/Game/PatchDLC/Indigo4/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/MerlinsRazor/Part/Part_SG_JAK_BarrelMod_Merlin',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Parts/Part_Armor_BrutalStamp_Base',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Parts/SubParts/Part_Armor_BrutalS_AbilityDMG1',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Parts/SubParts/Part_Armor_BrutalS_AbilityDMG2',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Parts/SubParts/Part_Armor_BrutalS_CritChance1',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Parts/SubParts/Part_Armor_BrutalS_CritChance2',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Parts/SubParts/Part_Armor_BrutalS_CritDMG1',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Parts/SubParts/Part_Armor_BrutalS_CritDMG2',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Parts/SubParts/Part_Armor_BrutalS_GunDMG1',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Parts/SubParts/Part_Armor_BrutalS_GunDMG2',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Parts/SubParts/Part_Armor_BrutalS_MeleeDMG1',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Parts/SubParts/Part_Armor_BrutalS_MeleeDMG2',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Parts/SubParts/Part_Armor_BrutalS_SpellDMG1',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Parts/SubParts/Part_Armor_BrutalS_SpellDMG2',
         ]:
     mod.reg_hotfix(Mod.PATCH, '',
             part,
