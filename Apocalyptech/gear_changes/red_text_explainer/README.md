@@ -11,7 +11,7 @@ In cases where there's already an on-card explanation, I've tried to include
 "all effects on card" instead of a custom description, but there are a few
 cases where that could still be tweaked, so you'll have a double-description.
 
-This mod should be current up through DLC3 (Molten Mirrors).
+This mod should be current up through DLC4 (Shattering Spectreglass).
 
 **Translation Information:** The code which generates this mod now supports
 translations pretty easily.  If you want to contribute a translation to this
@@ -24,6 +24,10 @@ me if you have any questions about that!
 
 Changelog
 =========
+
+**v1.1.0** - Aug 11, 2022
+ * Updated with DLC4 gear (though all relevant items already had descriptions
+   on the card)
 
 **v1.0.0** - Jul 28, 2022
  * Initial version, based on v1.6.0 of

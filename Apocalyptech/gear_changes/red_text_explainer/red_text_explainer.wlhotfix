@@ -1,6 +1,6 @@
 
 @title Red Text Explainer
-@version 1.0.0
+@version 1.1.0
 @author Apocalyptech
 @contact https://apocalyptech.com/contact.php
 @categories qol, gear-general
@@ -216,6 +216,15 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Indigo3/Gear/Weapons/AssualtRifles/Jakob
 # Stab-O-Matic
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Indigo3/Gear/Weapons/Shotgun/Hyperion/_Shared/_Design/_Unique/FaceStabber/Names/UIStat_RedText_FacePuncher.UIStat_RedText_FacePuncher,Text,0,,[Flavor]A personal touch shows you care.[/Flavor] [newline] (Damage is considered melee damage, and crit chance depends on melee crit chance stat.)
 
+# Vengeance
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Indigo4/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/_Unique/Vengeance/Names/UIStat_RedText_Vengeance.UIStat_RedText_Vengeance,Text,0,,[Flavor]Wait. Execute your plan. Hope.[/Flavor] [newline] (All effects on card.)
+
+# Merlin's Razor
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Indigo4/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/MerlinsRazor/Names/UIStat_RedText_MerlinsRazor.UIStat_RedText_MerlinsRazor,Text,0,,[Flavor]It'll bite you in the end. Or the face.[/Flavor] [newline] (All effects on card.)
+
+# Sly Trivern
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Indigo4/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/Tiabolt/Name/UIStat_RedText_Tiabolt.UIStat_RedText_Tiabolt,Text,0,,[Flavor]Try, try again.[/Flavor] [newline] (All effects on card.)
+
 # Arcane Bolt
 SparkPatchEntry,(1,1,0,),/Game/Gear/SpellMods/_Unique/ArcaneBolt/Names/UIStat_RedText_ArcaneBolt.UIStat_RedText_ArcaneBolt,Text,0,,[Flavor]From thine fingy-tippers comes doom.[/Flavor] [newline] (All effects on card.)
 
@@ -311,4 +320,10 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Indigo3/Gear/SpellMods/_Unique/Illmarine
 
 # Lovestruck Beau
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Indigo3/Gear/SpellMods/_Unique/InstantAmbush/Names/UIStat_RedText_InstantAmbush.UIStat_RedText_InstantAmbush,Text,0,,[Flavor]Always has your back.[/Flavor] [newline] (All effects on card.)
+
+# Curse of Malice
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Indigo4/Gear/SpellMods/_Unique/MineHail/Names/UIStat_RedText_MineHail.UIStat_RedText_MineHail,Text,0,,[Flavor]Ages like fine milk.[/Flavor] [newline] (All effects on card.)
+
+# Wicked Gossip
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Indigo4/Gear/SpellMods/_Unique/SomethingWicked/Names/UIStat_RedText_SWicked.UIStat_RedText_SWicked,Text,0,,[Flavor]Spreads like a lie.[/Flavor] [newline] (All effects on card.)
 
