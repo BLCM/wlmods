@@ -769,6 +769,8 @@ early_bloomer_tables = {
         '/Game/PatchDLC/Indigo2/Gear/Weapons/_Shared/DataTable_WeaponBalance_Unique_Indigo2',
         '/Game/PatchDLC/Indigo3/Gear/Melee/_Shared/_Unique/_Shared/DataTable_WeaponBalance_Unique_Melee_Indigo03',
         '/Game/PatchDLC/Indigo3/Gear/Weapons/_Shared/DataTable_WeaponBalance_Unique_Indigo3',
+        '/Game/PatchDLC/Indigo4/Gear/Melee/_Shared/_Unique/_Shared/DataTable_WeaponBalance_Unique_Melee_Indigo04',
+        '/Game/PatchDLC/Indigo4/Gear/Weapons/_Shared/DataTable_WeaponBalance_Unique_Indigo4',
         '/Game/Gear/Pauldrons/_Shared/_Design/A_Data/Pauldron_GlobalData',
         }
 def early_bloomer_check(data, export):
