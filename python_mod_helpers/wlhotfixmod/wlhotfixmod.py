@@ -1894,6 +1894,17 @@ LVL_TO_ENG = {
         'D_Smith_03_P': "DLC3 Dungeon Chamber 3",
         'D_Smith_04_P': "DLC3 Dungeon Chamber 4",
         'D_Smith_Boss_P': "DLC3 Dungeon Boss Chamber",
+        'D_Wyvern_01_P': "DLC4 Dungeon Chamber 1",
+        'D_Wyvern_02_P': "DLC4 Dungeon Chamber 2",
+        'D_Wyvern_03_P': "DLC4 Dungeon Chamber 3",
+        'D_Wyvern_04_P': "DLC4 Dungeon Chamber 4",
+        'D_Wyvern_Boss_P': "DLC4 Dungeon Boss Chamber",
+        'Ind_Wyvern_01_P': "DLC4 Dungeon Chamber 1",
+        'Ind_Wyvern_02_P': "DLC4 Dungeon Chamber 2",
+        'Ind_Wyvern_03_P': "DLC4 Dungeon Chamber 3",
+        'Ind_Wyvern_04_P': "DLC4 Dungeon Chamber 4",
+        'IND_Wyvern_Boss_P': "DLC4 Boss",
+        'Ind_Wyvern_Intro_P': "DLC4 Intro Level",
         }
 
 # Also create a lowercase version
