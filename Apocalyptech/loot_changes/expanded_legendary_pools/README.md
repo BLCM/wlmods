@@ -7,12 +7,16 @@ basically anything with red text.  This currently includes all items from:
 * DLC1 (Coiled Captors)
 * DLC2 (Glutton's Gamble)
 * DLC3 (Molten Mirrors)
+* DLC4 (Shattering Spectreglass)
 
 I recommend using this with my Uniques Are Legendary mod, which will make
 the red-text blue/purple gear more noticeable when they drop.
 
 Changelog
 =========
+
+**v1.1.0** - Aug 12, 2022
+ * Updated with new DLC4 gear
 
 **v1.0.2** - Jul 29, 2022
  * Added missing Fealty Oath ring, from DLC3.
