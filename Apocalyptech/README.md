@@ -56,7 +56,7 @@ than a mod:
 ## Mod-Testing Mods
 
 - **Super Buff: Goblin Pickaxe** - Absurdly OP Goblin Pickaxe buffs.
-- **Super Buff: Manual Transmission** - Absurdly OP Manual Transmission shield.
+- **Super Buff: Manual Transmission** - Absurdly OP Manual Transmission AR.
 - **Super Buff: Transistor** - Absurdly OP Transistor shield.
 - **Testing Loot Drops** - Used to test drops and verify balance names.
 
