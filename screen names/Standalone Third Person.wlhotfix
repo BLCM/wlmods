@@ -1,12 +1,11 @@
-###
-### Name: StandAlone Third Person
-### Author: screen names
-### Version: 1.0
-### Categories: qol, Resource, gameplay, bugfix
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-### 
+
+@title StandAlone Third Person
+@author screen names
+@version 1.0
+@categories qol, Resource, gameplay, bugfix
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Usage: Set the default camera to third person, Set the XYZ cordinates (change these to your liking!), Patch out some camera modes (stops events like sliding from switching to first person).
