@@ -31,6 +31,7 @@ import os
 import sys
 import gzip
 import string
+import itertools
 
 class _StreamingBlueprintPosition:
     """
@@ -1302,7 +1303,10 @@ class PartCategory(object):
             partlist=None,
             part_type_enum=None,
             select_multiple=False, use_weight_with_mult=False,
-            enabled=True):
+            enabled=True,
+            has_expansion=False,
+            is_expansion=False,
+            ):
         self.num_min = num_min
         self.num_max = num_max
         self.index = index
@@ -1312,6 +1316,8 @@ class PartCategory(object):
             self.select_multiple = True
         self.use_weight_with_mult = use_weight_with_mult
         self.enabled = enabled
+        self.has_expansion = has_expansion
+        self.is_expansion = is_expansion
         if partlist:
             self.partlist = partlist
         else:
@@ -1357,9 +1363,17 @@ class PartCategory(object):
 
     def str_partlist(self):
         """
-        Returns just a string representation of our partlist
+        Returns just a string representation of our partlist.  If we pass an
+        empty array to a hotfix, at least in these PartSet objects, it often ends
+        up getting interpreted as `(())` (ie: an array with a single empty part
+        in it), which is problematic when combined with our PartSet expansion
+        object handling.  So, we're now returning `None` for empty partlists
+        instead.
         """
-        return ','.join([str(l) for l in self.partlist])
+        if len(self.partlist) == 0:
+            return 'None'
+        else:
+            return '({})'.format(','.join([str(l) for l in self.partlist]))
 
     def clear(self):
         """
@@ -1393,10 +1407,16 @@ class PartCategory(object):
         if not self.part_type_enum:
             raise Exception('PartSet representation requires part_type_enum')
 
-        # If we ever want to include the partlist again, we'd want to add in
-        # `self.str_partlist()` to the `Parts=()` section in here.  The attribute
-        # seems to be entirely ignored by the game engine, though, so we can
-        # safely omit it.
+        # Ordinarily, the parts list inside a PartSet object is totally ignored
+        # when dropping gear, so we've historically left it off.  Objects which
+        # get processed by `InventoryPartSetExpansionData` expansions end up
+        # with a `RuntimeParts` attr right in the PartSet (alongside `Parts`),
+        # which seems to totally override basically everything in the Balance.
+        # So in those cases, we *do* need to include the full partlist here.
+        if self.has_expansion or self.is_expansion:
+            parts = self.str_partlist()
+        else:
+            parts = 'None'
         return """(
             PartTypeEnum={part_type_enum},
             PartType={index},
@@ -1407,7 +1427,7 @@ class PartCategory(object):
                 Max={num_max}
             ),
             bEnabled={enabled},
-            Parts=()
+            Parts={parts}
         )""".format(
                 part_type_enum=Mod.get_full_cond(self.part_type_enum),
                 index=self.index,
@@ -1416,6 +1436,7 @@ class PartCategory(object):
                 num_min=self.num_min,
                 num_max=self.num_max,
                 enabled=str(self.enabled),
+                parts=parts,
                 )
 
 class Balance(object):
@@ -1445,12 +1466,19 @@ class Balance(object):
             }
     PS_MODE_DEFAULT = PS_MODE_ADDITIVE
 
-    def __init__(self, bal_name, partset_name, part_type_enum=None, raw_bal_data=None, raw_ps_data=None):
+    def __init__(self, bal_name, partset_name,
+            part_type_enum=None,
+            raw_bal_data=None,
+            raw_ps_data=None,
+            partset_expansion=None,
+            ):
         """
         `part_type_enum` is a PartTypeEnum object name which will be used if partlists are added via
             `add_category_smart` (unused otherwise)
         `raw_bal_data` is the raw serialized Balance export (pretty much only useful with `from_data()`)
         `raw_ps_data` is the raw serialized PartSet export (pretty much only useful with `from_data()`)
+        `partset_expansion` is an optional PartSetExpansion object which applies to this Balance
+            (or rather, its main associated PartSet)
         """
         self.bal_name = bal_name
         self.partset_name = partset_name
@@ -1459,9 +1487,10 @@ class Balance(object):
         self.generics = []
         self.raw_bal_data = raw_bal_data
         self.raw_ps_data = raw_ps_data
+        self.partset_expansion = partset_expansion
 
     @staticmethod
-    def from_data(data, bal_name):
+    def from_data(data, bal_name, fold_partset_expansion=False):
         """
         Loads in all our data from a WLData instance, given a balance name.  Returns
         a fully-populated Balance object.
@@ -1498,6 +1527,12 @@ class Balance(object):
                 cur_bal_data = cur_bal_data[0]
             else:
                 break
+
+        # Also figure out if we have a PartSet expansion we need to process
+        if partset_names[0] in data.expansion_parts:
+            partset_expansion = data.expansion_parts[partset_names[0]]
+        else:
+            partset_expansion = None
 
         # Loop through the partset objects (note that we need to do the above list in reverse)
         # to grab parts by category, overwriting/appending where instructed to by the
@@ -1640,6 +1675,7 @@ class Balance(object):
         bal = Balance(bal_name, partset_name, part_type_enum,
                 raw_bal_data=bal_data,
                 raw_ps_data=partset_data,
+                partset_expansion=partset_expansion,
                 )
 
         # Populate the `generics` PartCategory inside the new Balance object
@@ -1648,12 +1684,6 @@ class Balance(object):
         # Loop through our partlists and populate our objects
         for idx, (partlist, apl) in enumerate(zip(partlists, partset_data['ActorPartLists'])):
 
-            # Hardcoded fix - SparkPatchEntry210 was brought into the main game binary, and
-            # alters the part range inside an APL for PartSet_Shield_Ward.  Will have to
-            # just handle it stupidly like this, for now.
-            if partset_name == '/Game/Gear/Shields/_Design/_Uniques/Ward/Balance/PartSet_Shield_Ward' and idx == 3:
-                apl['MultiplePartSelectionRange']['Min'] = 1
-
             partcat = PartCategory(
                     num_min=apl['MultiplePartSelectionRange']['Min'],
                     num_max=apl['MultiplePartSelectionRange']['Max'],
@@ -1661,20 +1691,16 @@ class Balance(object):
                     part_type_enum=apl['PartTypeEnum'][1],
                     select_multiple=apl['bCanSelectMultipleParts'],
                     use_weight_with_mult=apl['bUseWeightWithMultiplePartSelection'],
-                    enabled=apl['bEnabled'])
+                    enabled=apl['bEnabled'],
+                    has_expansion=partset_expansion is not None,
+                    )
             for part, weight in partlist:
-                # Weird data mangling here.  A couple of artifacts seem to reference
-                # Artifact_Part_Stats_FireDamage and Artifact_Part_Stats_CryoDamage in
-                # their JWP serializations, but both should have a `_2` suffix (all
-                # the other artifacts already do that).  There is no valid object
-                # *without* that `_2` suffix, so we're gonna cheat and alter the name
-                # if we need to.
-                if part == '/Game/Gear/Artifacts/_Design/PartSets/SecondaryStats/Elemental/Artifact_Part_Stats_FireDamage':
-                    part = '/Game/Gear/Artifacts/_Design/PartSets/SecondaryStats/Elemental/Artifact_Part_Stats_FireDamage_2'
-                elif part == '/Game/Gear/Artifacts/_Design/PartSets/SecondaryStats/Elemental/Artifact_Part_Stats_CryoDamage':
-                    part = '/Game/Gear/Artifacts/_Design/PartSets/SecondaryStats/Elemental/Artifact_Part_Stats_CryoDamage_2'
                 partcat.add_part_name(part, weight=weight)
             bal.add_category(partcat)
+
+        # If we've been told to fold in our partset expansion, do so now.
+        if fold_partset_expansion:
+            bal.fold_partset_expansion()
 
         # That... should be all?
         return bal
@@ -1708,6 +1734,27 @@ class Balance(object):
         obj = data.get_data(self.bal_name)[0]
         self.partset_name = obj['PartSetData'][1]
 
+    def fold_partset_expansion(self):
+        """
+        Folds in our PartSet expansion object so that its parts are found, instead, on
+        the main object PartSet instead of the expansion object.  Has no effect on
+        Balances whose PartSets don't have expansion objects.
+        """
+        if not self.partset_expansion:
+            return
+        for category, expansion in itertools.zip_longest(self.categories, self.partset_expansion.categories):
+            if category is None:
+                if len(expansion.partlist) > 0:
+                    raise RuntimeError('Expansion object tried to add parts to non-existent category: {}'.format(
+                        self.partset_expansion.expansion_name,
+                        ))
+                else:
+                    continue
+            if expansion is None:
+                continue
+            category.partlist.extend(expansion.partlist)
+            expansion.partlist = []
+
     def hotfix_partset_full(self, mod, hf_type=Mod.PATCH, hf_package=''):
         """
         Generates hotfixes to completely set the PartSet portion.
@@ -1716,6 +1763,11 @@ class Balance(object):
                 self.partset_name,
                 'ActorPartLists',
                 '({})'.format(','.join([str(c) for c in self.categories])))
+        if self.partset_expansion is not None:
+            mod.reg_hotfix(hf_type, hf_package,
+                    self.partset_expansion.expansion_name,
+                    'PartLists',
+                    '({})'.format(','.join([str(c) for c in self.partset_expansion.categories])))
 
     def hotfix_balance_full(self, mod, hf_type=Mod.PATCH, hf_package=''):
         """
@@ -1749,7 +1801,90 @@ class Balance(object):
         Generates hotfixes to completely set the object
         """
         self.hotfix_partset_full(mod, hf_type, hf_package)
-        self.hotfix_balance_full(mod, hf_type, hf_package)
+        if not self.partset_expansion:
+            # PartSet expansions end up making the Balance itself totally ignored for
+            # the sorts of things we're handling in this class.
+            self.hotfix_balance_full(mod, hf_type, hf_package)
+
+class DependencyExpansion:
+    """
+    A representation of the InventoryExcludersExpansionData objects introduced
+    in the 2022-08-11 release of Wonderlands (to support Blightcaller parts
+    where necessary).
+
+    Unlike PartSet changes (below), we're not bothering to keep track of which
+    expansion objects are actually in-use here, since the only thing of mine
+    which really needs this info at the moment is `gen_item_balances.py` to
+    generate some human-readable spreadsheets.  We're also not keeping track of
+    *ordering* since we're using sets inside gen_item_balances.py.
+    """
+
+    def __init__(self, name, dependencies=None, excluders=None):
+        self.name = name
+        if dependencies is None:
+            self.dependencies = set()
+        else:
+            self.dependencies = dependencies
+        if excluders is None:
+            self.excluders = set()
+        else:
+            self.excluders = excluders
+
+    def load_from_export(self, export):
+        if 'Dependencies' in export:
+            for new_dep in export['Dependencies']:
+                self.dependencies.add(new_dep[1])
+        if 'Excluders' in export:
+            for new_exc in export['Excluders']:
+                self.excluders.add(new_exc[1])
+
+class PartSetExpansion:
+    """
+    A representation of the new InventoryPartSetExpansionData objects
+    found in the 2022-08-11 release of Wonderlands (to patch in Blightcaller
+    parts where necessary).
+
+    Despite having the full set of category metadata in the data structure
+    (bCanSelectMultipleParts, MultiplePartSelectionRange, etc), the game
+    seems to *only* use the `Parts` list from these objects, but we're going
+    to read them all in, anyway, so our hotfixes can be complete.  It could
+    be that some of it is necessary for proper processing.  I suspect, for
+    instance, that PartTypeEnum might be needed for the expansion to actaully
+    apply.
+
+    As of that 2022-08-11 patch, no PartSet has more than one expansion
+    object attached to it, so for the time being that's all this class will
+    support.  If that ever changes in the future, we'll have to figure that
+    out.
+    """
+
+    def __init__(self, name):
+        self.name = name
+        self.categories = []
+        self.expansion_name = None
+
+    def load_expansion_from_export(self, expansion_name, export):
+        if self.expansion_name is not None:
+            raise RuntimeError('PartSet {} has more than one expansion, not currently supported: {}, {}'.format(
+                self.name,
+                self.expansion_name,
+                expansion_name,
+                ))
+        self.expansion_name = expansion_name
+        for cat in export['PartLists']:
+            new_cat = PartCategory(
+                    num_min=cat['MultiplePartSelectionRange']['Min'],
+                    num_max=cat['MultiplePartSelectionRange']['Max'],
+                    index=cat['PartType'],
+                    part_type_enum=cat['PartTypeEnum'][1],
+                    select_multiple=cat['bCanSelectMultipleParts'],
+                    use_weight_with_mult=cat['bUseWeightWithMultiplePartSelection'],
+                    enabled=cat['bEnabled'],
+                    is_expansion=True,
+                    )
+            for part in cat['Parts']:
+                new_cat.add_part_name(part['PartData'][1], BVC.from_data_struct(part['Weight']))
+            self.categories.append(new_cat)
 
 LVL_TO_ENG = {
         # Main Maps

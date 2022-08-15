@@ -37,7 +37,7 @@ import sqlite3
 import subprocess
 import configparser
 
-from wlhotfixmod.wlhotfixmod import BVC
+from wlhotfixmod.wlhotfixmod import BVC, DependencyExpansion, PartSetExpansion
 
 class WLData(object):
     """
@@ -88,6 +88,8 @@ class WLData(object):
             '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Ranger': 0.25,
             '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Rogue': 0.25,
             '/Game/PatchDLC/Indigo4/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Shaman': 0.25,
+            # Assuming we own DLC4 -- 0 otherwise
+            '/Game/PatchDLC/Indigo4/GameData/Attributes/PlayerClass/Att_Licensed_Shaman': 1,
             }
 
     # Hardcoded part-category values
@@ -139,6 +141,10 @@ class WLData(object):
             'RARITY',
             'MATERIAL',
             ]
+
+    # Expansion Objects
+    _expansion_parts = None
+    _expansion_dependencies = None
 
     def __init__(self):
         """
@@ -770,4 +776,74 @@ class WLData(object):
             return self.balance_to_extra_anoints[balance_name]
         else:
             return []
+
+    def _load_expansions(self):
+        """
+        Loads in the new InventoryPartSetExpansionData/InventoryExcludersExpansionData
+        data from the 2022-08-11 Wonderlands patch, needed for our Balance object to
+        know about some gear properly.  This will look for objects prefixed with `EXPD_`
+        across the whole data tree.  For now it looks like that's both sufficient and
+        accurate enough for our needs, though if the data ever changes in the future,
+        we may need to be more clever.  Note that there does not appear to be any main
+        index of these expansion objects, so the recursive trawl seems necessary.
+
+        This function ignores ItemPoolExpansionData objects entirely, which have been
+        used for all Wonderlands DLC to expand ItemPools.
+        """
+
+        self._expansion_parts = {}
+        self._expansion_dependencies = {}
+        for obj_name, obj_data in sorted(self.find_data('/', 'EXPD_')):
+            export = obj_data[0]
+            # Would like to use match/case here but don't feel like forcing folks
+            # to Python 3.10+
+            if export['export_type'] == 'InventoryExcludersExpansionData':
+                # First up: dependency/excluder expansions
+                for target in export['TargetParts']:
+                    target_obj = target[1]
+                    if target_obj not in self._expansion_dependencies:
+                        self._expansion_dependencies[target_obj] = DependencyExpansion(target_obj)
+                    self._expansion_dependencies[target_obj].load_from_export(export)
+
+            elif export['export_type'] == 'InventoryPartSetExpansionData':
+                # Next: partset expansions
+                partset_name = export['InventoryPartSet'][1]
+                if partset_name not in self._expansion_parts:
+                    self._expansion_parts[partset_name] = PartSetExpansion(partset_name)
+                self._expansion_parts[partset_name].load_expansion_from_export(obj_name, export)
+
+            elif export['export_type'] == 'ItemPoolExpansionData':
+                # Ignoring these entirely at the moment, since I don't really alter ItemPools
+                # based on on-disk data like we do for Balances (where the above two would be
+                # useful to have)
+                pass
+
+            else:
+                # Unknown!
+                raise RuntimeError('Unknown expansion type "{}" in {}'.format(
+                    export['export_type'],
+                    obj_name,
+                    ))
+
+    @property
+    def expansion_parts(self):
+        """
+        Retrieve our parsed Expansion PartSet dict.  Keys will be the PartSet being
+        expanded, and the values will be wlhotfixmod.PartSetExpansion objects.
+        Dynamically loads the data if we haven't already.
+        """
+        if self._expansion_parts is None:
+            self._load_expansions()
+        return self._expansion_parts
+
+    @property
+    def expansion_dependencies(self):
+        """
+        Retrieve our parsed Expansion dependency/excluder dict.  Keys will be the
+        Parts being expanded, and the values will be wlhotfixmod.DependencyExpansion
+        objects.  Dynamically loads the data if we haven't already.
+        """
+        if self._expansion_dependencies is None:
+            self._load_expansions()
+        return self._expansion_dependencies
 
