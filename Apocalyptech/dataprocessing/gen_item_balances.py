@@ -699,6 +699,9 @@ cur_row += 1
 
 # Changelog
 changelog = [
+        ('Aug 15, 2022', [
+            "Updated with GBX's new part expansion method, which pulls in Blightcaller parts properly",
+            ]),
         ('Aug 11, 2022', [
             'Updated with DLC4 data, and other patch fixes from today',
             ]),
@@ -905,7 +908,7 @@ for (sheet_label, filename, filename_long, balances, man_col_name, type_col_name
                     print(f'Balance: {bal_name}')
 
                 # Grab a Balance object
-                bal = Balance.from_data(data, bal_name)
+                bal = Balance.from_data(data, bal_name, fold_partset_expansion=True)
 
                 # Do some reporting for Early Bloomer mod construction, if told to do so.
                 if check_early_bloomer:
@@ -999,6 +1002,11 @@ for (sheet_label, filename, filename_long, balances, man_col_name, type_col_name
                                         if 'Dependencies' in export:
                                             for dependency in export['Dependencies']:
                                                 dependencies.add(dependency[1])
+
+                                        # Pull in dependency expansions, if we've got 'em
+                                        if part_name in data.expansion_dependencies:
+                                            dependencies |= data.expansion_dependencies[part_name].dependencies
+                                            excluders |= data.expansion_dependencies[part_name].excluders
 
                                         break
                                 if not found_export:
