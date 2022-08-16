@@ -140,7 +140,7 @@ for obj_name in [
         #'/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Rogue',
         ]:
 
-    bal = Balance.from_data(data, obj_name)
+    bal = Balance.from_data(data, obj_name, fold_partset_expansion=False)
     changed = False
     # This assumes that there's a partset_expansion, but we know that there is, so whatever.
     # We're *not* flattening the expansion object here, in an effort to sort-of change as
@@ -168,7 +168,7 @@ for label, obj_path in [
     # Unlike most amulets above, we *are* folding the expansion object into the main
     # PartSet here, since we're making more sweeping changes to the class-selection
     # category anyway.
-    bal = Balance.from_data(data, obj_path, fold_partset_expansion=True)
+    bal = Balance.from_data(data, obj_path)
     found_class_parts = False
     for cat in bal.categories:
         if 'Part_Amulet_ClassStat' in cat.partlist[0].part_name:

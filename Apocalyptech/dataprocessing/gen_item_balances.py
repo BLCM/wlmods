@@ -908,7 +908,7 @@ for (sheet_label, filename, filename_long, balances, man_col_name, type_col_name
                     print(f'Balance: {bal_name}')
 
                 # Grab a Balance object
-                bal = Balance.from_data(data, bal_name, fold_partset_expansion=True)
+                bal = Balance.from_data(data, bal_name)
 
                 # Do some reporting for Early Bloomer mod construction, if told to do so.
                 if check_early_bloomer:

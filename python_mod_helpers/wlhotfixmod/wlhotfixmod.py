@@ -1490,10 +1490,12 @@ class Balance(object):
         self.partset_expansion = partset_expansion
 
     @staticmethod
-    def from_data(data, bal_name, fold_partset_expansion=False):
+    def from_data(data, bal_name, fold_partset_expansion=True):
         """
         Loads in all our data from a WLData instance, given a balance name.  Returns
-        a fully-populated Balance object.
+        a fully-populated Balance object.  Will fold any existing PartSet expansion
+        objects into the main PartSet by default -- you can disable that behavior
+        by setting `fold_partset_expansion` to `False`.
         """
 
         # Load in Balance
