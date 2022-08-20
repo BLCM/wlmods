@@ -163,7 +163,7 @@ class _StreamingBlueprintHelper:
             '/hibiscus/interactiveobjects/systems/catcharide/_design/bp_hib_catcharide_platform': 'PlatformMesh',
             }
 
-    type_11_delay_meshes = [
+    _type_11_delay_meshes = [
             '/Engine/EditorMeshes/Camera/SM_CraneRig_Arm',
             '/Engine/EditorMeshes/Camera/SM_CraneRig_Base',
             '/Engine/EditorMeshes/Camera/SM_CraneRig_Body',
@@ -180,6 +180,10 @@ class _StreamingBlueprintHelper:
         to_lower = map_name.lower()
         if to_lower == 'MatchAll':
             raise RuntimeError('MatchAll is not a valid level target for delaying streaming blueprint hotfixes')
+        # Make a copy of the mesh list, otherwise when we pop entries later
+        # it'll update for all instances.  Reverse it so our `.pop()`s pull
+        # things in the correct order.
+        self.type_11_delay_meshes = list(reversed(self._type_11_delay_meshes))
 
     def get_next_index(self, obj_name, index=None):
         obj_name_lower = obj_name.lower()
