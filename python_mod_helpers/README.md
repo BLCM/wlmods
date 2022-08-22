@@ -325,8 +325,7 @@ along with these mesh-swapping hotfixes, so it's obvious where it's put things
 in automatically.  If you prefer not to see these comments, pass in
 `quiet_meshes=True` to your initial `Mod()` object creation.
 
-Blueprint Streaming
-===================
+### Blueprint Streaming
 
 The library supports [hotfix type 11](https://github.com/BLCM/BLCMods/wiki/Borderlands-3-Hotfixes#hotfix-type-11-stream-blueprint),
 which can be used to add in interactive elements to maps, such as vending
