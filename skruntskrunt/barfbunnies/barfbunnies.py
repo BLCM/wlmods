@@ -26,7 +26,7 @@ import random
 import argparse
 
 
-OUTPUT='barfbunnies.bl3hotfix'
+OUTPUT='barfbunnies.wlhotfix'
 SEED=None # 42
 our_seed = SEED
 version = '0.0.1'
@@ -61,7 +61,7 @@ mod = Mod(output_filename,
           ["Barf bunnies take too long. Speed up the loot room by reducing pulls but maintain the current level of loot. Reduce the total number of crystals to a meager sum, improve raid boss crystal drops, speed up barf bunnies slightly, with reduced crystals increase barf bunnies loot to match former levels."],
           lic=Mod.CC_BY_SA_40,
           v=version,
-          cats=['gameplay'],
+          cats=['gameplay','loot-system'],
 )
 
 # # disable seed for now
