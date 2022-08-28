@@ -43,7 +43,7 @@ hardcode_balance_names = [
         #'/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/LiquidCooling/Balance/Balance_PS_COV_05_LiquidCoolin',
         #'/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/Repellant/Balance/Balance_PS_COV_05_Repellant',
         #'/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/Apex/Balance/Balance_DAL_PS_05_Apex',
-        #'/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/IntroMission/Balance/Balance_DAL_PS_FirstGun',
+        ##'/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/IntroMission/Balance/Balance_DAL_PS_FirstGun',
         #'/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/Perceiver/Balance/Balance_DAL_PS_05_Perceiver',
         #'/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/RoisensSpite/Balance/Balance_DAL_PS_RoisensSpite',
         #'/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Catatumbo/Balance/Balance_PS_JAK_05_Catatumbo',
@@ -88,12 +88,17 @@ hardcode_balance_names = [
         #'/Game/Gear/Weapons/SniperRifles/Vladof/_Shared/_Design/_Unique/PortableSawmill/Balance/Balance_VLA_SR_05_PortableSawmill',
 
         # DLC Uniques/Legendaries (through DLC3)
-        '/Game/PatchDLC/Indigo1/Gear/Weapons/HeavyWeapons/Valdof/_Shared/_Design/_Unique/TwistDeluge/Balance/Bal_VLA_TwistDeluge',
-        '/Game/PatchDLC/Indigo1/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Unique/DieVergent/Balance/Balance_SG_TED_DieVergent',
-        '/Game/PatchDLC/Indigo2/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Butterboom/Balance/Balance_PS_TOR_05_Butterbm',
-        '/Game/PatchDLC/Indigo2/Gear/Weapons/SMGs/Dahl/OilNSpice/Balance/Balance_SM_DAHL_OilNSpice',
-        '/Game/PatchDLC/Indigo3/Gear/Weapons/AssualtRifles/Jakobs/_Shared/_Design/_Unique/EchoPhoenix/Balance/Bal_AR_JAK_EchoPhnix',
-        '/Game/PatchDLC/Indigo3/Gear/Weapons/Shotgun/Hyperion/_Shared/_Design/_Unique/FaceStabber/Balance/Balance_SG_HYP_FacePunch',
+        #'/Game/PatchDLC/Indigo1/Gear/Weapons/HeavyWeapons/Valdof/_Shared/_Design/_Unique/TwistDeluge/Balance/Bal_VLA_TwistDeluge',
+        #'/Game/PatchDLC/Indigo1/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Unique/DieVergent/Balance/Balance_SG_TED_DieVergent',
+        #'/Game/PatchDLC/Indigo2/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Butterboom/Balance/Balance_PS_TOR_05_Butterbm',
+        #'/Game/PatchDLC/Indigo2/Gear/Weapons/SMGs/Dahl/OilNSpice/Balance/Balance_SM_DAHL_OilNSpice',
+        #'/Game/PatchDLC/Indigo3/Gear/Weapons/AssualtRifles/Jakobs/_Shared/_Design/_Unique/EchoPhoenix/Balance/Bal_AR_JAK_EchoPhnix',
+        #'/Game/PatchDLC/Indigo3/Gear/Weapons/Shotgun/Hyperion/_Shared/_Design/_Unique/FaceStabber/Balance/Balance_SG_HYP_FacePunch',
+
+        # DLC4
+        '/Game/PatchDLC/Indigo4/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/_Unique/Vengeance/Balance/Bal_AR_TOR_Vengeance',
+        '/Game/PatchDLC/Indigo4/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/MerlinsRazor/Balance/Bal_SG_JAK_MerlinsRazor',
+        '/Game/PatchDLC/Indigo4/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/Tiabolt/Balance/Balance_SR_DAL_Tiabolt',
 
         ]
 
@@ -112,6 +117,11 @@ output.add_argument('--balancelist',
         help='Output in a formate copy+pasteable to gen_item_balances.py',
         )
 
+output.add_argument('--expanded',
+        action='store_true',
+        help='Output in a formate copy+pasteable to gen_expanded_legendary_pools.py',
+        )
+
 parser.add_argument('balance_names',
         nargs='*',
         help='Balances to look up (will default to a hardcoded list if not specified)',
@@ -124,9 +134,7 @@ if len(args.balance_names) == 0:
 
 # Whether to do headers, etc
 do_header = True
-if args.redtext:
-    do_header = False
-elif args.balancelist:
+if args.redtext or args.balancelist or args.expanded:
     do_header = False
 
 # Now process
@@ -196,6 +204,9 @@ for balance_name in args.balance_names:
             title.replace('"', '\\"'),
             balance_name,
             ))
+    elif args.expanded:
+        print(f'                # {title}')
+        print(f"                ('{balance_name}', 1),")
     else:
         print('Name: {}'.format(title))
         if red_text:

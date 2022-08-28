@@ -25,26 +25,26 @@ from wldata.wldata import WLData
 hardcode_balance_names = [
 
         # Base-game Armor
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Amalgam/Balance/Balance_Armor_Amalgam',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Barb',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Knight',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Mage',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Necro',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Ranger',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Rogue',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/BigBMittens/Balance/Balance_Armor_BigBMittens',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Bladesinger/Balance/Balance_Armor_Bladesinger',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Calamity/Balance/Balance_Armor_Calamity',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Claw/Balance/Balance_Armor_MantisClaw',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/CorruptedPlatemail/Balance/Balance_Armor_CorruptedPlatemail',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/DeathlessMantle/Balance/Balance_Armor_DeathlessMantle',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/DiamondGauntlets/Balance/Balance_Armor_DiamondGauntlets',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/HeadOfTheSnake/Balance/Balance_Armor_HeadOfTheSnake',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Pandemecium/Balance/Balance_Armor_Pandemecium',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/SelectiveAmnesia/Balance/Balance_Armor_SelectiveAmnesia',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/SmartArmor/Balance/Balance_Armor_SmartArmor',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/SteelGauntlets/Balance/Balance_Armor_SteelGauntlets',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Tabula/Balance/Balance_Armor_Tabula',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Amalgam/Balance/Balance_Armor_Amalgam',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Barb',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Knight',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Mage',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Necro',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Ranger',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Rogue',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/BigBMittens/Balance/Balance_Armor_BigBMittens',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Bladesinger/Balance/Balance_Armor_Bladesinger',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Calamity/Balance/Balance_Armor_Calamity',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Claw/Balance/Balance_Armor_MantisClaw',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/CorruptedPlatemail/Balance/Balance_Armor_CorruptedPlatemail',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/DeathlessMantle/Balance/Balance_Armor_DeathlessMantle',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/DiamondGauntlets/Balance/Balance_Armor_DiamondGauntlets',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/HeadOfTheSnake/Balance/Balance_Armor_HeadOfTheSnake',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Pandemecium/Balance/Balance_Armor_Pandemecium',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/SelectiveAmnesia/Balance/Balance_Armor_SelectiveAmnesia',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/SmartArmor/Balance/Balance_Armor_SmartArmor',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/SteelGauntlets/Balance/Balance_Armor_SteelGauntlets',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Tabula/Balance/Balance_Armor_Tabula',
 
         # DLC Armor (through DLC3)
         #'/Game/PatchDLC/Indigo1/Gear/Pauldrons/_Shared/_Design/_Unique/CapeOfTides/Balance/Balance_Armor_CapeOfTides',
@@ -84,6 +84,12 @@ hardcode_balance_names = [
         #'/Game/PatchDLC/Indigo3/Gear/Melee/_Shared/_Unique/HammerQuake/Balance_M_HammerQuake',
         #'/Game/PatchDLC/Indigo3/Gear/Melee/_Shared/_Unique/ShieldBash/Balance_M_ShieldBash',
 
+        # DLC4
+        '/Game/PatchDLC/Indigo4/Gear/Melee/_Shared/_Unique/FaceSmasher/Balance/Balance_M_RageHandle',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Shaman',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Balance/Balance_Armor_BrutalStampede',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/MantleOfThorns/Balance/Balance_Armor_MantleThorn',
+
         ]
 
 # Args
@@ -101,6 +107,11 @@ output.add_argument('--balancelist',
         help='Output in a formate copy+pasteable to gen_item_balances.py',
         )
 
+output.add_argument('--expanded',
+        action='store_true',
+        help='Output in a formate copy+pasteable to gen_expanded_legendary_pools.py',
+        )
+
 parser.add_argument('balance_names',
         nargs='*',
         help='Balances to look up (will default to a hardcoded list if not specified)',
@@ -113,9 +124,7 @@ if len(args.balance_names) == 0:
 
 # Whether to do headers, etc
 do_header = True
-if args.redtext:
-    do_header = False
-elif args.balancelist:
+if args.redtext or args.balancelist or args.expanded:
     do_header = False
 
 # Now process
@@ -129,7 +138,12 @@ for balance_name in args.balance_names:
 
     invbal = data.get_exports(balance_name, 'InventoryBalanceData')[0]
 
-    # Loop through to find any parts with a TitlePartList
+    # Report on Rarity
+    if do_header:
+        rarity = invbal['RarityData'][0]
+        print('Rarity: {}'.format(rarity))
+
+    # Loop through to find any parts with a TitlePartList (and also Red Text!)
     names = set()
     for part in invbal['RuntimePartList']['AllParts']:
         if 'export' not in part['PartData']:
@@ -146,11 +160,31 @@ for balance_name in args.balance_names:
                         name_name = titlepart[1]
                         name = data.get_data(name_name)[0]
                         names.add(name['PartName']['string'])
-
+                if 'UIStats' in part:
+                    try:
+                        for uistat in part['UIStats']:
+                            if 'RedText' in uistat['UIStat'][1]:
+                                red_text_name = uistat['UIStat'][1]
+                                red_text_obj = data.get_exports(red_text_name, 'UIStatData_Text')[0]
+                                red_text = red_text_obj['Text']['string']
+                                break
+                    except:
+                        red_text_name = '(no red text found)'
+                        red_text = '(no red text found)'
 
     # Making all kinds of assumptions in here
     if args.redtext:
-        pass
+        if red_text:
+            name = ' / '.join(sorted(names))
+            red_text = red_text.replace('[Flavor]', '')
+            red_text = red_text.replace('[/Flavor]', '')
+            red_text = red_text.replace('"', '\\"')
+            print('            (_("{}"),'.format(name))
+            print('                \'{}\','.format(red_text_name))
+            print('                _("{}"),'.format(red_text))
+            print('                _("unknown")),')
+        else:
+            print('            # {}: NO RED TEXT!'.format(name))
     elif args.balancelist:
         if len(names) == 0:
             print(f'        # ERROR: No names detected for {balance_name}')
@@ -161,8 +195,21 @@ for balance_name in args.balance_names:
                 name.replace('"', '\\"'),
                 balance_name,
                 ))
-    else:
+    elif args.expanded:
+        if len(names) == 0:
+            print(f'                # ERROR: No names detected for {balance_name}')
+        elif len(names) > 1:
+            print(f'                # NOTE: auto-detected more than one possible name for {balance_name}')
         for name in sorted(names):
-            print(f' - {name}')
+            print(f'                # {name}')
+        print(f"                ('{balance_name}', 1),")
+    else:
+        if len(names) == 1:
+            print('Name: {}'.format(names.pop()))
+        else:
+            print('Names:')
+            for name in sorted(names):
+                print(f' - {name}')
+        print(f'Red Text: {red_text}')
         print('')
 

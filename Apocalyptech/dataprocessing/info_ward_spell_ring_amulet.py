@@ -72,14 +72,16 @@ hardcode_balance_names = [
         #'/Game/Gear/SpellMods/_Unique/TimeSkip/Balance/Balance_Spell_TimeSkip',
         #'/Game/Gear/SpellMods/_Unique/Twister/Balance/Balance_Spell_Twister',
         #'/Game/Gear/SpellMods/_Unique/Watcher/Balance/Balance_Spell_Watcher',
-        #'/Game/Gear/SpellMods/_Unique/_MissionUniques/AncientPowers/Balance/Balance_Spell_AncientPowers_v1',
-        #'/Game/Gear/SpellMods/_Unique/_MissionUniques/AncientPowers/Balance/Balance_Spell_AncientPowers_v2',
-        #'/Game/Gear/SpellMods/_Unique/_MissionUniques/AncientPowers/Balance/Balance_Spell_AncientPowers_v3',
         #'/Game/Gear/SpellMods/_Unique/_MissionUniques/DestructionRains/Balance/Balance_Spell_DestructionRains',
         #'/Game/Gear/SpellMods/_Unique/_MissionUniques/Frostburn/Balance/Balance_Spell_Frostburn',
         #'/Game/Gear/SpellMods/_Unique/_MissionUniques/HoleyHandGrenade/Balance/Balance_Spell_HoleyHandGrenade',
         #'/Game/Gear/SpellMods/_Unique/_MissionUniques/JaggedToothCrew/Balance/Balance_Spell_JaggedTooth',
         #'/Game/Gear/SpellMods/_Unique/_MissionUniques/LavaGoodTime/Balance/Balance_Spell_LavaGoodTime',
+
+        # Pretty unremarkable gear for these spells; no unique abilities, etc.
+        #'/Game/Gear/SpellMods/_Unique/_MissionUniques/AncientPowers/Balance/Balance_Spell_AncientPowers_v1',
+        #'/Game/Gear/SpellMods/_Unique/_MissionUniques/AncientPowers/Balance/Balance_Spell_AncientPowers_v2',
+        #'/Game/Gear/SpellMods/_Unique/_MissionUniques/AncientPowers/Balance/Balance_Spell_AncientPowers_v3',
         #'/Game/Gear/SpellMods/_Unique/_MissionUniques/LittleBluePill/Balance/Balance_Spell_LittleBluePill',
         #'/Game/Gear/SpellMods/_Unique/_MissionUniques/FirstDarkSpell/Balance_Spell_FirstDark',
         #'/Game/Gear/SpellMods/_Unique/_MissionUniques/Plot02GraveyardReward/Balance_Plot02_Graveyard_FissureSpell',
@@ -114,28 +116,35 @@ hardcode_balance_names = [
         #'/Game/PatchDLC/Indigo1/Gear/Rings/_Shared/_Unique/LethalCatch/Balance/Balance_Ring_LethalCatch',
         #'/Game/PatchDLC/Indigo1/Gear/Rings/_Shared/_Unique/SharkBane/Balance/Balance_Ring_SharkBane',
         #'/Game/PatchDLC/Indigo2/Gear/Rings/_Shared/_Unique/PreciousJamstone/Balance/Balance_Ring_Jamstone',
+        #'/Game/PatchDLC/Indigo3/Gear/Rings/BrandLoyalty/Balance/Balance_Ring_BrandLoyalty',
 
         # Base-game Amulets
-        '/Game/Gear/Amulets/_Shared/_Unique/BlazeOfGlory/Balance/Balance_Amulet_Unique_BlazeOfGlory',
-        '/Game/Gear/Amulets/_Shared/_Unique/Bradluck/Balance/Balance_Amulet_Unique_Bradluck',
-        '/Game/Gear/Amulets/_Shared/_Unique/Frenzied/Balance/Balance_Amulet_Unique_Frenzied',
-        '/Game/Gear/Amulets/_Shared/_Unique/GTFO/Balance/Balance_Amulet_Unique_GTFO',
-        '/Game/Gear/Amulets/_Shared/_Unique/Harbinger/Balance/Balance_Amulet_Unique_Harbinger',
-        '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Barb',
-        '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_GunMage',
-        '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_KotC',
-        '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Necro',
-        '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Ranger',
-        '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Rogue',
-        '/Game/Gear/Amulets/_Shared/_Unique/JointTraining/Balance/Balance_Amulet_Unique_JointTraining',
-        '/Game/Gear/Amulets/_Shared/_Unique/RonRivote/Balance/Balance_Amulet_Unique_RonRivote',
-        '/Game/Gear/Amulets/_Shared/_Unique/Theruge/Balance/Balance_Amulet_Unique_Theruge',
-        '/Game/Gear/Amulets/_Shared/_Unique/UniversalSoldier/Balance/Balance_Amulet_Unique_UniversalSoldier',
-        '/Game/Gear/Amulets/_Shared/_Unique/OverflowBloodbag/Balance_Amulets_OverflowBloodbag',
-        '/Game/Gear/Amulets/_Shared/_Unique/SacSkeep/Balance_Amulets_SacSkeep',
-        '/Game/PatchDLC/Indigo1/Gear/Amulets/_Shared/_Unique/SlipnStun/Balance/Balance_Amulet_Unique_SlipnStun',
-        '/Game/PatchDLC/Indigo2/Gear/Amulets/_Shared/_Unique/Barboload/Balance/Balance_Amulet_Unique_Barboload',
-        '/Game/PatchDLC/Indigo3/Gear/Amulets/_Shared/_Unique/PracticalFocus/Balance/Balance_Amulet_Unique_PracticalFocus',
+        #'/Game/Gear/Amulets/_Shared/_Unique/BlazeOfGlory/Balance/Balance_Amulet_Unique_BlazeOfGlory',
+        #'/Game/Gear/Amulets/_Shared/_Unique/Bradluck/Balance/Balance_Amulet_Unique_Bradluck',
+        #'/Game/Gear/Amulets/_Shared/_Unique/Frenzied/Balance/Balance_Amulet_Unique_Frenzied',
+        #'/Game/Gear/Amulets/_Shared/_Unique/GTFO/Balance/Balance_Amulet_Unique_GTFO',
+        #'/Game/Gear/Amulets/_Shared/_Unique/Harbinger/Balance/Balance_Amulet_Unique_Harbinger',
+        #'/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Barb',
+        #'/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_GunMage',
+        #'/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_KotC',
+        #'/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Necro',
+        #'/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Ranger',
+        #'/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Rogue',
+        #'/Game/Gear/Amulets/_Shared/_Unique/JointTraining/Balance/Balance_Amulet_Unique_JointTraining',
+        #'/Game/Gear/Amulets/_Shared/_Unique/RonRivote/Balance/Balance_Amulet_Unique_RonRivote',
+        #'/Game/Gear/Amulets/_Shared/_Unique/Theruge/Balance/Balance_Amulet_Unique_Theruge',
+        #'/Game/Gear/Amulets/_Shared/_Unique/UniversalSoldier/Balance/Balance_Amulet_Unique_UniversalSoldier',
+        #'/Game/Gear/Amulets/_Shared/_Unique/OverflowBloodbag/Balance_Amulets_OverflowBloodbag',
+        #'/Game/Gear/Amulets/_Shared/_Unique/SacSkeep/Balance_Amulets_SacSkeep',
+        #'/Game/PatchDLC/Indigo1/Gear/Amulets/_Shared/_Unique/SlipnStun/Balance/Balance_Amulet_Unique_SlipnStun',
+        #'/Game/PatchDLC/Indigo2/Gear/Amulets/_Shared/_Unique/Barboload/Balance/Balance_Amulet_Unique_Barboload',
+        #'/Game/PatchDLC/Indigo3/Gear/Amulets/_Shared/_Unique/PracticalFocus/Balance/Balance_Amulet_Unique_PracticalFocus',
+
+        # DLC4
+        #'/Game/PatchDLC/Indigo4/Gear/_Design/Amulets/_Shared/_Design/_Unique/HDD/Balance/Balance_Amulet_Unique_Plot05_HDD_Shaman',
+        #'/Game/PatchDLC/Indigo4/Gear/Rings/HexRevenge/Balance/Balance_Ring_HexRevenge',
+        '/Game/PatchDLC/Indigo4/Gear/SpellMods/_Unique/MineHail/Balance/Balance_Spell_MineHail',
+        '/Game/PatchDLC/Indigo4/Gear/SpellMods/_Unique/SomethingWicked/Balance/Balance_Spell_SomethingWicked',
 
         ]
 
@@ -164,6 +173,27 @@ known_exceptions = {
             "Undying",
             "Opal",
             },
+        'wards': {
+            "Blackguard's",
+            "Bloodstone",
+            "Dragon's",
+            "Eagle Eyed",
+            "Emerald",
+            "Infused",
+            "Moonstone",
+            "Raging",
+            "Ruby",
+            "Sapphire",
+            "Undying",
+            "Opal",
+
+            # These aren't really prefixes, but some MissionUniques end up seeing 'em
+            "Elemental Blast",
+            "Sunder",
+            "Eruption",
+            "Calamity",
+            "Sigil",
+            },
         }
 
 # Args
@@ -171,9 +201,19 @@ parser = argparse.ArgumentParser(description='Ward/Spell/Ring/Amulet Info')
 
 output = parser.add_mutually_exclusive_group()
 
+output.add_argument('--redtext',
+        action='store_true',
+        help='Output in a formate copy+pasteable to Red Text Explainer',
+        )
+
 output.add_argument('--balancelist',
         action='store_true',
         help='Output in a formate copy+pasteable to gen_item_balances.py',
+        )
+
+output.add_argument('--expanded',
+        action='store_true',
+        help='Output in a formate copy+pasteable to gen_expanded_legendary_pools.py',
         )
 
 parser.add_argument('balance_names',
@@ -223,11 +263,13 @@ class NamingStrategySingle:
                 '/Game/PatchDLC/Indigo1/Gear/_Design/_GearExtension/NamingStrategies/Indigo01_SpellsNamingStrategy',
                 '/Game/PatchDLC/Indigo2/Gear/_Design/_GearExtension/NamingStrategies/Indigo02_SpellsNamingStrategy',
                 '/Game/PatchDLC/Indigo3/Gear/_Design/_GearExtension/NamingStrategy/Indigo03_SpellsNamingStrategy',
+                '/Game/PatchDLC/Indigo4/Gear/_Design/_GearExtension/NamingStrategies/Indigo04_SpellsNamingStrategy',
                 ],
             '/Game/Gear/Rings/_Shared/Design/NamingStrategy/RingNamingStrategy': [
                 '/Game/PatchDLC/Indigo1/Gear/_Design/_GearExtension/NamingStrategies/Indigo01_RingsNamingStrategy',
                 '/Game/PatchDLC/Indigo2/Gear/_Design/_GearExtension/NamingStrategies/Indigo02_RingsNamingStrategy',
                 '/Game/PatchDLC/Indigo3/Gear/_Design/_GearExtension/NamingStrategy/Indigo03_RingsNamingStrategy',
+                '/Game/PatchDLC/Indigo4/Gear/_Design/_GearExtension/NamingStrategies/Indigo04_RingsNamingStrategy',
                 ],
             '/Game/Gear/Amulets/_Shared/_Design/Naming/AmuletNamingStrategy': [
                 '/Game/PatchDLC/Indigo1/Gear/_Design/_GearExtension/NamingStrategies/Indigo01_AmuletsNamingStrategy',
@@ -237,7 +279,7 @@ class NamingStrategySingle:
             }
 
     def __init__(self, name, wldata, exceptions=None):
-        print(f'Loading NamingStrategy: {name}')
+        #print(f'Loading NamingStrategy: {name}')
         self.name = name
         self.wldata = wldata
         if exceptions is None:
@@ -251,6 +293,8 @@ class NamingStrategySingle:
             if export['export_type'] == 'OakInventoryNamingStrategyData':
                 found_naming = True
                 for single in export['SingleNames']:
+                    if 'export' in single['Part']:
+                        continue
                     name_part = self.data[single['NamePart']['export']-1]
                     name = name_part['PartName']['string']
                     if not name.startswith('of ') and name not in self.exceptions:
@@ -272,7 +316,7 @@ class NamingStrategySingle:
 
 # Whether to do headers, etc
 do_header = True
-if args.balancelist:
+if args.balancelist or args.redtext or args.expanded:
     do_header = False
 
 # Now process
@@ -285,6 +329,37 @@ for balance_name in args.balance_names:
         print('Balance: {}'.format(balance_name))
 
     invbal = data.get_exports(balance_name, 'InventoryBalanceData')[0]
+
+    # Report on Rarity
+    if do_header:
+        rarity = invbal['RarityData'][0]
+        print('Rarity: {}'.format(rarity))
+
+    # Loop through Parts, try to find the Red Text contained therein
+    red_text_name = None
+    red_text = None
+    for part in invbal['RuntimePartList']['AllParts']:
+        if 'export' not in part['PartData']:
+            part_name = part['PartData'][1]
+            part_obj = data.get_data(part_name)
+            found_part = False
+            for export in part_obj:
+                if export['export_type'].startswith('BPInvPart'):
+                    found_part = True
+                    if 'UIStats' in export:
+                        try:
+                            for uistat in export['UIStats']:
+                                if 'RedText' in uistat['UIStat'][1]:
+                                    red_text_name = uistat['UIStat'][1]
+                                    red_text_obj = data.get_exports(red_text_name, 'UIStatData_Text')[0]
+                                    red_text = red_text_obj['Text']['string']
+                                    break
+                        except:
+                            red_text_name = '(no red text found)'
+                            red_text = '(no red text found)'
+                    break
+            if not found_part:
+                raise Exception(f'BPInvPart not found in {part_name}')
 
     # Get our InventoryData (which will eventually lead us to the correct NamingStrategy)
     inv_data_name = invbal['InventoryData'][1]
@@ -340,8 +415,33 @@ for balance_name in args.balance_names:
                     ))
         if len(names) > 1 and args.extra_space_multi:
             print('')
-    else:
+    elif args.expanded:
+        if len(names) == 0:
+            print(f'                # ERROR: No names detected for {balance_name}')
+        elif len(names) > 1:
+            print(f'                # NOTE: auto-detected more than one possible name for {balance_name}')
         for name in sorted(names):
-            print(' - {}'.format(name))
+            print(f'                # {name}')
+        print(f"                ('{balance_name}', 1),")
+    elif args.redtext:
+        if red_text:
+            name = ' / '.join(sorted(names))
+            red_text = red_text.replace('[Flavor]', '')
+            red_text = red_text.replace('[/Flavor]', '')
+            red_text = red_text.replace('"', '\\"')
+            print('            (_("{}"),'.format(name))
+            print('                \'{}\','.format(red_text_name))
+            print('                _("{}"),'.format(red_text))
+            print('                _("unknown")),')
+        else:
+            print('            # {}: NO RED TEXT!'.format(name))
+    else:
+        if len(names) == 1:
+            print('Name: {}'.format(names.pop()))
+        else:
+            print('Names:')
+            for name in sorted(names):
+                print(' - {}'.format(name))
+        print('Red Text: {}'.format(red_text))
         print('')
 

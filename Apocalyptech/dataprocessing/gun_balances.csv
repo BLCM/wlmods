@@ -16,9 +16,9 @@ Blackpowder,ARs,01/Common,Balance_AR_JAK_01_Common,BARREL ACCESSORY,0,1,1,Part_A
 Blackpowder,ARs,01/Common,Balance_AR_JAK_01_Common,BARREL ACCESSORY,0,1,1,Part_AR_JAK_Barrel_03_A,,"Part_AR_JAK_Barrel_01, Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_04"
 Blackpowder,ARs,01/Common,Balance_AR_JAK_01_Common,BARREL ACCESSORY,0,1,1,Part_AR_JAK_Barrel_03_B,,"Part_AR_JAK_Barrel_01, Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_04"
 Blackpowder,ARs,01/Common,Balance_AR_JAK_01_Common,BARREL ACCESSORY,0,1,1,Part_AR_JAK_Barrel_03_C,,"Part_AR_JAK_Barrel_01, Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_04"
-Blackpowder,ARs,01/Common,Balance_AR_JAK_01_Common,BARREL ACCESSORY,0,1,1,Part_AR_JAK_Barrel_04_A,Part_AR_JAK_Barrel_04,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
-Blackpowder,ARs,01/Common,Balance_AR_JAK_01_Common,BARREL ACCESSORY,0,1,1,Part_AR_JAK_Barrel_04_B,Part_AR_JAK_Barrel_04,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
-Blackpowder,ARs,01/Common,Balance_AR_JAK_01_Common,BARREL ACCESSORY,0,1,1,Part_AR_JAK_Barrel_04_C,Part_AR_JAK_Barrel_04,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
+Blackpowder,ARs,01/Common,Balance_AR_JAK_01_Common,BARREL ACCESSORY,0,1,1,Part_AR_JAK_Barrel_04_A,,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
+Blackpowder,ARs,01/Common,Balance_AR_JAK_01_Common,BARREL ACCESSORY,0,1,1,Part_AR_JAK_Barrel_04_B,,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
+Blackpowder,ARs,01/Common,Balance_AR_JAK_01_Common,BARREL ACCESSORY,0,1,1,Part_AR_JAK_Barrel_04_C,,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
 Blackpowder,ARs,01/Common,Balance_AR_JAK_01_Common,BOLT,1,1,1,Part_AR_JAK_Bolt_01,,
 Blackpowder,ARs,01/Common,Balance_AR_JAK_01_Common,BOLT,1,1,1,Part_AR_JAK_Bolt_02,,
 Blackpowder,ARs,01/Common,Balance_AR_JAK_01_Common,BOLT,1,1,1,Part_AR_JAK_Bolt_03,,
@@ -69,9 +69,9 @@ Blackpowder,ARs,02/Uncommon,Balance_AR_JAK_02_UnCommon,BARREL ACCESSORY,0,2,1,Pa
 Blackpowder,ARs,02/Uncommon,Balance_AR_JAK_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_AR_JAK_Barrel_03_A,,"Part_AR_JAK_Barrel_01, Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_04"
 Blackpowder,ARs,02/Uncommon,Balance_AR_JAK_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_AR_JAK_Barrel_03_B,,"Part_AR_JAK_Barrel_01, Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_04"
 Blackpowder,ARs,02/Uncommon,Balance_AR_JAK_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_AR_JAK_Barrel_03_C,,"Part_AR_JAK_Barrel_01, Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_04"
-Blackpowder,ARs,02/Uncommon,Balance_AR_JAK_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_AR_JAK_Barrel_04_A,Part_AR_JAK_Barrel_04,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
-Blackpowder,ARs,02/Uncommon,Balance_AR_JAK_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_AR_JAK_Barrel_04_B,Part_AR_JAK_Barrel_04,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
-Blackpowder,ARs,02/Uncommon,Balance_AR_JAK_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_AR_JAK_Barrel_04_C,Part_AR_JAK_Barrel_04,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
+Blackpowder,ARs,02/Uncommon,Balance_AR_JAK_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_AR_JAK_Barrel_04_A,,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
+Blackpowder,ARs,02/Uncommon,Balance_AR_JAK_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_AR_JAK_Barrel_04_B,,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
+Blackpowder,ARs,02/Uncommon,Balance_AR_JAK_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_AR_JAK_Barrel_04_C,,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
 Blackpowder,ARs,02/Uncommon,Balance_AR_JAK_02_UnCommon,BOLT,1,1,1,Part_AR_JAK_Bolt_01,,
 Blackpowder,ARs,02/Uncommon,Balance_AR_JAK_02_UnCommon,BOLT,1,1,1,Part_AR_JAK_Bolt_02,,
 Blackpowder,ARs,02/Uncommon,Balance_AR_JAK_02_UnCommon,BOLT,1,1,1,Part_AR_JAK_Bolt_03,,
@@ -123,9 +123,9 @@ Blackpowder,ARs,03/Rare,Balance_AR_JAK_03_Rare,BARREL ACCESSORY,1,3,1,Part_AR_JA
 Blackpowder,ARs,03/Rare,Balance_AR_JAK_03_Rare,BARREL ACCESSORY,1,3,1,Part_AR_JAK_Barrel_03_A,,"Part_AR_JAK_Barrel_01, Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_04"
 Blackpowder,ARs,03/Rare,Balance_AR_JAK_03_Rare,BARREL ACCESSORY,1,3,1,Part_AR_JAK_Barrel_03_B,,"Part_AR_JAK_Barrel_01, Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_04"
 Blackpowder,ARs,03/Rare,Balance_AR_JAK_03_Rare,BARREL ACCESSORY,1,3,1,Part_AR_JAK_Barrel_03_C,,"Part_AR_JAK_Barrel_01, Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_04"
-Blackpowder,ARs,03/Rare,Balance_AR_JAK_03_Rare,BARREL ACCESSORY,1,3,1,Part_AR_JAK_Barrel_04_A,Part_AR_JAK_Barrel_04,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
-Blackpowder,ARs,03/Rare,Balance_AR_JAK_03_Rare,BARREL ACCESSORY,1,3,1,Part_AR_JAK_Barrel_04_B,Part_AR_JAK_Barrel_04,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
-Blackpowder,ARs,03/Rare,Balance_AR_JAK_03_Rare,BARREL ACCESSORY,1,3,1,Part_AR_JAK_Barrel_04_C,Part_AR_JAK_Barrel_04,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
+Blackpowder,ARs,03/Rare,Balance_AR_JAK_03_Rare,BARREL ACCESSORY,1,3,1,Part_AR_JAK_Barrel_04_A,,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
+Blackpowder,ARs,03/Rare,Balance_AR_JAK_03_Rare,BARREL ACCESSORY,1,3,1,Part_AR_JAK_Barrel_04_B,,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
+Blackpowder,ARs,03/Rare,Balance_AR_JAK_03_Rare,BARREL ACCESSORY,1,3,1,Part_AR_JAK_Barrel_04_C,,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
 Blackpowder,ARs,03/Rare,Balance_AR_JAK_03_Rare,BOLT,1,1,1,Part_AR_JAK_Bolt_01,,
 Blackpowder,ARs,03/Rare,Balance_AR_JAK_03_Rare,BOLT,1,1,1,Part_AR_JAK_Bolt_02,,
 Blackpowder,ARs,03/Rare,Balance_AR_JAK_03_Rare,BOLT,1,1,1,Part_AR_JAK_Bolt_03,,
@@ -177,9 +177,9 @@ Blackpowder,ARs,04/Very Rare,Balance_AR_JAK_04_VeryRare,BARREL ACCESSORY,2,3,1,P
 Blackpowder,ARs,04/Very Rare,Balance_AR_JAK_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_03_A,,"Part_AR_JAK_Barrel_01, Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_04"
 Blackpowder,ARs,04/Very Rare,Balance_AR_JAK_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_03_B,,"Part_AR_JAK_Barrel_01, Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_04"
 Blackpowder,ARs,04/Very Rare,Balance_AR_JAK_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_03_C,,"Part_AR_JAK_Barrel_01, Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_04"
-Blackpowder,ARs,04/Very Rare,Balance_AR_JAK_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_04_A,Part_AR_JAK_Barrel_04,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
-Blackpowder,ARs,04/Very Rare,Balance_AR_JAK_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_04_B,Part_AR_JAK_Barrel_04,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
-Blackpowder,ARs,04/Very Rare,Balance_AR_JAK_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_04_C,Part_AR_JAK_Barrel_04,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
+Blackpowder,ARs,04/Very Rare,Balance_AR_JAK_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_04_A,,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
+Blackpowder,ARs,04/Very Rare,Balance_AR_JAK_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_04_B,,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
+Blackpowder,ARs,04/Very Rare,Balance_AR_JAK_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_04_C,,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
 Blackpowder,ARs,04/Very Rare,Balance_AR_JAK_04_VeryRare,BOLT,1,1,1,Part_AR_JAK_Bolt_01,,
 Blackpowder,ARs,04/Very Rare,Balance_AR_JAK_04_VeryRare,BOLT,1,1,1,Part_AR_JAK_Bolt_02,,
 Blackpowder,ARs,04/Very Rare,Balance_AR_JAK_04_VeryRare,BOLT,1,1,1,Part_AR_JAK_Bolt_03,,
@@ -2580,9 +2580,9 @@ Hyperius,SMGs,01/Common,Balance_SM_HYP_01_Common,BARREL ACCESSORY,0,1,1,Part_SM_
 Hyperius,SMGs,01/Common,Balance_SM_HYP_01_Common,BARREL ACCESSORY,0,1,1,Part_SM_HYP_Barrel_Magic_Dark_A,Part_SM_HYP_Barrel_Magic_Dark,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,01/Common,Balance_SM_HYP_01_Common,BARREL ACCESSORY,0,1,1,Part_SM_HYP_Barrel_Magic_Dark_B,Part_SM_HYP_Barrel_Magic_Dark,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,01/Common,Balance_SM_HYP_01_Common,BARREL ACCESSORY,0,1,1,Part_SM_HYP_Barrel_Magic_Dark_C,Part_SM_HYP_Barrel_Magic_Dark,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
-Hyperius,SMGs,01/Common,Balance_SM_HYP_01_Common,BARREL ACCESSORY,0,1,1,Part_SM_HYP_Barrel_Magic_Fire_A,Part_SM_HYP_Barrel_Magic_Fire,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
-Hyperius,SMGs,01/Common,Balance_SM_HYP_01_Common,BARREL ACCESSORY,0,1,1,Part_SM_HYP_Barrel_Magic_Fire_B,Part_SM_HYP_Barrel_Magic_Fire,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
-Hyperius,SMGs,01/Common,Balance_SM_HYP_01_Common,BARREL ACCESSORY,0,1,1,Part_SM_HYP_Barrel_Magic_Fire_C,Part_SM_HYP_Barrel_Magic_Fire,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
+Hyperius,SMGs,01/Common,Balance_SM_HYP_01_Common,BARREL ACCESSORY,0,1,1,Part_SM_HYP_Barrel_Magic_Fire_A,,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
+Hyperius,SMGs,01/Common,Balance_SM_HYP_01_Common,BARREL ACCESSORY,0,1,1,Part_SM_HYP_Barrel_Magic_Fire_B,,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
+Hyperius,SMGs,01/Common,Balance_SM_HYP_01_Common,BARREL ACCESSORY,0,1,1,Part_SM_HYP_Barrel_Magic_Fire_C,,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,01/Common,Balance_SM_HYP_01_Common,BARREL ACCESSORY,0,1,1,Part_SM_HYP_Barrel_Magic_Lightning_A,Part_SM_HYP_Barrel_Magic_Lightning,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,01/Common,Balance_SM_HYP_01_Common,BARREL ACCESSORY,0,1,1,Part_SM_HYP_Barrel_Magic_Lightning_B,Part_SM_HYP_Barrel_Magic_Lightning,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,01/Common,Balance_SM_HYP_01_Common,BARREL ACCESSORY,0,1,1,Part_SM_HYP_Barrel_Magic_Lightning_C,Part_SM_HYP_Barrel_Magic_Lightning,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
@@ -2641,9 +2641,9 @@ Hyperius,SMGs,02/Uncommon,Balance_SM_HYP_02_UnCommon,BARREL ACCESSORY,0,2,1,Part
 Hyperius,SMGs,02/Uncommon,Balance_SM_HYP_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_SM_HYP_Barrel_Magic_Dark_A,Part_SM_HYP_Barrel_Magic_Dark,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,02/Uncommon,Balance_SM_HYP_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_SM_HYP_Barrel_Magic_Dark_B,Part_SM_HYP_Barrel_Magic_Dark,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,02/Uncommon,Balance_SM_HYP_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_SM_HYP_Barrel_Magic_Dark_C,Part_SM_HYP_Barrel_Magic_Dark,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
-Hyperius,SMGs,02/Uncommon,Balance_SM_HYP_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_SM_HYP_Barrel_Magic_Fire_A,Part_SM_HYP_Barrel_Magic_Fire,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
-Hyperius,SMGs,02/Uncommon,Balance_SM_HYP_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_SM_HYP_Barrel_Magic_Fire_B,Part_SM_HYP_Barrel_Magic_Fire,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
-Hyperius,SMGs,02/Uncommon,Balance_SM_HYP_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_SM_HYP_Barrel_Magic_Fire_C,Part_SM_HYP_Barrel_Magic_Fire,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
+Hyperius,SMGs,02/Uncommon,Balance_SM_HYP_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_SM_HYP_Barrel_Magic_Fire_A,,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
+Hyperius,SMGs,02/Uncommon,Balance_SM_HYP_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_SM_HYP_Barrel_Magic_Fire_B,,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
+Hyperius,SMGs,02/Uncommon,Balance_SM_HYP_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_SM_HYP_Barrel_Magic_Fire_C,,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,02/Uncommon,Balance_SM_HYP_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_SM_HYP_Barrel_Magic_Lightning_A,Part_SM_HYP_Barrel_Magic_Lightning,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,02/Uncommon,Balance_SM_HYP_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_SM_HYP_Barrel_Magic_Lightning_B,Part_SM_HYP_Barrel_Magic_Lightning,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,02/Uncommon,Balance_SM_HYP_02_UnCommon,BARREL ACCESSORY,0,2,1,Part_SM_HYP_Barrel_Magic_Lightning_C,Part_SM_HYP_Barrel_Magic_Lightning,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
@@ -2705,9 +2705,9 @@ Hyperius,SMGs,03/Rare,Balance_SM_HYP_03_Rare,BARREL ACCESSORY,1,3,1,Part_SM_HYP_
 Hyperius,SMGs,03/Rare,Balance_SM_HYP_03_Rare,BARREL ACCESSORY,1,3,1,Part_SM_HYP_Barrel_Magic_Dark_A,Part_SM_HYP_Barrel_Magic_Dark,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,03/Rare,Balance_SM_HYP_03_Rare,BARREL ACCESSORY,1,3,1,Part_SM_HYP_Barrel_Magic_Dark_B,Part_SM_HYP_Barrel_Magic_Dark,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,03/Rare,Balance_SM_HYP_03_Rare,BARREL ACCESSORY,1,3,1,Part_SM_HYP_Barrel_Magic_Dark_C,Part_SM_HYP_Barrel_Magic_Dark,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
-Hyperius,SMGs,03/Rare,Balance_SM_HYP_03_Rare,BARREL ACCESSORY,1,3,1,Part_SM_HYP_Barrel_Magic_Fire_A,Part_SM_HYP_Barrel_Magic_Fire,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
-Hyperius,SMGs,03/Rare,Balance_SM_HYP_03_Rare,BARREL ACCESSORY,1,3,1,Part_SM_HYP_Barrel_Magic_Fire_B,Part_SM_HYP_Barrel_Magic_Fire,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
-Hyperius,SMGs,03/Rare,Balance_SM_HYP_03_Rare,BARREL ACCESSORY,1,3,1,Part_SM_HYP_Barrel_Magic_Fire_C,Part_SM_HYP_Barrel_Magic_Fire,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
+Hyperius,SMGs,03/Rare,Balance_SM_HYP_03_Rare,BARREL ACCESSORY,1,3,1,Part_SM_HYP_Barrel_Magic_Fire_A,,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
+Hyperius,SMGs,03/Rare,Balance_SM_HYP_03_Rare,BARREL ACCESSORY,1,3,1,Part_SM_HYP_Barrel_Magic_Fire_B,,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
+Hyperius,SMGs,03/Rare,Balance_SM_HYP_03_Rare,BARREL ACCESSORY,1,3,1,Part_SM_HYP_Barrel_Magic_Fire_C,,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,03/Rare,Balance_SM_HYP_03_Rare,BARREL ACCESSORY,1,3,1,Part_SM_HYP_Barrel_Magic_Lightning_A,Part_SM_HYP_Barrel_Magic_Lightning,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,03/Rare,Balance_SM_HYP_03_Rare,BARREL ACCESSORY,1,3,1,Part_SM_HYP_Barrel_Magic_Lightning_B,Part_SM_HYP_Barrel_Magic_Lightning,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,03/Rare,Balance_SM_HYP_03_Rare,BARREL ACCESSORY,1,3,1,Part_SM_HYP_Barrel_Magic_Lightning_C,Part_SM_HYP_Barrel_Magic_Lightning,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
@@ -2768,9 +2768,9 @@ Hyperius,SMGs,04/Very Rare,Balance_SM_HYP_04_VeryRare,BARREL ACCESSORY,2,3,1,Par
 Hyperius,SMGs,04/Very Rare,Balance_SM_HYP_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_SM_HYP_Barrel_Magic_Dark_A,Part_SM_HYP_Barrel_Magic_Dark,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,04/Very Rare,Balance_SM_HYP_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_SM_HYP_Barrel_Magic_Dark_B,Part_SM_HYP_Barrel_Magic_Dark,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,04/Very Rare,Balance_SM_HYP_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_SM_HYP_Barrel_Magic_Dark_C,Part_SM_HYP_Barrel_Magic_Dark,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
-Hyperius,SMGs,04/Very Rare,Balance_SM_HYP_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_SM_HYP_Barrel_Magic_Fire_A,Part_SM_HYP_Barrel_Magic_Fire,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
-Hyperius,SMGs,04/Very Rare,Balance_SM_HYP_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_SM_HYP_Barrel_Magic_Fire_B,Part_SM_HYP_Barrel_Magic_Fire,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
-Hyperius,SMGs,04/Very Rare,Balance_SM_HYP_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_SM_HYP_Barrel_Magic_Fire_C,Part_SM_HYP_Barrel_Magic_Fire,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
+Hyperius,SMGs,04/Very Rare,Balance_SM_HYP_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_SM_HYP_Barrel_Magic_Fire_A,,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
+Hyperius,SMGs,04/Very Rare,Balance_SM_HYP_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_SM_HYP_Barrel_Magic_Fire_B,,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
+Hyperius,SMGs,04/Very Rare,Balance_SM_HYP_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_SM_HYP_Barrel_Magic_Fire_C,,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,04/Very Rare,Balance_SM_HYP_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_SM_HYP_Barrel_Magic_Lightning_A,Part_SM_HYP_Barrel_Magic_Lightning,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,04/Very Rare,Balance_SM_HYP_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_SM_HYP_Barrel_Magic_Lightning_B,Part_SM_HYP_Barrel_Magic_Lightning,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Hyperius,SMGs,04/Very Rare,Balance_SM_HYP_04_VeryRare,BARREL ACCESSORY,2,3,1,Part_SM_HYP_Barrel_Magic_Lightning_C,Part_SM_HYP_Barrel_Magic_Lightning,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
@@ -5464,9 +5464,9 @@ Blazing Volley,,Named Weapon,Balance_SM_HYP_05_BlazingVolley,BODY ACCESSORY,2,3,
 Blazing Volley,,Named Weapon,Balance_SM_HYP_05_BlazingVolley,BODY ACCESSORY,2,3,1,Part_SM_HYP_Body_B,Part_SM_HYP_Body,
 Blazing Volley,,Named Weapon,Balance_SM_HYP_05_BlazingVolley,BODY ACCESSORY,2,3,1,Part_SM_HYP_Body_C,Part_SM_HYP_Body,
 Blazing Volley,,Named Weapon,Balance_SM_HYP_05_BlazingVolley,BARREL,1,1,1,Part_SM_HYP_Barrel_BlazingVolley,,
-Blazing Volley,,Named Weapon,Balance_SM_HYP_05_BlazingVolley,BARREL ACCESSORY,2,3,1,Part_SM_HYP_Barrel_Magic_Fire_A,Part_SM_HYP_Barrel_Magic_Fire,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
-Blazing Volley,,Named Weapon,Balance_SM_HYP_05_BlazingVolley,BARREL ACCESSORY,2,3,1,Part_SM_HYP_Barrel_Magic_Fire_B,Part_SM_HYP_Barrel_Magic_Fire,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
-Blazing Volley,,Named Weapon,Balance_SM_HYP_05_BlazingVolley,BARREL ACCESSORY,2,3,1,Part_SM_HYP_Barrel_Magic_Fire_C,Part_SM_HYP_Barrel_Magic_Fire,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
+Blazing Volley,,Named Weapon,Balance_SM_HYP_05_BlazingVolley,BARREL ACCESSORY,2,3,1,Part_SM_HYP_Barrel_Magic_Fire_A,,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
+Blazing Volley,,Named Weapon,Balance_SM_HYP_05_BlazingVolley,BARREL ACCESSORY,2,3,1,Part_SM_HYP_Barrel_Magic_Fire_B,,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
+Blazing Volley,,Named Weapon,Balance_SM_HYP_05_BlazingVolley,BARREL ACCESSORY,2,3,1,Part_SM_HYP_Barrel_Magic_Fire_C,,"Part_SM_HYP_Barrel_01, Part_SM_HYP_Barrel_02"
 Blazing Volley,,Named Weapon,Balance_SM_HYP_05_BlazingVolley,GRIP,1,1,1,Part_SM_HYP_Grip_01,,
 Blazing Volley,,Named Weapon,Balance_SM_HYP_05_BlazingVolley,GRIP,1,1,1,Part_SM_HYP_Grip_03,,
 Blazing Volley,,Named Weapon,Balance_SM_HYP_05_BlazingVolley,STOCK,1,1,1,Part_SM_HYP_Stock_01,,
@@ -5752,9 +5752,9 @@ Crossbolt Generator,,Named Weapon,Balance_AR_JAK_05_CrossGen,TRIGGER,1,1,1,Part_
 Crossbolt Generator,,Named Weapon,Balance_AR_JAK_05_CrossGen,TRIGGER,1,1,1,Part_AR_JAK_Trigger_03,,
 Crossbolt Generator,,Named Weapon,Balance_AR_JAK_05_CrossGen,TRIGGER,1,1,0.4,Part_AR_JAK_Trigger_04,,
 Crossbolt Generator,,Named Weapon,Balance_AR_JAK_05_CrossGen,BARREL,1,1,3,Part_AR_JAK_Barrel_CrossGen,,
-Crossbolt Generator,,Named Weapon,Balance_AR_JAK_05_CrossGen,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_04_A,Part_AR_JAK_Barrel_04,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
-Crossbolt Generator,,Named Weapon,Balance_AR_JAK_05_CrossGen,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_04_B,Part_AR_JAK_Barrel_04,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
-Crossbolt Generator,,Named Weapon,Balance_AR_JAK_05_CrossGen,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_04_C,Part_AR_JAK_Barrel_04,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
+Crossbolt Generator,,Named Weapon,Balance_AR_JAK_05_CrossGen,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_04_A,,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
+Crossbolt Generator,,Named Weapon,Balance_AR_JAK_05_CrossGen,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_04_B,,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
+Crossbolt Generator,,Named Weapon,Balance_AR_JAK_05_CrossGen,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_04_C,,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
 Crossbolt Generator,,Named Weapon,Balance_AR_JAK_05_CrossGen,BOLT,1,1,1,Part_AR_JAK_Bolt_01,,
 Crossbolt Generator,,Named Weapon,Balance_AR_JAK_05_CrossGen,BOLT,1,1,1,Part_AR_JAK_Bolt_02,,
 Crossbolt Generator,,Named Weapon,Balance_AR_JAK_05_CrossGen,BOLT,1,1,1,Part_AR_JAK_Bolt_03,,
@@ -5904,9 +5904,9 @@ Echoing Phoenix,,Named Weapon,Bal_AR_JAK_EchoPhnix,BODY,1,1,1,Part_AR_JAK_Body,,
 Echoing Phoenix,,Named Weapon,Bal_AR_JAK_EchoPhnix,TRIGGER,1,1,1,Part_AR_JAK_Trigger_02,,
 Echoing Phoenix,,Named Weapon,Bal_AR_JAK_EchoPhnix,TRIGGER,1,1,1,Part_AR_JAK_Trigger_03,,
 Echoing Phoenix,,Named Weapon,Bal_AR_JAK_EchoPhnix,BARREL,1,1,1,Part_AR_JAK_Barrel_EchP,,
-Echoing Phoenix,,Named Weapon,Bal_AR_JAK_EchoPhnix,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_04_A,Part_AR_JAK_Barrel_04,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
-Echoing Phoenix,,Named Weapon,Bal_AR_JAK_EchoPhnix,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_04_B,Part_AR_JAK_Barrel_04,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
-Echoing Phoenix,,Named Weapon,Bal_AR_JAK_EchoPhnix,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_04_C,Part_AR_JAK_Barrel_04,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
+Echoing Phoenix,,Named Weapon,Bal_AR_JAK_EchoPhnix,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_04_A,,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
+Echoing Phoenix,,Named Weapon,Bal_AR_JAK_EchoPhnix,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_04_B,,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
+Echoing Phoenix,,Named Weapon,Bal_AR_JAK_EchoPhnix,BARREL ACCESSORY,2,3,1,Part_AR_JAK_Barrel_04_C,,"Part_AR_JAK_Barrel_02, Part_AR_JAK_Barrel_03"
 Echoing Phoenix,,Named Weapon,Bal_AR_JAK_EchoPhnix,BOLT,1,1,1,Part_AR_JAK_Bolt_01,,
 Echoing Phoenix,,Named Weapon,Bal_AR_JAK_EchoPhnix,BOLT,1,1,1,Part_AR_JAK_Bolt_02,,
 Echoing Phoenix,,Named Weapon,Bal_AR_JAK_EchoPhnix,BOLT,1,1,1,Part_AR_JAK_Bolt_03,,
@@ -6317,6 +6317,39 @@ Masterwork Handbow,,Named Weapon,Balance_PS_JAK_MasterworkCrossbow,SCOPE,1,1,1,P
 Masterwork Handbow,,Named Weapon,Balance_PS_JAK_MasterworkCrossbow,PINCUSHION,1,1,1,Part_JAK_PS_PincushionType_01,,"Part_PS_JAK_Barrel_01, Part_PS_JAK_Barrel_02, Part_PS_JAK_Barrel_03"
 Masterwork Handbow,,Named Weapon,Balance_PS_JAK_MasterworkCrossbow,PINCUSHION,1,1,0.6,Part_JAK_PS_PincushionType_02,,"Part_PS_JAK_Barrel_01, Part_PS_JAK_Barrel_02, Part_PS_JAK_Barrel_03"
 Masterwork Handbow,,Named Weapon,Balance_PS_JAK_MasterworkCrossbow,MATERIAL,1,1,1,Part_PS_JAK_Material_MasterworkCrossbow,,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,BODY,1,1,1,Part_SG_JAK_Body,,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,TRIGGER,1,1,1,Part_SG_JAK_Trigger_03,Part_SG_JAK_Body,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,BARREL,1,1,1,Part_SG_JAK_MerlinsRazor,,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,BARREL ACCESSORY,2,4,1,Part_SG_JAK_Barrel_04_A,,"Part_SG_JAK_Barrel_01, Part_SG_JAK_Barrel_02, Part_SG_JAK_Barrel_03"
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,BARREL ACCESSORY,2,4,1,Part_SG_JAK_Barrel_04_B,,"Part_SG_JAK_Barrel_01, Part_SG_JAK_Barrel_02, Part_SG_JAK_Barrel_03"
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,BARREL ACCESSORY,2,4,1,Part_SG_JAK_Barrel_04_C,,"Part_SG_JAK_Barrel_01, Part_SG_JAK_Barrel_02, Part_SG_JAK_Barrel_03"
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,BARREL ACCESSORY,2,4,0.25,Part_SG_JAK_BarrelMod_Merlin,,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,BOLT,1,1,1,Part_SG_JAK_Bolt_03,,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,BOLT,1,1,1,Part_SG_JAK_Bolt_04,,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,BOLT,1,1,1,Part_SG_JAK_Bolt_05,,Part_SG_JAK_Barrel_04
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,FOREGRIP,1,1,1,Part_SG_JAK_Foregrip_01,,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,FOREGRIP,1,1,1,Part_SG_JAK_Foregrip_02,,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,FOREGRIP,1,1,1,Part_SG_JAK_Foregrip_03,Part_SG_JAK_Trigger_03,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,FOREGRIP,1,1,0.6,Part_SG_JAK_Fgrip_04_Mag_U,,"Part_SG_JAK_Barrel_01, Part_SG_JAK_Barrel_02, Part_SG_JAK_Barrel_03"
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,FOREGRIP,1,1,1,Part_SG_JAK_Foregrip_05,,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,STOCK,1,1,1,Part_SG_JAK_Stock_01,,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,STOCK,1,1,1,Part_SG_JAK_Stock_02,,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,STOCK,1,1,1,Part_SG_JAK_Stock_03,,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,STOCK,1,1,1,Part_SG_JAK_Stock_04,,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,STOCK,1,1,1,Part_SG_JAK_Stock_05,,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,STOCK ACCESSORY,1,1,1,Part_SG_JAK_Stock_01_A,Part_SG_JAK_Stock_01,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,STOCK ACCESSORY,1,1,1,Part_SG_JAK_Stock_02_A,Part_SG_JAK_Stock_02,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,STOCK ACCESSORY,1,1,1,Part_SG_JAK_Stock_03_A,Part_SG_JAK_Stock_03,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,STOCK ACCESSORY,1,1,1,Part_SG_JAK_Stock_05_A,Part_SG_JAK_Stock_05,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,MAGAZINE,1,1,1,Part_SG_JAK_Mag_Merlins,,"Part_SG_JAK_Barrel_01, Part_SG_JAK_Barrel_02, Part_SG_JAK_Barrel_03"
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,SCOPE,1,1,1,Part_SG_JAK_Scope_01,,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,SCOPE,1,1,1,Part_SG_JAK_Scope_02,,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,MATERIAL,1,1,1,Part_JAK_Mat_MerlinsRazor,,
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,ELEMENTAL,1,1,1,Part_SG_JAK_Ele_Cryo,,"Part_SG_JAK_Barrel_01, Part_SG_JAK_Barrel_02, Part_SG_JAK_Barrel_03"
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,ELEMENTAL,1,1,1,Part_SG_JAK_Ele_DarkMagic,,"Part_SG_JAK_Barrel_01, Part_SG_JAK_Barrel_02, Part_SG_JAK_Barrel_03"
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,ELEMENTAL,1,1,1,Part_SG_JAK_Ele_Fire,,"Part_SG_JAK_Barrel_01, Part_SG_JAK_Barrel_02, Part_SG_JAK_Barrel_03"
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,ELEMENTAL,1,1,1,Part_SG_JAK_Ele_Shock,,"Part_SG_JAK_Barrel_01, Part_SG_JAK_Barrel_02, Part_SG_JAK_Barrel_03"
+Merlin's Razor,,Named Weapon,Bal_SG_JAK_MerlinsRazor,ELEMENTAL,1,1,1,Part_SG_JAK_Poison,,"Part_SG_JAK_Barrel_01, Part_SG_JAK_Barrel_02, Part_SG_JAK_Barrel_03"
 Message,,Named Weapon,Balance_PS_TOR_05_Message,BODY,2,2,1,Part_PS_TOR_Body,,
 Message,,Named Weapon,Balance_PS_TOR_05_Message,BODY,2,2,1,Part_PS_TOR_Body_SpeedLoader,,
 Message,,Named Weapon,Balance_PS_TOR_05_Message,BODY ACCESSORY,3,4,1,Part_PS_TOR_Body_A,Part_PS_TOR_Body,
@@ -6735,6 +6768,57 @@ Skeep Prod,,Named Weapon,Balance_SR_DAL_05_SkeepProd,FIRE SELECTOR,1,1,1,Part_SR
 Skeep Prod,,Named Weapon,Balance_SR_DAL_05_SkeepProd,ELEMENTAL,1,1,1,Part_SR_DAL_Ele_Shock,,
 Skeep Prod,,Named Weapon,Balance_SR_DAL_05_SkeepProd,PINCUSHION,1,1,1,Part_SR_DAL_PincuhionType_01,,"Part_SR_DAL_Barrel_01, Part_SR_DAL_Barrel_02, Part_SR_DAL_Barrel_03"
 Skeep Prod,,Named Weapon,Balance_SR_DAL_05_SkeepProd,MATERIAL,1,1,1,Part_SR_DAL_Mat_SkeepProd,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,BODY,1,1,1,Part_SR_Tiabolt_Body_Cryo,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,BODY,1,1,1,Part_SR_Tiabolt_Body_Dark,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,BODY,1,1,1,Part_SR_Tiabolt_Body_Fire,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,BODY,1,1,1,Part_SR_Tiabolt_Body_Poison,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,BODY,1,1,1,Part_SR_Tiabolt_Body_Shock,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,BODY ACCESSORY,3,3,1,Part_SR_Tiabolt_Body_A,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,BODY ACCESSORY,3,3,1,Part_SR_Tiabolt_Body_B,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,BODY ACCESSORY,3,3,1,Part_SR_Tiabolt_Body_C,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,BARREL,1,1,1,Part_SR_Barrel_Tiabolt,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,BARREL ACCESSORY,2,3,1,Part_SR_DAL_Barrel_01_A,,"Part_SR_DAL_Barrel_02, Part_SR_DAL_Barrel_03, Part_SR_DAL_Barrel_04"
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,BARREL ACCESSORY,2,3,1,Part_SR_DAL_Barrel_01_B,,"Part_SR_DAL_Barrel_02, Part_SR_DAL_Barrel_03, Part_SR_DAL_Barrel_04"
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,BARREL ACCESSORY,2,3,1,Part_SR_DAL_Barrel_01_C,,"Part_SR_DAL_Barrel_02, Part_SR_DAL_Barrel_03, Part_SR_DAL_Barrel_04"
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,MAGAZINE,1,1,1,Part_SR_DAL_Mag_01,,Part_SR_DAL_Barrel_04
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,MAGAZINE,1,1,1,Part_SR_DAL_Mag_02,,Part_SR_DAL_Barrel_04
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,MAGAZINE,1,1,1,Part_SR_DAL_Mag_03,,Part_SR_DAL_Barrel_04
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,GRIP,1,1,1,Part_SR_DAL_Grip_01,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,GRIP,1,1,1,Part_SR_DAL_Grip_02,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,GRIP,1,1,1,Part_SR_DAL_Grip_03,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,GRIP,1,1,1,Part_SR_DAL_Grip_04,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,GRIP,1,1,1,Part_SR_DAL_Grip_05,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,GRIP ACCESSORY,1,1,1,None,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,GRIP ACCESSORY,1,1,1,Part_SR_DAL_Grip_03_A,Part_SR_DAL_Grip_03,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,FOREGRIP,1,1,1,Part_SR_DAL_Foregrip_01,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,FOREGRIP,1,1,1,Part_SR_DAL_Foregrip_02,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,FOREGRIP,1,1,1,Part_SR_DAL_Foregrip_03,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,FOREGRIP,1,1,1,Part_SR_DAL_Foregrip_04,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,FOREGRIP,1,1,1,Part_SR_DAL_Foregrip_05,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,BOLT,1,1,1,Part_SR_DAL_Bolt_A,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,BOLT,1,1,1,Part_SR_DAL_Bolt_B,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,RAIL,1,1,1,Part_SR_DAL_Rail_01,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,RAIL,1,1,1,Part_SR_DAL_Rail_02,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,RAIL,1,1,1,Part_SR_DAL_Rail_03,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,SCOPE,1,1,1,Part_SR_DAL_Scope_01,,Part_SR_DAL_Barrel_04
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,SCOPE,1,1,1,Part_SR_DAL_Scope_03,,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,SCOPE ACCESSORY,2,2,1,Part_SR_DAL_Scope_01_A,Part_SR_DAL_Scope_01,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,SCOPE ACCESSORY,2,2,1,Part_SR_DAL_Scope_01_B,Part_SR_DAL_Scope_01,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,SCOPE ACCESSORY,2,2,1,Part_SR_DAL_Scope_02_A,Part_SR_DAL_Scope_02,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,SCOPE ACCESSORY,2,2,1,Part_SR_DAL_Scope_02_B,Part_SR_DAL_Scope_02,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,SCOPE ACCESSORY,2,2,1,Part_SR_DAL_Scope_03_A,Part_SR_DAL_Scope_03,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,SCOPE ACCESSORY,2,2,1,Part_SR_DAL_Scope_03_B,Part_SR_DAL_Scope_03,
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,FIRE SELECTOR,1,1,1,Part_SR_Tiabolt_Auto_Single_Cryo,,"Part_SR_DAL_Barrel_04, Part_SR_Tiabolt_Body_Cryo"
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,FIRE SELECTOR,1,1,1,Part_SR_Tiabolt_Auto_Single_Dark,,"Part_SR_DAL_Barrel_04, Part_SR_Tiabolt_Body_Dark"
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,FIRE SELECTOR,1,1,1,Part_SR_Tiabolt_Auto_Single_Fire,,"Part_SR_DAL_Barrel_04, Part_SR_Tiabolt_Body_Fire"
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,FIRE SELECTOR,1,1,1,Part_SR_Tiabolt_Auto_Single_Poison,,"Part_SR_DAL_Barrel_04, Part_SR_Tiabolt_Body_Poison"
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,FIRE SELECTOR,1,1,1,Part_SR_Tiabolt_Auto_Single_Shock,,"Part_SR_DAL_Barrel_04, Part_SR_Tiabolt_Body_Shock"
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,ELEMENTAL,1,1,1,Part_SR_Tiabolt_Ele_Cryo,,"Part_SR_Tiabolt_Auto_Single_Cryo, Part_SR_Tiabolt_Body_Cryo"
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,ELEMENTAL,1,1,1,Part_SR_Tiabolt_Ele_DarkMagic,,"Part_SR_Tiabolt_Auto_Single_Dark, Part_SR_Tiabolt_Body_Dark"
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,ELEMENTAL,1,1,1,Part_SR_Tiabolt_Ele_Fire,,"Part_SR_Tiabolt_Auto_Single_Fire, Part_SR_Tiabolt_Body_Fire"
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,ELEMENTAL,1,1,1,Part_SR_Tiabolt_Ele_Poison,,"Part_SR_Tiabolt_Auto_Single_Poison, Part_SR_Tiabolt_Body_Poison"
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,ELEMENTAL,1,1,1,Part_SR_Tiabolt_Ele_Shock,,"Part_SR_Tiabolt_Auto_Single_Shock, Part_SR_Tiabolt_Body_Shock"
+Sly Trivern,,Named Weapon,Balance_SR_DAL_Tiabolt,MATERIAL,1,1,1,Part_SR_DAL_Mat_SkeepProd,,
 Stab-O-Matic,,Named Weapon,Balance_SG_HYP_FacePunch,BODY,1,1,1,Part_SG_Hyp_Body_01,,
 Stab-O-Matic,,Named Weapon,Balance_SG_HYP_FacePunch,BODY ACCESSORY,2,3,1,Part_SG_Hyp_Body_01_A,Part_SG_Hyp_Body_01,
 Stab-O-Matic,,Named Weapon,Balance_SG_HYP_FacePunch,BODY ACCESSORY,2,3,1,Part_SG_Hyp_Body_01_B,Part_SG_Hyp_Body_01,
@@ -6781,15 +6865,6 @@ Sworderang,,Named Weapon,Balance_SG_Tediore_05_Sworderang,ELEMENTAL,1,1,0.25,Par
 Sworderang,,Named Weapon,Balance_SG_Tediore_05_Sworderang,ELEMENTAL,1,1,0.25,Part_SG_TED_Ele_Shock,,
 Sworderang,,Named Weapon,Balance_SG_Tediore_05_Sworderang,ELEMENTAL,1,1,0.25,Part_SG_TED_Ele_DarkMagic,,Part_SG_TED_TypeMod_03_Hydra
 Sworderang,,Named Weapon,Balance_SG_Tediore_05_Sworderang,MATERIAL,1,1,1,Part_SG_TED_Material_04_VeryRare,,
-Swordruption,,Named Weapon,Balance_SG_Torgue_Swordruption,BODY,1,1,1,Part_SG_Torgue_Body,,
-Swordruption,,Named Weapon,Balance_SG_Torgue_Swordruption,BODY ACCESSORY,1,1,1,Part_SG_Torgue_Body_B,Part_SG_Torgue_Body,
-Swordruption,,Named Weapon,Balance_SG_Torgue_Swordruption,BARREL,1,1,1,Part_SG_Torgue_Barrel_Swordruption,,
-Swordruption,,Named Weapon,Balance_SG_Torgue_Swordruption,BARREL ACCESSORY,1,1,1,Part_SG_Torgue_Barrel_01_A,,"Part_SG_Torgue_Barrel_02, Part_SG_Torgue_Barrel_03, Part_SG_Torgue_Barrel_04"
-Swordruption,,Named Weapon,Balance_SG_Torgue_Swordruption,GRIP,1,1,1,Part_SG_Torgue_Grip_01,,
-Swordruption,,Named Weapon,Balance_SG_Torgue_Swordruption,FOREGRIP,1,1,1,Part_SG_Torgue_Foregrip_01,,
-Swordruption,,Named Weapon,Balance_SG_Torgue_Swordruption,MAGAZINE,1,1,1,Part_SG_Torgue_Magazine_03,,
-Swordruption,,Named Weapon,Balance_SG_Torgue_Swordruption,SCOPE,1,1,1,Part_SG_Torgue_Scope_01,,
-Swordruption,,Named Weapon,Balance_SG_Torgue_Swordruption,MATERIAL,1,1,1,Part_SG_Torgue_Material_Swordruption,,
 Swordsplosion,,Named Weapon,Balance_SG_Torgue_05_Swordsplosion,BODY,1,1,1,Part_SG_Torgue_Body,,
 Swordsplosion,,Named Weapon,Balance_SG_Torgue_05_Swordsplosion,BODY ACCESSORY,1,2,1,Part_SG_Torgue_Body_B,Part_SG_Torgue_Body,
 Swordsplosion,,Named Weapon,Balance_SG_Torgue_05_Swordsplosion,BARREL,1,1,1,Part_SG_Torgue_Barrel_Swordsplosion,,
@@ -6799,7 +6874,6 @@ Swordsplosion,,Named Weapon,Balance_SG_Torgue_05_Swordsplosion,BARREL ACCESSORY,
 Swordsplosion,,Named Weapon,Balance_SG_Torgue_05_Swordsplosion,GRIP,1,1,0.2223,Part_SG_Torgue_Grip_Swordsplosion,,
 Swordsplosion,,Named Weapon,Balance_SG_Torgue_05_Swordsplosion,GRIP,1,1,1,Part_SG_Torgue_Grip_02,,
 Swordsplosion,,Named Weapon,Balance_SG_Torgue_05_Swordsplosion,GRIP,1,1,1,Part_SG_Torgue_Grip_03,,
-Swordsplosion,,Named Weapon,Balance_SG_Torgue_05_Swordsplosion,FOREGRIP,1,1,0.5,None,,
 Swordsplosion,,Named Weapon,Balance_SG_Torgue_05_Swordsplosion,FOREGRIP,1,1,1,Part_SG_Torgue_Foregrip_01,,
 Swordsplosion,,Named Weapon,Balance_SG_Torgue_05_Swordsplosion,FOREGRIP,1,1,1,Part_SG_Torgue_Foregrip_02,,
 Swordsplosion,,Named Weapon,Balance_SG_Torgue_05_Swordsplosion,FOREGRIP,1,1,1,Part_SG_Torgue_Foregrip_03,,
@@ -6926,6 +7000,38 @@ Used Antique Greatbow,,Named Weapon,Balance_SR_HYP_05_AntGreatBow_Used,ELEMENTAL
 Used Antique Greatbow,,Named Weapon,Balance_SR_HYP_05_AntGreatBow_Used,ELEMENTAL,1,1,1,Part_SR_HYP_Ele_Shock,,
 Used Antique Greatbow,,Named Weapon,Balance_SR_HYP_05_AntGreatBow_Used,MATERIAL,1,1,1,Part_SR_HYP_Mat_AntGreatBow_Used,,
 Used Antique Greatbow,,Named Weapon,Balance_SR_HYP_05_AntGreatBow_Used,STOCK,1,1,1,Part_SR_HYP_Stock_03,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,BODY,1,1,1,Part_AR_TOR_Body,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,BODY ACCESSORY,3,3,1,Part_AR_TOR_Body_A,Part_AR_TOR_Body,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,BODY ACCESSORY,3,3,1,Part_AR_TOR_Body_B,Part_AR_TOR_Body,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,BODY ACCESSORY,3,3,1,Part_AR_TOR_Body_C,Part_AR_TOR_Body,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,BARREL,1,1,1,Part_TOR_Barrel_Vengeance,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,BARREL ACCESSORY,2,3,1,Part_AR_TOR_Barrel_04_A,Part_AR_TOR_Barrel_04,"Part_AR_TOR_Barrel_02, Part_AR_TOR_Barrel_03"
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,BARREL ACCESSORY,2,3,1,Part_AR_TOR_Barrel_04_B,Part_AR_TOR_Barrel_04,"Part_AR_TOR_Barrel_02, Part_AR_TOR_Barrel_03"
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,BARREL ACCESSORY,2,3,1,Part_AR_TOR_Barrel_04_C,Part_AR_TOR_Barrel_04,"Part_AR_TOR_Barrel_02, Part_AR_TOR_Barrel_03"
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,GRIP,1,1,1,Part_AR_TOR_Grip_01,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,GRIP,1,1,1,Part_AR_TOR_Grip_02,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,GRIP,1,1,1,Part_AR_TOR_Grip_03,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,GRIP,1,1,1,Part_AR_TOR_Grip_04,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,GRIP,1,1,1,Part_AR_TOR_Grip_05,,Part_AR_TOR_Barrel_04
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,FOREGRIP,1,1,1,Part_AR_TOR_ForeGrip_01,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,FOREGRIP,1,1,1,Part_AR_TOR_ForeGrip_02,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,FOREGRIP,1,1,1,Part_AR_TOR_ForeGrip_03,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,FOREGRIP,1,1,1,Part_AR_TOR_ForeGrip_04,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,FOREGRIP,1,1,1,Part_AR_TOR_ForeGrip_05,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,SCOPE,1,1,0.5,None,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,SCOPE,1,1,1,Part_AR_TOR_Scope_01,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,SCOPE,1,1,1,Part_AR_TOR_Scope_02,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,SCOPE,1,1,1,Part_AR_TOR_Scope_03,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,MAGAZINE,1,1,1,Part_AR_TOR_Magazine_01,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,MAGAZINE,1,1,1,Part_AR_TOR_Magazine_03,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,ELEMENTAL,1,1,1,Part_AR_TOR_Ele_DarkMagic,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,EXHAUST,1,1,1,None,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,EXHAUST,1,1,1,Part_AR_TOR_Exhaust_01,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,EXHAUST,1,1,1,Part_AR_TOR_Exhaust_02,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,EXHAUST,1,1,1,Part_AR_TOR_Exhaust_03,,
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,PINCUSHION,1,1,1,Part_TOR_AR_PincushionType_01,,"Part_AR_TOR_Barrel_01, Part_AR_TOR_Barrel_02, Part_AR_TOR_Barrel_03"
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,PINCUSHION,1,1,0.6,Part_TOR_AR_PincushionType_02,,"Part_AR_TOR_Barrel_01, Part_AR_TOR_Barrel_02, Part_AR_TOR_Barrel_03"
+Vengeance,,Named Weapon,Bal_AR_TOR_Vengeance,MATERIAL,1,1,1,Part_AR_TOR_Material_04_VeryRare,,
 White Rider,,Named Weapon,Balance_SM_DAHL_05_WhiteRider,BODY,1,1,1,Part_SM_DAL_Body,,
 White Rider,,Named Weapon,Balance_SM_DAHL_05_WhiteRider,BODY ACCESSORY,3,3,1,Part_SM_DAL_Body_A,Part_SM_DAL_Body,
 White Rider,,Named Weapon,Balance_SM_DAHL_05_WhiteRider,BODY ACCESSORY,3,3,1,Part_SM_DAL_Body_B,Part_SM_DAL_Body,
@@ -6992,3 +7098,12 @@ Wizard's Pipe,,Named Weapon,Balance_SM_HYP_05_WizardsPipe,ELEMENTAL,1,1,0.25,Par
 Wizard's Pipe,,Named Weapon,Balance_SM_HYP_05_WizardsPipe,ELEMENTAL,1,1,0.25,Part_SM_HYP_Elemental_Shock,,"Part_SM_HYP_Barrel_Magic_Cryo, Part_SM_HYP_Barrel_Magic_Dark, Part_SM_HYP_Barrel_Magic_Fire, Part_SM_HYP_Barrel_Magic_Poison"
 Wizard's Pipe,,Named Weapon,Balance_SM_HYP_05_WizardsPipe,ELEMENTAL,1,1,0.25,Part_SM_HYP_Elemental_DarkMagic,,"Part_SM_HYP_Barrel_Magic_Cryo, Part_SM_HYP_Barrel_Magic_Fire, Part_SM_HYP_Barrel_Magic_Lightning, Part_SM_HYP_Barrel_Magic_Poison"
 Wizard's Pipe,,Named Weapon,Balance_SM_HYP_05_WizardsPipe,MATERIAL,1,1,1,Part_SM_HYP_Material_WizardPipe,,
+"(Swordruption, broken)",,Named Weapon,Balance_SG_Torgue_Swordruption,BODY,1,1,1,Part_SG_Torgue_Body,,
+"(Swordruption, broken)",,Named Weapon,Balance_SG_Torgue_Swordruption,BODY ACCESSORY,1,1,1,Part_SG_Torgue_Body_B,Part_SG_Torgue_Body,
+"(Swordruption, broken)",,Named Weapon,Balance_SG_Torgue_Swordruption,BARREL,1,1,1,Part_SG_Torgue_Barrel_Swordruption,,
+"(Swordruption, broken)",,Named Weapon,Balance_SG_Torgue_Swordruption,BARREL ACCESSORY,1,1,1,Part_SG_Torgue_Barrel_01_A,,"Part_SG_Torgue_Barrel_02, Part_SG_Torgue_Barrel_03, Part_SG_Torgue_Barrel_04"
+"(Swordruption, broken)",,Named Weapon,Balance_SG_Torgue_Swordruption,GRIP,1,1,1,Part_SG_Torgue_Grip_01,,
+"(Swordruption, broken)",,Named Weapon,Balance_SG_Torgue_Swordruption,FOREGRIP,1,1,1,Part_SG_Torgue_Foregrip_01,,
+"(Swordruption, broken)",,Named Weapon,Balance_SG_Torgue_Swordruption,MAGAZINE,1,1,1,Part_SG_Torgue_Magazine_03,,
+"(Swordruption, broken)",,Named Weapon,Balance_SG_Torgue_Swordruption,SCOPE,1,1,1,Part_SG_Torgue_Scope_01,,
+"(Swordruption, broken)",,Named Weapon,Balance_SG_Torgue_Swordruption,MATERIAL,1,1,1,Part_SG_Torgue_Material_Swordruption,,

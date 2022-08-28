@@ -28,7 +28,7 @@ sys.path.append('../../../python_mod_helpers')
 from wldata.wldata import WLData
 from wlhotfixmod.wlhotfixmod import Mod, BVCF, Balance, PartCategory, Part
 
-_version = '1.0.0-b1'
+_version = '1.0.0'
 
 try:
     balance_name = sys.argv[1]

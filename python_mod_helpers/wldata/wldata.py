@@ -37,7 +37,7 @@ import sqlite3
 import subprocess
 import configparser
 
-from wlhotfixmod.wlhotfixmod import BVC
+from wlhotfixmod.wlhotfixmod import BVC, DependencyExpansion, PartSetExpansion
 
 class WLData(object):
     """
@@ -70,7 +70,7 @@ class WLData(object):
     """
 
     # Data serialization version requirements
-    data_version = 24
+    data_version = 26
 
     # Hardcoded BVA values
     bva_values = {
@@ -87,6 +87,9 @@ class WLData(object):
             '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Necro': 0.25,
             '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Ranger': 0.25,
             '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Rogue': 0.25,
+            '/Game/PatchDLC/Indigo4/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Shaman': 0.25,
+            # Assuming we own DLC4 -- 0 otherwise
+            '/Game/PatchDLC/Indigo4/GameData/Attributes/PlayerClass/Att_Licensed_Shaman': 1,
             }
 
     # Hardcoded part-category values
@@ -138,6 +141,10 @@ class WLData(object):
             'RARITY',
             'MATERIAL',
             ]
+
+    # Expansion Objects
+    _expansion_parts = None
+    _expansion_dependencies = None
 
     def __init__(self):
         """
@@ -241,6 +248,14 @@ class WLData(object):
             print('')
             sys.exit(1)
 
+    def get_raw_file_path(self, path_name):
+        """
+        Returns the full filename to the specified `path_name`.  This can be used
+        to read in data like CSS files and the like which wouldn't make sense to
+        process with the rest of the class
+        """
+        return '{}{}'.format(self.data_dir, path_name)
+
     def get_data(self, obj_name):
         """
         Returns a JSON-serialized version of the object `obj_name`, if possible.
@@ -314,8 +329,8 @@ class WLData(object):
         https://en.wikipedia.org/wiki/Glob_(programming)
         """
         for filename in glob.glob('{}{}'.format(self.data_dir, glob_pattern)):
-            if filename.endswith('.uasset'):
-                yield filename[len(self.data_dir):-7]
+            if filename.endswith('.uasset') or filename.endswith('.umap'):
+                yield filename[len(self.data_dir):].rsplit('.', 1)[0]
 
     def glob_data(self, glob_pattern):
         """
@@ -420,12 +435,20 @@ class WLData(object):
         data = self.get_exports(table_name, 'DataTable')[0]
         if row_name in data and col_name in data[row_name]:
             return data[row_name][col_name]
+        elif row_name in data and col_name == 'None' and 'Value' in data[row_name]:
+            # This happens in Amulet part weights, if nowhere else.  Note the
+            # nested BVC processing here.  Note too that this is almost certainly
+            # a BVC struct, though we're not making assumptions here.
+            return data[row_name]['Value']
         else:
             return None
 
-    def process_bvc(self, bvc_obj):
+    def process_bvc(self, bvc_obj, cur_dt=None):
         """
-        Given a wlhotfixmod BVC object, return a value.
+        Given a wlhotfixmod BVC object, return a value.  Optionally pass in `cur_dt`
+        as the objet path to the currently-being-processed DataTable, in case a
+        nested BVC ends up referring back to the DataTable with subobject-following
+        syntax.
         """
 
         # BVC
@@ -435,7 +458,10 @@ class WLData(object):
         if bvc_obj.dtv and bvc_obj.dtv.table != 'None':
             new_bvc = self.datatable_lookup(bvc_obj.dtv.table, bvc_obj.dtv.row, bvc_obj.dtv.value)
             if new_bvc is not None:
-                bvc = new_bvc
+                if type(new_bvc) == dict:
+                    bvc = round(self.process_bvc_struct(new_bvc, cur_dt=bvc_obj.dtv.table), 6)
+                else:
+                    bvc = new_bvc
 
         # BVA
         if bvc_obj.bva and bvc_obj.bva != 'None':
@@ -488,12 +514,17 @@ class WLData(object):
         # BVS
         return bvc * bvc_obj.bvs
 
-    def process_bvc_struct(self, data):
+    def process_bvc_struct(self, data, cur_dt=None):
         """
-        Given a serialized BVC/BVSC/etc structure, return a value.
+        Given a serialized BVC/BVSC/etc structure, return a value.  Optionally
+        pass in a `cur_dt` with the current DataTable path, if we're processing
+        a BVC struct inside a DataTable.  (Nested BVCs may reference the same
+        DataTable it's in using the `export` subobject-following syntax.  See
+        /Game/Gear/Amulets/_Shared/_Design/GameplayAttributes/Tables/DataTable_Amulets_BaseValues
+        for some examples of this (for instance, `Weight_Low_2X`)
         """
 
-        return self.process_bvc(BVC.from_data_struct(data))
+        return self.process_bvc(BVC.from_data_struct(data, cur_dt=cur_dt), cur_dt=cur_dt)
 
     def _cache_part_category_name(self, part_name, name):
         """
@@ -622,6 +653,9 @@ class WLData(object):
                 elif part_lower.endswith('/part_m_blunt_hammerquake'):
                     return self._cache_part_category_name(part_name, 'PETTY TANTRUM')
 
+                elif part_lower.endswith('/part_axe_blade_ragehandle'):
+                    return self._cache_part_category_name(part_name, 'RAGE HANDLE')
+
                 break
 
         return self._cache_part_category_name(part_name, None)
@@ -742,4 +776,74 @@ class WLData(object):
             return self.balance_to_extra_anoints[balance_name]
         else:
             return []
+
+    def _load_expansions(self):
+        """
+        Loads in the new InventoryPartSetExpansionData/InventoryExcludersExpansionData
+        data from the 2022-08-11 Wonderlands patch, needed for our Balance object to
+        know about some gear properly.  This will look for objects prefixed with `EXPD_`
+        across the whole data tree.  For now it looks like that's both sufficient and
+        accurate enough for our needs, though if the data ever changes in the future,
+        we may need to be more clever.  Note that there does not appear to be any main
+        index of these expansion objects, so the recursive trawl seems necessary.
+
+        This function ignores ItemPoolExpansionData objects entirely, which have been
+        used for all Wonderlands DLC to expand ItemPools.
+        """
+
+        self._expansion_parts = {}
+        self._expansion_dependencies = {}
+        for obj_name, obj_data in sorted(self.find_data('/', 'EXPD_')):
+            export = obj_data[0]
+            # Would like to use match/case here but don't feel like forcing folks
+            # to Python 3.10+
+            if export['export_type'] == 'InventoryExcludersExpansionData':
+                # First up: dependency/excluder expansions
+                for target in export['TargetParts']:
+                    target_obj = target[1]
+                    if target_obj not in self._expansion_dependencies:
+                        self._expansion_dependencies[target_obj] = DependencyExpansion(target_obj)
+                    self._expansion_dependencies[target_obj].load_from_export(export)
+
+            elif export['export_type'] == 'InventoryPartSetExpansionData':
+                # Next: partset expansions
+                partset_name = export['InventoryPartSet'][1]
+                if partset_name not in self._expansion_parts:
+                    self._expansion_parts[partset_name] = PartSetExpansion(partset_name)
+                self._expansion_parts[partset_name].load_expansion_from_export(obj_name, export)
+
+            elif export['export_type'] == 'ItemPoolExpansionData':
+                # Ignoring these entirely at the moment, since I don't really alter ItemPools
+                # based on on-disk data like we do for Balances (where the above two would be
+                # useful to have)
+                pass
+
+            else:
+                # Unknown!
+                raise RuntimeError('Unknown expansion type "{}" in {}'.format(
+                    export['export_type'],
+                    obj_name,
+                    ))
+
+    @property
+    def expansion_parts(self):
+        """
+        Retrieve our parsed Expansion PartSet dict.  Keys will be the PartSet being
+        expanded, and the values will be wlhotfixmod.PartSetExpansion objects.
+        Dynamically loads the data if we haven't already.
+        """
+        if self._expansion_parts is None:
+            self._load_expansions()
+        return self._expansion_parts
+
+    @property
+    def expansion_dependencies(self):
+        """
+        Retrieve our parsed Expansion dependency/excluder dict.  Keys will be the
+        Parts being expanded, and the values will be wlhotfixmod.DependencyExpansion
+        objects.  Dynamically loads the data if we haven't already.
+        """
+        if self._expansion_dependencies is None:
+            self._load_expansions()
+        return self._expansion_dependencies
 

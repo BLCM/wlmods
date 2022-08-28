@@ -1,0 +1,1248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-08-11 23:13-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+#: gen_red_text_explainer.py:36
+msgid "Red Text Explainer"
+msgstr ""
+
+#: gen_red_text_explainer.py:37
+msgid "English"
+msgstr ""
+
+#: gen_red_text_explainer.py:38
+msgid "Apocalyptech"
+msgstr ""
+
+#: gen_red_text_explainer.py:39
+msgid "Inspired by Ezeith's BL2 Red Text Explainer"
+msgstr ""
+
+#: gen_red_text_explainer.py:63
+msgid "https://apocalyptech.com/contact.php"
+msgstr ""
+
+#: gen_red_text_explainer.py:82
+msgid "poison"
+msgstr ""
+
+#: gen_red_text_explainer.py:85
+msgid "frost"
+msgstr ""
+
+#: gen_red_text_explainer.py:86
+msgid "blizzard"
+msgstr ""
+
+#: gen_red_text_explainer.py:89
+msgid "incendiary"
+msgstr ""
+
+#: gen_red_text_explainer.py:90
+msgid "ignite"
+msgstr ""
+
+#: gen_red_text_explainer.py:91
+msgid "ignites"
+msgstr ""
+
+#: gen_red_text_explainer.py:94
+msgid "dark magic"
+msgstr ""
+
+#: gen_red_text_explainer.py:99
+msgid "lightning"
+msgstr ""
+
+#: gen_red_text_explainer.py:102
+msgid "explodes"
+msgstr ""
+
+#: gen_red_text_explainer.py:103
+msgid "explosive"
+msgstr ""
+
+#: gen_red_text_explainer.py:128
+msgid "All effects on card."
+msgstr ""
+
+#: gen_red_text_explainer.py:138
+msgid "Eight Piece"
+msgstr ""
+
+#: gen_red_text_explainer.py:140
+msgid "You know I don't mean a word of it."
+msgstr ""
+
+#: gen_red_text_explainer.py:141
+msgid "Bolts can ricochet, and carry a bomb that explodes after 3 seconds."
+msgstr ""
+
+#: gen_red_text_explainer.py:142
+msgid "Rogue Imp"
+msgstr ""
+
+#: gen_red_text_explainer.py:144
+msgid "It's a great day for an incineration!"
+msgstr ""
+
+#: gen_red_text_explainer.py:145
+msgid "When overheated, sends out 3 homing wyverns who deal fire splash damage."
+msgstr ""
+
+#: gen_red_text_explainer.py:146
+msgid "Thunder Anima"
+msgstr ""
+
+#: gen_red_text_explainer.py:148
+msgid "We are the rising cascade, the rolling wave."
+msgstr ""
+
+#: gen_red_text_explainer.py:149
+msgid "Fires piercing bullets.  At 30% heat, bullets ricochet and spawn homing lightning bolts."
+msgstr ""
+
+#: gen_red_text_explainer.py:150
+msgid "Mistrial"
+msgstr ""
+
+#: gen_red_text_explainer.py:152
+msgid "All rise."
+msgstr ""
+
+#: gen_red_text_explainer.py:153
+msgid "Every third bullet is free and deals +100% damage."
+msgstr ""
+
+#: gen_red_text_explainer.py:154
+msgid "Quad Bow"
+msgstr ""
+
+#: gen_red_text_explainer.py:156
+msgid "Quad damage."
+msgstr ""
+
+#: gen_red_text_explainer.py:157
+msgid "Switching firing mode refills the magazine and toggles between vertical/horizontal lines of bolts."
+msgstr ""
+
+#: gen_red_text_explainer.py:158
+msgid "Crossbolt Generator"
+msgstr ""
+
+#: gen_red_text_explainer.py:160
+msgid "Get this, it's a crossbow that fires more crossbows."
+msgstr ""
+
+#: gen_red_text_explainer.py:161
+msgid "Ricochets can continually ricochet between enemies."
+msgstr ""
+
+#: gen_red_text_explainer.py:162
+msgid "Lil K's Bread Slicer"
+msgstr ""
+
+#: gen_red_text_explainer.py:164
+msgid "This seems impractical."
+msgstr ""
+
+#: gen_red_text_explainer.py:165
+msgid "Fires three rows of piercing sawblades.  Underbarrel is a grenade launcher which fires a splash-damage baguette."
+msgstr ""
+
+#: gen_red_text_explainer.py:166
+msgid "Donkey"
+msgstr ""
+
+#: gen_red_text_explainer.py:168
+msgid "... Your breath STINKS."
+msgstr ""
+
+#: gen_red_text_explainer.py:169
+msgid "Sawblades are sticky and fire a bullet in the original direction when they explode."
+msgstr ""
+
+#: gen_red_text_explainer.py:170
+msgid "Dreadlord's Finest"
+msgstr ""
+
+#: gen_red_text_explainer.py:172
+msgid "Your soul is mine."
+msgstr ""
+
+#: gen_red_text_explainer.py:173
+msgid "Fires transparent hydra heads which ricochet once."
+msgstr ""
+
+#: gen_red_text_explainer.py:174
+msgid "Manual Transmission"
+msgstr ""
+
+#: gen_red_text_explainer.py:176
+msgid "We're lights out."
+msgstr ""
+
+#: gen_red_text_explainer.py:177
+msgid "Switching gears just before weapon break resets heat and increases fire rate.  Effect stacks 10x."
+msgstr ""
+
+#: gen_red_text_explainer.py:178
+msgid "Blue Cake"
+msgstr ""
+
+#: gen_red_text_explainer.py:180
+msgid "I'm more of a brownie person, actually."
+msgstr ""
+
+#: gen_red_text_explainer.py:181
+msgid "Fires a lightning orb which can split in half twice in-flight."
+msgstr ""
+
+#: gen_red_text_explainer.py:182
+msgid "Love Leopard"
+msgstr ""
+
+#: gen_red_text_explainer.py:184
+msgid "It works every time."
+msgstr ""
+
+#: gen_red_text_explainer.py:185
+msgid "Fires a heart projectile which can bounce off surfaces once.  Also drops smaller heart bombs on its path."
+msgstr ""
+
+#: gen_red_text_explainer.py:186
+msgid "Anchor"
+msgstr ""
+
+#: gen_red_text_explainer.py:188
+msgid "The world is full of temptations."
+msgstr ""
+
+#: gen_red_text_explainer.py:189
+msgid "Fires a large anchor projectile which can bounce off surfaces once."
+msgstr ""
+
+#: gen_red_text_explainer.py:190
+msgid "Cannonballer"
+msgstr ""
+
+#: gen_red_text_explainer.py:192
+msgid "Baker's on his run."
+msgstr ""
+
+#: gen_red_text_explainer.py:193
+msgid "Fires a large cannonball which can bounce twice, with large-radius splash damage.  Multiball mode fires 2-4 cannonballs."
+msgstr ""
+
+#: gen_red_text_explainer.py:194
+msgid "Moleman"
+msgstr ""
+
+#: gen_red_text_explainer.py:196
+msgid "There is no escape."
+msgstr ""
+
+#: gen_red_text_explainer.py:197
+msgid "Rockets burrow underground in a straight line and deal fire splash damage to anything in their path.  Alternate Rocket Salvo mode."
+msgstr ""
+
+#: gen_red_text_explainer.py:198
+msgid "Liquid Cooling"
+msgstr ""
+
+#: gen_red_text_explainer.py:200
+msgid "Works great until it doesn't."
+msgstr ""
+
+#: gen_red_text_explainer.py:201
+msgid "Scoring a critical hit reduces weapon heat."
+msgstr ""
+
+#: gen_red_text_explainer.py:202
+msgid "Goblin Repellant"
+msgstr ""
+
+#: gen_red_text_explainer.py:204
+msgid "Keeps 'em at bay."
+msgstr ""
+
+#: gen_red_text_explainer.py:205
+msgid "Every fourth shot fires homing poison bullets that can ricochet three times.  These increase in frequency with heat."
+msgstr ""
+
+#: gen_red_text_explainer.py:206
+msgid "Apex"
+msgstr ""
+
+#: gen_red_text_explainer.py:208
+msgid "Use as directed against heroes."
+msgstr ""
+
+#: gen_red_text_explainer.py:209
+msgid "Bolts have a chance to turn into homing bats."
+msgstr ""
+
+#: gen_red_text_explainer.py:210
+msgid "Perceiver"
+msgstr ""
+
+#: gen_red_text_explainer.py:212
+msgid "How do you want to do this?"
+msgstr ""
+
+#: gen_red_text_explainer.py:213
+msgid "Chance to deal bonus crit damage on any hit.  Semi-auto mode uses 3 ammo for 1 bullet which does +94% damage."
+msgstr ""
+
+#: gen_red_text_explainer.py:214
+msgid "Ruby's Spite"
+msgstr ""
+
+#: gen_red_text_explainer.py:216
+msgid "Death fulfillment."
+msgstr ""
+
+#: gen_red_text_explainer.py:217
+msgid "Fires in 3 horizontal rows.  For 5s after killing an enemy, bolts become homing and fire rate is increased.  Alt mode is +190% damage."
+msgstr ""
+
+#: gen_red_text_explainer.py:218
+msgid "Catatumbo"
+msgstr ""
+
+#: gen_red_text_explainer.py:220
+msgid "Witness the river's rage."
+msgstr ""
+
+#: gen_red_text_explainer.py:221
+msgid "Critical hits strike the enemy with lightning, dealing 50% splash damage."
+msgstr ""
+
+#: gen_red_text_explainer.py:222
+msgid "Masterwork Handbow"
+msgstr ""
+
+#: gen_red_text_explainer.py:224
+msgid "Mercy like a gun."
+msgstr ""
+
+#: gen_red_text_explainer.py:225
+msgid "Critical hits return 1 bullet to the magazine and ricochet 6 bolts at the nearest enemy."
+msgstr ""
+
+#: gen_red_text_explainer.py:226
+msgid "Pookie's Chew Toy"
+msgstr ""
+
+#: gen_red_text_explainer.py:228
+msgid "Chum... p!"
+msgstr ""
+
+#: gen_red_text_explainer.py:231
+msgid "Gluttony"
+msgstr ""
+
+#: gen_red_text_explainer.py:233
+msgid "Equivalent exchange."
+msgstr ""
+
+#: gen_red_text_explainer.py:234
+msgid "While below 49% health, shots and reload effect deal +100% damage.  Reload consumes all health above 49%."
+msgstr ""
+
+#: gen_red_text_explainer.py:235
+msgid "Boniface's Soul"
+msgstr ""
+
+#: gen_red_text_explainer.py:237
+msgid "Of course, there's always my way."
+msgstr ""
+
+#: gen_red_text_explainer.py:238
+msgid "Reload explosion spawns a ward-transfusion orb."
+msgstr ""
+
+#: gen_red_text_explainer.py:239
+msgid "Headcanon"
+msgstr ""
+
+#: gen_red_text_explainer.py:241
+msgid "Captain of the ship."
+msgstr ""
+
+#: gen_red_text_explainer.py:242
+msgid "Critical hits deal splash damage to nearby enemies."
+msgstr ""
+
+#: gen_red_text_explainer.py:243
+msgid "Message"
+msgstr ""
+
+#: gen_red_text_explainer.py:245
+msgid "Sleep with the fishes."
+msgstr ""
+
+#: gen_red_text_explainer.py:246
+msgid "Fires a poisonous fish that bounces for 5s, exploding with each bounce."
+msgstr ""
+
+#: gen_red_text_explainer.py:247
+msgid "AUTOMAGIC.exe"
+msgstr ""
+
+#: gen_red_text_explainer.py:249
+msgid "Task, managed."
+msgstr ""
+
+#: gen_red_text_explainer.py:250
+msgid "Bullets ricochet up to three times.  Alternate fire is a tracker dart -- bullets will home in on enemies."
+msgstr ""
+
+#: gen_red_text_explainer.py:251
+msgid "Birthright"
+msgstr ""
+
+#: gen_red_text_explainer.py:253
+msgid "I'll take my rightful place."
+msgstr ""
+
+#: gen_red_text_explainer.py:254
+msgid "Enemy hits have a chance to call down a frost meteor, dealing 200% frost splash damage."
+msgstr ""
+
+#: gen_red_text_explainer.py:255
+msgid "Queen's Cry"
+msgstr ""
+
+#: gen_red_text_explainer.py:257
+msgid "Our enemies will come for us."
+msgstr ""
+
+#: gen_red_text_explainer.py:259
+msgid "Enemy hits have a chance to call down a frost meteor, dealing 300% frost splash damage."
+msgstr ""
+
+#: gen_red_text_explainer.py:260
+msgid "Circuitous Gyre"
+msgstr ""
+
+#: gen_red_text_explainer.py:262
+msgid "Whirl. Whirl until you see yourself again."
+msgstr ""
+
+#: gen_red_text_explainer.py:263
+msgid "Continuous fire increases fire rate up to +100% and damage up to +200%."
+msgstr ""
+
+#: gen_red_text_explainer.py:264
+msgid "Last Rites"
+msgstr ""
+
+#: gen_red_text_explainer.py:266
+msgid "But it's time for you to find it on your own."
+msgstr ""
+
+#: gen_red_text_explainer.py:267
+msgid "Shots ricochet up to two times, and hits richochet frost bolts towards a nearby enemy."
+msgstr ""
+
+#: gen_red_text_explainer.py:268
+msgid "Red Hellion"
+msgstr ""
+
+#: gen_red_text_explainer.py:270
+msgid "Think you're fast? Not fast enough."
+msgstr ""
+
+#: gen_red_text_explainer.py:271
+msgid "+1 pellet per +10% movement speed."
+msgstr ""
+
+#: gen_red_text_explainer.py:272
+msgid "Crossblade"
+msgstr ""
+
+#: gen_red_text_explainer.py:274
+msgid "We shall call him... Deathblade."
+msgstr ""
+
+#: gen_red_text_explainer.py:275
+msgid "Fires two crossing slashes of the two specified elements."
+msgstr ""
+
+#: gen_red_text_explainer.py:276
+msgid "Reign of Arrows"
+msgstr ""
+
+#: gen_red_text_explainer.py:278
+msgid "... From a lacerated sky."
+msgstr ""
+
+#: gen_red_text_explainer.py:279
+msgid "Fires a volley of arrows into the targetted area for three seconds."
+msgstr ""
+
+#: gen_red_text_explainer.py:280
+msgid "Sworderang"
+msgstr ""
+
+#: gen_red_text_explainer.py:282
+msgid "It's all coming back to you now."
+msgstr ""
+
+#: gen_red_text_explainer.py:283
+msgid "When thrown, transforms into a swirling blade in a boomerang trajectory."
+msgstr ""
+
+#: gen_red_text_explainer.py:284
+msgid "Negotiator"
+msgstr ""
+
+#: gen_red_text_explainer.py:286
+msgid "Ye not guilty."
+msgstr ""
+
+#: gen_red_text_explainer.py:287
+msgid "Gyrojets are laser-guided."
+msgstr ""
+
+#: gen_red_text_explainer.py:288
+msgid "Hawkins' Wrath"
+msgstr ""
+
+#: gen_red_text_explainer.py:290
+msgid "Oooohhh ahh ahh ahh ahh!"
+msgstr ""
+
+#: gen_red_text_explainer.py:291
+msgid "Shoots a fire wyvern which explodes on impact."
+msgstr ""
+
+#: gen_red_text_explainer.py:292
+msgid "Swordsplosion"
+msgstr ""
+
+#: gen_red_text_explainer.py:294
+msgid "Your sword is the sword that will pierce the heavens!"
+msgstr ""
+
+#: gen_red_text_explainer.py:295
+msgid "Fires explosive ghost blades.  Stuck targets are impaled by a Giant Sword which deals 10x splash damage."
+msgstr ""
+
+#: gen_red_text_explainer.py:296
+msgid "Heckwader"
+msgstr ""
+
+#: gen_red_text_explainer.py:298
+msgid "Rip and tear."
+msgstr ""
+
+#: gen_red_text_explainer.py:299
+msgid "Fires three bullets in rotating lines which form a pentagram."
+msgstr ""
+
+#: gen_red_text_explainer.py:300
+msgid "Live Wire"
+msgstr ""
+
+#: gen_red_text_explainer.py:302
+msgid "The lightning. It's good for you!"
+msgstr ""
+
+#: gen_red_text_explainer.py:303
+msgid "High chance to connect a chaining lightning beam to enemies.  +20% melee damage, and every 2nd melee strike zaps the target."
+msgstr ""
+
+#: gen_red_text_explainer.py:304
+msgid "White Rider"
+msgstr ""
+
+#: gen_red_text_explainer.py:306
+msgid "Putrefy, rot, spoil and fester."
+msgstr ""
+
+#: gen_red_text_explainer.py:307
+msgid "Single Beam mode has +200% damage, attaches to one enemy, and charges.  Dual Beam mode has -20% damage, does not need charging, and connects to 2 enemies."
+msgstr ""
+
+#: gen_red_text_explainer.py:308
+msgid "Blazing Volley"
+msgstr ""
+
+#: gen_red_text_explainer.py:310
+msgid "Burn down the walls that bind you to this cage."
+msgstr ""
+
+#: gen_red_text_explainer.py:311
+msgid "Charge up to fire a 6-round burst which has a chance to be homing."
+msgstr ""
+
+#: gen_red_text_explainer.py:312
+msgid "Dry'l's Legacy"
+msgstr ""
+
+#: gen_red_text_explainer.py:314
+msgid "Born of the fiery depths."
+msgstr ""
+
+#: gen_red_text_explainer.py:315
+msgid "Randomly sends out a bouncing lightning orb, which creates a lightning sphere on hit which deals continual damage."
+msgstr ""
+
+#: gen_red_text_explainer.py:316
+msgid "Wizard's Pipe"
+msgstr ""
+
+#: gen_red_text_explainer.py:318
+msgid "Go back to the abyss!"
+msgstr ""
+
+#: gen_red_text_explainer.py:319
+msgid "Every 7th to 9th shot lobs 1 or 2 homing elemental orbs which deal +100% splash damage and adapt to enemies' weaknesses."
+msgstr ""
+
+#: gen_red_text_explainer.py:320
+msgid "Borea's Breath"
+msgstr ""
+
+#: gen_red_text_explainer.py:322
+msgid "The North Wind blows."
+msgstr ""
+
+#: gen_red_text_explainer.py:323
+msgid "Fires frost projectiles in an arcing trajectory, and spawns ice spikes during reload bounces."
+msgstr ""
+
+#: gen_red_text_explainer.py:324
+msgid "Fragment Rain"
+msgstr ""
+
+#: gen_red_text_explainer.py:326
+msgid "Nothing burns like the cold."
+msgstr ""
+
+#: gen_red_text_explainer.py:327
+msgid "Fires frost shards which ricochet and spawn additional shards."
+msgstr ""
+
+#: gen_red_text_explainer.py:328
+msgid "Shadowfire"
+msgstr ""
+
+#: gen_red_text_explainer.py:330
+msgid "MAGIK WITH A K!"
+msgstr ""
+
+#: gen_red_text_explainer.py:331
+msgid "Fires arcing elemental orbs.  On reload, forms a large Shadow Pillar which deals elemental damage."
+msgstr ""
+
+#: gen_red_text_explainer.py:332
+msgid "Throwable Hole"
+msgstr ""
+
+#: gen_red_text_explainer.py:334
+msgid "What happens if I throw a throwable hole into a portable hole?"
+msgstr ""
+
+#: gen_red_text_explainer.py:335
+msgid "On reload, spawns a singularity which deals dark magic splash damage and explodes after 5s."
+msgstr ""
+
+#: gen_red_text_explainer.py:336
+msgid "Skeep Prod"
+msgstr ""
+
+#: gen_red_text_explainer.py:338
+msgid "Not free-range."
+msgstr ""
+
+#: gen_red_text_explainer.py:339
+msgid "Enemies with stuck bolts chain lightning between each other, dealing constant lightning damage."
+msgstr ""
+
+#: gen_red_text_explainer.py:340
+msgid "Antique Greatbow"
+msgstr ""
+
+#: gen_red_text_explainer.py:342
+msgid "It'd be worth a hefty sum if it was never fired."
+msgstr ""
+
+#: gen_red_text_explainer.py:343
+msgid "Can only be fired once -- breaks and then turns into a Used Antique Greatbow"
+msgstr ""
+
+#: gen_red_text_explainer.py:344
+msgid "Used Antique Greatbow"
+msgstr ""
+
+#: gen_red_text_explainer.py:346
+msgid "What a pity."
+msgstr ""
+
+#: gen_red_text_explainer.py:347
+msgid "Cannot be enchanted, and has -90% damage and -60% sell price."
+msgstr ""
+
+#: gen_red_text_explainer.py:348
+msgid "Kao Khan"
+msgstr ""
+
+#: gen_red_text_explainer.py:350
+msgid "He shaped the world with his hands."
+msgstr ""
+
+#: gen_red_text_explainer.py:351
+msgid "Fires bolts in a horizontal line."
+msgstr ""
+
+#: gen_red_text_explainer.py:352
+msgid "Tootherator"
+msgstr ""
+
+#: gen_red_text_explainer.py:354
+msgid "Brace for impact!"
+msgstr ""
+
+#: gen_red_text_explainer.py:355
+msgid "Fires teeth in a jawline pattern."
+msgstr ""
+
+#: gen_red_text_explainer.py:356
+msgid "Carrouser"
+msgstr ""
+
+#: gen_red_text_explainer.py:358
+msgid "If you're not getting around, you're standing still."
+msgstr ""
+
+#: gen_red_text_explainer.py:359
+msgid "Fires a heart bolt which can turn enemies into allies for 6s."
+msgstr ""
+
+#: gen_red_text_explainer.py:360
+msgid "Envy"
+msgstr ""
+
+#: gen_red_text_explainer.py:362
+msgid "I see things in only two shades."
+msgstr ""
+
+#: gen_red_text_explainer.py:363
+msgid "Critical hits cause enemies to drop poison puddles as they walk.  Ricochets spawn dark magic pools."
+msgstr ""
+
+#: gen_red_text_explainer.py:364
+msgid "Ironsides"
+msgstr ""
+
+#: gen_red_text_explainer.py:366
+msgid "And burst the cannon's roar."
+msgstr ""
+
+#: gen_red_text_explainer.py:367
+msgid "Bullets turn into a steel ball on critical hit or ricochet."
+msgstr ""
+
+#: gen_red_text_explainer.py:368
+msgid "Dry'l's Fury"
+msgstr ""
+
+#: gen_red_text_explainer.py:370
+msgid "Choke them with your chains."
+msgstr ""
+
+#: gen_red_text_explainer.py:371
+msgid "Alt fire shoots a slow-moving lightning orb, which stops when shot and chains lightning to nearby enemies.  Can shoot the orb multiple times for more damage."
+msgstr ""
+
+#: gen_red_text_explainer.py:372
+msgid "Portable Sawmill"
+msgstr ""
+
+#: gen_red_text_explainer.py:374
+msgid "Destroy nature and lumber futures on a budget!"
+msgstr ""
+
+#: gen_red_text_explainer.py:375
+msgid "Fires sawblades which ricochet once off surfaces or enemies, towards nearby enemies."
+msgstr ""
+
+#: gen_red_text_explainer.py:376
+msgid "Twisted Delugeon"
+msgstr ""
+
+#: gen_red_text_explainer.py:378
+msgid "You're gonna need a bigger umbrella."
+msgstr ""
+
+#: gen_red_text_explainer.py:379
+msgid "Underbarrel rocket knocks back enemies while doing splash damage."
+msgstr ""
+
+#: gen_red_text_explainer.py:380
+msgid "Die-Vergent"
+msgstr ""
+
+#: gen_red_text_explainer.py:382
+msgid "Roll for destruction."
+msgstr ""
+
+#: gen_red_text_explainer.py:383
+msgid "Fires ricocheting dice which can knock back enemies."
+msgstr ""
+
+#: gen_red_text_explainer.py:384
+msgid "Butterboom"
+msgstr ""
+
+#: gen_red_text_explainer.py:386
+msgid "No concessions."
+msgstr ""
+
+#: gen_red_text_explainer.py:387
+msgid "Fires popcorn which produces 1-4 extra popcorn on exploding."
+msgstr ""
+
+#: gen_red_text_explainer.py:388
+msgid "Oil and Spice"
+msgstr ""
+
+#: gen_red_text_explainer.py:390
+msgid "And everything flammable."
+msgstr ""
+
+#: gen_red_text_explainer.py:391
+msgid "Oil: bullets deal fire splash damage and can spawn more homing flares.  Spice: creates a highly explosive oil puddle."
+msgstr ""
+
+#: gen_red_text_explainer.py:392
+msgid "Echoing Phoenix"
+msgstr ""
+
+#: gen_red_text_explainer.py:394
+msgid "Burn it all down."
+msgstr ""
+
+#: gen_red_text_explainer.py:397
+msgid "Stab-O-Matic"
+msgstr ""
+
+#: gen_red_text_explainer.py:399
+msgid "A personal touch shows you care."
+msgstr ""
+
+#: gen_red_text_explainer.py:400
+msgid "Damage is considered melee damage, and crit chance depends on melee crit chance stat."
+msgstr ""
+
+#: gen_red_text_explainer.py:403
+msgid "Vengeance"
+msgstr ""
+
+#: gen_red_text_explainer.py:405
+msgid "Wait. Execute your plan. Hope."
+msgstr ""
+
+#: gen_red_text_explainer.py:408
+msgid "Merlin's Razor"
+msgstr ""
+
+#: gen_red_text_explainer.py:410
+msgid "It'll bite you in the end. Or the face."
+msgstr ""
+
+#: gen_red_text_explainer.py:413
+msgid "Sly Trivern"
+msgstr ""
+
+#: gen_red_text_explainer.py:415
+msgid "Try, try again."
+msgstr ""
+
+#: gen_red_text_explainer.py:423
+msgid "Arcane Bolt"
+msgstr ""
+
+#: gen_red_text_explainer.py:425
+msgid "From thine fingy-tippers comes doom."
+msgstr ""
+
+#: gen_red_text_explainer.py:428
+msgid "Barrelmaker"
+msgstr ""
+
+#: gen_red_text_explainer.py:430
+msgid "I need your strongest barrels."
+msgstr ""
+
+#: gen_red_text_explainer.py:431
+msgid "Summons an exploding barrel on a fuse, also explodes on hit."
+msgstr ""
+
+#: gen_red_text_explainer.py:432
+msgid "Buffmeister"
+msgstr ""
+
+#: gen_red_text_explainer.py:434
+msgid "AAAAAAAAAAAAAAAH."
+msgstr ""
+
+#: gen_red_text_explainer.py:435
+msgid "Also +98% movement speed on cast."
+msgstr ""
+
+#: gen_red_text_explainer.py:436
+msgid "Buffmeister [Ability]"
+msgstr ""
+
+#: gen_red_text_explainer.py:438
+msgid "Kchow!"
+msgstr ""
+
+#: gen_red_text_explainer.py:439
+msgid "+120% Ability Damage, +98.4% Ability Chance"
+msgstr ""
+
+#: gen_red_text_explainer.py:440
+msgid "Buffmeister [Gun]"
+msgstr ""
+
+#: gen_red_text_explainer.py:442
+msgid "Pew!"
+msgstr ""
+
+#: gen_red_text_explainer.py:443
+msgid "+98% Handling/Accuracy/Recoil, +38.5% Fire Rate, +60% Reload Speed"
+msgstr ""
+
+#: gen_red_text_explainer.py:444
+msgid "Buffmeister [Melee]"
+msgstr ""
+
+#: gen_red_text_explainer.py:446
+msgid "Bonk!"
+msgstr ""
+
+#: gen_red_text_explainer.py:447
+msgid "+120% Melee Damage"
+msgstr ""
+
+#: gen_red_text_explainer.py:448
+msgid "Buffmeister [Spell]"
+msgstr ""
+
+#: gen_red_text_explainer.py:450
+msgid "Zap!"
+msgstr ""
+
+#: gen_red_text_explainer.py:451
+msgid "+120% Spell Damage"
+msgstr ""
+
+#: gen_red_text_explainer.py:452
+msgid "Dazzler"
+msgstr ""
+
+#: gen_red_text_explainer.py:454
+msgid "You are fine."
+msgstr ""
+
+#: gen_red_text_explainer.py:455
+msgid "Sends out homing sticky orbs which shoot lightning between each other."
+msgstr ""
+
+#: gen_red_text_explainer.py:456
+msgid "Frozen Orb"
+msgstr ""
+
+#: gen_red_text_explainer.py:458
+msgid "Man, you came a long way for my orb."
+msgstr ""
+
+#: gen_red_text_explainer.py:459
+msgid "Sends a slow bizzard orb to nearby enemies."
+msgstr ""
+
+#: gen_red_text_explainer.py:460
+msgid "Gelatinous Cube"
+msgstr ""
+
+#: gen_red_text_explainer.py:462
+msgid "The apotheosis is upon us."
+msgstr ""
+
+#: gen_red_text_explainer.py:463
+msgid "Sends forth a slime cube which bounces five times, leaving poison puddles and sticky poison bombs."
+msgstr ""
+
+#: gen_red_text_explainer.py:464
+msgid "Glacial Cascade"
+msgstr ""
+
+#: gen_red_text_explainer.py:466
+msgid "Stick around."
+msgstr ""
+
+#: gen_red_text_explainer.py:467
+msgid "Sends forward a surge of ice spikes."
+msgstr ""
+
+#: gen_red_text_explainer.py:468
+msgid "Inflammation"
+msgstr ""
+
+#: gen_red_text_explainer.py:470
+msgid "It's not the heat... it's the low flesh-melting point."
+msgstr ""
+
+#: gen_red_text_explainer.py:471
+msgid "Instant flamethrower!"
+msgstr ""
+
+#: gen_red_text_explainer.py:472
+msgid "Laserhand"
+msgstr ""
+
+#: gen_red_text_explainer.py:474
+msgid "It is a name what strikes fear into the hearts of anyone who hears it!"
+msgstr ""
+
+#: gen_red_text_explainer.py:475
+msgid "Charging increases damage of the laser."
+msgstr ""
+
+#: gen_red_text_explainer.py:476
+msgid "Marshmallow"
+msgstr ""
+
+#: gen_red_text_explainer.py:478
+msgid "Something that would never ever possibly destroy us."
+msgstr ""
+
+#: gen_red_text_explainer.py:479
+msgid "Sends out a giant sticky marshmallow which explodes 5s later, sending back 2 healing marshmallows."
+msgstr ""
+
+#: gen_red_text_explainer.py:480
+msgid "Reviver"
+msgstr ""
+
+#: gen_red_text_explainer.py:482
+msgid "I'm never going to physically recover from this."
+msgstr ""
+
+#: gen_red_text_explainer.py:483
+msgid "Additionally calls down a lightning bolt, followed by four homing sparks."
+msgstr ""
+
+#: gen_red_text_explainer.py:484
+msgid "Sawblades"
+msgstr ""
+
+#: gen_red_text_explainer.py:486
+msgid "Watch your fingers."
+msgstr ""
+
+#: gen_red_text_explainer.py:487
+msgid "Sends out sawblades which bounce off any surface."
+msgstr ""
+
+#: gen_red_text_explainer.py:488
+msgid "Threads of Fate"
+msgstr ""
+
+#: gen_red_text_explainer.py:490
+msgid "Watch me unravel."
+msgstr ""
+
+#: gen_red_text_explainer.py:491
+msgid "Spawns a slow orb which deals dark magic damge to nearby enemies."
+msgstr ""
+
+#: gen_red_text_explainer.py:492
+msgid "Time Skip"
+msgstr ""
+
+#: gen_red_text_explainer.py:494
+msgid "Time keeps on slippin', slippin', slippin'."
+msgstr ""
+
+#: gen_red_text_explainer.py:495
+msgid "Spawns up to five small orbs which rush towards the targetted location and explode."
+msgstr ""
+
+#: gen_red_text_explainer.py:496
+msgid "Twister"
+msgstr ""
+
+#: gen_red_text_explainer.py:498
+msgid "Moo."
+msgstr ""
+
+#: gen_red_text_explainer.py:499
+msgid "Enemies near the center of the magic blast are sucked in and thrown around."
+msgstr ""
+
+#: gen_red_text_explainer.py:500
+msgid "Skullantir"
+msgstr ""
+
+#: gen_red_text_explainer.py:502
+msgid "I hate you, too."
+msgstr ""
+
+#: gen_red_text_explainer.py:503
+msgid "Spawns a floating, talking skull for 20s, which will home in on nearby enemies and explode."
+msgstr ""
+
+#: gen_red_text_explainer.py:504
+msgid "Hellfire"
+msgstr ""
+
+#: gen_red_text_explainer.py:506
+msgid "From the Heavens."
+msgstr ""
+
+#: gen_red_text_explainer.py:509
+msgid "Frostburn"
+msgstr ""
+
+#: gen_red_text_explainer.py:511
+msgid "They're all a tray of cakes next to death."
+msgstr ""
+
+#: gen_red_text_explainer.py:512
+msgid "Summons a frost dome which deals damage and blocks enemy projectiles."
+msgstr ""
+
+#: gen_red_text_explainer.py:513
+msgid "Holey Spell-nade"
+msgstr ""
+
+#: gen_red_text_explainer.py:515
+msgid "Blow thine enemies to tiny bits."
+msgstr ""
+
+#: gen_red_text_explainer.py:516
+msgid "Sticky flare spawns 2-3 exploding child flares."
+msgstr ""
+
+#: gen_red_text_explainer.py:517
+msgid "Great Wake"
+msgstr ""
+
+#: gen_red_text_explainer.py:519
+msgid "Terror can fill any space."
+msgstr ""
+
+#: gen_red_text_explainer.py:520
+msgid "Summons a shark fin which burrows through the ground and drops explosive fish along its path."
+msgstr ""
+
+#: gen_red_text_explainer.py:521
+msgid "Greatest Spell Ever"
+msgstr ""
+
+#: gen_red_text_explainer.py:523
+msgid "This is just a tribute!"
+msgstr ""
+
+#: gen_red_text_explainer.py:524
+msgid "If targetted on an enemy, only one fire blast.  Otherwise, three fire blasts."
+msgstr ""
+
+#: gen_red_text_explainer.py:525
+msgid "Dynamo"
+msgstr ""
+
+#: gen_red_text_explainer.py:527
+msgid "Boom-lay boom!"
+msgstr ""
+
+#: gen_red_text_explainer.py:530
+msgid "Rainbolt"
+msgstr ""
+
+#: gen_red_text_explainer.py:532
+msgid "Death by a thousand colors."
+msgstr ""
+
+#: gen_red_text_explainer.py:533
+msgid "Fires rainbow flares in wave trajectories."
+msgstr ""
+
+#: gen_red_text_explainer.py:534
+msgid "Tidebreaker"
+msgstr ""
+
+#: gen_red_text_explainer.py:536
+msgid "Drenched and doused."
+msgstr ""
+
+#: gen_red_text_explainer.py:539
+msgid "Boltlash"
+msgstr ""
+
+#: gen_red_text_explainer.py:541
+msgid "Let it fly. Let 'em die."
+msgstr ""
+
+#: gen_red_text_explainer.py:542
+msgid "Arrows bouncing off a surface turn into sawblades which cannot explode or deal splash damage."
+msgstr ""
+
+#: gen_red_text_explainer.py:543
+msgid "Garlic Breath"
+msgstr ""
+
+#: gen_red_text_explainer.py:545
+msgid "Time to put the cloves on."
+msgstr ""
+
+#: gen_red_text_explainer.py:548
+msgid "Smithy's Ire"
+msgstr ""
+
+#: gen_red_text_explainer.py:550
+msgid "Forging new corpses all day."
+msgstr ""
+
+#: gen_red_text_explainer.py:553
+msgid "Lovestruck Beau"
+msgstr ""
+
+#: gen_red_text_explainer.py:555
+msgid "Always has your back."
+msgstr ""
+
+#: gen_red_text_explainer.py:560
+msgid "Curse of Malice"
+msgstr ""
+
+#: gen_red_text_explainer.py:562
+msgid "Ages like fine milk."
+msgstr ""
+
+#: gen_red_text_explainer.py:565
+msgid "Wicked Gossip"
+msgstr ""
+
+#: gen_red_text_explainer.py:567
+msgid "Spreads like a lie."
+msgstr ""
