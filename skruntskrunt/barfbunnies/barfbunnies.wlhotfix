@@ -1,12 +1,11 @@
-###
-### Name: Barf Bunnies Same Loot, Less Pulls
-### Version: 0.0.1
-### Author: skruntskrunt
-### Categories: gameplay, loot-system
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title Barf Bunnies Same Loot, Less Pulls
+@version 0.0.1
+@author skruntskrunt
+@categories gameplay, loot-system
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Barf bunnies take too long. Speed up the loot room by reducing pulls but maintain the current level of loot. Reduce the total number of crystals to a meager sum, improve raid boss crystal drops, speed up barf bunnies slightly, with reduced crystals increase barf bunnies loot to match former levels.
