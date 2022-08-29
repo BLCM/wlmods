@@ -12,10 +12,10 @@ Running Mods
 
 There are two methods for running mods on Wonderlands.
 
-### Open Hotfix Loader
+### OpenHotfixLoader
 
 As of writing (August 28, 2022), this has just recently been released and is
-still in beta.  [Open Hotfix Loader](https://github.com/apple1417/OpenHotfixLoader/),
+still in beta.  [OpenHotfixLoader](https://github.com/apple1417/OpenHotfixLoader/),
 by apple1417, is a new method of injecting hotfixes which doesn't rely on doing
 any "man in the middle" proxying like B3HM does.  Some links:
 

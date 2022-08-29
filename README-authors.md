@@ -2,7 +2,7 @@ Writing Mods
 ============
 
 Modding Tiny Tina's Wonderlands works basically identically to Borderlands 3:
-an application such as B3HM or Open Hotfix Loader is used to inject hotfixes
+an application such as B3HM or OpenHotfixLoader is used to inject hotfixes
 into the game, making use of Gearbox's hotfix system.  Modders familiar with
 BL3 modding will find no real surprises here.
 
