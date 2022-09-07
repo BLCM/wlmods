@@ -1,0 +1,16 @@
+@title No Base Crit
+@version 1.0.0
+@author DexManly
+@contact-discord dex_manly#5571
+@categories resource
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+###
+### Makes base crit 0, for testing purposes. Thank you for testing :)
+###
+### Credit: This code is based on something Grimm provided me in discord. Thanks to them for the help.
+###
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Character/BPChar_Player.Default__BPChar_Player_C:DefaultDamageCauserComponent,DefaultCriticalHitChance,0,,(Value=1.0,BaseValue=0.0)

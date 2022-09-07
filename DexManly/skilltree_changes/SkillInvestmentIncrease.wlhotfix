@@ -1,0 +1,166 @@
+@title Skill Investment Increase
+@version 1.0.0
+@author DexManly
+@contact-discord dex_manly#5571
+@categories skill-system class-other
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+###
+### This mod increases the max allowed points per skill to be 15. I just made all skills available but with no guarantee that investing
+### more points in a skill will do anything. The intent was for testing purposes. This mod works well in combination my Unrestricted Skilltrees mod.
+###
+### Special Thanks: Apocalyptech for skill_tree_shenanigans.txt that I used as reference. SSpyR for TTWLOE. c0dycode for B3HM. stone_swan for taking care of Blightcaller
+###
+
+# Stabbo
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[1].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[1].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[1].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[2].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[2].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[2].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[3].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[3].Object..Items.Items[1].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[4].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[4].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[4].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[5].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[5].Object..Items.Items[1].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[6].Object..Items.Items[0].Object..MaxPoints,0,,15
+
+
+# Brr-Zerker
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[1].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[1].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[1].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[2].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[2].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[2].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[3].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[3].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[3].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[4].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[4].Object..Items.Items[1].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[5].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[5].Object..Items.Items[1].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[6].Object..Items.Items[0].Object..MaxPoints,0,,15
+
+
+# SpellShot
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/GunMage/_Shared/_Design/SkillTree/AbilityTree_Branch_GunMage.AbilityTree_Branch_GunMage,Tiers.Tiers[1].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/GunMage/_Shared/_Design/SkillTree/AbilityTree_Branch_GunMage.AbilityTree_Branch_GunMage,Tiers.Tiers[1].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/GunMage/_Shared/_Design/SkillTree/AbilityTree_Branch_GunMage.AbilityTree_Branch_GunMage,Tiers.Tiers[1].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/GunMage/_Shared/_Design/SkillTree/AbilityTree_Branch_GunMage.AbilityTree_Branch_GunMage,Tiers.Tiers[2].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/GunMage/_Shared/_Design/SkillTree/AbilityTree_Branch_GunMage.AbilityTree_Branch_GunMage,Tiers.Tiers[2].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/GunMage/_Shared/_Design/SkillTree/AbilityTree_Branch_GunMage.AbilityTree_Branch_GunMage,Tiers.Tiers[2].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/GunMage/_Shared/_Design/SkillTree/AbilityTree_Branch_GunMage.AbilityTree_Branch_GunMage,Tiers.Tiers[3].Object..Items.Items[0].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/GunMage/_Shared/_Design/SkillTree/AbilityTree_Branch_GunMage.AbilityTree_Branch_GunMage,Tiers.Tiers[4].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/GunMage/_Shared/_Design/SkillTree/AbilityTree_Branch_GunMage.AbilityTree_Branch_GunMage,Tiers.Tiers[4].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/GunMage/_Shared/_Design/SkillTree/AbilityTree_Branch_GunMage.AbilityTree_Branch_GunMage,Tiers.Tiers[4].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/GunMage/_Shared/_Design/SkillTree/AbilityTree_Branch_GunMage.AbilityTree_Branch_GunMage,Tiers.Tiers[5].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/GunMage/_Shared/_Design/SkillTree/AbilityTree_Branch_GunMage.AbilityTree_Branch_GunMage,Tiers.Tiers[5].Object..Items.Items[1].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/GunMage/_Shared/_Design/SkillTree/AbilityTree_Branch_GunMage.AbilityTree_Branch_GunMage,Tiers.Tiers[6].Object..Items.Items[0].Object..MaxPoints,0,,15
+
+
+# Clawbringer
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/KnightOfTheClaw/_Shared/_Design/SkillTree/AbilityTree_Branch_DragonCleric.AbilityTree_Branch_DragonCleric,Tiers.Tiers[1].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/KnightOfTheClaw/_Shared/_Design/SkillTree/AbilityTree_Branch_DragonCleric.AbilityTree_Branch_DragonCleric,Tiers.Tiers[1].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/KnightOfTheClaw/_Shared/_Design/SkillTree/AbilityTree_Branch_DragonCleric.AbilityTree_Branch_DragonCleric,Tiers.Tiers[1].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/KnightOfTheClaw/_Shared/_Design/SkillTree/AbilityTree_Branch_DragonCleric.AbilityTree_Branch_DragonCleric,Tiers.Tiers[2].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/KnightOfTheClaw/_Shared/_Design/SkillTree/AbilityTree_Branch_DragonCleric.AbilityTree_Branch_DragonCleric,Tiers.Tiers[2].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/KnightOfTheClaw/_Shared/_Design/SkillTree/AbilityTree_Branch_DragonCleric.AbilityTree_Branch_DragonCleric,Tiers.Tiers[2].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/KnightOfTheClaw/_Shared/_Design/SkillTree/AbilityTree_Branch_DragonCleric.AbilityTree_Branch_DragonCleric,Tiers.Tiers[3].Object..Items.Items[0].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/KnightOfTheClaw/_Shared/_Design/SkillTree/AbilityTree_Branch_DragonCleric.AbilityTree_Branch_DragonCleric,Tiers.Tiers[4].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/KnightOfTheClaw/_Shared/_Design/SkillTree/AbilityTree_Branch_DragonCleric.AbilityTree_Branch_DragonCleric,Tiers.Tiers[4].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/KnightOfTheClaw/_Shared/_Design/SkillTree/AbilityTree_Branch_DragonCleric.AbilityTree_Branch_DragonCleric,Tiers.Tiers[4].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/KnightOfTheClaw/_Shared/_Design/SkillTree/AbilityTree_Branch_DragonCleric.AbilityTree_Branch_DragonCleric,Tiers.Tiers[5].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/KnightOfTheClaw/_Shared/_Design/SkillTree/AbilityTree_Branch_DragonCleric.AbilityTree_Branch_DragonCleric,Tiers.Tiers[5].Object..Items.Items[1].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/KnightOfTheClaw/_Shared/_Design/SkillTree/AbilityTree_Branch_DragonCleric.AbilityTree_Branch_DragonCleric,Tiers.Tiers[6].Object..Items.Items[0].Object..MaxPoints,0,,15
+
+
+# Graveborn
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[1].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[1].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[1].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[2].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[2].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[2].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[3].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[3].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[3].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[4].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[4].Object..Items.Items[1].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[5].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[5].Object..Items.Items[1].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[6].Object..Items.Items[0].Object..MaxPoints,0,,15
+
+
+# SporeWarden
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[1].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[1].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[1].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[2].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[2].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[2].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[3].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[3].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[3].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[4].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[4].Object..Items.Items[1].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[5].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[5].Object..Items.Items[1].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[6].Object..Items.Items[0].Object..MaxPoints,0,,15
+
+
+# Blightcaller (courtesy of the stone_swan)
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[1].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[1].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[1].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[2].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[2].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[2].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[3].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[3].Object..Items.Items[1].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[3].Object..Items.Items[2].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[4].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[4].Object..Items.Items[1].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[5].Object..Items.Items[0].Object..MaxPoints,0,,15
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[5].Object..Items.Items[1].Object..MaxPoints,0,,15
+
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[6].Object..Items.Items[0].Object..MaxPoints,0,,15

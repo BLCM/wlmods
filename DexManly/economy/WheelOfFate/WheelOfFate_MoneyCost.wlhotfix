@@ -1,0 +1,16 @@
+@title Wheel of Fate: Money Cost
+@version 1.0.0
+@author DexManly
+@contact-discord dex_manly#5571
+@categories cheat economy
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+###
+### This mod changes the Wheel of Fate in the PLC hub area to cost $500,000 instead of costing Souls. 
+###
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Indigo1/Common/InteractiveObjects/WheelOfFate/UIData_WheelOfFate_Pay.UIData_WheelOfFate_Pay,ActionText,0,,Use Money ([cashicon]%i)
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Indigo1/Common/InteractiveObjects/WheelOfFate/UIData_WheelOfFate_Pay.UIData_WheelOfFate_Pay,CurrencyType,0,,/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_Money
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Indigo1/Common/InteractiveObjects/WheelOfFate/UIData_WheelOfFate_Pay.UIData_WheelOfFate_Pay,Cost.BaseValueConstant,0,,500000.0
