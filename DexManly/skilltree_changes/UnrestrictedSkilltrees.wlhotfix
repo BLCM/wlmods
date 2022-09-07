@@ -1,0 +1,65 @@
+@title Unrestricted Skilltrees
+@version 1.0.0
+@author DexManly
+@contact-discord dex_manly#5571
+@categories skill-system class-other
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+###
+### This mod allows you to spend points without restrictions. It sets the amount of skillpoints necessary to unlock the next tiers to 0.
+### So you can spec into a capstone only if you want for example.
+###
+### Special Thanks: This is a port for wonderlands of the original BL3 mod going by the same name created by CZ47. Stone_swan for adding Blightcaller section for me.
+###
+
+
+# Brr-Zerker
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[4].Tiers_OakPlayerAbilityTreeTierData_3.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[5].Tiers_OakPlayerAbilityTreeTierData_4.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Barbarian/_Shared/_Design/SkillTree/AbilityTree_Branch_Barbarian.AbilityTree_Branch_Barbarian,Tiers.Tiers[6].Tiers_OakPlayerAbilityTreeTierData_5.BranchPointsToUnlock,0,,0
+
+# Spore Warden
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[4].Tiers_OakPlayerAbilityTreeTierData_3.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[5].Tiers_OakPlayerAbilityTreeTierData_4.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Ranger/_Shared/_Design/SkillTree/AbilityTree_Branch_Ranger.AbilityTree_Branch_Ranger,Tiers.Tiers[6].Tiers_OakPlayerAbilityTreeTierData_5.BranchPointsToUnlock,0,,0
+
+# Stabbomancer
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[4].Tiers_OakPlayerAbilityTreeTierData_3.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[5].Tiers_OakPlayerAbilityTreeTierData_4.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/AbilityTree_Branch_Rogue.AbilityTree_Branch_Rogue,Tiers.Tiers[6].Tiers_OakPlayerAbilityTreeTierData_5.BranchPointsToUnlock,0,,0
+
+# Graveborn
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[4].Tiers_OakPlayerAbilityTreeTierData_3.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[5].Tiers_OakPlayerAbilityTreeTierData_4.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Necromancer/_Shared/_Design/SkillTree/AbilityTree_Branch_Necromancer.AbilityTree_Branch_Necromancer,Tiers.Tiers[6].Tiers_OakPlayerAbilityTreeTierData_5.BranchPointsToUnlock,0,,0
+
+# Spellshot
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/GunMage/_Shared/_Design/SkillTree/AbilityTree_Branch_GunMage.AbilityTree_Branch_GunMage,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/GunMage/_Shared/_Design/SkillTree/AbilityTree_Branch_GunMage.AbilityTree_Branch_GunMage,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/GunMage/_Shared/_Design/SkillTree/AbilityTree_Branch_GunMage.AbilityTree_Branch_GunMage,Tiers.Tiers[4].Tiers_OakPlayerAbilityTreeTierData_3.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/GunMage/_Shared/_Design/SkillTree/AbilityTree_Branch_GunMage.AbilityTree_Branch_GunMage,Tiers.Tiers[5].Tiers_OakPlayerAbilityTreeTierData_4.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/GunMage/_Shared/_Design/SkillTree/AbilityTree_Branch_GunMage.AbilityTree_Branch_GunMage,Tiers.Tiers[6].Tiers_OakPlayerAbilityTreeTierData_5.BranchPointsToUnlock,0,,0
+
+# Clawbringer
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/KnightOfTheClaw/_Shared/_Design/SkillTree/AbilityTree_Branch_DragonCleric.AbilityTree_Branch_DragonCleric,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/KnightOfTheClaw/_Shared/_Design/SkillTree/AbilityTree_Branch_DragonCleric.AbilityTree_Branch_DragonCleric,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/KnightOfTheClaw/_Shared/_Design/SkillTree/AbilityTree_Branch_DragonCleric.AbilityTree_Branch_DragonCleric,Tiers.Tiers[4].Tiers_OakPlayerAbilityTreeTierData_3.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/KnightOfTheClaw/_Shared/_Design/SkillTree/AbilityTree_Branch_DragonCleric.AbilityTree_Branch_DragonCleric,Tiers.Tiers[5].Tiers_OakPlayerAbilityTreeTierData_4.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/KnightOfTheClaw/_Shared/_Design/SkillTree/AbilityTree_Branch_DragonCleric.AbilityTree_Branch_DragonCleric,Tiers.Tiers[6].Tiers_OakPlayerAbilityTreeTierData_5.BranchPointsToUnlock,0,,0
+
+# Blightcaller
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[4].Tiers_OakPlayerAbilityTreeTierData_3.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[5].Tiers_OakPlayerAbilityTreeTierData_4.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/PatchDLC/Indigo4/PlayerCharacters/Shaman/_Shared/_Design/SkillTree/AbilityTree_Branch_Shaman.AbilityTree_Branch_Shaman,Tiers.Tiers[6].Tiers_OakPlayerAbilityTreeTierData_5.BranchPointsToUnlock,0,,0
