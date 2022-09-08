@@ -1,0 +1,21 @@
+@title Spore Warden Called Shot 3 Stack
+@version 1.0.0
+@author DexManly
+@contact-discord dex_manly#5571
+@categories class-sporewarden, skill-system
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+###
+### This mod attempts to make the Spore Warden`s Called Shot skill much more user friendly. 6 percent instead of 1.8 but stacking 3 times instead of 10
+###
+
+# Increased Gun damage per stack per point.... was 0.0175 but for 3 stacks the math is like (0.0175 * 10 / 3) = 0.0583
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Ranger/DataTable_Ranger_Values.DataTable_Ranger_Values,Passive_15,Primary_8_7144784543D12C00F7A08182E7FDEE36,0,,0.0583
+
+# Increased Damage Resistance per stack per point.... was -0.017949 but for 3 stacks the math is like (-0.017949 * 10 / 3) = -0.05983
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Ranger/DataTable_Ranger_Values.DataTable_Ranger_Values,Passive_15,Secondary_11_84A2134543364C50EC79C68B17F4BBB5,0,,-0.0598
+
+# Max Stacks.... was 10.0
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Ranger/DataTable_Ranger_Values.DataTable_Ranger_Values,Passive_15,Tertiary_14_E37033D045CF357045CCE0A20D6A91C2,0,,3.0
