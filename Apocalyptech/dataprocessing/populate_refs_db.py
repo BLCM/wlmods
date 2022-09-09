@@ -66,6 +66,20 @@ blacklist_to = {
 # "real" database connections anymore.  So we'll manually read in its INI
 # file, and expect to see the old-style database connection parameters
 # in there.
+#
+# The stanza we expect to see (including vars used by convert_refs_db.py):
+#
+#    [mysql]
+#    host = localhost
+#    port = 3306
+#    user = wlrefs
+#    passwd = password
+#    db = wlrefs
+#    mysql2sqlite = /usr/local/dv/virtualenv/mysql2sqlite/bin/mysql2sqlite
+#    notice2 = Not used by wldata anymore, but IS used by populate_refs_db.py
+#
+# (The "notice2" isn't actually important, just a note to myself.)
+# ~/.config/wldata/wldata.ini on Linux, if using defaults
 config_dir = appdirs.user_config_dir('wldata')
 config_file = os.path.join(config_dir, 'wldata.ini')
 config = configparser.ConfigParser()
@@ -74,7 +88,9 @@ db = MySQLdb.connect(
         user=config['mysql']['user'],
         passwd=config['mysql']['passwd'],
         host=config['mysql']['host'],
-        db=config['mysql']['db'])
+        db=config['mysql']['db'],
+        port=config['mysql']['port'],
+        )
 curs = db.cursor()
 
 # Let's time this.  Obviously the ETA comparison will vary if you're not
