@@ -1892,6 +1892,8 @@ LVL_TO_ENG = {
         'D_Boss_Intro_P': "Boss Dungeon: Queen's Gate",
         'D_Boss_Oasis_P': "Boss Dungeon: Salissa",
         'D_Boss_Goblin_P': "Boss Dungeon: Vorcanar",
+        'D_Boss_Climb_p': "Boss Dungeon: Wastard",
+        'D_Hubtown_01': "Brighthoof Area Dungeon 1",
         'D_Hubtown_02_P': "Brighthoof Area Dungeon 2",
         'D_Hubtown_03_P': "Brighthoof Area Dungeon 3",
         'D_HubtownRare_P': "Brighthoof Area Dungeon Special",
