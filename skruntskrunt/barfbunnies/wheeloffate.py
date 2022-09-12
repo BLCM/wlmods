@@ -140,3 +140,27 @@ gen_all(["/Game/PatchDLC/Indigo1/Common/Animation/WheelOfFate/AS_WheelOfFate_Man
 gen_all(["/Game/PatchDLC/Indigo1/Common/Animation/WheelOfFate/AS_WheelOfFate_Mandibles_OpenClose_Short"], {"Notifies.Notifies[0].SegmentLength":short, #, 2.6,
                                                                                                            "Notifies.Notifies[1].SegmentLength":short})#, 2.6,
 
+mess_paths = [
+    "/Game/PatchDLC/Indigo1/Audio/Events/Indigo1_IO/WE_IO_WheelofFate_Idle_Lp_Stop",
+    "/Game/PatchDLC/Indigo1/Audio/Events/Indigo1_IO/WE_IO_WheelofFate_Player_ScreenStatus_Lp_Start",
+    "/Game/PatchDLC/Indigo1/Audio/Events/Indigo1_IO/WE_IO_WheelofFate_Voc_Idles",
+    "/Game/PatchDLC/Indigo1/Audio/Events/Indigo1_IO/WE_IO_WheelofFate_Maw_open",
+    "/Game/PatchDLC/Indigo1/Audio/Events/Indigo1_IO/WE_IO_WheelofFate_Spin_Lp_Start",
+    "/Game/PatchDLC/Indigo1/Audio/Events/Indigo1_IO/WE_IO_WheelofFate_Spin_Chains_Lp",
+    "/Game/PatchDLC/Indigo1/Audio/Events/Indigo1_IO/WE_IO_WheelofFate_Spin_Lp_Stop",
+    "/Game/PatchDLC/Indigo1/Audio/Events/Indigo1_IO/WE_IO_WheelofFate_Player_ScreenStatus_Lp_Stop",
+    "/Game/PatchDLC/Indigo1/Audio/Events/Indigo1_IO/WE_IO_WheelofFate_Maw_barfItem",
+    "/Game/PatchDLC/Indigo1/Audio/Events/Indigo1_IO/WE_IO_WheelofFate_Eye_Blink",
+    "/Game/PatchDLC/Indigo1/Audio/Events/Indigo1_IO/WE_IO_WheelofFate_Idle_Lp_Start",
+    "/Game/PatchDLC/Indigo1/Audio/Events/Indigo1_IO/WE_IO_WheelofFate_Maw_close",
+]
+mess_params = {
+    "DurationRange.Min":0.0,
+    "DurationRange.Max":short,
+}
+gen_all( mess_paths, mess_params)
+mess_paths = ["/Game/PatchDLC/Indigo1/Common/Effects/Systems/PS_WheelOfFate_Eye"]
+mess_params = dict(
+        [(f"Emitters.Emitters[{i}].Object..LODLevels.LODLevels[0].Object..RequiredModule.Object..EmitterDuration",short) for i in range(0,3)]
+)
+gen_all( mess_paths, mess_params)
