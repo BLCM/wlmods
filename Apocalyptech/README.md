@@ -64,6 +64,8 @@ than a mod:
 
 ## Quality of Life Mods
 
+- **Always Visible Challenge Icons** - Makes challenge icons visible at all
+  times
 - **Mega TimeSaver XL** - Speeds up slow animations throughout the game.
 - **More Visible Scrolls** - Makes the scroll loot bars (and, incidentally,
   mission items) far more visible
