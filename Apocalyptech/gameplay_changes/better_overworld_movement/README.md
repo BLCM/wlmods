@@ -6,7 +6,7 @@ can almost certainly be used for sequence-breaking, should you desire
 such shenanigans.
 
 Users of this mod may be interested in
-[Early Overworld Abilities](https://github.com/BLCM/wlmods/wiki/Easier%20Overworld%20Abilities)
+[Early Overworld Abilities](https://github.com/BLCM/wlmods/wiki/Early%20Overworld%20Abilities)
 as well, which allows the player to dispel hex barriers, see hidden
 bridges, and bypass red Dark Magic barriers from the beginning of the
 game.
