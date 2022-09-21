@@ -30,6 +30,7 @@
 import os
 import sys
 import gzip
+import struct
 import itertools
 
 class _StreamingBlueprintPosition:
@@ -902,6 +903,51 @@ class Mod(object):
             '{}:{}'.format(len(to_val), to_val),
             ]), file=self.df)
         self.last_was_newline = False
+
+    def _guid_to_ints(self, guid):
+        """
+        Converts `guid` (represented as 32 ASCII hex characters) to a
+        series of four integers (signed 32-bit big-endian).
+        """
+        rv = []
+        for part in [
+                guid[:8],
+                guid[8:16],
+                guid[16:24],
+                guid[24:],
+                ]:
+            rv.append(struct.unpack('>i', bytes.fromhex(part))[0])
+        return rv
+
+    def bytecode_hotfix_guid(self, hf_type, package,
+            obj_name,
+            export_name,
+            index,
+            from_val,
+            to_val,
+            notify=False):
+        """
+        When a GUID value is referenced in Bytecode, it seems to show up
+        as four separate integer values, which would be annoying to deal
+        with manually (especially given that data serializations are likely
+        to just give you a single hex-digit string).  This method allows you
+        to pass in those hex-digit strings as `from_val` and `to_val`, and
+        will generate four bytecode hotfixes to update the GUID.  The `index`
+        should be the index of the *first* of the quads -- the subsequent
+        indexes will always be +5 each.
+        """
+        parts_orig = self._guid_to_ints(from_val)
+        parts_new = self._guid_to_ints(to_val)
+        cur_index = index
+        for part_orig, part_new in zip(parts_orig, parts_new):
+            self.bytecode_hotfix(hf_type, package,
+                    obj_name,
+                    export_name,
+                    cur_index,
+                    part_orig,
+                    part_new,
+                    notify=notify)
+            cur_index += 5
 
     def finish_streaming(self):
         """
