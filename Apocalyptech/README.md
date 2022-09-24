@@ -1,9 +1,6 @@
 Apocalyptech's Wonderlands Mods
 ===============================
 
-**NOTE:** This is still a work in progress, and no mods stored here are
-usable by the general public.
-
 Welcome to my Wonderlands Mod space!  I've divided this up into category
 folders, so click through to see details on the actual mods.  Here's a summary
 of the mods you'll find in here, though:
@@ -49,6 +46,8 @@ than a mod:
 - **Expanded Legendary Pools** - Adds all legendary/unique items to the world drop pools.
 - **More Elemental Weapons** - Increases the probability of rolling the elemental version
   of any given weapon.
+- **No Loot Luck: Better Loot Edition** - Completely removes the effect of Loot Luck on
+  gear drops, setting them instead to traditional Better Loot quality weighting.
 - **No Wasted Equipment** - Armor and Amulet parts will always match the player(s)
   currently in the game.  Will eventually support Enchantments too, but that isn't done yet.
 - **Starting Gear** - Some alternate contents for the initial starting
