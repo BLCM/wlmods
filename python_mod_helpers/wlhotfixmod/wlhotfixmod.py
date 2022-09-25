@@ -1202,21 +1202,23 @@ class ItemPool(object):
     Some abstraction to easily build up ItemPools.
     """
 
-    def __init__(self, pool_name, pools=[], balances=[]):
+    def __init__(self, pool_name, pools=None, balances=None):
         self.pool_name = pool_name
         self.balanceditems = []
 
         # Populate initial values if specified
-        for pool in pools:
-            if type(pool) == tuple:
-                self.add_pool(*pool)
-            else:
-                self.add_pool(pool)
-        for balance in balances:
-            if type(balance) == tuple:
-                self.add_balance(*balance)
-            else:
-                self.add_balance(balance)
+        if pools is not None:
+            for pool in pools:
+                if type(pool) == tuple:
+                    self.add_pool(*pool)
+                else:
+                    self.add_pool(pool)
+        if balances is not None:
+            for balance in balances:
+                if type(balance) == tuple:
+                    self.add_balance(*balance)
+                else:
+                    self.add_balance(balance)
 
     def add_pool(self, pool_name, weight=None):
         """
@@ -1246,13 +1248,14 @@ class ItemPool(object):
 
         pool = ItemPool(pool_name)
         pool_data = data.get_data(pool_name)[0]
-        for bal in pool_data['BalancedItems']:
-            if 'export' in bal['ItemPoolData']:
-                bal_name = bal['ResolvedInventoryBalanceData'][1]
-                pool.add_balance(bal_name, BVC.from_data_struct(bal['Weight']))
-            else:
-                pool_name = bal['ItemPoolData'][1]
-                pool.add_pool(pool_name, BVC.from_data_struct(bal['Weight']))
+        if 'BalancedItems' in pool_data:
+            for bal in pool_data['BalancedItems']:
+                if 'export' in bal['ItemPoolData']:
+                    bal_name = bal['ResolvedInventoryBalanceData'][1]
+                    pool.add_balance(bal_name, BVC.from_data_struct(bal['Weight']))
+                else:
+                    pool_name = bal['ItemPoolData'][1]
+                    pool.add_pool(pool_name, BVC.from_data_struct(bal['Weight']))
 
         return pool
 
