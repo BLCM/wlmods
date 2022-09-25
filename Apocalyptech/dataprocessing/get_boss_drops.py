@@ -34,7 +34,8 @@ from wlhotfixmod.wlhotfixmod import ItemPool, LVL_TO_ENG_LOWER, LVL_CASE_NORM
 # This is a script to try and auto-discover all unique drops for boss-like characters
 # in Wonderlands.  This would probably work pretty well for BL3 as well, though it'd
 # have to be updated to report on TVHM properly, and the various exclusion sets would
-# need to be updated.
+# need to be updated.  (Also the BL3 version would have to deal with ItemPool expansion
+# objects -- WL *does* have those, but they don't seem to affect unique drops.)
 #
 # It does *not* attempt to report anything about drop probabilities, or if drops are
 # locked behind Chaos levels, or any of that.  My own purpose for this script was just
@@ -813,4 +814,41 @@ for bpchar_name in data.find('/', 'BPCHar_'):
                     print(f'{report_color} > {pool}')
                     pool_obj.show(indent=2, balance_name_mapping=balance_name_mapping)
             print('')
+
+# Finally, a few notes about data we *know* we don't gather properly in here.
+print("""NOTE: One known bit of missing data is for three of the "hidden" Chaos
+Chamber bosses (Gloopathoth, Bunnidhogg, and Barkenstein).  I don't quite
+understand how those bosses get their drops, but it seems that they might
+end up at Item_PoolList_Boss_Endlessboss via BPChar_TheMaker somehow.
+Maybe that BPChar gets loaded regardless of which Endlessboss is rolled,
+and that gets to control the drops?  I dunno, it's weird.
+
+Anyway, the following are not detected by this script (and probably never
+will be), so this is just hardcoded info:
+
+BPChar: /Game/Enemies/EndlessBoss/_Design/Character/AbyssAspect/BPChar_AbyssAspect
+Name: Gloopathoth, Keeper of the Abyss
+ ... (shenanigans occur) ...
+ > /Game/GameData/Loot/ItemPools/EndlessDungeon/Item_PoolList_Cookies/Boss/Item_PoolList_Boss_Endlessboss
+   ... (skipping some steps) ...
+   > /Game/GameData/Loot/ItemPools/Unique/ItemPool_Boss_Aspect_Abyss_2
+     - Crossblade | /Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/CrossBlade/Balance/Balance_SG_JAK_05_Crossblade
+
+BPChar: /Game/Enemies/EndlessBoss/_Design/Character/DesertAspect/BPChar_DesertAspect
+Name: Bunnidhogg, Keeper of the Sands
+ ... (shenanigans occur) ...
+ > /Game/GameData/Loot/ItemPools/EndlessDungeon/Item_PoolList_Cookies/Boss/Item_PoolList_Boss_Endlessboss
+   ... (skipping some steps) ...
+   > /Game/GameData/Loot/ItemPools/Unique/ItemPool_Boss_Aspect_Desert_2
+     - Body Rune | /Game/Gear/Shields/_Design/_Uniques/Rune_Body/Balance/InvBalD_Shield_Rune_Body
+
+BPChar: /Game/Enemies/EndlessBoss/_Design/Character/NatureAspect/BPChar_NatureAspect
+Name: Barkenstein, Keeper of Nature
+ ... (shenanigans occur) ...
+ > /Game/GameData/Loot/ItemPools/EndlessDungeon/Item_PoolList_Cookies/Boss/Item_PoolList_Boss_Endlessboss
+   ... (skipping some steps) ...
+   > /Game/GameData/Loot/ItemPools/Unique/ItemPool_Boss_Aspect_Nature_2
+     - Frozen Orb | /Game/Gear/SpellMods/_Unique/FrozenOrb/Balance/Balance_Spell_FrozenOrb
+
+""")
 
