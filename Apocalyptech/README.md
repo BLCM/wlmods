@@ -20,6 +20,8 @@ of the mods you'll find in here, though:
   bypass red Dark Magic barriers, and see hidden bridges from the beginning of
   the game.
 - **Movement Speed Cheats** - Move faster!
+- **Short Overworld Dungeons** - Shortens all Overworld dungeons (single-room
+  only, and shorter enemy waves)
 
 ## Gear Changes
 
