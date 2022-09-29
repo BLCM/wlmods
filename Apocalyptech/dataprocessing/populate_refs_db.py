@@ -92,7 +92,7 @@ db = MySQLdb.connect(
         passwd=config['mysql']['passwd'],
         host=config['mysql']['host'],
         db=config['mysql']['db'],
-        port=config['mysql']['port'],
+        port=int(config['mysql']['port']),
         )
 curs = db.cursor()
 
