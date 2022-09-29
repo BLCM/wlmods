@@ -1,0 +1,15 @@
+@title Wheel of Fate: Free Cost
+@version 1.0.0
+@author DexManly
+@contact-discord dex_manly#5571
+@categories cheat, economy
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+###
+### This mod changes the Wheel of Fate in the PLC hub area to be FREE instead of costing Souls. 
+###
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Indigo1/Common/InteractiveObjects/WheelOfFate/UIData_WheelOfFate_Pay.UIData_WheelOfFate_Pay,ActionText,0,,Big Money No Whammies!
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Indigo1/Common/InteractiveObjects/WheelOfFate/UIData_WheelOfFate_Pay.UIData_WheelOfFate_Pay,bCostsToUse,0,,False

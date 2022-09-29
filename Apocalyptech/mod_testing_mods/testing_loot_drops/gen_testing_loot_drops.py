@@ -73,6 +73,8 @@ pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_VeryRare'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Amulets/ItemPool_Amulets_All'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Amulets/ItemPool_Amulets_05_Legendary'
+#pool_to_set = '/Game/Automation/Maps/DPS/ItemPools/ItemPool_TESTONLY_CircleOfProtection_Mod1'
+#pool_to_set = '/Game/Automation/Maps/DPS/ItemPools/ItemPool_TESTONLY_CircleOfProtection_Mod2'
 
 balances = [
 
@@ -92,6 +94,26 @@ balances = [
         #'/Game/Gear/SpellMods/MagicMissile/_Shared/_Design/_Unique/Balance_Spell_MagicMissile_IntroMission',
         #'/Game/Gear/Melee/Swords/_Shared/_Design/_Unique/IntroMission/Balance/Balance_M_Sword_IntroMission',
         #'/Game/Gear/Melee/Swords/_Shared/_Design/_Unique/IntroMission/Balance/Balance_M_Sword_IntroMission_SkellySword',
+
+        # DLC4
+        # Vengeance
+        #'/Game/PatchDLC/Indigo4/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/_Unique/Vengeance/Balance/Bal_AR_TOR_Vengeance',
+        # Merlin's Razor
+        #'/Game/PatchDLC/Indigo4/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/MerlinsRazor/Balance/Bal_SG_JAK_MerlinsRazor',
+        # Sly Trivern
+        #'/Game/PatchDLC/Indigo4/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/Tiabolt/Balance/Balance_SR_DAL_Tiabolt',
+        # Rage Handle
+        #'/Game/PatchDLC/Indigo4/Gear/Melee/_Shared/_Unique/FaceSmasher/Balance/Balance_M_RageHandle',
+        # Brutal Stampede
+        #'/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Balance/Balance_Armor_BrutalStampede',
+        # Mosquito's Mantle
+        #'/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/MantleOfThorns/Balance/Balance_Armor_MantleThorn',
+        # Curse of Malice
+        #'/Game/PatchDLC/Indigo4/Gear/SpellMods/_Unique/MineHail/Balance/Balance_Spell_MineHail',
+        # Wicked Gossip
+        #'/Game/PatchDLC/Indigo4/Gear/SpellMods/_Unique/SomethingWicked/Balance/Balance_Spell_SomethingWicked',
+        # Daemon Blight
+        #'/Game/PatchDLC/Indigo4/Gear/Rings/HexRevenge/Balance/Balance_Ring_HexRevenge',
 
         ]
 

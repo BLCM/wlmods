@@ -1,6 +1,6 @@
 
 @title Uniques Are Legendary
-@version 1.0.1
+@version 1.1.0
 @author Apocalyptech
 @contact https://apocalyptech.com/contact.php
 @categories gear-general
@@ -52,6 +52,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThat
 SparkPatchEntry,(1,1,0,),/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Mage.Balance_Armor_ArmorThatSucks_Mage,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary"'
 SparkPatchEntry,(1,1,0,),/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Ranger.Balance_Armor_ArmorThatSucks_Ranger,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary"'
 SparkPatchEntry,(1,1,0,),/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Rogue.Balance_Armor_ArmorThatSucks_Rogue,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary"'
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Shaman.Balance_Armor_ArmorThatSucks_Shaman,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary"'
 SparkPatchEntry,(1,1,0,),/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/SteelGauntlets/Balance/Balance_Armor_SteelGauntlets.Balance_Armor_SteelGauntlets,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary"'
 SparkPatchEntry,(1,1,0,),/Game/Gear/SpellMods/_Unique/_MissionUniques/Frostburn/Balance/Balance_Spell_Frostburn.Balance_Spell_Frostburn,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary"'
 SparkPatchEntry,(1,1,0,),/Game/Gear/SpellMods/_Unique/_MissionUniques/JaggedToothCrew/Balance/Balance_Spell_JaggedTooth.Balance_Spell_JaggedTooth,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary"'
@@ -68,6 +69,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDang
 SparkPatchEntry,(1,1,0,),/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_GunMage.Balance_Amulet_Unique_Plot05_HDD_GunMage,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary"'
 SparkPatchEntry,(1,1,0,),/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Ranger.Balance_Amulet_Unique_Plot05_HDD_Ranger,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary"'
 SparkPatchEntry,(1,1,0,),/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Rogue.Balance_Amulet_Unique_Plot05_HDD_Rogue,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary"'
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Indigo4/Gear/_Design/Amulets/_Shared/_Design/_Unique/HDD/Balance/Balance_Amulet_Unique_Plot05_HDD_Shaman.Balance_Amulet_Unique_Plot05_HDD_Shaman,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary"'
 SparkPatchEntry,(1,1,0,),/Game/Gear/Amulets/_Shared/_Unique/RonRivote/Balance/Balance_Amulet_Unique_RonRivote.Balance_Amulet_Unique_RonRivote,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary"'
 SparkPatchEntry,(1,1,0,),/Game/Gear/Amulets/_Shared/_Unique/GTFO/Balance/Balance_Amulet_Unique_GTFO.Balance_Amulet_Unique_GTFO,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary"'
 

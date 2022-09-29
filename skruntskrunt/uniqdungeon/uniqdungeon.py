@@ -21,12 +21,12 @@
 import json
 import sys
 sys.path.append('../../python_mod_helpers')
-from bl3hotfixmod.bl3hotfixmod import Mod
+from wlhotfixmod.wlhotfixmod import Mod
 import random
 import argparse
 
 
-OUTPUT='uniqdungeon.bl3hotfix'
+OUTPUT='uniqdungeon.wlhotfix'
 SPAWNOUT='spawnoptions.output.json'
 BPCHAR=1
 SEED=None # 42

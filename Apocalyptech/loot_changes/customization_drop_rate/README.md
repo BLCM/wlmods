@@ -20,8 +20,17 @@ collect them all.  Note that *dedicated* cosmetic drops (if there are any in the
 game) may be unaffected by this.  As of initial release, the mod hasn't been
 tested super thoroughly, so there could be areas which need fixing up.
 
+As of v1.1.0, this mod also prevents cosmetics from spawning at the Wheel of Fate,
+in Dreamveil Overlook.  The cosmetic option can still be "rolled," but the items
+should be replaced with a random assortment of other possibilities.  I have not
+made any effort to see if this can cause gear to spawn before it's supposed to
+be able to, so it's possible this mod's a bit cheaty in that regard.
+
 Changelog
 =========
+
+**v1.1.0** - Aug 16, 2022
+ * Prevent cosmetics from spawning at the Wheel of Fate, in Dreamveil Overlook.
 
 **v1.0.1** - Aug 10, 2022
  * Updated "None" preset to prevent customization drops while fulfilling level

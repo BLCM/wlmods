@@ -63,7 +63,7 @@ mod = Mod('expanded_legendary_pools.wlhotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.2',
+        v='1.1.0',
         cats='loot-system, enemy-drops',
         )
 
@@ -174,6 +174,11 @@ pools = [
 
                 # Echoing Phoenix
                 ('/Game/PatchDLC/Indigo3/Gear/Weapons/AssualtRifles/Jakobs/_Shared/_Design/_Unique/EchoPhoenix/Balance/Bal_AR_JAK_EchoPhnix', 1),
+
+                ### DLC4
+
+                # Vengeance
+                ('/Game/PatchDLC/Indigo4/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/_Unique/Vengeance/Balance/Bal_AR_TOR_Vengeance', 1),
 
                 ### Additions
 
@@ -288,6 +293,11 @@ pools = [
                 # Stab-O-Matic
                 ('/Game/PatchDLC/Indigo3/Gear/Weapons/Shotgun/Hyperion/_Shared/_Design/_Unique/FaceStabber/Balance/Balance_SG_HYP_FacePunch', 1),
 
+                ### DLC4
+
+                # Merlin's Razor
+                ('/Game/PatchDLC/Indigo4/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/MerlinsRazor/Balance/Bal_SG_JAK_MerlinsRazor', 1),
+
                 ### Additions
 
                 # Last Rites
@@ -354,6 +364,11 @@ pools = [
                 # Kao Khan
                 ('/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/KaoKhan/Balance/Balance_SR_HYP_KaoKhan', 1),
 
+                ### DLC4
+
+                # Sly Trivern
+                ('/Game/PatchDLC/Indigo4/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/Tiabolt/Balance/Balance_SR_DAL_Tiabolt', 1),
+
                 ### Additions
 
                 # Ironsides
@@ -407,6 +422,11 @@ pools = [
                 ('/Game/PatchDLC/Indigo3/Gear/Melee/_Shared/_Unique/ShieldBash/Balance_M_ShieldBash', 1),
                 # Petty Tantrum
                 ('/Game/PatchDLC/Indigo3/Gear/Melee/_Shared/_Unique/HammerQuake/Balance_M_HammerQuake', 1),
+
+                ### DLC4
+
+                # Rage Handle
+                ('/Game/PatchDLC/Indigo4/Gear/Melee/_Shared/_Unique/FaceSmasher/Balance/Balance_M_RageHandle', 1),
 
                 ### Additions
 
@@ -541,20 +561,29 @@ pools = [
                 # Tyrant's Truth
                 ('/Game/PatchDLC/Indigo3/Gear/Pauldrons/_Shared/_Design/_Unique/Ascetic/Balance/Balance_Armor_05_Ascetic', 1),
 
+                ### DLC4
+
+                # Brutal Stampede
+                ('/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Balance/Balance_Armor_BrutalStampede', 1),
+                # Mosquito's Mantle
+                ('/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/MantleOfThorns/Balance/Balance_Armor_MantleThorn', 1),
+
                 ### Additions
 
+                # Armor That Sucks (Blightcaller)
+                #('/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Shaman', 1*addition_scale/7),
                 # Armor That Sucks (Brr-Zerker)
-                #('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Barb', 1*addition_scale/6),
+                #('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Barb', 1*addition_scale/7),
                 # Armor That Sucks (Clawbringer)
-                #('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Knight', 1*addition_scale/6),
+                #('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Knight', 1*addition_scale/7),
                 # Armor That Sucks (Graveborn)
-                #('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Necro', 1*addition_scale/6),
+                #('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Necro', 1*addition_scale/7),
                 # Armor That Sucks (Spellshot)
-                #('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Mage', 1*addition_scale/6),
+                #('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Mage', 1*addition_scale/7),
                 # Armor That Sucks (Spore Warden)
-                #('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Ranger', 1*addition_scale/6),
+                #('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Ranger', 1*addition_scale/7),
                 # Armor That Sucks (Stabbomancer)
-                #('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Rogue', 1*addition_scale/6),
+                #('/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Rogue', 1*addition_scale/7),
                 # Armor That Sucks (combined custom pool)
                 (armor_that_sucks_pool, 1),
                 # Steel Gauntlets
@@ -625,6 +654,13 @@ pools = [
                 # Smithy's Ire
                 ('/Game/PatchDLC/Indigo3/Gear/SpellMods/_Unique/IllmarinensWrath/Balance/Balance_Spell_IllWrath', 1),
 
+                ### DLC4
+
+                # Curse of Malice
+                ('/Game/PatchDLC/Indigo4/Gear/SpellMods/_Unique/MineHail/Balance/Balance_Spell_MineHail', 1),
+                # Wicked Gossip
+                ('/Game/PatchDLC/Indigo4/Gear/SpellMods/_Unique/SomethingWicked/Balance/Balance_Spell_SomethingWicked', 1),
+
                 ### Additions
 
                 # Frostburn
@@ -680,6 +716,11 @@ pools = [
                 # Fealty Oath
                 ('/Game/PatchDLC/Indigo3/Gear/Rings/BrandLoyalty/Balance/Balance_Ring_BrandLoyalty', 1),
 
+                ### DLC4
+
+                # Daemon Blight
+                ('/Game/PatchDLC/Indigo4/Gear/Rings/HexRevenge/Balance/Balance_Ring_HexRevenge', 1),
+
                 ### Additions
 
                 # Driftwood
@@ -733,18 +774,21 @@ pools = [
 
                 ### Additions
 
+                # Harmonious Dingledangle (Blightcaller)
+                #('/Game/PatchDLC/Indigo4/Gear/_Design/Amulets/_Shared/_Design/_Unique/HDD/Balance/Balance_Amulet_Unique_Plot05_HDD_Shaman', 1*addition_scale/7),
+
                 # Harmonious Dingledangle (Brr-Zerker)
-                #('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Barb', 1*addition_scale/6),
+                #('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Barb', 1*addition_scale/7),
                 # Harmonious Dingledangle (Clawbringer)
-                #('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_KotC', 1*addition_scale/6),
+                #('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_KotC', 1*addition_scale/7),
                 # Harmonious Dingledangle (Graveborn)
-                #('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Necro', 1*addition_scale/6),
+                #('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Necro', 1*addition_scale/7),
                 # Harmonious Dingledangle (Spellshot)
-                #('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_GunMage', 1*addition_scale/6),
+                #('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_GunMage', 1*addition_scale/7),
                 # Harmonious Dingledangle (Spore Warden)
-                #('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Ranger', 1*addition_scale/6),
+                #('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Ranger', 1*addition_scale/7),
                 # Harmonious Dingledangle (Stabbomancer)
-                #('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Rogue', 1*addition_scale/6),
+                #('/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Rogue', 1*addition_scale/7),
                 # Harmonious Dingledangle (combined custom pool)
                 (dingledangle_pool, 1),
                 # Rivote's Amulet
@@ -783,6 +827,7 @@ class_attrs = [
         '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_GunMage',
         '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Ranger',
         '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Rogue',
+        '/Game/PatchDLC/Indigo4/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Shaman',
         ]
 for label, pool_name, balances in [
         ('Armor That Sucks', armor_that_sucks_pool, [
@@ -792,6 +837,7 @@ for label, pool_name, balances in [
             '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Mage',
             '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Ranger',
             '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Rogue',
+            '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Shaman',
             ]),
         ('Harmonious Dingledangle', dingledangle_pool, [
             '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Barb',
@@ -800,6 +846,7 @@ for label, pool_name, balances in [
             '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_GunMage',
             '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Ranger',
             '/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Rogue',
+            '/Game/PatchDLC/Indigo4/Gear/_Design/Amulets/_Shared/_Design/_Unique/HDD/Balance/Balance_Amulet_Unique_Plot05_HDD_Shaman',
             ])
         ]:
     mod.comment(label)
@@ -853,6 +900,15 @@ for exp in [
         '/Game/PatchDLC/Indigo3/GameData/PatchScripts/EXPD_ItemPool_Indigo3_Rings',
         '/Game/PatchDLC/Indigo3/GameData/PatchScripts/EXPD_ItemPool_Indigo3_Shotguns',
         '/Game/PatchDLC/Indigo3/GameData/PatchScripts/EXPD_ItemPool_Indigo3_Spells',
+
+        # DLC4
+        '/Game/PatchDLC/Indigo4/GameData/PatchScripts/EXPD_ItemPool_Indigo4_Armor',
+        '/Game/PatchDLC/Indigo4/GameData/PatchScripts/EXPD_ItemPool_Indigo4_ARs',
+        '/Game/PatchDLC/Indigo4/GameData/PatchScripts/EXPD_ItemPool_Indigo4_Melee',
+        '/Game/PatchDLC/Indigo4/GameData/PatchScripts/EXPD_ItemPool_Indigo4_Rings',
+        '/Game/PatchDLC/Indigo4/GameData/PatchScripts/EXPD_ItemPool_Indigo4_Shotguns',
+        '/Game/PatchDLC/Indigo4/GameData/PatchScripts/EXPD_ItemPool_Indigo4_Snipers',
+        '/Game/PatchDLC/Indigo4/GameData/PatchScripts/EXPD_ItemPool_Indigo4_Spells',
         ]:
     mod.reg_hotfix(Mod.PATCH, '',
             exp,

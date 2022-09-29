@@ -62,7 +62,7 @@ for language in ['en']:
             ],
             contact=_('https://apocalyptech.com/contact.php'),
             lic=Mod.CC_BY_SA_40,
-            v='1.0.0',
+            v='1.1.0',
             cats=', '.join(cats),
             ss=[
                 'https://raw.githubusercontent.com/BLCM/wlmods/master/Apocalyptech/gear_changes/red_text_explainer/automagic.png',
@@ -399,6 +399,23 @@ for language in ['en']:
                 _("A personal touch shows you care."),
                 _("Damage is considered melee damage, and crit chance depends on melee crit chance stat.")),
 
+            # DLC4 Gear
+            (_("Vengeance"),
+                '/Game/PatchDLC/Indigo4/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/_Unique/Vengeance/Names/UIStat_RedText_Vengeance',
+                _("Wait. Execute your plan. Hope."),
+                # Quarrel/Feud modes with slightly different effects
+                ON_CARD),
+            (_("Merlin's Razor"),
+                '/Game/PatchDLC/Indigo4/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/MerlinsRazor/Names/UIStat_RedText_MerlinsRazor',
+                _("It'll bite you in the end. Or the face."),
+                # Magic blast which returns back towards you (and bounces forward again a bit)
+                ON_CARD),
+            (_("Sly Trivern"),
+                '/Game/PatchDLC/Indigo4/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/Tiabolt/Name/UIStat_RedText_Tiabolt',
+                _("Try, try again."),
+                # Cycle-bolt/Tri-bolt modes, each with multi-element capabilities
+                ON_CARD),
+
             ###
             ### Now: Spells!
             ###
@@ -537,6 +554,18 @@ for language in ['en']:
                 '/Game/PatchDLC/Indigo3/Gear/SpellMods/_Unique/InstantAmbush/Names/UIStat_RedText_InstantAmbush',
                 _("Always has your back."),
                 # Summons flying bows which fire at enemies
+                ON_CARD),
+
+            # DLC4
+            (_("Curse of Malice"),
+                '/Game/PatchDLC/Indigo4/Gear/SpellMods/_Unique/MineHail/Names/UIStat_RedText_MineHail',
+                _("Ages like fine milk."),
+                # Rains explosive crossbolts which attach to targets and explode as MIRVs
+                ON_CARD),
+            (_("Wicked Gossip"),
+                '/Game/PatchDLC/Indigo4/Gear/SpellMods/_Unique/SomethingWicked/Names/UIStat_RedText_SWicked',
+                _("Spreads like a lie."),
+                # Oh hit, ricochets to nearby enemies, or drops poison puddle if none are available
                 ON_CARD),
 
             ###

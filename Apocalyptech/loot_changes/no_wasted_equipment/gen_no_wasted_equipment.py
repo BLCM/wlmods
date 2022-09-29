@@ -22,7 +22,7 @@
 import sys
 sys.path.append('../../../python_mod_helpers')
 from wldata.wldata import WLData
-from wlhotfixmod.wlhotfixmod import Mod, BVCF, Balance
+from wlhotfixmod.wlhotfixmod import Mod, BVCF, Balance, DataTableValue
 
 data = WLData()
 
@@ -41,7 +41,7 @@ mod = Mod('no_wasted_equipment.wlhotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='0.9.0',
+        v='0.9.1',
         cats='loot-system, gameplay',
         )
 
@@ -64,20 +64,33 @@ for row, val in [
             BVCF(bvc=val))
 mod.newline()
 
+mod.comment('Extra tweak for Blightcaller character weight')
+mod.reg_hotfix(Mod.PATCH, '',
+        '/Game/PatchDLC/Indigo4/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Shaman',
+        'ValueResolver.Object..ValueB',
+        BVCF(dtv=DataTableValue(
+            table='/Game/GameData/Economy/Economy_Miscellaneous',
+            row='CharacterWeights_Secondary',
+            value='Value')))
+mod.newline()
+
 # Armor secondary-class unlocking -- the default behavior ends up unlocking
 # in pairs (based on an unlocked Secondary Body part), which isn't really
 # what we want with this mod.
 mod.header('Unlocking Armor Second Class')
 for part in [
-        'Part_P_Class_Secondary_Barbarian',
-        'Part_P_Class_Secondary_GunMage',
-        'Part_P_Class_Secondary_Knight',
-        'Part_P_Class_Secondary_Necromancer',
-        'Part_P_Class_Secondary_Ranger',
-        'Part_P_Class_Secondary_Rogue',
+        '/Game/Gear/Pauldrons/_Shared/_Design/Parts/Class/Secondary/Part_P_Class_Secondary_Barbarian',
+        '/Game/Gear/Pauldrons/_Shared/_Design/Parts/Class/Secondary/Part_P_Class_Secondary_GunMage',
+        '/Game/Gear/Pauldrons/_Shared/_Design/Parts/Class/Secondary/Part_P_Class_Secondary_Knight',
+        '/Game/Gear/Pauldrons/_Shared/_Design/Parts/Class/Secondary/Part_P_Class_Secondary_Necromancer',
+        '/Game/Gear/Pauldrons/_Shared/_Design/Parts/Class/Secondary/Part_P_Class_Secondary_Ranger',
+        '/Game/Gear/Pauldrons/_Shared/_Design/Parts/Class/Secondary/Part_P_Class_Secondary_Rogue',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/Parts/Class/Secondary/Part_P_Class_Secondary_Shaman',
         ]:
+    if part in data.expansion_dependencies:
+        print('WARNING: {} has dependency expansions'.format(part))
     mod.reg_hotfix(Mod.PATCH, '',
-            f'/Game/Gear/Pauldrons/_Shared/_Design/Parts/Class/Secondary/{part}',
+            part,
             'Dependencies',
             '()')
 mod.newline()
@@ -85,12 +98,13 @@ mod.newline()
 # Amulets -- by default these don't take the currently-used classes into
 # account at all!
 amulet_part_mapping = {
-        'Part_Amulet_ClassStat_Barbarian': '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Barb',
-        'Part_Amulet_ClassStat_GunMage': '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_GunMage',
-        'Part_Amulet_ClassStat_KotC': '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Knight',
-        'Part_Amulet_ClassStat_Necromancer': '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Necro',
-        'Part_Amulet_ClassStat_Ranger': '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Ranger',
-        'Part_Amulet_ClassStat_Rogue': '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Rogue',
+        '/Game/Gear/Amulets/_Shared/_Design/Parts/ClassStat/Part_Amulet_ClassStat_Barbarian': '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Barb',
+        '/Game/Gear/Amulets/_Shared/_Design/Parts/ClassStat/Part_Amulet_ClassStat_GunMage': '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_GunMage',
+        '/Game/Gear/Amulets/_Shared/_Design/Parts/ClassStat/Part_Amulet_ClassStat_KotC': '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Knight',
+        '/Game/Gear/Amulets/_Shared/_Design/Parts/ClassStat/Part_Amulet_ClassStat_Necromancer': '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Necro',
+        '/Game/Gear/Amulets/_Shared/_Design/Parts/ClassStat/Part_Amulet_ClassStat_Ranger': '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Ranger',
+        '/Game/Gear/Amulets/_Shared/_Design/Parts/ClassStat/Part_Amulet_ClassStat_Rogue': '/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Rogue',
+        '/Game/Gear/Amulets/_Shared/_Design/Parts/ClassStat/Part_Amulet_ClassStat_Shaman': '/Game/PatchDLC/Indigo4/GameData/Loot/CharacterWeighting/Att_CharacterWeight_ArmorUsers_Shaman',
         }
 mod.header('Amulet Class-locking')
 for obj_name in [
@@ -126,33 +140,34 @@ for obj_name in [
         #'/Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Rogue',
         ]:
 
-    # We could make use of the Balance class, but that's a bit too high-level
-    # for us, and I'm content to not bother with processing categories here.
-    # Just looking to update the weights, is all.
-    short_name = obj_name.rsplit('/', 1)[-1]
-    obj_data = data.get_data(obj_name)[0]
-    seen_header = False
-    for idx, part in enumerate(obj_data['RuntimePartList']['AllParts']):
-        if 'export' not in part['PartData'] and part['PartData'][0] in amulet_part_mapping:
-            if not seen_header:
-                mod.comment(short_name)
-                seen_header = True
-            mod.reg_hotfix(Mod.PATCH, '',
-                    obj_name,
-                    f'RuntimePartList.AllParts.AllParts[{idx}].Weight',
-                    BVCF(bva=amulet_part_mapping[part['PartData'][0]]))
-    if seen_header:
+    bal = Balance.from_data(data, obj_name, fold_partset_expansion=False)
+    changed = False
+    # This assumes that there's a partset_expansion, but we know that there is, so whatever.
+    # We're *not* flattening the expansion object here, in an effort to sort-of change as
+    # little as possible (even though we're hotfixing the whole PartSet here).
+    for cat in bal.categories + bal.partset_expansion.categories:
+        for part in cat.partlist:
+            if part.part_name in amulet_part_mapping:
+                changed = True
+                part.weight = BVCF(bva=amulet_part_mapping[part.part_name])
+    if changed:
+        short_name = bal.partset_name.rsplit('/', 1)[-1]
+        mod.comment(short_name)
+        bal.hotfix_full(mod)
         mod.newline()
 
 # A couple of amulets are straight-up class-locked.  They do make *sense* that way, in terms
 # of their effects, but there's no reason why other classes couldn't make use of them too.
-# So: unlocks!  We *will* be making use of the Balance class to do this one.
-mod.header('Amulet Class Expansions')
+# So: unlocks!
+mod.header('Amulet Class Expansions (and subsequent locking)')
 for label, obj_path in [
         ("Rivolte's Amulet", '/Game/Gear/Amulets/_Shared/_Unique/RonRivote/Balance/Balance_Amulet_Unique_RonRivote'),
         ("Vorcanar's Cog", '/Game/Gear/Amulets/_Shared/_Unique/GTFO/Balance/Balance_Amulet_Unique_GTFO'),
         ]:
     mod.comment(label)
+    # Unlike most amulets above, we *are* folding the expansion object into the main
+    # PartSet here, since we're making more sweeping changes to the class-selection
+    # category anyway.
     bal = Balance.from_data(data, obj_path)
     found_class_parts = False
     for cat in bal.categories:
@@ -160,7 +175,7 @@ for label, obj_path in [
             found_class_parts = True
             cat.clear()
             for part, att in amulet_part_mapping.items():
-                cat.add_part_name(f'/Game/Gear/Amulets/_Shared/_Design/Parts/ClassStat/{part}', BVCF(bva=att))
+                cat.add_part_name(part, BVCF(bva=att))
             break
     if found_class_parts:
         bal.hotfix_full(mod)

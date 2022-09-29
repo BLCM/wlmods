@@ -1,5 +1,5 @@
-drop table if exists ttwlobject;
 drop table if exists ttwlrefs;
+drop table if exists ttwlobject;
 
 create table ttwlobject
 (

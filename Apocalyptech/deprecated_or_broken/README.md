@@ -15,6 +15,14 @@ weren't actually intended to be mods themselves.
 
 ## Failed Attempts
 
+- `early_character_skills.txt` - This actually *does* mostly work.  An attempt
+  to get character feat, alternate class skill, and secondary class (with
+  re-roll at Quick Change) active starting right at level 2.  The main issue
+  which caused me to shuffle it over here is that it stopped giving me the
+  bonus skill points when the secondary class unlocks, and I got tired of
+  trying to figure that out.  Note that technically most of that stuff unlocks
+  based on either mission or objectives, not level, so there's a bit of
+  hand-waving.
 
 Licenses
 ========

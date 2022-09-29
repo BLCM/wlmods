@@ -41,6 +41,9 @@ TODO
 Changelog
 =========
 
+**v1.1.0** - Aug 12, 2022
+ * Updated with new DLC4 gear
+
 **v1.0.0** - Aug 4, 2022
  * Initial release
  

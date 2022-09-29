@@ -8,7 +8,7 @@ so I don't have to worry about combat, and quickly levelling up characters, etc.
 See the individual mod folders for full READMEs.
 
 - **Super Buff: Goblin Pickaxe** - Absurdly OP Goblin Pickaxe buffs.
-- **Super Buff: Manual Transmission** - Absurdly OP Manual Transmission shield.
+- **Super Buff: Manual Transmission** - Absurdly OP Manual Transmission AR.
 - **Super Buff: Transistor** - Absurdly OP Transistor shield.
 - **Testing Loot Drops** - Used to test drops and verify balance names.
 

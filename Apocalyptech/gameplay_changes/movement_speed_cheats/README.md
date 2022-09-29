@@ -13,6 +13,14 @@ to companions (Demi-Lich, Wyvern, and Mushroom).  There are three variants:
   applied movement speed mod without having to quit the game entirely.
   Probably only of interest to mod authors under specific circumstances.
 
+Note that the speed increases affect sliding as well, which includes the
+slides in levels like Tangledrift.  A couple of the slides in Tangledrift
+specifically become very difficult with the "Reasonable" variant, and may
+be nearly impossible with "Extreme."  You're likely to get thrown off
+the slide when cornering, etc.  With Reasonable, at least, they're still
+workable if you jump pretty frequently to use air control to align
+yourself back up, but that may or may not be feasible with Extreme.
+
 Changelog
 =========
 

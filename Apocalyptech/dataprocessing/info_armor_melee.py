@@ -32,7 +32,7 @@ hardcode_balance_names = [
         #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Necro',
         #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Ranger',
         #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Rogue',
-        '/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/BigBMittens/Balance/Balance_Armor_BigBMittens',
+        #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/BigBMittens/Balance/Balance_Armor_BigBMittens',
         #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Bladesinger/Balance/Balance_Armor_Bladesinger',
         #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Calamity/Balance/Balance_Armor_Calamity',
         #'/Game/Gear/Pauldrons/_Shared/_Design/_Uniques/Claw/Balance/Balance_Armor_MantisClaw',
@@ -84,6 +84,12 @@ hardcode_balance_names = [
         #'/Game/PatchDLC/Indigo3/Gear/Melee/_Shared/_Unique/HammerQuake/Balance_M_HammerQuake',
         #'/Game/PatchDLC/Indigo3/Gear/Melee/_Shared/_Unique/ShieldBash/Balance_M_ShieldBash',
 
+        # DLC4
+        '/Game/PatchDLC/Indigo4/Gear/Melee/_Shared/_Unique/FaceSmasher/Balance/Balance_M_RageHandle',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Shaman',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/BrutalStampede/Balance/Balance_Armor_BrutalStampede',
+        '/Game/PatchDLC/Indigo4/Gear/Pauldrons/_Shared/_Design/_Unique/MantleOfThorns/Balance/Balance_Armor_MantleThorn',
+
         ]
 
 # Args
@@ -101,6 +107,11 @@ output.add_argument('--balancelist',
         help='Output in a formate copy+pasteable to gen_item_balances.py',
         )
 
+output.add_argument('--expanded',
+        action='store_true',
+        help='Output in a formate copy+pasteable to gen_expanded_legendary_pools.py',
+        )
+
 parser.add_argument('balance_names',
         nargs='*',
         help='Balances to look up (will default to a hardcoded list if not specified)',
@@ -113,9 +124,7 @@ if len(args.balance_names) == 0:
 
 # Whether to do headers, etc
 do_header = True
-if args.redtext:
-    do_header = False
-elif args.balancelist:
+if args.redtext or args.balancelist or args.expanded:
     do_header = False
 
 # Now process
@@ -186,6 +195,14 @@ for balance_name in args.balance_names:
                 name.replace('"', '\\"'),
                 balance_name,
                 ))
+    elif args.expanded:
+        if len(names) == 0:
+            print(f'                # ERROR: No names detected for {balance_name}')
+        elif len(names) > 1:
+            print(f'                # NOTE: auto-detected more than one possible name for {balance_name}')
+        for name in sorted(names):
+            print(f'                # {name}')
+        print(f"                ('{balance_name}', 1),")
     else:
         if len(names) == 1:
             print('Name: {}'.format(names.pop()))

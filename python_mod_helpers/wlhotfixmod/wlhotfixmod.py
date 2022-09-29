@@ -30,7 +30,8 @@
 import os
 import sys
 import gzip
-import string
+import struct
+import itertools
 
 class _StreamingBlueprintPosition:
     """
@@ -86,54 +87,25 @@ class _StreamingBlueprintHelper:
     loaded these meshes prior to trying this delay will interfere with the process.
     """
 
-    # TODO: Should probably *not* specify a default here.  Just have a known list, and
-    # raise an exception if we don't know what the var should be.
-    # These positioning object names are *not* at all exhaustive!  Objects
-    # that we *do* know should work fine, though:
-    #  - /Alisma/Lootables/_Design/Classes/Hyperion/BPIO_Ali_Lootable_Hyperion_RedChest
-    #  - /Dandelion/Lootables/_Design/Classes/Hyperion/BPIO_Lootable_Hyperion_RedChest
-    #  - /Game/InteractiveObjects/AtlasDefenseTurret/_Shared/_Design/IO_AtlasDefenseTurret
-    #  - /Game/InteractiveObjects/GameSystemMachines/CatchARide/_Shared/Blueprints/BP_CatchARide_Console
-    #  - /Game/InteractiveObjects/GameSystemMachines/CatchARide/_Shared/Blueprints/BP_CatchARide_Platform
-    #  - /Game/InteractiveObjects/GameSystemMachines/QuickChange/BP_QuickChange
-    #  - /Game/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/Blueprints/BP_VendingMachine_Ammo
-    #  - /Game/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/Blueprints/BP_VendingMachine_CrazyEarl
-    #  - /Game/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/Blueprints/BP_VendingMachine_Health
-    #  - /Game/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/Blueprints/BP_VendingMachine_Weapons
-    #  - /Game/InteractiveObjects/SlotMachine/_Shared/_Design/BPIO_SlotMachine_ClapTrap
-    #  - /Game/InteractiveObjects/SlotMachine/_Shared/_Design/BPIO_SlotMachine_HiJinx
-    #  - /Game/InteractiveObjects/SlotMachine/_Shared/_Design/BPIO_SlotMachine_LootBoxer
-    #  - /Game/InteractiveObjects/SlotMachine/_Shared/_Design/BPIO_SlotMachine_VaultLine
-    #  - /Game/InteractiveObjects/StationaryMannedTurret/IO_GroundTurret
-    #  - /Game/InteractiveObjects/Switches/Circuit_Breaker/_Design/IO_Switch_Circuit_Breaker_V1
-    #  - /Game/InteractiveObjects/Switches/Lever/Design/IO_Switch_Industrial_Prison
-    #  - /Game/Lootables/_Design/Classes/Atlas/BPIO_Lootable_Atlas_RedChest
-    #  - /Game/Lootables/_Design/Classes/CoV/BPIO_Lootable_COV_RedCrate
-    #  - /Game/Lootables/_Design/Classes/CoV/BPIO_Lootable_COV_RedCrate_Slaughter
-    #  - /Game/Lootables/_Design/Classes/Eridian/BPIO_Lootable_Eridian_RedChest
-    #  - /Game/Lootables/_Design/Classes/Eridian/BPIO_Lootable_Eridian_WhiteChest
-    #  - /Game/Lootables/_Design/Classes/Eridian/BPIO_Lootable_Eridian_WhiteChestCrystal
-    #  - /Game/Lootables/_Design/Classes/Global/BPIO_Lootable_Global_WhiteCrate
-    #  - /Game/Lootables/_Design/Classes/Jakobs/BPIO_Lootable_Jakobs_RedChest
-    #  - /Game/Lootables/_Design/Classes/Jakobs/BPIO_Lootable_Jakobs_WhiteChest
-    #  - /Game/Lootables/_Design/Classes/Maliwan/BPIO_Lootable_Maliwan_RedChest
-    #  - /Game/Lootables/_Design/Classes/Maliwan/BPIO_Lootable_Maliwan_RedChest_Slaughter
-    #  - /Game/Lootables/_Design/Classes/Maliwan/BPIO_Lootable_Maliwan_WhiteChest
-    #  - /Game/PatchDLC/Event2/Lootables/_Design/BPIO_Lootable_Jakobs_WhiteChest_Cartels
-    #  - /Game/PatchDLC/Ixora2/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/BP_VendingMachine_BlackMarket
-    #  - /Geranium/InteractiveObjects/GameSystemMachines/CatchARide/_Shared/Blueprints/BP_CatchARide_Console_Ger
-    #  - /Hibiscus/InteractiveObjects/Lootables/_Design/Classes/Cultists/BPIO_Hib_Lootable_Cultist_RedChest
-    #  - /Hibiscus/InteractiveObjects/Lootables/_Design/Classes/Cultists/BPIO_Hib_Lootable_Cultist_WhiteChest
-    #  - /Hibiscus/InteractiveObjects/Lootables/_Design/Classes/FrostBiters/BPIO_Hib_Lootable_FrostBiters_RedChest
-    #  - /Hibiscus/InteractiveObjects/Lootables/_Design/Classes/FrostBiters/BPIO_Hib_Lootable_FrostBiters_WhiteChest
-    #  - /Hibiscus/InteractiveObjects/Systems/CatchARide/_Design/BP_Hib_CatchARide_Console
-    #  - /Hibiscus/InteractiveObjects/Systems/CatchARide/_Design/BP_Hib_CatchARide_Platform
-    positioning_obj_default = 'RootComponent'
+    # The subobject names which we need to use to reposition the objects, once
+    # they've been streamed into the level.  These positioning object names are
+    # *not* at all exhaustive!  We'll raise a RuntimeError if we're asked for
+    # an object we don't know about.  `RootComponent` is a reasonable first
+    # guess since most objects seem to *have* that subobject, but it often
+    # doesn't actually take effect, so other names are needed instead.
+    # TODO: This needs trimming and updating with the correct values for some common Wonderlands objects
     positioning_obj_names = {
             '/alisma/lootables/_design/classes/hyperion/bpio_ali_lootable_hyperion_redchest': 'Mesh_Chest1',
             '/dandelion/lootables/_design/classes/hyperion/bpio_lootable_hyperion_redchest': 'Mesh_Chest1',
             '/game/interactiveobjects/atlasdefenseturret/_shared/_design/io_atlasdefenseturret': 'DefaultSceneRoot',
+            '/game/interactiveobjects/gamesystemmachines/catcharide/_shared/blueprints/bp_catcharide_console': 'RootComponent',
             '/game/interactiveobjects/gamesystemmachines/catcharide/_shared/blueprints/bp_catcharide_platform': 'PlatformMesh',
+            '/game/interactiveobjects/gamesystemmachines/quickchange/bp_quickchange': 'RootComponent',
+            '/game/interactiveobjects/gamesystemmachines/storagedeckvendor/blueprints/bp_sducase': 'RootComponent',
+            '/game/interactiveobjects/gamesystemmachines/vendingmachine/_shared/blueprints/bp_vendingmachine_ammo': 'RootComponent',
+            '/game/interactiveobjects/gamesystemmachines/vendingmachine/_shared/blueprints/bp_vendingmachine_crazyearl': 'RootComponent',
+            '/game/interactiveobjects/gamesystemmachines/vendingmachine/_shared/blueprints/bp_vendingmachine_health': 'RootComponent',
+            '/game/interactiveobjects/gamesystemmachines/vendingmachine/_shared/blueprints/bp_vendingmachine_weapons': 'RootComponent',
             '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_claptrap': 'Cabinet',
             '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_hijinx': 'Cabinet',
             '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_lootboxer': 'Cabinet',
@@ -154,35 +126,25 @@ class _StreamingBlueprintHelper:
             '/game/lootables/_design/classes/maliwan/bpio_lootable_maliwan_redchest_slaughter': 'Mesh_Chest1',
             '/game/lootables/_design/classes/maliwan/bpio_lootable_maliwan_whitechest': 'Mesh_Chest1',
             '/game/patchdlc/event2/lootables/_design/bpio_lootable_jakobs_whitechest_cartels': 'Mesh_Chest1',
+            '/game/patchdlc/ixora2/interactiveobjects/gamesystemmachines/vendingmachine/_shared/bp_vendingmachine_blackmarket': 'RootComponent',
+            '/geranium/interactiveobjects/gamesystemmachines/catcharide/_shared/blueprints/bp_catcharide_console_ger': 'RootComponent',
             '/hibiscus/interactiveobjects/lootables/_design/classes/cultists/bpio_hib_lootable_cultist_redchest': 'Mesh_Chest1',
             '/hibiscus/interactiveobjects/lootables/_design/classes/cultists/bpio_hib_lootable_cultist_whitechest': 'Mesh_Chest1',
             '/hibiscus/interactiveobjects/lootables/_design/classes/cultists/bpio_hib_lootable_portalchest': 'Mesh_Chest1',
             '/hibiscus/interactiveobjects/lootables/_design/classes/frostbiters/bpio_hib_lootable_frostbiters_redchest': 'Mesh_Chest1',
             '/hibiscus/interactiveobjects/lootables/_design/classes/frostbiters/bpio_hib_lootable_frostbiters_whitechest': 'Mesh_Chest1',
+            '/hibiscus/interactiveobjects/systems/catcharide/_design/bp_hib_catcharide_console': 'RootComponent',
             '/hibiscus/interactiveobjects/systems/catcharide/_design/bp_hib_catcharide_platform': 'PlatformMesh',
             }
 
-    used_sm_letters_by_map = {
-            'atlashq_p': set(['A', 'B', 'F', 'I', 'K', 'L', 'N', 'O', 'Q', 'S']),
-            'bar_p': set(['A', 'C', 'D', 'E', 'G', 'H', 'L', 'N', 'O', 'R', 'S', 'U', 'V']),
-            'cityvault_p': set(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'W', 'Y']),
-            'covslaughter_p': set(['C', 'O', 'V']),
-            'creatureslaughter_p': set(['C', 'O', 'V']),
-            'desert_p': set(['A', 'B', 'C', 'D', 'E', 'G', 'I', 'L', 'M', 'N', 'O', 'P', 'S', 'T', 'W']),
-            'finalboss_p': set(['B', 'M', 'N', 'O', 'T', 'W']),
-            'mansion_p': set(['A', 'E', 'M', 'T']),
-            'marshfields_p': set(['A', 'C', 'E', 'K', 'L', 'T']),
-            'motorcade_p': set(['B', 'C', 'E', 'I', 'J', 'K', 'L', 'N', 'R', 'W']),
-            'motorcadefestival_p': set(['A', 'B', 'C', 'D', 'E', 'G', 'I', 'K', 'L', 'N', 'O', 'S', 'T']),
-            'motorcadeinterior_p': set(['C', 'E', 'L', 'M', 'O', 'W']),
-            'prologue_p': set(['A', 'C', 'E', 'G', 'I', 'K', 'L', 'O', 'P', 'R', 'S', 'T', 'Y']),
-            'sanctuary3_p': set(['A', 'C', 'E', 'I', 'L', 'M', 'N', 'O', 'P', 'R', 'T', 'X', 'Z']),
-            'strip_p': set(['J', 'K', 'M', 'O', 'P', 'R', 'S', 'T', 'W']),
-            'towers_p': set(['A', 'C', 'D', 'E', 'F', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'Y']),
-            'trashtown_p': set(['A', 'H', 'I', 'L', 'N', 'R', 'S', 'T']),
-            'wetlands_p': set(['A', 'E', 'G', 'L', 'M', 'O', 'S', 'T']),
-            'woods_p': set(['H', 'M', 'S', 'U']),
-            }
+    _type_11_delay_meshes = [
+            '/Engine/EditorMeshes/Camera/SM_CraneRig_Arm',
+            '/Engine/EditorMeshes/Camera/SM_CraneRig_Base',
+            '/Engine/EditorMeshes/Camera/SM_CraneRig_Body',
+            '/Engine/EditorMeshes/Camera/SM_CraneRig_Mount',
+            '/Engine/EditorMeshes/Camera/SM_RailRig_Mount',
+            '/Engine/EditorMeshes/Camera/SM_RailRig_Track',
+            ]
 
     def __init__(self, mod, map_name):
         self.map_name = map_name
@@ -192,13 +154,10 @@ class _StreamingBlueprintHelper:
         to_lower = map_name.lower()
         if to_lower == 'MatchAll':
             raise RuntimeError('MatchAll is not a valid level target for delaying streaming blueprint hotfixes')
-        self.avail_meshes = []
-        for letter in string.ascii_uppercase:
-            if to_lower in self.used_sm_letters_by_map and letter in self.used_sm_letters_by_map[to_lower]:
-                continue
-            self.avail_meshes.append(f'/Game/LevelArt/Environments/_Global/Letters/Meshes/SM_Letter_{letter}')
-        # Use 'em in order
-        self.avail_meshes.reverse()
+        # Make a copy of the mesh list, otherwise when we pop entries later
+        # it'll update for all instances.  Reverse it so our `.pop()`s pull
+        # things in the correct order.
+        self.type_11_delay_meshes = list(reversed(self._type_11_delay_meshes))
 
     def get_next_index(self, obj_name, index=None):
         obj_name_lower = obj_name.lower()
@@ -211,10 +170,10 @@ class _StreamingBlueprintHelper:
         return index
 
     def consume(self, count=2):
-        if count > len(self.avail_meshes):
+        if count > len(self.type_11_delay_meshes):
             raise RuntimeError('Not enough free meshes to properly delay hotfix execution!')
         for _ in range(count):
-            yield self.avail_meshes.pop()
+            yield self.type_11_delay_meshes.pop()
 
     def add_positioning(self, *args):
         self.positions.append(_StreamingBlueprintPosition(*args))
@@ -224,7 +183,13 @@ class _StreamingBlueprintHelper:
         if obj_name_lower in self.positioning_obj_names:
             return self.positioning_obj_names[obj_name_lower]
         else:
-            return self.positioning_obj_default
+            print('-'*80)
+            print(f'ERROR: Unknown positioning object for: {obj_name}')
+            print('Specify the `positioning_obj` argument to `streaming_hotfix`, or add the')
+            print('mapping to the _StreamingBlueprintHelper class in wlhotfixmod.py.')
+            print('The value `RootComponent` might be a good option to try, if unsure.')
+            print('-'*80)
+            raise RuntimeError(f'Unknown positioning object for: {obj_name}')
 
     def finish(self, count=2):
         if self.positions:
@@ -236,14 +201,14 @@ class _StreamingBlueprintHelper:
             # First the delay
             for mesh_name in self.consume(count):
                 self.mod.reg_hotfix(Mod.EARLYLEVEL, self.map_name,
-                        '/Game/Gear/Game/Resonator/_Design/BP_Eridian_Resonator.Default__BP_Eridian_Resonator_C',
-                        'StaticMeshComponent.Object..StaticMesh',
+                        '/Game/Pickups/Ammo/BPAmmoItem_Pistol.Default__BPAmmoItem_Pistol_C',
+                        'ItemMeshComponent.Object..StaticMesh',
                         self.mod.get_full_cond(mesh_name, 'StaticMesh'))
             # Revert it right away; no sense waiting for it.
             self.mod.reg_hotfix(Mod.EARLYLEVEL, self.map_name,
-                    '/Game/Gear/Game/Resonator/_Design/BP_Eridian_Resonator.Default__BP_Eridian_Resonator_C',
-                    'StaticMeshComponent.Object..StaticMesh',
-                    self.mod.get_full_cond('/Game/Gear/Game/Resonator/Model/Meshes/SM_Eridian_Resonator', 'StaticMesh'))
+                    '/Game/Pickups/Ammo/BPAmmoItem_Pistol.Default__BPAmmoItem_Pistol_C',
+                    'ItemMeshComponent.Object..StaticMesh',
+                    self.mod.get_full_cond('/Game/Pickups/Ammo/Model/Meshes/SM_ammo_pistol', 'StaticMesh'))
 
             # And now the individual repositioning
             for pos in self.positions:
@@ -327,7 +292,7 @@ class Mod(object):
             homepage=None, nexus=None,
             contact=None, contact_email=None, contact_discord=None,
             quiet_meshes=False, quiet_streaming=False,
-            aggressive_streaming=True,
+            aggressive_streaming=False,
             comment_tags=False,
             ):
         """
@@ -362,17 +327,16 @@ class Mod(object):
             of course).  See `_ensure_mesh()` for some info on this.
         `quiet_streaming` - Likewise, this library can do Streaming Blueprint
             injection, which also requires some extra injected hotfixes to work
-            properly.  Setting this to `True` will suppress warnings/notices
-            about this, including to the console while generating.
+            properly.  Setting this to `True` will suppress the extra mod comments
+            which detail that behavior.
         `aggressive_streaming` - This library has helper code to aggressively
             help out with handling Streaming Blueprint (type 11) hotfixes which
             are really better handled in mod-injection software like B3HM or
             Apoc's mitmproxy-based hfinject.py.  Support for this is present in
-            hfinject.py, and is forthcoming in B3HM.  For now, if using B3HM,
-            leave `aggressive_streaming` at its default of `True`, and if using
-            hfinject.py, set it to `False` instead.  (Though is should be noted
-            that there's not really any downside to always leaving it on, apart
-            from some wasted hotfixes.)
+            hfinject.py and B3HM v1.0.2+.  If using older versions of B3HM, set
+            this to `True` to enable the helper code right in the mod itself.
+            (Note that this will make multiple mods using type-11 hotfixes on
+            the same mod probably not work together.)
         `comment_tags` - This controls whether the BLIMP tags (mod metadata at
             the top of the mod) are printed "inside" the triple-hash comments
             that the rest of the mod comments use.  The BLIMP spec allows for
@@ -404,7 +368,6 @@ class Mod(object):
         self.comment_tags = comment_tags
 
         # Some vars to help out with type-11 (streaming blueprint) hotfixes
-        self.seen_streaming_warning = quiet_streaming
         self.streaming_helpers = {}
 
         self.source = os.path.basename(sys.argv[0])
@@ -812,22 +775,11 @@ class Mod(object):
             with the value set to `True`)
         `positioning_obj` can be set, to specify the subobject used to actually position the
             injected object in the world.  If not specified, this will use a small hardcoded
-            mapping to see if we know what the object name is, defaulting to `RootComponent`
-            if not (which is what's used for objects like vending machines).
+            mapping to see if we know what the object name is -- if we don't already have a
+            name mapping, a RuntimeError will be raised.
 
         Returns the full object name of what we believe the created object should be.
-
-        NOTE: These are finnicky, and these may not be reliable at the moment.
         """
-
-        if not self.seen_streaming_warning:
-            self.seen_streaming_warning = True
-            print("WARNING: Blueprint Stream hotfixes (type 11) are rather finnicky, and often")
-            print("don't seem to work how you'd hope them to.  The position/rotation/scaling")
-            print("changes in particular often seem to not actually 'take', leaving your added")
-            print("object at the origin point (0,0,0).  Mods using this type may not be reliable.")
-            print("")
-            self.comment('WARNING: type-11 hotfixes (and associated positioning params) may not work right...')
 
         # Map path
         map_first, map_last = map_path.rsplit('/', 1)
@@ -952,6 +904,51 @@ class Mod(object):
             '{}:{}'.format(len(to_val), to_val),
             ]), file=self.df)
         self.last_was_newline = False
+
+    def _guid_to_ints(self, guid):
+        """
+        Converts `guid` (represented as 32 ASCII hex characters) to a
+        series of four integers (signed 32-bit big-endian).
+        """
+        rv = []
+        for part in [
+                guid[:8],
+                guid[8:16],
+                guid[16:24],
+                guid[24:],
+                ]:
+            rv.append(struct.unpack('>i', bytes.fromhex(part))[0])
+        return rv
+
+    def bytecode_hotfix_guid(self, hf_type, package,
+            obj_name,
+            export_name,
+            index,
+            from_val,
+            to_val,
+            notify=False):
+        """
+        When a GUID value is referenced in Bytecode, it seems to show up
+        as four separate integer values, which would be annoying to deal
+        with manually (especially given that data serializations are likely
+        to just give you a single hex-digit string).  This method allows you
+        to pass in those hex-digit strings as `from_val` and `to_val`, and
+        will generate four bytecode hotfixes to update the GUID.  The `index`
+        should be the index of the *first* of the quads -- the subsequent
+        indexes will always be +5 each.
+        """
+        parts_orig = self._guid_to_ints(from_val)
+        parts_new = self._guid_to_ints(to_val)
+        cur_index = index
+        for part_orig, part_new in zip(parts_orig, parts_new):
+            self.bytecode_hotfix(hf_type, package,
+                    obj_name,
+                    export_name,
+                    cur_index,
+                    part_orig,
+                    part_new,
+                    notify=notify)
+            cur_index += 5
 
     def finish_streaming(self):
         """
@@ -1206,21 +1203,23 @@ class ItemPool(object):
     Some abstraction to easily build up ItemPools.
     """
 
-    def __init__(self, pool_name, pools=[], balances=[]):
+    def __init__(self, pool_name, pools=None, balances=None):
         self.pool_name = pool_name
         self.balanceditems = []
 
         # Populate initial values if specified
-        for pool in pools:
-            if type(pool) == tuple:
-                self.add_pool(*pool)
-            else:
-                self.add_pool(pool)
-        for balance in balances:
-            if type(balance) == tuple:
-                self.add_balance(*balance)
-            else:
-                self.add_balance(balance)
+        if pools is not None:
+            for pool in pools:
+                if type(pool) == tuple:
+                    self.add_pool(*pool)
+                else:
+                    self.add_pool(pool)
+        if balances is not None:
+            for balance in balances:
+                if type(balance) == tuple:
+                    self.add_balance(*balance)
+                else:
+                    self.add_balance(balance)
 
     def add_pool(self, pool_name, weight=None):
         """
@@ -1250,13 +1249,14 @@ class ItemPool(object):
 
         pool = ItemPool(pool_name)
         pool_data = data.get_data(pool_name)[0]
-        for bal in pool_data['BalancedItems']:
-            if 'export' in bal['ItemPoolData']:
-                bal_name = bal['ResolvedInventoryBalanceData'][1]
-                pool.add_balance(bal_name, BVC.from_data_struct(bal['Weight']))
-            else:
-                pool_name = bal['ItemPoolData'][1]
-                pool.add_pool(pool_name, BVC.from_data_struct(bal['Weight']))
+        if 'BalancedItems' in pool_data:
+            for bal in pool_data['BalancedItems']:
+                if 'export' in bal['ItemPoolData']:
+                    bal_name = bal['ResolvedInventoryBalanceData'][1]
+                    pool.add_balance(bal_name, BVC.from_data_struct(bal['Weight']))
+                else:
+                    pool_name = bal['ItemPoolData'][1]
+                    pool.add_pool(pool_name, BVC.from_data_struct(bal['Weight']))
 
         return pool
 
@@ -1302,7 +1302,10 @@ class PartCategory(object):
             partlist=None,
             part_type_enum=None,
             select_multiple=False, use_weight_with_mult=False,
-            enabled=True):
+            enabled=True,
+            has_expansion=False,
+            is_expansion=False,
+            ):
         self.num_min = num_min
         self.num_max = num_max
         self.index = index
@@ -1312,6 +1315,8 @@ class PartCategory(object):
             self.select_multiple = True
         self.use_weight_with_mult = use_weight_with_mult
         self.enabled = enabled
+        self.has_expansion = has_expansion
+        self.is_expansion = is_expansion
         if partlist:
             self.partlist = partlist
         else:
@@ -1357,9 +1362,17 @@ class PartCategory(object):
 
     def str_partlist(self):
         """
-        Returns just a string representation of our partlist
+        Returns just a string representation of our partlist.  If we pass an
+        empty array to a hotfix, at least in these PartSet objects, it often ends
+        up getting interpreted as `(())` (ie: an array with a single empty part
+        in it), which is problematic when combined with our PartSet expansion
+        object handling.  So, we're now returning `None` for empty partlists
+        instead.
         """
-        return ','.join([str(l) for l in self.partlist])
+        if len(self.partlist) == 0:
+            return 'None'
+        else:
+            return '({})'.format(','.join([str(l) for l in self.partlist]))
 
     def clear(self):
         """
@@ -1393,10 +1406,16 @@ class PartCategory(object):
         if not self.part_type_enum:
             raise Exception('PartSet representation requires part_type_enum')
 
-        # If we ever want to include the partlist again, we'd want to add in
-        # `self.str_partlist()` to the `Parts=()` section in here.  The attribute
-        # seems to be entirely ignored by the game engine, though, so we can
-        # safely omit it.
+        # Ordinarily, the parts list inside a PartSet object is totally ignored
+        # when dropping gear, so we've historically left it off.  Objects which
+        # get processed by `InventoryPartSetExpansionData` expansions end up
+        # with a `RuntimeParts` attr right in the PartSet (alongside `Parts`),
+        # which seems to totally override basically everything in the Balance.
+        # So in those cases, we *do* need to include the full partlist here.
+        if self.has_expansion or self.is_expansion:
+            parts = self.str_partlist()
+        else:
+            parts = 'None'
         return """(
             PartTypeEnum={part_type_enum},
             PartType={index},
@@ -1407,7 +1426,7 @@ class PartCategory(object):
                 Max={num_max}
             ),
             bEnabled={enabled},
-            Parts=()
+            Parts={parts}
         )""".format(
                 part_type_enum=Mod.get_full_cond(self.part_type_enum),
                 index=self.index,
@@ -1416,6 +1435,7 @@ class PartCategory(object):
                 num_min=self.num_min,
                 num_max=self.num_max,
                 enabled=str(self.enabled),
+                parts=parts,
                 )
 
 class Balance(object):
@@ -1445,12 +1465,19 @@ class Balance(object):
             }
     PS_MODE_DEFAULT = PS_MODE_ADDITIVE
 
-    def __init__(self, bal_name, partset_name, part_type_enum=None, raw_bal_data=None, raw_ps_data=None):
+    def __init__(self, bal_name, partset_name,
+            part_type_enum=None,
+            raw_bal_data=None,
+            raw_ps_data=None,
+            partset_expansion=None,
+            ):
         """
         `part_type_enum` is a PartTypeEnum object name which will be used if partlists are added via
             `add_category_smart` (unused otherwise)
         `raw_bal_data` is the raw serialized Balance export (pretty much only useful with `from_data()`)
         `raw_ps_data` is the raw serialized PartSet export (pretty much only useful with `from_data()`)
+        `partset_expansion` is an optional PartSetExpansion object which applies to this Balance
+            (or rather, its main associated PartSet)
         """
         self.bal_name = bal_name
         self.partset_name = partset_name
@@ -1459,12 +1486,15 @@ class Balance(object):
         self.generics = []
         self.raw_bal_data = raw_bal_data
         self.raw_ps_data = raw_ps_data
+        self.partset_expansion = partset_expansion
 
     @staticmethod
-    def from_data(data, bal_name):
+    def from_data(data, bal_name, fold_partset_expansion=True):
         """
         Loads in all our data from a WLData instance, given a balance name.  Returns
-        a fully-populated Balance object.
+        a fully-populated Balance object.  Will fold any existing PartSet expansion
+        objects into the main PartSet by default -- you can disable that behavior
+        by setting `fold_partset_expansion` to `False`.
         """
 
         # Load in Balance
@@ -1498,6 +1528,12 @@ class Balance(object):
                 cur_bal_data = cur_bal_data[0]
             else:
                 break
+
+        # Also figure out if we have a PartSet expansion we need to process
+        if partset_names[0] in data.expansion_parts:
+            partset_expansion = data.expansion_parts[partset_names[0]]
+        else:
+            partset_expansion = None
 
         # Loop through the partset objects (note that we need to do the above list in reverse)
         # to grab parts by category, overwriting/appending where instructed to by the
@@ -1640,6 +1676,7 @@ class Balance(object):
         bal = Balance(bal_name, partset_name, part_type_enum,
                 raw_bal_data=bal_data,
                 raw_ps_data=partset_data,
+                partset_expansion=partset_expansion,
                 )
 
         # Populate the `generics` PartCategory inside the new Balance object
@@ -1648,12 +1685,6 @@ class Balance(object):
         # Loop through our partlists and populate our objects
         for idx, (partlist, apl) in enumerate(zip(partlists, partset_data['ActorPartLists'])):
 
-            # Hardcoded fix - SparkPatchEntry210 was brought into the main game binary, and
-            # alters the part range inside an APL for PartSet_Shield_Ward.  Will have to
-            # just handle it stupidly like this, for now.
-            if partset_name == '/Game/Gear/Shields/_Design/_Uniques/Ward/Balance/PartSet_Shield_Ward' and idx == 3:
-                apl['MultiplePartSelectionRange']['Min'] = 1
-
             partcat = PartCategory(
                     num_min=apl['MultiplePartSelectionRange']['Min'],
                     num_max=apl['MultiplePartSelectionRange']['Max'],
@@ -1661,20 +1692,16 @@ class Balance(object):
                     part_type_enum=apl['PartTypeEnum'][1],
                     select_multiple=apl['bCanSelectMultipleParts'],
                     use_weight_with_mult=apl['bUseWeightWithMultiplePartSelection'],
-                    enabled=apl['bEnabled'])
+                    enabled=apl['bEnabled'],
+                    has_expansion=partset_expansion is not None,
+                    )
             for part, weight in partlist:
-                # Weird data mangling here.  A couple of artifacts seem to reference
-                # Artifact_Part_Stats_FireDamage and Artifact_Part_Stats_CryoDamage in
-                # their JWP serializations, but both should have a `_2` suffix (all
-                # the other artifacts already do that).  There is no valid object
-                # *without* that `_2` suffix, so we're gonna cheat and alter the name
-                # if we need to.
-                if part == '/Game/Gear/Artifacts/_Design/PartSets/SecondaryStats/Elemental/Artifact_Part_Stats_FireDamage':
-                    part = '/Game/Gear/Artifacts/_Design/PartSets/SecondaryStats/Elemental/Artifact_Part_Stats_FireDamage_2'
-                elif part == '/Game/Gear/Artifacts/_Design/PartSets/SecondaryStats/Elemental/Artifact_Part_Stats_CryoDamage':
-                    part = '/Game/Gear/Artifacts/_Design/PartSets/SecondaryStats/Elemental/Artifact_Part_Stats_CryoDamage_2'
                 partcat.add_part_name(part, weight=weight)
             bal.add_category(partcat)
+
+        # If we've been told to fold in our partset expansion, do so now.
+        if fold_partset_expansion:
+            bal.fold_partset_expansion()
 
         # That... should be all?
         return bal
@@ -1708,6 +1735,27 @@ class Balance(object):
         obj = data.get_data(self.bal_name)[0]
         self.partset_name = obj['PartSetData'][1]
 
+    def fold_partset_expansion(self):
+        """
+        Folds in our PartSet expansion object so that its parts are found, instead, on
+        the main object PartSet instead of the expansion object.  Has no effect on
+        Balances whose PartSets don't have expansion objects.
+        """
+        if not self.partset_expansion:
+            return
+        for category, expansion in itertools.zip_longest(self.categories, self.partset_expansion.categories):
+            if category is None:
+                if len(expansion.partlist) > 0:
+                    raise RuntimeError('Expansion object tried to add parts to non-existent category: {}'.format(
+                        self.partset_expansion.expansion_name,
+                        ))
+                else:
+                    continue
+            if expansion is None:
+                continue
+            category.partlist.extend(expansion.partlist)
+            expansion.partlist = []
+
     def hotfix_partset_full(self, mod, hf_type=Mod.PATCH, hf_package=''):
         """
         Generates hotfixes to completely set the PartSet portion.
@@ -1716,6 +1764,11 @@ class Balance(object):
                 self.partset_name,
                 'ActorPartLists',
                 '({})'.format(','.join([str(c) for c in self.categories])))
+        if self.partset_expansion is not None:
+            mod.reg_hotfix(hf_type, hf_package,
+                    self.partset_expansion.expansion_name,
+                    'PartLists',
+                    '({})'.format(','.join([str(c) for c in self.partset_expansion.categories])))
 
     def hotfix_balance_full(self, mod, hf_type=Mod.PATCH, hf_package=''):
         """
@@ -1749,7 +1802,90 @@ class Balance(object):
         Generates hotfixes to completely set the object
         """
         self.hotfix_partset_full(mod, hf_type, hf_package)
-        self.hotfix_balance_full(mod, hf_type, hf_package)
+        if not self.partset_expansion:
+            # PartSet expansions end up making the Balance itself totally ignored for
+            # the sorts of things we're handling in this class.
+            self.hotfix_balance_full(mod, hf_type, hf_package)
+
+class DependencyExpansion:
+    """
+    A representation of the InventoryExcludersExpansionData objects introduced
+    in the 2022-08-11 release of Wonderlands (to support Blightcaller parts
+    where necessary).
+
+    Unlike PartSet changes (below), we're not bothering to keep track of which
+    expansion objects are actually in-use here, since the only thing of mine
+    which really needs this info at the moment is `gen_item_balances.py` to
+    generate some human-readable spreadsheets.  We're also not keeping track of
+    *ordering* since we're using sets inside gen_item_balances.py.
+    """
+
+    def __init__(self, name, dependencies=None, excluders=None):
+        self.name = name
+        if dependencies is None:
+            self.dependencies = set()
+        else:
+            self.dependencies = dependencies
+        if excluders is None:
+            self.excluders = set()
+        else:
+            self.excluders = excluders
+
+    def load_from_export(self, export):
+        if 'Dependencies' in export:
+            for new_dep in export['Dependencies']:
+                self.dependencies.add(new_dep[1])
+        if 'Excluders' in export:
+            for new_exc in export['Excluders']:
+                self.excluders.add(new_exc[1])
+
+class PartSetExpansion:
+    """
+    A representation of the new InventoryPartSetExpansionData objects
+    found in the 2022-08-11 release of Wonderlands (to patch in Blightcaller
+    parts where necessary).
+
+    Despite having the full set of category metadata in the data structure
+    (bCanSelectMultipleParts, MultiplePartSelectionRange, etc), the game
+    seems to *only* use the `Parts` list from these objects, but we're going
+    to read them all in, anyway, so our hotfixes can be complete.  It could
+    be that some of it is necessary for proper processing.  I suspect, for
+    instance, that PartTypeEnum might be needed for the expansion to actaully
+    apply.
+
+    As of that 2022-08-11 patch, no PartSet has more than one expansion
+    object attached to it, so for the time being that's all this class will
+    support.  If that ever changes in the future, we'll have to figure that
+    out.
+    """
+
+    def __init__(self, name):
+        self.name = name
+        self.categories = []
+        self.expansion_name = None
+
+    def load_expansion_from_export(self, expansion_name, export):
+        if self.expansion_name is not None:
+            raise RuntimeError('PartSet {} has more than one expansion, not currently supported: {}, {}'.format(
+                self.name,
+                self.expansion_name,
+                expansion_name,
+                ))
+        self.expansion_name = expansion_name
+        for cat in export['PartLists']:
+            new_cat = PartCategory(
+                    num_min=cat['MultiplePartSelectionRange']['Min'],
+                    num_max=cat['MultiplePartSelectionRange']['Max'],
+                    index=cat['PartType'],
+                    part_type_enum=cat['PartTypeEnum'][1],
+                    select_multiple=cat['bCanSelectMultipleParts'],
+                    use_weight_with_mult=cat['bUseWeightWithMultiplePartSelection'],
+                    enabled=cat['bEnabled'],
+                    is_expansion=True,
+                    )
+            for part in cat['Parts']:
+                new_cat.add_part_name(part['PartData'][1], BVC.from_data_struct(part['Weight']))
+            self.categories.append(new_cat)
 
 LVL_TO_ENG = {
         # Main Maps
@@ -1806,6 +1942,8 @@ LVL_TO_ENG = {
         'D_Boss_Intro_P': "Boss Dungeon: Queen's Gate",
         'D_Boss_Oasis_P': "Boss Dungeon: Salissa",
         'D_Boss_Goblin_P': "Boss Dungeon: Vorcanar",
+        'D_Boss_Climb_p': "Boss Dungeon: Wastard",
+        'D_Hubtown_01': "Brighthoof Area Dungeon 1",
         'D_Hubtown_02_P': "Brighthoof Area Dungeon 2",
         'D_Hubtown_03_P': "Brighthoof Area Dungeon 3",
         'D_HubtownRare_P': "Brighthoof Area Dungeon Special",
@@ -1894,6 +2032,17 @@ LVL_TO_ENG = {
         'D_Smith_03_P': "DLC3 Dungeon Chamber 3",
         'D_Smith_04_P': "DLC3 Dungeon Chamber 4",
         'D_Smith_Boss_P': "DLC3 Dungeon Boss Chamber",
+        'D_Wyvern_01_P': "DLC4 Dungeon Chamber 1",
+        'D_Wyvern_02_P': "DLC4 Dungeon Chamber 2",
+        'D_Wyvern_03_P': "DLC4 Dungeon Chamber 3",
+        'D_Wyvern_04_P': "DLC4 Dungeon Chamber 4",
+        'D_Wyvern_Boss_P': "DLC4 Dungeon Boss Chamber",
+        'Ind_Wyvern_01_P': "DLC4 Dungeon Chamber 1",
+        'Ind_Wyvern_02_P': "DLC4 Dungeon Chamber 2",
+        'Ind_Wyvern_03_P': "DLC4 Dungeon Chamber 3",
+        'Ind_Wyvern_04_P': "DLC4 Dungeon Chamber 4",
+        'IND_Wyvern_Boss_P': "DLC4 Boss",
+        'Ind_Wyvern_Intro_P': "DLC4 Intro Level",
         }
 
 # Also create a lowercase version

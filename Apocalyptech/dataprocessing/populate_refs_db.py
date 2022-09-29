@@ -66,6 +66,23 @@ blacklist_to = {
 # "real" database connections anymore.  So we'll manually read in its INI
 # file, and expect to see the old-style database connection parameters
 # in there.
+#
+# The util does also make use of the `data_dir` value inside the `filesystem`
+# section in that config file, since we're reading it in anyway.
+#
+# The stanza we expect to see (including vars used by convert_refs_db.py):
+#
+#    [mysql]
+#    host = localhost
+#    port = 3306
+#    user = wlrefs
+#    passwd = password
+#    db = wlrefs
+#    mysql2sqlite = /usr/local/dv/virtualenv/mysql2sqlite/bin/mysql2sqlite
+#    notice2 = Not used by wldata anymore, but IS used by populate_refs_db.py
+#
+# (The "notice2" isn't actually important, just a note to myself.)
+# ~/.config/wldata/wldata.ini on Linux, if using defaults
 config_dir = appdirs.user_config_dir('wldata')
 config_file = os.path.join(config_dir, 'wldata.ini')
 config = configparser.ConfigParser()
@@ -74,12 +91,14 @@ db = MySQLdb.connect(
         user=config['mysql']['user'],
         passwd=config['mysql']['passwd'],
         host=config['mysql']['host'],
-        db=config['mysql']['db'])
+        db=config['mysql']['db'],
+        port=config['mysql']['port'],
+        )
 curs = db.cursor()
 
 # Let's time this.  Obviously the ETA comparison will vary if you're not
 # on my machine.
-estimated_secs = 546
+estimated_secs = 199
 start_time = time.time()
 
 # Go ahead and auto-truncate first
@@ -110,10 +129,12 @@ def read_str(df):
 objects = {}
 toplevels = set()
 obj_count = 0
-data_dir = config['filesystem']['data_dir'] 
-if data_dir[-1] != "/":
-    data_dir += "/"
-for (dirpath, dirnames, filenames) in os.walk( data_dir ): #os.walk('extracted'):
+data_dir = config['filesystem']['data_dir']
+# Could alternatively *chop* off a slash if we do find it, but whatever.
+if data_dir[-1] != '/':
+    data_dir += '/'
+data_dir_slice = len(data_dir)
+for (dirpath, dirnames, filenames) in os.walk(data_dir):
     for filename in filenames:
         if filename.endswith('.uasset') or filename.endswith('.umap'):
 
@@ -121,10 +142,9 @@ for (dirpath, dirnames, filenames) in os.walk( data_dir ): #os.walk('extracted')
             full_filename = os.path.join(dirpath, filename)
             # Get our object name
             if filename.endswith('.uasset'):
-                cur_obj_name = full_filename[len(data_dir)-1:-7]
+                cur_obj_name = full_filename[data_dir_slice:-7]
             else:
-                cur_obj_name = full_filename[len(data_dir)-1:-5]
-            print(cur_obj_name)
+                cur_obj_name = full_filename[data_dir_slice:-5]
             cur_obj_name_lower = cur_obj_name.lower()
             if cur_obj_name_lower in toplevels:
                 print('WARNING: Found duplicate name {} in {}'.format(cur_obj_name, full_filename))
@@ -189,7 +209,7 @@ for (dirpath, dirnames, filenames) in os.walk( data_dir ): #os.walk('extracted')
                     eta = '{}m{}s remaining'.format(mins, secs)
                 else:
                     eta = '---- remaining'
-                print('Processed {} objects (of ~85900, as of 2022-06-23 (Steam release, DLC3) (95746 in DB)) | {}...'.format(obj_count, eta))
+                print('Processed {} objects (of ~89000, as of 2022-08-11 (DLC4, Blightcaller) (99383 in DB)) | {}...'.format(obj_count, eta))
                 db.commit()
 
 # Ensure that we've committed

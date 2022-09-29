@@ -12,6 +12,9 @@ starting level.
 Changelog
 =========
 
+**v1.1.0** - Aug 12, 2022
+ * Updated for DLC4 compatibility
+
 **v1.0.0** - Jul 27, 2022
  * Initial release, based on v1.1.0 of
    [BL3's Early Bloomer](https://github.com/BLCM/bl3mods/wiki/Early%20Bloomer)
