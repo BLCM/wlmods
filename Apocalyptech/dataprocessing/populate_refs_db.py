@@ -92,7 +92,7 @@ db = MySQLdb.connect(
         passwd=config['mysql']['passwd'],
         host=config['mysql']['host'],
         db=config['mysql']['db'],
-        port=config['mysql']['port'],
+        port=int(config['mysql']['port']),
         )
 curs = db.cursor()
 
@@ -131,9 +131,8 @@ toplevels = set()
 obj_count = 0
 
 data_dir = config['filesystem']['data_dir']
-# Could alternatively *chop* off a slash if we do find it, but whatever.
-if data_dir[-1] != '/':
-    data_dir += '/'
+if data_dir[-1] == '/':
+    data_dir = data_dir[:-1]
 data_dir_slice = len(data_dir)
 for (dirpath, dirnames, filenames) in os.walk(data_dir):
     for filename in filenames:
