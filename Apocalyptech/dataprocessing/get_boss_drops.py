@@ -147,6 +147,14 @@ class BPChar:
                     if 'TargetUIName' in tc and type(tc['TargetUIName']) == list:
                         self.uiname_target = tc['TargetUIName'][1]
 
+        # Custom fix for DLC4's Raging Wyborg.  I think this just happens via object inheritance,
+        # of which there wouldn't be any indication in the data file.
+        if self.path == '/Game/PatchDLC/Indigo4/Enemies/BPChar_DragonMech_Indigo':
+            owner_name='/Game/Enemies/Vorcanar/_Shared/_Design/Character/BPChar_DragonMech'
+            if owner_name not in self.bpchar_cache:
+                self.bpchar_cache[owner_name] = BPChar(self.data, owner_name, self.bpchar_cache)
+            self.owner = self.bpchar_cache[owner_name]
+
     def _process_aibalance(self, aibsc):
         if self.seen_aibalance:
             return
