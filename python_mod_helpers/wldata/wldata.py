@@ -70,7 +70,7 @@ class WLData(object):
     """
 
     # Data serialization version requirements
-    data_version = 26
+    data_version = 27
 
     # Hardcoded BVA values
     bva_values = {

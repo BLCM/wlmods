@@ -55,10 +55,10 @@ import configparser
 # select from_obj, count(from_obj) from ttwlrefs group by from_obj having count(from_obj) > N
 # select to_obj, count(to_obj) from ttwlrefs group by to_obj having count(to_obj) > N
 
-blacklist_from = {
+blocklist_from = {
         #'/game/common/_design/bplevelassetlists',
         }
-blacklist_to = {
+blocklist_to = {
         }
 
 # We used to abuse our wldata class to connect to the DB, here, but that
@@ -98,7 +98,7 @@ curs = db.cursor()
 
 # Let's time this.  Obviously the ETA comparison will vary if you're not
 # on my machine.
-estimated_secs = 199
+estimated_secs = 200
 start_time = time.time()
 
 # Go ahead and auto-truncate first
@@ -130,13 +130,12 @@ objects = {}
 toplevels = set()
 obj_count = 0
 data_dir = config['filesystem']['data_dir']
-# Could alternatively *chop* off a slash if we do find it, but whatever.
-if data_dir[-1] != '/':
-    data_dir += '/'
-data_dir_slice = len(data_dir) - 1 # - 1 is to keep the / prefix
 # both of these queries should produce 1 if you didn't mess up the path names
 # select count(*)=0 from ttwlobject where ttwlobject.name like 'G%' ;
 # select count(*)>0 from ttwlobject where ttwlobject.name like '/G%' ;
+if data_dir[-1] == '/':
+    data_dir = data_dir[:-1]
+data_dir_slice = len(data_dir)
 for (dirpath, dirnames, filenames) in os.walk(data_dir):
     for filename in filenames:
         if filename.endswith('.uasset') or filename.endswith('.umap'):
@@ -212,7 +211,7 @@ for (dirpath, dirnames, filenames) in os.walk(data_dir):
                     eta = '{}m{}s remaining'.format(mins, secs)
                 else:
                     eta = '---- remaining'
-                print('Processed {} objects (of ~89000, as of 2022-08-11 (DLC4, Blightcaller) (99383 in DB)) | {}...'.format(obj_count, eta))
+                print('Processed {} objects (of ~89000, as of 2022-09-29 (general patch) (99392 in DB)) | {}...'.format(obj_count, eta))
                 db.commit()
 
 # Ensure that we've committed
@@ -220,18 +219,18 @@ db.commit()
 
 # Cleanup at the end -- automatically get rid of /Game/Common/_Design/BPLevelAssetLists "from" refs
 # Untested!
-for obj_name in sorted(blacklist_from):
+for obj_name in sorted(blocklist_from):
     if obj_name in objects:
         print('Clearing "from" refs from {}'.format(obj_name))
         curs.execute('delete from ttwlrefs where from_obj=%s', (objects[obj_name],))
     else:
-        print('WARNING: could not find blacklisted {}'.format(obj_name))
-for obj_name in sorted(blacklist_to):
+        print('WARNING: could not find blocklisted {}'.format(obj_name))
+for obj_name in sorted(blocklist_to):
     if obj_name in objects:
         print('Clearing "to" refs from {}'.format(obj_name))
         curs.execute('delete from ttwlrefs where to_obj=%s', (objects[obj_name],))
     else:
-        print('WARNING: could not find blacklisted {}'.format(obj_name))
+        print('WARNING: could not find blocklisted {}'.format(obj_name))
 db.commit()
 
 # Report on the number of records in the DB
