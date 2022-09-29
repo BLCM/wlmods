@@ -101,6 +101,7 @@ class _StreamingBlueprintHelper:
             '/game/interactiveobjects/gamesystemmachines/catcharide/_shared/blueprints/bp_catcharide_console': 'RootComponent',
             '/game/interactiveobjects/gamesystemmachines/catcharide/_shared/blueprints/bp_catcharide_platform': 'PlatformMesh',
             '/game/interactiveobjects/gamesystemmachines/quickchange/bp_quickchange': 'RootComponent',
+            '/game/interactiveobjects/gamesystemmachines/storagedeckvendor/blueprints/bp_sducase': 'RootComponent',
             '/game/interactiveobjects/gamesystemmachines/vendingmachine/_shared/blueprints/bp_vendingmachine_ammo': 'RootComponent',
             '/game/interactiveobjects/gamesystemmachines/vendingmachine/_shared/blueprints/bp_vendingmachine_crazyearl': 'RootComponent',
             '/game/interactiveobjects/gamesystemmachines/vendingmachine/_shared/blueprints/bp_vendingmachine_health': 'RootComponent',
