@@ -55,10 +55,10 @@ import configparser
 # select from_obj, count(from_obj) from ttwlrefs group by from_obj having count(from_obj) > N
 # select to_obj, count(to_obj) from ttwlrefs group by to_obj having count(to_obj) > N
 
-blacklist_from = {
+blocklist_from = {
         #'/game/common/_design/bplevelassetlists',
         }
-blacklist_to = {
+blocklist_to = {
         }
 
 # We used to abuse our wldata class to connect to the DB, here, but that
@@ -218,18 +218,18 @@ db.commit()
 
 # Cleanup at the end -- automatically get rid of /Game/Common/_Design/BPLevelAssetLists "from" refs
 # Untested!
-for obj_name in sorted(blacklist_from):
+for obj_name in sorted(blocklist_from):
     if obj_name in objects:
         print('Clearing "from" refs from {}'.format(obj_name))
         curs.execute('delete from ttwlrefs where from_obj=%s', (objects[obj_name],))
     else:
-        print('WARNING: could not find blacklisted {}'.format(obj_name))
-for obj_name in sorted(blacklist_to):
+        print('WARNING: could not find blocklisted {}'.format(obj_name))
+for obj_name in sorted(blocklist_to):
     if obj_name in objects:
         print('Clearing "to" refs from {}'.format(obj_name))
         curs.execute('delete from ttwlrefs where to_obj=%s', (objects[obj_name],))
     else:
-        print('WARNING: could not find blacklisted {}'.format(obj_name))
+        print('WARNING: could not find blocklisted {}'.format(obj_name))
 db.commit()
 
 # Report on the number of records in the DB
