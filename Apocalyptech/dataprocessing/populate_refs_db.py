@@ -133,7 +133,10 @@ data_dir = config['filesystem']['data_dir']
 # Could alternatively *chop* off a slash if we do find it, but whatever.
 if data_dir[-1] != '/':
     data_dir += '/'
-data_dir_slice = len(data_dir)
+data_dir_slice = len(data_dir) - 1 # - 1 is to keep the / prefix
+# both of these queries should produce 1 if you didn't mess up the path names
+# select count(*)=0 from ttwlobject where ttwlobject.name like 'G%' ;
+# select count(*)>0 from ttwlobject where ttwlobject.name like '/G%' ;
 for (dirpath, dirnames, filenames) in os.walk(data_dir):
     for filename in filenames:
         if filename.endswith('.uasset') or filename.endswith('.umap'):

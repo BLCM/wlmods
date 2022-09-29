@@ -88,8 +88,9 @@ for invpart in invparts:
     print('Processing {}...'.format(invpart))
     object_names = data.get_refs_objects_by_short_name(invpart)
     if len(object_names) != 1:
-        print('WARNING: {} has more than one result: {}'.format(
+        print('WARNING: {} has more than zero or one ({}) result: {}'.format(
             invpart,
+            len(object_names),
             ', '.join([o[0] for o in object_names]),
             ))
         continue
