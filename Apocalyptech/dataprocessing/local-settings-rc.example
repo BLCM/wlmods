@@ -1,6 +1,0 @@
-PASS=my-secret-pw
-FULLPASS=my-secret-pw
-USER=wlrefs
-HOST=mcp
-PORT=3306
-MYSQL2SQLITE=/usr/local/dv/virtualenv/mysql2sqlite/bin/mysql2sqlite
