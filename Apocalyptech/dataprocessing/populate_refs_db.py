@@ -98,7 +98,7 @@ curs = db.cursor()
 
 # Let's time this.  Obviously the ETA comparison will vary if you're not
 # on my machine.
-estimated_secs = 199
+estimated_secs = 200
 start_time = time.time()
 
 # Go ahead and auto-truncate first
@@ -210,7 +210,7 @@ for (dirpath, dirnames, filenames) in os.walk(data_dir):
                     eta = '{}m{}s remaining'.format(mins, secs)
                 else:
                     eta = '---- remaining'
-                print('Processed {} objects (of ~89000, as of 2022-08-11 (DLC4, Blightcaller) (99383 in DB)) | {}...'.format(obj_count, eta))
+                print('Processed {} objects (of ~89000, as of 2022-09-29 (general patch) (99392 in DB)) | {}...'.format(obj_count, eta))
                 db.commit()
 
 # Ensure that we've committed
