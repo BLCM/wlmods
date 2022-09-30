@@ -14,6 +14,8 @@ See the individual mod folders for full READMEs.
   near the end of a magazine.
 - **Photo Mode Unlock** - Lets the camera in Photo Mode go extremely far, and
   speeds up its movement.
+- **Skip DLC Intros** - Skips the DLC intro movies in Dreamveil Overlook, for
+  DLCs 1, 2, and 3.  Does *not* work for Shattering Spectreglass (DLC4)!
 
 Licenses
 ========

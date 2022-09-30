@@ -10,8 +10,6 @@ See the individual mod folders for full READMEs.
 - **Movement Speed Cheats** - Move faster!
 - **Short Overworld Dungeons** - Shortens all Overworld dungeons (single-room
   only, and shorter enemy waves)
-- **Skip DLC Intros** - Skips the DLC intro movies in Dreamveil Overlook, for
-  DLCs 1, 2, and 3.  Does *not* work for Shattering Spectreglass (DLC4)!
 
 Licenses
 ========
