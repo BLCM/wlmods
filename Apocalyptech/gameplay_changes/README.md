@@ -10,6 +10,8 @@ See the individual mod folders for full READMEs.
 - **Movement Speed Cheats** - Move faster!
 - **Short Overworld Dungeons** - Shortens all Overworld dungeons (single-room
   only, and shorter enemy waves)
+- **Skip To DLC Bosses** - Skips directly to the boss chambers when entering
+  a mirror in Dreamveil Overlook.
 
 Licenses
 ========
