@@ -47,10 +47,14 @@ class ChaosConfig:
     
     # defaults
     default_starting_levels = [None, 1, 20, 35, 50]
-    #default_level_equivs = [None, 2, 4, 6, 8]
-    default_weight_bases = [50, 1, 0, 0, 0]
-    default_per_levels = [0, 1, 1, 1, 1]
-    default_catchups = [0, 1, 1, 0, 0]
+    default_weight_bases = [20, 1, 0, 0, 0.7]
+    default_per_levels = [0, 0, 0, 1, 0.3]
+    default_catchups = [0, 5, 5, 5, 0]
+
+    # Depletion AIs
+    depletion_ai_0 = '/Game/GameData/Mayhem/Init/Init_Calc_DepleteTier0Weight.Init_Calc_DepleteTier0Weight_C'
+    depletion_ai_1 = '/Game/GameData/Mayhem/Init/Init_Calc_DepleteTier1Weight.Init_Calc_DepleteTier1Weight_C'
+    depletion_ai_2 = '/Game/GameData/Mayhem/Init/Init_Calc_DepleteTier2Weight.Init_Calc_DepleteTier2Weight_C'
 
     # Object paths
     main_obj = '/Game/GameData/Mayhem/MayhemModeData'
@@ -67,10 +71,13 @@ class ChaosConfig:
 
     def __init__(self,
             starting_levels=None,
-            #level_equivs=None,
             weight_bases=None,
             per_levels=None,
             catchups=None,
+            depletion=None,
+            depletion_lv0=None,
+            depletion_lv1=None,
+            depletion_lv2=None
             ):
         """
         We're using separate `default_*` attrs here in case I ever want to
@@ -83,12 +90,6 @@ class ChaosConfig:
             self.starting_levels = self.default_starting_levels
         else:
             self.starting_levels = starting_levels
-
-        # Level Equivalency
-        #if level_equivs is None:
-        #    self.level_equivs = self.default_level_equivs
-        #else:
-        #    self.level_equivs = level_equivs
 
         # Weight Base
         if weight_bases is None:
@@ -108,19 +109,44 @@ class ChaosConfig:
         else:
             self.catchups = catchups
 
+        # Depletions.  First set a default set -- default is to use
+        # depletions.
+        if depletion is None or depletion:
+            self.depletion = [
+                    self.depletion_ai_0,
+                    self.depletion_ai_1,
+                    self.depletion_ai_2,
+                    None,
+                    None,
+                    ]
+        else:
+            self.depletion = [None, None, None, None, None]
+        # Next, if we've overridden any particular depletions,
+        # process that.
+        for idx, arg, ai in [
+                (0, depletion_lv0, self.depletion_ai_0),
+                (1, depletion_lv1, self.depletion_ai_1),
+                (2, depletion_lv2, self.depletion_ai_2),
+                ]:
+            if arg is not None:
+                if arg:
+                    self.depletion[idx] = ai
+                else:
+                    self.depletion[idx] = None
+
     def to_hotfix(self, mod):
-        for idx, (weight_base, per_level, catchup, starting_level) in enumerate(zip(
+        for idx, (weight_base, per_level, catchup, starting_level, depletion_ai) in enumerate(zip(
                 self.weight_bases,
                 self.per_levels,
                 self.catchups,
                 self.starting_levels,
-                #self.level_equivs,
+                self.depletion,
                 )):
             mod.comment('Chaos Level {} ({})'.format(idx, self.chaos_to_eng[idx]))
             mod.reg_hotfix(Mod.PATCH, '',
                     self.main_obj,
                     f'Tiers.Tiers[{idx}].AvailableInventoryOverpowerLevelWeight',
-                    BVCF(bvc=weight_base))
+                    BVCF(bvc=weight_base, ai=depletion_ai))
             mod.reg_hotfix(Mod.PATCH, '',
                     self.main_obj,
                     f'Tiers.Tiers[{idx}].AvailableInventoryOverpowerLevelWeightPerMayhemLevel',
@@ -135,11 +161,6 @@ class ChaosConfig:
                         f'Tier{idx}_StartingLevel',
                         'Base_17_28B25EC8493D1EB6C2138A962F659BCD',
                         starting_level)
-                #mod.table_hotfix(Mod.PATCH, '',
-                #        self.table_obj,
-                #        f'Overpower_Tier{idx}_LevelEquivalency',
-                #        'Base_17_28B25EC8493D1EB6C2138A962F659BCD',
-                #        level_equiv)
             mod.newline()
 
 # Now generate each of our mod files
@@ -153,22 +174,29 @@ for label, filename, desc, config in [
                 "Prevents Chaotic/Volatile/Primordial/Ascended gear from spawning",
                 "when Chaos Mode is active.",
                 ],
-            ChaosConfig(starting_levels=[None, 51, 51, 51, 51]),
+            ChaosConfig(starting_levels=[None, 101, 101, 101, 101],
+                depletion=False,
+                ),
             ),
         ('Guaranteed Chaos Gear', 'guaranteed', [
                 "Ensures that all gear dropped in Chaos Mode will have a Chaos Level",
-                "attached to it (Chaotic/Volatile/Primordial/Ascended).",
+                "attached to it (Chaotic/Volatile/Primordial/Ascended).  As of the",
+                "September 2022 patch, by the time you get to Chaos 50 or so, you'll",
+                "actually be slightly better off with the default Chaos config,",
+                "though they even out awhile after that.",
                 ],
-            ChaosConfig(weight_bases=[0, 1, 0, 0, 0]),
+            ChaosConfig(weight_bases=[0, 1, 0, 0, 0],
+                depletion_lv0=False),
             ),
         ('All Chaotic', 'all_chaotic', [
                 "All spawned gear will be Chaotic when in Chaos Mode, regardless",
                 "of Chaos Level.",
                 ],
             ChaosConfig(weight_bases=[0, 1, 0, 0, 0],
-                starting_levels=[None, 1, 51, 51, 51],
+                starting_levels=[None, 1, 101, 101, 101],
                 per_levels=[0, 0, 0, 0, 0],
                 catchups=[0, 0, 0, 0, 0],
+                depletion=False,
                 ),
             ),
         ('All Volatile', 'all_volatile', [
@@ -176,9 +204,10 @@ for label, filename, desc, config in [
                 "of Chaos Level.",
                 ],
             ChaosConfig(weight_bases=[0, 0, 1, 0, 0],
-                starting_levels=[None, 51, 1, 51, 51],
+                starting_levels=[None, 101, 1, 101, 101],
                 per_levels=[0, 0, 0, 0, 0],
                 catchups=[0, 0, 0, 0, 0],
+                depletion=False,
                 ),
             ),
         ('All Primordial', 'all_primordial', [
@@ -186,9 +215,10 @@ for label, filename, desc, config in [
                 "of Chaos Level.",
                 ],
             ChaosConfig(weight_bases=[0, 0, 0, 1, 0],
-                starting_levels=[None, 51, 51, 1, 51],
+                starting_levels=[None, 101, 101, 1, 101],
                 per_levels=[0, 0, 0, 0, 0],
                 catchups=[0, 0, 0, 0, 0],
+                depletion=False,
                 ),
             ),
         ('All Ascended', 'all_ascended', [
@@ -196,9 +226,10 @@ for label, filename, desc, config in [
                 "of Chaos Level.",
                 ],
             ChaosConfig(weight_bases=[0, 0, 0, 0, 1],
-                starting_levels=[None, 51, 51, 51, 1],
+                starting_levels=[None, 101, 101, 101, 1],
                 per_levels=[0, 0, 0, 0, 0],
                 catchups=[0, 0, 0, 0, 0],
+                depletion=False,
                 ),
             ),
         ]:
@@ -209,7 +240,7 @@ for label, filename, desc, config in [
             desc,
             contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
-            v='1.0.0',
+            v='1.1.0',
             cats='chaos',
             )
     config.to_hotfix(mod)

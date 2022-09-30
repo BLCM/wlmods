@@ -14,7 +14,9 @@ The available variants are:
   game.
 * **Guaranteed** - All dropped gear will have a Chaos level attached to it,
   when in Chaos Mode.  Otherwise, continues to use the stock game weights
-  for which one gets spawned.
+  for which one gets spawned.  As of the September 2022 patch, by the time
+  you get to Chaos 50 or so, you'll actually be slightly better off with
+  the default Chaos config, though they even out awhile after that.
 * **No Chaos Gear** - Prevents Chaos-buffed gear from spawning at all.
   Useful if you want to use Chaos Mode as a "simple" difficulty slider,
   without introducing another keep/throw-away factor for gear.
@@ -25,6 +27,9 @@ The available variants are:
 
 Changelog
 =========
+
+**v1.1.0** - Sep 29, 2022
+ * Updated with compatibility with today's v1.0.6 Wonderlands patch
 
 **v1.0.0** - Aug 1, 2022
  * Initial release
