@@ -23,6 +23,7 @@ import sys
 import appdirs
 import subprocess
 import configparser
+import shutil
 
 # The stanza we expect to see (including vars used by populate_refs_db.py):
 #
@@ -48,7 +49,10 @@ port = config['mysql']['port']
 user = config['mysql']['user']
 passwd = config['mysql']['passwd']
 db = config['mysql']['db']
-mysql2sqlite = config['mysql']['mysql2sqlite']
+# if it is not there, assume it is in the path
+mysql2sqlite = config['mysql'].get('mysql2sqlite',shutil.which("mysql2sqlite"))
+if mysql2sqlite is None:
+    raise "mysql2sqlite executable is missing from wldata.ini and the path"
 
 # Construct filenames
 file_sql = f'{db}.sql'
@@ -88,7 +92,7 @@ cp = subprocess.run([mysql2sqlite,
     '-h', host,
     '-P', port,
     '-V',
-    '-p', passwd,
+    '--mysql-password', passwd,
     ])
 if cp.returncode == 0:
     subprocess.run(['zip', file_sqlite_zip, file_sqlite])

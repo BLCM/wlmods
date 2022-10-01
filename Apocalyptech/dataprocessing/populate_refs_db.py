@@ -129,8 +129,10 @@ def read_str(df):
 objects = {}
 toplevels = set()
 obj_count = 0
-
 data_dir = config['filesystem']['data_dir']
+# both of these queries should produce 1 if you didn't mess up the path names
+# select count(*)=0 from ttwlobject where ttwlobject.name like 'G%' ;
+# select count(*)>0 from ttwlobject where ttwlobject.name like '/G%' ;
 if data_dir[-1] == '/':
     data_dir = data_dir[:-1]
 data_dir_slice = len(data_dir)
@@ -140,7 +142,6 @@ for (dirpath, dirnames, filenames) in os.walk(data_dir):
 
             refs = set()
             full_filename = os.path.join(dirpath, filename)
-
             # Get our object name
             if filename.endswith('.uasset'):
                 cur_obj_name = full_filename[data_dir_slice:-7]
