@@ -32,10 +32,10 @@ from wldata.wldata import WLData
 from wlhotfixmod.wlhotfixmod import ItemPool, LVL_TO_ENG_LOWER, LVL_CASE_NORM
 
 # This is a script to try and auto-discover all unique drops for boss-like characters
-# in Wonderlands.  This would probably work pretty well for BL3 as well, though it'd
-# have to be updated to report on TVHM properly, and the various exclusion sets would
-# need to be updated.  (Also the BL3 version would have to deal with ItemPool expansion
-# objects -- WL *does* have those, but they don't seem to affect unique drops.)
+# in Wonderlands.  This would probably work pretty well for BL3 as well, though the
+# various exclusion sets would need to be updated.  (Also the BL3 version would have
+# to deal with ItemPool expansion objects -- WL *does* have those, but they don't
+# seem to affect unique drops.)
 #
 # It does *not* attempt to report anything about drop probabilities, or if drops are
 # locked behind Chaos levels, or any of that.  My own purpose for this script was just
@@ -196,47 +196,44 @@ class BPChar:
                     self.pt_pools.append(None)
                     self.pt_pool_lists.append(None)
 
-    def get_uiname(self, pt=1):
+    def get_uiname(self, pt=0):
         uiname = None
         if self.owner is not None:
             uiname = self.owner.get_uiname(pt)
         if self.uiname_target is not None:
             uiname = self.uiname_target
-        if len(self.pt_uinames) >= pt:
-            pt_idx = pt-1
-            if self.pt_uinames[pt_idx] is not None:
-                uiname = self.pt_uinames[pt_idx]
+        if len(self.pt_uinames) >= pt+1:
+            if self.pt_uinames[pt] is not None:
+                uiname = self.pt_uinames[pt]
         return uiname
 
-    def get_pools(self, pt=1):
+    def get_pools(self, pt=0):
         pools = []
         if self.owner is not None:
             pools = self.owner.get_pools(pt)
         pools.extend(self.pools)
-        if len(self.pt_pools) >= pt:
-            pt_idx = pt-1
-            if self.pt_pools[pt_idx] is not None:
+        if len(self.pt_pools) >= pt+1:
+            if self.pt_pools[pt] is not None:
                 # TODO: is this really a *full* overwrite?  I think so...
                 # Is it a full rewrite if we're given an *empty* list here?  That I'm not sure of.
                 # (though I think the BL3 Hightower bug was due to an empty list here?)
-                pools = self.pt_pools[pt_idx]
+                pools = self.pt_pools[pt]
         return pools
 
-    def get_pool_lists(self, pt=1):
+    def get_pool_lists(self, pt=0):
         pool_lists = []
         if self.owner is not None:
             pool_lists = self.owner.get_pool_lists(pt)
         pool_lists.extend(self.pool_lists)
-        if len(self.pt_pool_lists) >= pt:
-            pt_idx = pt-1
-            if self.pt_pool_lists[pt_idx] is not None:
+        if len(self.pt_pool_lists) >= pt+1:
+            if self.pt_pool_lists[pt] is not None:
                 # TODO: is this really a *full* overwrite?  I think so...
                 # Is it a full rewrite if we're given an *empty* list here?  That I'm not sure of.
                 # (though I think the BL3 Hightower bug was due to an empty list here?)
-                pool_lists = self.pt_pool_lists[pt_idx]
+                pool_lists = self.pt_pool_lists[pt]
         return pool_lists
 
-    def report(self, pt=1):
+    def report(self, pt=0):
         pools = self.get_pools(pt)
         pool_lists = self.get_pool_lists(pt)
         if pools or pool_lists:
@@ -292,6 +289,15 @@ class ItemPoolWrapper(ItemPool):
                     interest = True
         self.has_interesting = interest
         return interest
+
+    def get_aggregate_balances(self):
+        agg = set()
+        for entry in self.balanceditems:
+            if entry.pool_name:
+                agg |= self.cache[entry.pool_name].get_aggregate_balances()
+            elif entry.balance_name:
+                agg.add(entry.balance_name)
+        return agg
 
     def show(self, indent=0, balance_name_mapping=None):
         indent_str = '   '*indent
@@ -595,6 +601,11 @@ ordinary_filter = {
         '/Game/GameData/Loot/ItemPools/SpellMods/ItemPool_Spells_All',
         '/Game/GameData/Loot/Weapons/Pool_Gear_Misc_All',
         '/Game/GameData/Loot/Weapons/Pool_Weapons_All',
+        '/Game/Patch/Live/DaffLive_ItemPool_1',
+        '/Game/Patch/Live/DaffLive_ItemPool_2',
+        '/Game/Patch/Live/DaffLive_ItemPool_3',
+        '/Game/Patch/Live/DaffLive_ItemPool_4',
+        '/Game/Patch/Live/DaffLive_ItemPool_5',
         '/Game/PatchDLC/Indigo1/Common/InteractiveObjects/ChallengeDrops/LootPool_Indigo_ChallengeReward',
         '/Game/PatchDLC/Indigo1/Common/InteractiveObjects/Lootables/Data/ItemPool_Indigo_Currency',
         '/Game/PatchDLC/Indigo3/Enemies/MunitionGolem/_Shared/_Design/_Character/ItemPoolList_Smith_Minions_Indigo',
@@ -603,6 +614,12 @@ ordinary_filter = {
 # Balances to ignore while processing itempool contents
 ordinary_balances = {
         '/Game/Pickups/Money/DA_InventoryBalance_Currency_MoneySingleDollar',
+        }
+
+# Labels for playthroughs, when reporting on that
+pt_labels = {
+        0: 'Normal',
+        1: 'Chaos Mode',
         }
 
 # Balance Name mapping, for nicer reporting.
@@ -659,86 +676,120 @@ for so_name, so in so_objects:
                             # literally all of them (which is unsurprising, but I'm glad I checked), and I can't
                             # imagine future updates would add unique drops via ItemPoolList objects.  So, don't
                             # even bother with them here, from this point on.
-                            drop_pools_tmp = bpchar.get_pools()
-                            if so_pool is not None:
-                                if so_pool_additive:
-                                    drop_pools_tmp.append(so_pool)
-                                else:
-                                    drop_pools_tmp = [so_pool]
+                            drop_pools_tmp_pt = []
+                            for pt in range(2):
+                                drop_pools_tmp_pt.append(bpchar.get_pools(pt))
+                                if so_pool is not None:
+                                    if so_pool_additive:
+                                        drop_pools_tmp_pt[-1].append(so_pool)
+                                    else:
+                                        drop_pools_tmp_pt[-1] = [so_pool]
 
                             # Filter out "ordinary" pools/pool lists
-                            drop_pools = []
-                            for pool in drop_pools_tmp:
-                                if pool not in ordinary_filter:
-                                    drop_pools.append(pool)
+                            drop_pools_pt = []
+                            for drop_pools_tmp in drop_pools_tmp_pt:
+                                drop_pools_pt.append([])
+                                for pool in drop_pools_tmp:
+                                    if pool not in ordinary_filter:
+                                        drop_pools_pt[-1].append(pool)
 
                             # Load in pool data to see what's actually in there
-                            interesting = False
-                            for pool_name in drop_pools:
-                                pool = ItemPoolWrapper.from_data(data, pool_name, pool_cache, ordinary_balances)
-                                if pool.has_interesting:
-                                    interesting = True
+                            interesting_pt = []
+                            for drop_pools in drop_pools_pt:
+                                interesting_pt.append(False)
+                                for pool_name in drop_pools:
+                                    pool = ItemPoolWrapper.from_data(data, pool_name, pool_cache, ordinary_balances)
+                                    if pool.has_interesting:
+                                        interesting_pt[-1] = True
 
-                            # Are we interesting?
-                            if interesting:
+                            # Compare our playthrough aggregates to see if we should report
+                            # on each, or just one
+                            comparison = []
+                            for interesting, drop_pools in zip(interesting_pt, drop_pools_pt):
+                                comparison.append(set())
+                                if interesting:
+                                    for pool_name in drop_pools:
+                                        comparison[-1] |= pool_cache[pool_name].get_aggregate_balances()
+                            if comparison[0] == comparison[1]:
+                                show_pts = [0]
+                                show_pt_header = False
+                            else:
+                                show_pts = [0, 1]
+                                show_pt_header = True
 
-                                # Figure out what name to use
-                                if so_uiname is None:
-                                    report_uiname_obj = bpchar.get_uiname()
-                                else:
-                                    report_uiname_obj = so_uiname
-                                if report_uiname_obj is None:
-                                    report_uiname = '(no name)'
-                                else:
-                                    if report_uiname_obj not in name_cache:
-                                        uiname_data = data.get_data(report_uiname_obj)[0]
-                                        if 'DisplayName' in uiname_data and 'string' in uiname_data['DisplayName']:
-                                            uiname = uiname_data['DisplayName']['string']
-                                        else:
-                                            uiname = f'(invalid uiname: {report_uiname_obj})'
-                                        name_cache[report_uiname_obj] = uiname
-                                    report_uiname = name_cache[report_uiname_obj]
+                            # Okay, now show what we've been told to show
+                            for pt_idx in show_pts:
 
-                                # Find out what maps we're in
-                                in_maps = set()
-                                for ref in data.get_refs_to(so_name):
-                                    if '/Maps/' in ref and 'Benchmark' not in ref and 'QAGym' not in ref:
-                                        found_map = False
-                                        last_bit = ref.rsplit('/', 1)[1].lower()
-                                        parts = last_bit.split('_')
-                                        for idx in range(len(parts), 0, -1):
-                                            possible_name = '{}_p'.format('_'.join(parts[:idx]))
-                                            if possible_name in LVL_TO_ENG_LOWER:
-                                                in_maps.add('{} ({})'.format(
-                                                    LVL_TO_ENG_LOWER[possible_name],
-                                                    LVL_CASE_NORM[possible_name],
-                                                    ))
-                                                found_map = True
-                                                break
-                                        if not found_map:
-                                            in_maps.add(ref)
+                                interesting = interesting_pt[pt_idx]
+                                drop_pools = drop_pools_pt[pt_idx]
 
-                                # Report...
-                                print(f'SpawnOptions: {so_name}')
-                                if in_maps:
-                                    if len(in_maps) == 1:
-                                        plural = ''
+                                # Are we interesting?
+                                if interesting:
+
+                                    # Figure out what name to use
+                                    if so_uiname is None:
+                                        report_uiname_obj = bpchar.get_uiname(pt_idx)
                                     else:
-                                        plural = 's'
-                                    print('In Map{}: {}'.format(
-                                        plural,
-                                        ', '.join(sorted(in_maps)),
-                                        ))
-                                else:
-                                    print('In Maps: (unknown)')
-                                print(f'BPChar: {bpchar_name}')
-                                print(f'Name: {report_uiname}')
-                                for pool in drop_pools:
-                                    pool_obj = pool_cache[pool]
-                                    if pool_obj.has_interesting:
-                                        print(f'{report_color} > {pool}')
-                                        pool_obj.show(indent=2, balance_name_mapping=balance_name_mapping)
-                                print('')
+                                        report_uiname_obj = so_uiname
+                                    if report_uiname_obj is None:
+                                        report_uiname = '(no name)'
+                                    else:
+                                        if report_uiname_obj not in name_cache:
+                                            uiname_data = data.get_data(report_uiname_obj)[0]
+                                            if 'DisplayName' in uiname_data and 'string' in uiname_data['DisplayName']:
+                                                uiname = uiname_data['DisplayName']['string']
+                                            else:
+                                                uiname = f'(invalid uiname: {report_uiname_obj})'
+                                            name_cache[report_uiname_obj] = uiname
+                                        report_uiname = name_cache[report_uiname_obj]
+                                    if show_pt_header:
+                                        report_uiname = '{} ({})'.format(
+                                                report_uiname,
+                                                pt_labels[pt_idx],
+                                                )
+
+                                    # Find out what maps we're in
+                                    in_maps = set()
+                                    for ref in data.get_refs_to(so_name):
+                                        if '/Maps/' in ref and 'Benchmark' not in ref and 'QAGym' not in ref:
+                                            found_map = False
+                                            last_bit = ref.rsplit('/', 1)[1].lower()
+                                            parts = last_bit.split('_')
+                                            for idx in range(len(parts), 0, -1):
+                                                possible_name = '{}_p'.format('_'.join(parts[:idx]))
+                                                if possible_name in LVL_TO_ENG_LOWER:
+                                                    in_maps.add('{} ({})'.format(
+                                                        LVL_TO_ENG_LOWER[possible_name],
+                                                        LVL_CASE_NORM[possible_name],
+                                                        ))
+                                                    found_map = True
+                                                    break
+                                            if not found_map:
+                                                in_maps.add(ref)
+
+                                    # Report...
+                                    if show_pt_header:
+                                        print('(showing drops in {})'.format(pt_labels[pt_idx]))
+                                    print(f'SpawnOptions: {so_name}')
+                                    if in_maps:
+                                        if len(in_maps) == 1:
+                                            plural = ''
+                                        else:
+                                            plural = 's'
+                                        print('In Map{}: {}'.format(
+                                            plural,
+                                            ', '.join(sorted(in_maps)),
+                                            ))
+                                    else:
+                                        print('In Maps: (unknown)')
+                                    print(f'BPChar: {bpchar_name}')
+                                    print(f'Name: {report_uiname}')
+                                    for pool in drop_pools:
+                                        pool_obj = pool_cache[pool]
+                                        if pool_obj.has_interesting:
+                                            print(f'{report_color} > {pool}')
+                                            pool_obj.show(indent=2, balance_name_mapping=balance_name_mapping)
+                                    print('')
 
 # A handful of BPChars aren't referenced by any SpawnOption object.  Find those
 # here.  (There's not too many, but there are definitely a few we care about.)
