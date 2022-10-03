@@ -24,9 +24,23 @@ The available variants are:
 * **All Volatile** - All dropped gear will be Volatile, in Chaos Mode.
 * **All Primordial** - All dropped gear will be Primordial, in Chaos Mode.
 * **All Ascended** - All dropped gear will be Ascended, in Chaos Mode.
+* **Just Regular and Ascended** - Restricts drops to either normal or
+  Ascended.
+* **Just Regular, Primordial, and Ascended** - Restricts drops to be
+  normal, Primordial, or Ascended.
 
 Changelog
 =========
+
+**v1.1.1** - Oct 3, 2022
+ * Removed setting of "catchup" variables internally, which are actually
+   used to specify how many Chaos levels are gained with each chamber.
+   Setting them in here might've gotten in the way of future mods, by
+   accident.
+
+*(no version number change)* - Sep 30, 2022
+ * Added "Just Regular and Ascended" and "Just Regular, Primordial, and
+   Ascended" variants, from skruntskrunt
 
 **v1.1.0** - Sep 29, 2022
  * Updated with compatibility with today's v1.0.6 Wonderlands patch

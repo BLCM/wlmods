@@ -35,7 +35,6 @@ class ChaosConfig:
     `weight_bases`: The "base" weighting of this tier, at the time when it's
         been introduced
     `per_levels`: Additional weight added to this tier with each Chaos Level
-    `catchups`: No idea what this is, actually.
 
     Support for this next one is sort-of in here but commented out: I think
     it'd make more sense to allow other mods to edit these, without having
@@ -49,7 +48,6 @@ class ChaosConfig:
     default_starting_levels = [None, 1, 20, 35, 50]
     default_weight_bases = [20, 1, 0, 0, 0.7]
     default_per_levels = [0, 0, 0, 1, 0.3]
-    default_catchups = [0, 5, 5, 5, 0]
 
     # Depletion AIs
     depletion_ai_0 = '/Game/GameData/Mayhem/Init/Init_Calc_DepleteTier0Weight.Init_Calc_DepleteTier0Weight_C'
@@ -73,7 +71,6 @@ class ChaosConfig:
             starting_levels=None,
             weight_bases=None,
             per_levels=None,
-            catchups=None,
             depletion=None,
             depletion_lv0=None,
             depletion_lv1=None,
@@ -103,12 +100,6 @@ class ChaosConfig:
         else:
             self.per_levels = per_levels
 
-        # Catchups (?)
-        if catchups is None:
-            self.catchups = self.default_catchups
-        else:
-            self.catchups = catchups
-
         # Depletions.  First set a default set -- default is to use
         # depletions.
         if depletion is None or depletion:
@@ -135,10 +126,9 @@ class ChaosConfig:
                     self.depletion[idx] = None
 
     def to_hotfix(self, mod):
-        for idx, (weight_base, per_level, catchup, starting_level, depletion_ai) in enumerate(zip(
+        for idx, (weight_base, per_level, starting_level, depletion_ai) in enumerate(zip(
                 self.weight_bases,
                 self.per_levels,
-                self.catchups,
                 self.starting_levels,
                 self.depletion,
                 )):
@@ -151,10 +141,6 @@ class ChaosConfig:
                     self.main_obj,
                     f'Tiers.Tiers[{idx}].AvailableInventoryOverpowerLevelWeightPerMayhemLevel',
                     BVCF(bvc=per_level))
-            mod.reg_hotfix(Mod.PATCH, '',
-                    self.main_obj,
-                    f'Tiers.Tiers[{idx}].BonusCatchup',
-                    BVCF(bvc=catchup))
             if idx != 0:
                 mod.table_hotfix(Mod.PATCH, '',
                         self.table_obj,
@@ -195,7 +181,6 @@ for label, filename, desc, config in [
             ChaosConfig(weight_bases=[0, 1, 0, 0, 0],
                 starting_levels=[None, 1, 101, 101, 101],
                 per_levels=[0, 0, 0, 0, 0],
-                catchups=[0, 0, 0, 0, 0],
                 depletion=False,
                 ),
             ),
@@ -206,7 +191,6 @@ for label, filename, desc, config in [
             ChaosConfig(weight_bases=[0, 0, 1, 0, 0],
                 starting_levels=[None, 101, 1, 101, 101],
                 per_levels=[0, 0, 0, 0, 0],
-                catchups=[0, 0, 0, 0, 0],
                 depletion=False,
                 ),
             ),
@@ -217,7 +201,6 @@ for label, filename, desc, config in [
             ChaosConfig(weight_bases=[0, 0, 0, 1, 0],
                 starting_levels=[None, 101, 101, 1, 101],
                 per_levels=[0, 0, 0, 0, 0],
-                catchups=[0, 0, 0, 0, 0],
                 depletion=False,
                 ),
             ),
@@ -228,7 +211,6 @@ for label, filename, desc, config in [
             ChaosConfig(weight_bases=[0, 0, 0, 0, 1],
                 starting_levels=[None, 101, 101, 101, 1],
                 per_levels=[0, 0, 0, 0, 0],
-                catchups=[0, 0, 0, 0, 0],
                 depletion=False,
                 ),
             ),
@@ -247,7 +229,6 @@ for label, filename, desc, config in [
             ChaosConfig(weight_bases=[100, 0, 0, 0, 0.7],
                 starting_levels=[1, 101, 101, 101, 50],
                 per_levels=[0, 0, 0, 0, 2],
-                catchups=[0, 0, 0, 0, 0],
                 depletion=False,
                 ),
             ),
@@ -266,7 +247,6 @@ for label, filename, desc, config in [
             ChaosConfig(weight_bases=[20, 0, 0, 0, 0.7], # -> 100 to 20
                 starting_levels=[None, 101, 101, 35, 50],
                 per_levels=[0, 0, 0, 1, 0.3], # 1 -> 3 -> 5 -> 1 
-                catchups=[0, 0, 0, 5, 0],
                 depletion_lv0=True,
                 depletion_lv1=False,
                 depletion_lv2=False,
@@ -280,7 +260,7 @@ for label, filename, desc, config in [
             desc,
             contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
-            v='1.1.0',
+            v='1.1.1',
             cats='chaos',
             )
     config.to_hotfix(mod)

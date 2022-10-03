@@ -1,6 +1,6 @@
 
 @title Chaos Gear Spawns: Just Regular, Primordial, and Ascended
-@version 1.1.0
+@version 1.1.1
 @author Apocalyptech, skruntskrunt
 @contact https://apocalyptech.com/contact.php
 @categories chaos
@@ -26,29 +26,24 @@
 # Chaos Level 0 (Regular (No Chaos Level))
 SparkPatchEntry,(1,1,0,),/Game/GameData/Mayhem/MayhemModeData.MayhemModeData,Tiers.Tiers[0].AvailableInventoryOverpowerLevelWeight,0,,(BaseValueConstant=20,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=BlueprintGeneratedClass'"/Game/GameData/Mayhem/Init/Init_Calc_DepleteTier0Weight.Init_Calc_DepleteTier0Weight_C"',BaseValueScale=1)
 SparkPatchEntry,(1,1,0,),/Game/GameData/Mayhem/MayhemModeData.MayhemModeData,Tiers.Tiers[0].AvailableInventoryOverpowerLevelWeightPerMayhemLevel,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkPatchEntry,(1,1,0,),/Game/GameData/Mayhem/MayhemModeData.MayhemModeData,Tiers.Tiers[0].BonusCatchup,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Chaos Level 1 (Chaotic)
 SparkPatchEntry,(1,1,0,),/Game/GameData/Mayhem/MayhemModeData.MayhemModeData,Tiers.Tiers[1].AvailableInventoryOverpowerLevelWeight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkPatchEntry,(1,1,0,),/Game/GameData/Mayhem/MayhemModeData.MayhemModeData,Tiers.Tiers[1].AvailableInventoryOverpowerLevelWeightPerMayhemLevel,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkPatchEntry,(1,1,0,),/Game/GameData/Mayhem/MayhemModeData.MayhemModeData,Tiers.Tiers[1].BonusCatchup,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkPatchEntry,(1,2,0,),/Game/GameData/Mayhem/Balance/Table_Mayhem_GlobalModifers.Table_Mayhem_GlobalModifers,Tier1_StartingLevel,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,101
 
 # Chaos Level 2 (Volatile)
 SparkPatchEntry,(1,1,0,),/Game/GameData/Mayhem/MayhemModeData.MayhemModeData,Tiers.Tiers[2].AvailableInventoryOverpowerLevelWeight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkPatchEntry,(1,1,0,),/Game/GameData/Mayhem/MayhemModeData.MayhemModeData,Tiers.Tiers[2].AvailableInventoryOverpowerLevelWeightPerMayhemLevel,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkPatchEntry,(1,1,0,),/Game/GameData/Mayhem/MayhemModeData.MayhemModeData,Tiers.Tiers[2].BonusCatchup,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkPatchEntry,(1,2,0,),/Game/GameData/Mayhem/Balance/Table_Mayhem_GlobalModifers.Table_Mayhem_GlobalModifers,Tier2_StartingLevel,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,101
 
 # Chaos Level 3 (Primordial)
 SparkPatchEntry,(1,1,0,),/Game/GameData/Mayhem/MayhemModeData.MayhemModeData,Tiers.Tiers[3].AvailableInventoryOverpowerLevelWeight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkPatchEntry,(1,1,0,),/Game/GameData/Mayhem/MayhemModeData.MayhemModeData,Tiers.Tiers[3].AvailableInventoryOverpowerLevelWeightPerMayhemLevel,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkPatchEntry,(1,1,0,),/Game/GameData/Mayhem/MayhemModeData.MayhemModeData,Tiers.Tiers[3].BonusCatchup,0,,(BaseValueConstant=5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkPatchEntry,(1,2,0,),/Game/GameData/Mayhem/Balance/Table_Mayhem_GlobalModifers.Table_Mayhem_GlobalModifers,Tier3_StartingLevel,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,35
 
 # Chaos Level 4 (Ascended)
 SparkPatchEntry,(1,1,0,),/Game/GameData/Mayhem/MayhemModeData.MayhemModeData,Tiers.Tiers[4].AvailableInventoryOverpowerLevelWeight,0,,(BaseValueConstant=0.7,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkPatchEntry,(1,1,0,),/Game/GameData/Mayhem/MayhemModeData.MayhemModeData,Tiers.Tiers[4].AvailableInventoryOverpowerLevelWeightPerMayhemLevel,0,,(BaseValueConstant=0.3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkPatchEntry,(1,1,0,),/Game/GameData/Mayhem/MayhemModeData.MayhemModeData,Tiers.Tiers[4].BonusCatchup,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkPatchEntry,(1,2,0,),/Game/GameData/Mayhem/Balance/Table_Mayhem_GlobalModifers.Table_Mayhem_GlobalModifers,Tier4_StartingLevel,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,50
 
