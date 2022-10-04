@@ -1,0 +1,461 @@
+----------------------------------------------------------------------------------------------------------
+A Farmer's Ardor
+/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/Repellant/Balance/ItemPool_REpellant
+----------------------------------------------------------------------------------------------------------
+ - Bal: Goblin Repellant
+        /Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/Repellant/Balance/Balance_PS_COV_05_Repellant
+
+ -> /Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary
+
+---------------------------------------------------------------------------
+A Hard Day's Knight
+/Game/Missions/Plot/Plot02/Graveyard/ItemPool_Plot02_Graveyard_FissureSpell
+---------------------------------------------------------------------------
+ - Bal: Sunder (mission)
+        /Game/Gear/SpellMods/_Unique/_MissionUniques/Plot02GraveyardReward/Balance_Plot02_Graveyard_FissureSpell
+
+ -> /Game/GameData/Loot/ItemPools/SpellMods/ItemPool_SpellMods_02_Uncommon
+
+-----------------------------------------------------------------------------------------------
+A Knight's Toil
+/Game/Gear/SpellMods/_Unique/_MissionUniques/HoleyHandGrenade/Balance/ItemPool_HoleyHandGrenade
+-----------------------------------------------------------------------------------------------
+ - Bal: Holey Spell-nade
+        /Game/Gear/SpellMods/_Unique/_MissionUniques/HoleyHandGrenade/Balance/Balance_Spell_HoleyHandGrenade
+
+ -> /Game/GameData/Loot/ItemPools/SpellMods/ItemPool_SpellMods_05_Legendary
+
+---------------------------------------------------------------------------------------------
+A Realm in Peril
+/Game/Gear/Melee/Swords_2H/_Shared/_Design/_Unique/PaladinSword/Balance/ItemPool_PaladinSword
+---------------------------------------------------------------------------------------------
+ - Bal: Paladin's Sword
+        /Game/Gear/Melee/Swords_2H/_Shared/_Design/_Unique/PaladinSword/Balance/Balance_M_Sword2H_PaladinSword
+
+ -> /Game/GameData/Loot/ItemPools/Melee/ItemPool_Melee_05_Legendary
+
+---------------------------------------------------------------------------------
+A Small Favor
+/Game/Gear/SpellMods/_Unique/_MissionUniques/Frostburn/Balance/ItemPool_Frostburn
+---------------------------------------------------------------------------------
+ - Bal: Frostburn
+        /Game/Gear/SpellMods/_Unique/_MissionUniques/Frostburn/Balance/Balance_Spell_Frostburn
+
+ -> /Game/GameData/Loot/ItemPools/SpellMods/ItemPool_SpellMods_05_Legendary
+
+----------------------------------------------------------------------------------------
+A Walk to Dismember
+/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Pookie/Balance/ItemPool_Pookie
+----------------------------------------------------------------------------------------
+ - Bal: Pookie's Chew Toy
+        /Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Pookie/Balance/Balance_PS_JAK_05_Pookie
+
+ -> /Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary
+
+--------------------------------------------------------------------------------------------------------------------
+A Wandering Aye
+/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/PiratesLife/Balance/ItemPool_PiratesLife
+--------------------------------------------------------------------------------------------------------------------
+ - Bal: Eight Piece
+        /Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/PiratesLife/Balance/Balance_AR_COV_Pirates
+
+ -> /Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary
+
+-----------------------------------------------------------------------------------------
+All Swashed Up
+/Game/Gear/SpellMods/_Unique/_MissionUniques/JaggedToothCrew/Balance/ItemPool_JaggedTooth
+-----------------------------------------------------------------------------------------
+ - Bal: Great Wake
+        /Game/Gear/SpellMods/_Unique/_MissionUniques/JaggedToothCrew/Balance/Balance_Spell_JaggedTooth
+
+ -> /Game/GameData/Loot/ItemPools/SpellMods/ItemPool_SpellMods_05_Legendary
+
+--------------------------------------------------------------------------------------------
+Ancient Powers
+/Game/Gear/SpellMods/_Unique/_MissionUniques/AncientPowers/Balance/ItemPool_AncientPowers_v1
+--------------------------------------------------------------------------------------------
+ - Bal: Arc Torrent (mission v1)
+        /Game/Gear/SpellMods/_Unique/_MissionUniques/AncientPowers/Balance/Balance_Spell_AncientPowers_v1
+
+ -> /Game/GameData/Loot/ItemPools/SpellMods/ItemPool_SpellMods_03_Rare
+
+--------------------------------------------------------------------------------------------
+Ancient Powers (Part 2)
+/Game/Gear/SpellMods/_Unique/_MissionUniques/AncientPowers/Balance/ItemPool_AncientPowers_v2
+--------------------------------------------------------------------------------------------
+ - Bal: Arc Torrent (mission v2)
+        /Game/Gear/SpellMods/_Unique/_MissionUniques/AncientPowers/Balance/Balance_Spell_AncientPowers_v2
+
+ -> /Game/GameData/Loot/ItemPools/SpellMods/ItemPool_SpellMods_04_VeryRare
+
+--------------------------------------------------------------------------------------------
+Ancient Powers (Part 3)
+/Game/Gear/SpellMods/_Unique/_MissionUniques/AncientPowers/Balance/ItemPool_AncientPowers_v3
+--------------------------------------------------------------------------------------------
+ - Bal: Arc Torrent (mission v3)
+        /Game/Gear/SpellMods/_Unique/_MissionUniques/AncientPowers/Balance/Balance_Spell_AncientPowers_v3
+
+ -> /Game/GameData/Loot/ItemPools/SpellMods/ItemPool_SpellMods_04_VeryRare
+
+----------------------------------------------------------------------------------------------------
+Ancient Powers (Part 4)
+/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/DreadLord/Balance/ItemPool_Dreadlord
+----------------------------------------------------------------------------------------------------
+ - Bal: Dreadlord's Finest
+        /Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/DreadLord/Balance/Balance_AR_VLA_Dreadlord
+
+ -> /Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary
+
+------------------------------------------------------------------------------------------------
+Armageddon Distracted
+/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Headcannon/Balance/ItemPool_Headcannon
+------------------------------------------------------------------------------------------------
+ - Bal: Headcanon
+        /Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Headcannon/Balance/Balance_PS_TOR_05_Headcannon
+
+ -> /Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary
+
+-----------------------------------------------------------
+Ballad of Bones
+/Game/Missions/Plot/Plot06/ItemPool_Plot06_LeChancesLastLeg
+-----------------------------------------------------------
+ - Bal: LeChance's Last Leg
+        /Game/Gear/Melee/Blunts/_Shared/_Design/_Unique/LeChancesLastLeg/Balance_M_Blunt_LeChancesLastLeg
+
+ -> /Game/GameData/Loot/ItemPools/Melee/ItemPool_Melee_05_Legendary
+
+------------------------------------------------------------
+Bunkers & Badasses
+/Game/Missions/Plot/Plot00/ItemPools/ItemPool_Plot00_Shotgun
+------------------------------------------------------------
+ - Bal: Green Hyperius Shotgun
+        /Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/BalanceStates/Balance_SG_HYP_02_Uncommon
+
+ -> /Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Uncommon
+
+-------------------------------------------------------------------------
+Burning Hunger
+/Game/Gear/Rings/_Shared/_Unique/ElderWyvern/Balance/ItemPool_ElderWyvern
+-------------------------------------------------------------------------
+ - Bal: Elder Wyvern's Ring
+        /Game/Gear/Rings/_Shared/_Unique/ElderWyvern/Balance/Balance_Ring_ElderWyvern
+
+ -> /Game/GameData/Loot/ItemPools/Rings/ItemPool_Rings_05_Legendary
+
+---------------------------------------------------------------------------------------------------------
+Cash 4 Teeth
+/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/Tootherator/Balance/ItemPool_Tootherator
+---------------------------------------------------------------------------------------------------------
+ - Bal: Tootherator
+        /Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/Tootherator/Balance/Balance_SR_HYP_03_Tootherator
+
+ -> /Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary
+
+-----------------------------------------------------------------------------------------------
+Destruction Rains from the Heavens
+/Game/Gear/SpellMods/_Unique/_MissionUniques/DestructionRains/Balance/ItemPool_DestructionRains
+-----------------------------------------------------------------------------------------------
+ - Bal: Hellfire
+        /Game/Gear/SpellMods/_Unique/_MissionUniques/DestructionRains/Balance/Balance_Spell_DestructionRains
+
+ -> /Game/GameData/Loot/ItemPools/SpellMods/ItemPool_SpellMods_05_Legendary
+
+-----------------------------------------------------------------------------------------------
+Diplomatic Relations
+/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Diplomacy/Balance/ItemPool_Diplomacy
+-----------------------------------------------------------------------------------------------
+ - Bal: Negotiator
+        /Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Diplomacy/Balance/Balance_SG_Torgue_05_Diplomacy
+
+ -> /Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary
+
+------------------------------------------------
+Emotion of the Ocean
+/Game/Missions/Plot/Plot05/ItemPool_Plot5_Amulet
+------------------------------------------------
+ - Bal: Harmonious Dingledangle (Brr-Zerker)
+        /Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Barb
+ - Bal: Harmonious Dingledangle (Spellshot)
+        /Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_GunMage
+ - Bal: Harmonious Dingledangle (Clawbringer)
+        /Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_KotC
+ - Bal: Harmonious Dingledangle (Graveborn)
+        /Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Necro
+ - Bal: Harmonious Dingledangle (Spore Warden)
+        /Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Ranger
+ - Bal: Harmonious Dingledangle (Stabbomancer)
+        /Game/Gear/Amulets/_Shared/_Unique/HarmoniousDingleDangle/Balance/Balance_Amulet_Unique_Plot05_HDD_Rogue
+
+ -> /Game/GameData/Loot/ItemPools/Amulets/ItemPool_Amulets_05_Legendary
+
+---------------------------------------------------------------------------------------------
+Epilogue
+/Game/Gear/Shields/_Design/_Uniques/_MissionUniques/PowerNap/Balance/ItemPool_PowerNap_Shield
+---------------------------------------------------------------------------------------------
+ - Bal: Sweet Dreams
+        /Game/Gear/Shields/_Design/_Uniques/_MissionUniques/PowerNap/Balance/InvBalD_Shield_PowerNap
+
+ -> /Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary
+
+---------------------------------------------------------
+Fatebreaker
+/Game/Missions/Plot/Plot10/ItemPool_Plot10_SteelGauntlets
+---------------------------------------------------------
+ - Bal: Selective Amnesia
+        /Game/Gear/Pauldrons/_Shared/_Design/_Uniques/SelectiveAmnesia/Balance/Balance_Armor_SelectiveAmnesia
+
+ -> /Game/GameData/Loot/ItemPools/Armor/ItemPool_Armor_05_Legendary
+
+-----------------------------------------------------------------------------------------------
+Forgery
+/Game/Gear/Melee/Axes/_Shared/_Design/_Unique/SmithCharade/Balance/ItemPool_SmithCharade_Reward
+-----------------------------------------------------------------------------------------------
+ - Bal: Frostbite
+        /Game/Gear/Melee/Axes/_Shared/_Design/_Unique/SmithCharade/Balance/Balance_M_Axe_SmithCharade_Reward
+
+ -> /Game/GameData/Loot/ItemPools/Melee/ItemPool_Melee_05_Legendary
+
+-------------------------------------------------------------------------------------------
+Goblins Tired of Forced Oppression
+/Game/Gear/SpellMods/_Unique/_MissionUniques/LittleBluePill/Balance/ItemPool_LittleBluePill
+-------------------------------------------------------------------------------------------
+ - Bal: Flaming Spell
+        /Game/Gear/SpellMods/_Unique/_MissionUniques/LittleBluePill/Balance/Balance_Spell_LittleBluePill
+
+ -> /Game/GameData/Loot/ItemPools/SpellMods/ItemPool_SpellMods_05_Legendary
+
+---------------------------------------------------------------------------------------------------
+Gumbo No. 5
+/Game/Gear/Shields/_Design/_Uniques/_MissionUniques/CryingApple/Balance/ItemPool_CryingApple_Shield
+---------------------------------------------------------------------------------------------------
+ - Bal: Crying Apple
+        /Game/Gear/Shields/_Design/_Uniques/_MissionUniques/CryingApple/Balance/InvBalD_Shield_CryingApple
+
+ -> /Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary
+
+---------------------------------------------------------
+Hero of Brighthoof
+/Game/Missions/Plot/Plot01/ItemPool_Plot01_ArmorThatSucks
+---------------------------------------------------------
+ - Bal: Armor That Sucks (Brr-Zerker)
+        /Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Barb
+ - Bal: Armor That Sucks (Clawbringer)
+        /Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Knight
+ - Bal: Armor That Sucks (Spellshot)
+        /Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Mage
+ - Bal: Armor That Sucks (Graveborn)
+        /Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Necro
+ - Bal: Armor That Sucks (Spore Warden)
+        /Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Ranger
+ - Bal: Armor That Sucks (Stabbomancer)
+        /Game/Gear/Pauldrons/_Shared/_Design/_Uniques/ArmorThatSucks/Balance/Balance_Armor_ArmorThatSucks_Rogue
+
+ -> /Game/GameData/Loot/ItemPools/Armor/ItemPool_Armor_05_Legendary
+
+---------------------------------------------------------------------------------------------------------------
+Hot Fizz
+/Game/Gear/Shields/_Design/_Uniques/_MissionUniques/ElementalAlements/Balance/ItemPool_ElementalAlements_Shield
+---------------------------------------------------------------------------------------------------------------
+ - Bal: High Tolerance
+        /Game/Gear/Shields/_Design/_Uniques/_MissionUniques/ElementalAlements/Balance/InvBalD_Shield_ElementalAlements
+
+ -> /Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary
+
+---------------------------------------------------------------------------------------------
+In the Belly Is a Beast
+/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/Anchor/Balance/ItemPool_Anchor
+---------------------------------------------------------------------------------------------
+ - Bal: Anchor
+        /Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/Anchor/Balance/Balance_HW_TOR_Anchor
+
+ -> /Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_Legendary
+
+-----------------------------------------------------------------------------------------
+Inner Daemons
+/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/Heckwader/Balance/ItemPool_Heckwader
+-----------------------------------------------------------------------------------------
+ - Bal: Heckwader
+        /Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/Heckwader/Balance/Balance_SM_DAL_Heckwader
+
+ -> /Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary
+
+-----------------------------------------------------------------------------------------------
+Little Boys Blue
+/Game/Gear/Weapons/HeavyWeapons/Vladof/_Shared/_Design/_Unique/Moleman/Balance/ItemPool_Moleman
+-----------------------------------------------------------------------------------------------
+ - Bal: Moleman
+        /Game/Gear/Weapons/HeavyWeapons/Vladof/_Shared/_Design/_Unique/Moleman/Balance/Balance_HW_VLA_04_Moleman
+
+ -> /Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_Legendary
+
+----------------------------------------------------------------------------------
+Lyre and Brimstone
+/Game/Gear/Melee/Blunts/_Shared/_Design/_Unique/Minstrel/Balance/ItemPool_Minstrel
+----------------------------------------------------------------------------------
+ - Bal: Metal Lute
+        /Game/Gear/Melee/Blunts/_Shared/_Design/_Unique/Minstrel/Balance/Balance_M_Blunt_Minstrel
+
+ -> /Game/GameData/Loot/ItemPools/Melee/ItemPool_Melee_05_Legendary
+
+-------------------------------------------------------------------------------------------------
+Mortal Coil
+/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/DrylsLegacy/Balance/ItemPool_DrylsLegacy
+-------------------------------------------------------------------------------------------------
+ - Bal: Dry'l's Legacy
+        /Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/DrylsLegacy/Balance/Balance_SM_HYP_05_DrylsLegacy
+
+ -> /Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary
+
+----------------------------------------------------------------------------------
+Necromance Her
+/Game/Gear/Melee/Axes/_Shared/_Design/_Unique/BodySpray/Balance/ItemPool_BodySpray
+----------------------------------------------------------------------------------
+ - Bal: Body Spray
+        /Game/Gear/Melee/Axes/_Shared/_Design/_Unique/BodySpray/Balance/Balance_M_Axe_BodySpray
+
+ -> /Game/GameData/Loot/ItemPools/Melee/ItemPool_Melee_05_Legendary
+
+----------------------------------------------------------------------------------------
+Non-Violent Offender
+/Game/Gear/Melee/Swords/_Shared/_Design/_Unique/GoblinsBane/Balance/ItemPool_GoblinsBane
+----------------------------------------------------------------------------------------
+ - Bal: Goblin's Bane
+        /Game/Gear/Melee/Swords/_Shared/_Design/_Unique/GoblinsBane/Balance/Balance_M_Sword_GoblinsBane
+
+ -> /Game/GameData/Loot/ItemPools/Melee/ItemPool_Melee_05_Legendary
+
+-------------------------------------------------------------------------------------------------------------------
+Non-Violent Offender (optional reward)
+/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/LovePanther/Balance/ItemPool_LovePanther
+-------------------------------------------------------------------------------------------------------------------
+ - Bal: Love Leopard
+        /Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/LovePanther/Balance/Balance_HW_COV_05_LovePanther
+
+ -> /Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_Legendary
+
+---------------------------------------------------------------------------------------------------------
+Of Curse and Claw
+/Game/Gear/Shields/_Design/_Uniques/_MissionUniques/TwistedSisters/Balance/ItemPool_TwistedSisters_Shield
+---------------------------------------------------------------------------------------------------------
+ - Bal: Dusa's Visage
+        /Game/Gear/Shields/_Design/_Uniques/_MissionUniques/TwistedSisters/Balance/InvBalD_Shield_TwistedSisters
+
+ -> /Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary
+
+-------------------------------------------------------------------------
+On the Wink of Destruction
+/Game/Gear/Rings/_Shared/_Unique/InsightRing/Balance/ItemPool_InsightRing
+-------------------------------------------------------------------------
+ - Bal: Insight Ring
+        /Game/Gear/Rings/_Shared/_Unique/InsightRing/Balance/Balance_Rings_InsightRing
+
+ -> /Game/GameData/Loot/ItemPools/Rings/ItemPool_Rings_05_Legendary
+
+---------------------------------------------------------------------------
+Raiders of the Lost Shark
+/Game/Gear/Rings/_Shared/_Unique/Sharklescent/Balance/ItemPool_Sharklescent
+---------------------------------------------------------------------------
+ - Bal: Sharklescent Ring
+        /Game/Gear/Rings/_Shared/_Unique/Sharklescent/Balance/Balance_Ring_Sharklescent
+
+ -> /Game/GameData/Loot/ItemPools/Rings/ItemPool_Rings_05_Legendary
+
+------------------------------------------------------------------------------
+Ron Rivote
+/Game/Gear/Amulets/_Shared/_Unique/RonRivote/Balance/ItemPool_RonRivote_Amulet
+------------------------------------------------------------------------------
+ - Bal: Rivote's Amulet
+        /Game/Gear/Amulets/_Shared/_Unique/RonRivote/Balance/Balance_Amulet_Unique_RonRivote
+
+ -> /Game/GameData/Loot/ItemPools/Amulets/ItemPool_Amulets_05_Legendary
+
+-----------------------------------------------------------------------------------------------
+Ron Rivote (optional reward)
+/Game/Gear/Shields/_Design/_Uniques/_MissionUniques/RonRivote/Balance/ItemPool_RonRivote_Shield
+-----------------------------------------------------------------------------------------------
+ - Bal: Rivote's Shield
+        /Game/Gear/Shields/_Design/_Uniques/_MissionUniques/RonRivote/Balance/InvBalD_Shield_RonRivote
+
+ -> /Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary
+
+-----------------------------------------------------
+Soul Purpose
+/Game/Missions/Plot/Plot09/ItemPool_Plot09_Birthright
+-----------------------------------------------------
+ - Bal: Blue Stoker Pistol
+        /Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/BalanceState/Balance_PS_VLA_03_Rare
+
+ -> /Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary
+
+---------------------------------------------------------------------------------------
+Spell to Pay
+/Game/Gear/SpellMods/_Unique/_MissionUniques/LavaGoodTime/Balance/ItemPool_LavaGoodTime
+---------------------------------------------------------------------------------------
+ - Bal: Greatest Spell Ever
+        /Game/Gear/SpellMods/_Unique/_MissionUniques/LavaGoodTime/Balance/Balance_Spell_LavaGoodTime
+
+ -> /Game/GameData/Loot/ItemPools/SpellMods/ItemPool_SpellMods_05_Legendary
+
+-----------------------------------------------------------------------------------------
+The Ditcher
+/Game/Gear/Melee/Swords_2H/_Shared/_Design/_Unique/Tidesorrow/Balance/ItemPool_Tidesorrow
+-----------------------------------------------------------------------------------------
+ - Bal: Tidesorrow, Lament of the Seas
+        /Game/Gear/Melee/Swords_2H/_Shared/_Design/_Unique/Tidesorrow/Balance/Balance_M_Sword_Tidesorrow
+
+ -> /Game/GameData/Loot/ItemPools/Melee/ItemPool_Melee_05_Legendary
+
+--------------------------------------------------------------------
+The Slayer of Vorcanar
+/Game/Gear/Amulets/_Shared/_Unique/GTFO/Balance/ItemPool_GTFO_Amulet
+--------------------------------------------------------------------
+ - Bal: Vorcanar's Cog
+        /Game/Gear/Amulets/_Shared/_Unique/GTFO/Balance/Balance_Amulet_Unique_GTFO
+
+ -> /Game/GameData/Loot/ItemPools/Amulets/ItemPool_Amulets_05_Legendary
+
+------------------------------------------------------------
+The Son of a Witch
+/Game/Missions/Plot/Plot08/ItemPool_Plot8_Reward_FullBattery
+------------------------------------------------------------
+ - Bal: Full Battery
+        /Game/Gear/Shields/_Design/_Uniques/FullBattery/Balance/InvBalD_Shield_FullBattery
+
+ -> /Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary
+
+------------------------------------------------------------------------------------------------
+The Trial of Crooked-Eye Phil
+/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Mistrial/Balance/ItemPool_Mistrial
+------------------------------------------------------------------------------------------------
+ - Bal: Mistrial
+        /Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Mistrial/Balance/Balance_DAL_AR_Mistrial
+
+ -> /Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary
+
+-----------------------------------------------------
+Thy Bard, with a Vengeance
+/Game/Missions/Plot/Plot04/ItemPool_Plot4_BansheeClaw
+-----------------------------------------------------
+ - Bal: Banshee Claw
+        /Game/Gear/Melee/Swords_2H/_Shared/_Design/_Unique/BansheeClaw/Balance_M_Sword2H_BansheeClaw
+
+ -> /Game/GameData/Loot/ItemPools/Melee/ItemPool_Melee_05_Legendary
+
+-------------------------------------------------------------------------------------------------
+Twenty Thousand Years Under the Sea
+/Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/_Unique/LastRites/Balance/ItemPool_LastRites
+-------------------------------------------------------------------------------------------------
+ - Bal: Last Rites
+        /Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/_Unique/LastRites/Balance/Balance_SG_HYP_05_LastRites
+
+ -> /Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary
+
+---------------------------------------------------------------------------------------------------
+Walk the Stalk
+/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/IronSides/Balance/ItemPool_Ironsides
+---------------------------------------------------------------------------------------------------
+ - Bal: Ironsides
+        /Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/IronSides/Balance/Balance_SR_JAK_05_IronSides
+
+ -> /Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary
+

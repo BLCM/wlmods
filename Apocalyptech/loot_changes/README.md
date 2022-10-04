@@ -19,6 +19,7 @@ See the individual mod folders for full READMEs.
   currently in the game.  Will eventually support Enchantments too, but that isn't done yet.
 - **Randomized Boss Drops** - Boss/miniboss drops will be randomized, instead of locked
   to their usual unique drops.
+- **Randomized Mission Rewards** - Mission reward items will be randomized.
 - **Starting Gear** - Some alternate contents for the initial starting
   gear pickups/chests, in Snoring Valley.
 
