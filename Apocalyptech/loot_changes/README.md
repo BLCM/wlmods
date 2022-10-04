@@ -10,12 +10,15 @@ See the individual mod folders for full READMEs.
 - **Early Bloomer**- Unlock all weapon types, elements, manufacturers,
   enchantments, etc, from the very beginning of the game.
 - **Expanded Legendary Pools** - Adds all legendary/unique items to the world drop pools.
+- **Guaranteed Boss Drops** - Bosses/minibosses will always drop from their unique-drop pools.
 - **More Elemental Weapons** - Increases the probability of rolling the elemental version
   of any given weapon.
 - **No Loot Luck: Better Loot Edition** - Completely removes the effect of Loot Luck on
   gear drops, setting them instead to traditional Better Loot quality weighting.
 - **No Wasted Equipment** - Armor and Amulet parts will always match the player(s)
   currently in the game.  Will eventually support Enchantments too, but that isn't done yet.
+- **Randomized Boss Drops** - Boss/miniboss drops will be randomized, instead of locked
+  to their usual unique drops.
 - **Starting Gear** - Some alternate contents for the initial starting
   gear pickups/chests, in Snoring Valley.
 
