@@ -49,6 +49,8 @@ than a mod:
   enchantments, etc, from the very beginning of the game.
 - **Expanded Legendary Pools** - Adds all legendary/unique items to the world drop pools.
 - **Guaranteed Boss Drops** - Bosses/minibosses will always drop from their unique-drop pools.
+- **Guaranteed Enchantments** - All dropped/looted gear will be enchanted, if the gear
+  supports it.
 - **More Elemental Weapons** - Increases the probability of rolling the elemental version
   of any given weapon.
 - **No Loot Luck: Better Loot Edition** - Completely removes the effect of Loot Luck on

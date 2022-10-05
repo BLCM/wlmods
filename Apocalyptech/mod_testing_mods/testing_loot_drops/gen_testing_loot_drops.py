@@ -64,6 +64,7 @@ drop_quantity = 5
 # This one's my usual 'rotating' pool that gets used
 pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_VeryRare'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_All'
+#pool_to_set = '/Game/GameData/Loot/ItemPools/Melee/ItemPool_Melee_All'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Melee/ItemPool_Axes_02_Uncommon'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Melee/ItemPool_Swords_02_Uncommon'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Melee/ItemPool_Swords_03_Rare'
@@ -71,10 +72,13 @@ pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_VeryRare'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Armor/ItemPool_Armor_04_VeryRare'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Armor/ItemPool_Armor_05_Legendary'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary'
+#pool_to_set = '/Game/GameData/Loot/ItemPools/Rings/ItemPool_Rings_All'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Amulets/ItemPool_Amulets_All'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Amulets/ItemPool_Amulets_05_Legendary'
 #pool_to_set = '/Game/Automation/Maps/DPS/ItemPools/ItemPool_TESTONLY_CircleOfProtection_Mod1'
 #pool_to_set = '/Game/Automation/Maps/DPS/ItemPools/ItemPool_TESTONLY_CircleOfProtection_Mod2'
+#pool_to_set = '/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_All'
+#pool_to_set = '/Game/GameData/Loot/ItemPools/SpellMods/ItemPool_Spells_All'
 
 balances = [
 
