@@ -23,6 +23,7 @@ import sys
 import csv
 import gzip
 import json
+import argparse
 from wldata.wldata import WLData
 from wlhotfixmod.wlhotfixmod import BVC
 
@@ -32,18 +33,35 @@ from wlhotfixmod.wlhotfixmod import BVC
 #
 # Anyway, results here basically only ever come up 1.0 or `Init_EnchantmentWeight`
 
+parser = argparse.ArgumentParser(
+        description='Figure out gear enchantment chances, by balance',
+        )
+parser.add_argument('-b', '--balance',
+        action='store_true',
+        help='Include full balance paths in output',
+        )
+args = parser.parse_args()
+
 data = WLData()
 
 # Load name mapping
 with gzip.open('balance_name_mapping.json.gz') as df:
     name_map = json.load(df)
 
+ignore = {
+        'amulet',
+        'ring',
+        'armor',
+        }
+
 # Load a list of balances (the mapping is lowercase, so eh)
 balances = set()
-for filename in os.listdir('.'):
+for filename in sorted(os.listdir('.')):
     if filename.endswith('_balances_long.csv'):
+        label = filename[:-18]
+        if label in ignore:
+            continue
         with open(filename) as df:
-            label = filename[:-18]
             print(label)
             print('-'*len(label))
             reader = csv.DictReader(df)
@@ -69,7 +87,15 @@ for filename in os.listdir('.'):
                                         report = weight.bvc
                                     if weight.bvs != 1:
                                         report += f' * {weight.bvs}'
-                            #print(f'{name} - {balance_name} - {report}')
-                            print(f'{name} - {report}')
+                                if 'PartList' in rgpl \
+                                        and type(rgpl['PartList']) == list \
+                                        and len(rgpl['PartList']) > 0:
+                                    prefix = '(HAS PRE-FILLED: {}) '.format(len(rgpl['PartList']))
+                                else:
+                                    prefix = ''
+                            if args.balance:
+                                print(f'{prefix}{name} - {report} | {balance_name}')
+                            else:
+                                print(f'{prefix}{name} - {report}')
             print('')
 
