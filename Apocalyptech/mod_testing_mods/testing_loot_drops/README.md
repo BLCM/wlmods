@@ -17,6 +17,13 @@ my Early Bloomer mod active, as well.)
 Changelog
 =========
 
+**v1.1.0** - Oct 9, 2022
+ * Updated to use a spare pool from the game data, when specifying pool contents,
+   rather than overwriting one of the "real" pools.  This makes switching back
+   and forth much easier -- previously, you'd generally need to quit the game
+   entirely to get rid of changes, if you'd used this to set pool contents.  You'll
+   still need to quit entirely to *completely* disable the mod, though.
+
 **v1.0.0** - Jul 27, 2022
  * Initial release, based on v1.0.0 of
    [BL3's Testing Loot Drops](https://github.com/BLCM/bl3mods/wiki/Testing%20Loot%20Drops)

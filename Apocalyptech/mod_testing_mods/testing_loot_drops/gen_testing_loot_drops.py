@@ -3,7 +3,7 @@
 
 # Copyright 2019-2022 Christopher J. Kucera
 # <cj@apocalyptech.com>
-# <http://apocalyptech.com/contact.php>
+# <https://apocalyptech.com/contact.php>
 #
 # This Wonderlands Hotfix Mod is free software: you can redistribute it
 # and/or modify it under the terms of the GNU General Public License
@@ -23,19 +23,6 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from wlhotfixmod.wlhotfixmod import Mod, ItemPool
 
-def set_pool(mod, pool_to_set, balances, char=None):
-
-    if char is None:
-        hf_subtype = Mod.PATCH
-        hf_pkg = ''
-    else:
-        hf_subtype = Mod.CHAR
-        hf_pkg = char
-    mod.reg_hotfix(hf_subtype, hf_pkg,
-            pool_to_set,
-            'BalancedItems',
-            ItemPool('', balances=balances))
-
 mod = Mod('testing_loot_drops.wlhotfix',
         'Testing Loot Drops',
         'Apocalyptech',
@@ -54,16 +41,23 @@ mod = Mod('testing_loot_drops.wlhotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='resource',
         )
 
-do_pool_set = True
+###
+### How many items to drop from the pool specified
+###
+
 drop_quantity = 5
 
-# This one's my usual 'rotating' pool that gets used
-pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_VeryRare'
-#pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_All'
+###
+### Pool to drop from, if we want to just drop from a single pre-established pool
+### (this is ignored if you specify balances below, instead)
+###
+
+pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_All'
+#pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_VeryRare'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Melee/ItemPool_Melee_All'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Melee/ItemPool_Axes_02_Uncommon'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Melee/ItemPool_Swords_02_Uncommon'
@@ -71,14 +65,21 @@ pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_VeryRare'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Armor/ItemPool_Armor_All'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Armor/ItemPool_Armor_04_VeryRare'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Armor/ItemPool_Armor_05_Legendary'
+#pool_to_set = '/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_All'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Rings/ItemPool_Rings_All'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Amulets/ItemPool_Amulets_All'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Amulets/ItemPool_Amulets_05_Legendary'
 #pool_to_set = '/Game/Automation/Maps/DPS/ItemPools/ItemPool_TESTONLY_CircleOfProtection_Mod1'
 #pool_to_set = '/Game/Automation/Maps/DPS/ItemPools/ItemPool_TESTONLY_CircleOfProtection_Mod2'
-#pool_to_set = '/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_All'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/SpellMods/ItemPool_Spells_All'
+
+###
+### Balances to set -- if this list is empty, we'll just drop from the configured
+### pool above, but if there *are* items in here, the mod will use a "spare" pool
+### from the Wonderlands data, instead, so that we're not overwriting "real" pool
+### contents.
+###
 
 balances = [
 
@@ -121,11 +122,13 @@ balances = [
 
         ]
 
-# Set the pool, if we've been told to
-if do_pool_set:
-    mod.header('Setting Pool Contents')
-    set_pool(mod, pool_to_set, balances)
-    mod.newline()
+# If we're setting balances, use an alt pool which we can override without
+# causing problems going back to "vanilla"
+if len(balances) == 0:
+    set_pool_contents = False
+else:
+    set_pool_contents = True
+    pool_to_set = '/Game/Automation/Maps/DPS/ItemPools/ItemPool_TESTONLY_CircleOfProtection_Mod3'
 
 # Now set everything's drops.
 mod.header(f'Redirecting drops to {pool_to_set}')
@@ -203,5 +206,18 @@ for obj_name in [
                 Mod.get_full_cond(pool_to_set, 'ItemPoolData'),
                 drop_quantity,
                 ))
+mod.newline()
+
+# Set the pool contents, if we need to.  We'll have to do this *after* the pool-set
+# hotfixes above, since the pool needs to be referenced before it exists.
+if set_pool_contents:
+    mod.header('Setting Pool Contents')
+    bi = ItemPool('', balances=balances)
+    for hf_type in [Mod.CHAR, Mod.LEVEL]:
+        mod.reg_hotfix(hf_type, 'MatchAll',
+                pool_to_set,
+                'BalancedItems',
+                bi)
+    mod.newline()
 
 mod.close()
