@@ -6,6 +6,8 @@ Note that for mods which change part lists for gear, the mod will only apply to
 
 See the individual mod folders for full READMEs.
 
+- **Enchantment-Spawning Tweaks** - Some collected changes to how Enchantments get
+  spawned on gear.  (All applicable gear, even chances, and supported class weighting.)
 - **Morph-A-Gun™ 2000** - A set of mods to make guns morph into other guns the instant
   they're fired.
 - **Red Text Explainer** - Adds a description of weapon/spell special effects on the card.

@@ -1,10 +1,10 @@
 No Wasted Equipment
 ===================
 
-This mod makes it so that class-specific attributes will only ever spawn in a version
-which is useful to a player currently in the game.  This currently applies to armor
-and amulets.  It's intended to handle class-specific Enchantments too, but that is
-not yet present in the mod.
+This mod makes it so that class-specific attributes in Armor and Amulets will only ever
+spawn in a version which is useful to a player currently in the game.  This doesn't
+support class-specific Enchantments directly, but it *does* apply if used in conjunction
+with my [Enchantment-Spawning Tweaks](https://github.com/BLCM/wlmods/wiki/Enchantment-Spawning%20Tweaks) mod.
 
 In a singleplayer game, before speccing into a secondary skill, the secondary class buff
 on Purple/Legendary armor should be evenly random across all possibilities (the primary
@@ -28,15 +28,19 @@ Legendary Pools, they will drop with an appropriate class.
   work, starting with the DLC4 release.  Any other mods which touch amulet part selection
   will end up being overwritten by this mod, if they show up prior to No Wasted Equipment
   in your mod list.
-* As mentioned above, this mod is not yet at 1.0.0 -- namely, class-specific
-  Enchantments are not handled at all.  I do intend to implement that, but it seems super
-  annoying in WL, so I'm procrastinating.
-* Very rarely, it seems that gear (especially amulets) might break free of this mod's
-  restraints and drop with an inappropriate class.  I have no idea why that happens, but it
-  doesn't happen often, at least.
+* In order to handle Armor drops properly, before the player has spec'd into a secondary
+  skill, we can't *completely* zero out the other class chances.  So, very occasionally
+  you *will* probably see a non-appropriate gear drop.  Still, that shouldn't happen very
+  often.
 
 Changelog
 =========
+
+**v1.0.0** - Oct 9, 2022
+ * No actual functionality changes, but updated with notes about my Enchantment-Spawning
+   Tweaks mod, and clarified how the two interact.  The short story is that this mod, on
+   its own, will not ever handle class-specific Enchantment weighting, but it *does* work
+   properly when combined with Enchantment-Spawning Tweaks.
 
 **v0.9.1** - Aug 15, 2022
  * Updated for DLC4 (Shattering Spectreglass) support -- Blightcaller parts needed some

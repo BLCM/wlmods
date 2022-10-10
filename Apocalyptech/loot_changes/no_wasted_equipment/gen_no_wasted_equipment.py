@@ -3,7 +3,7 @@
 
 # Copyright 2022 Christopher J. Kucera
 # <cj@apocalyptech.com>
-# <http://apocalyptech.com/contact.php>
+# <https://apocalyptech.com/contact.php>
 #
 # This Wonderlands Hotfix Mod is free software: you can redistribute it
 # and/or modify it under the terms of the GNU General Public License
@@ -32,16 +32,16 @@ mod = Mod('no_wasted_equipment.wlhotfix',
         [
             "Adjust the character-specific weighting so that you won't get",
             "class-specific gear for classes that you're not currently",
-            "playing.  Theoretically this should work just fine in multiplayer,",
-            "though I haven't tested it at all in that mode.",
+            "playing, for Armor and Amulets.  Does not affect class-specific",
+            "Enchantment chances in vanilla, but *will* affect those spawns",
+            "if used along with my Enchantment-Spawning Tweaks mod.",
             "",
-            "Note that this does *not* affect specific gear drops from named",
-            "enemies, should that matter at all.",
-            # TODO: ^ figure that out.
+            "Theoretically this should work just fine in multiplayer, though",
+            "I haven't tested it at all in that mode.",
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='0.9.1',
+        v='1.0.0',
         cats='loot-system, gameplay',
         )
 
@@ -180,43 +180,5 @@ for label, obj_path in [
     if found_class_parts:
         bal.hotfix_full(mod)
     mod.newline()
-
-# Aborted attempt at seeing how we can deal with Enchantments below.  There's various annoyances
-# if we want to do this -- many Balances include a hardcoded list of enchantments, and those
-# would be easy to edit: just alter the weights.  It'd be annoying 'cause there's so many of
-# them, but doable, especially with code.
-#
-# The wrinkle is that some balances *don't* explicitly specify Enchantments, and they just get
-# put on the Balance automatically by the engine.  For instance:
-#
-#   /Game/Gear/Melee/_Shared/_Design/Balance/Balance_M_Sword_03_Rare
-#
-# If you dump at runtime, you'll see that its RuntimeGenericPartList is populated, so it's
-# getting them from somewhere; I assume probably:
-#
-#   /Game/Gear/Melee/_Shared/_Design/EndGameParts/Balance/InvGenericPartExpansion_Melee
-#
-# By the time we hotfix, modifications to that object don't impact anything on the balance.
-# For instance, this *works* (the object is updated) but no changes show up on the Balance:
-#
-#    mod.reg_hotfix(Mod.PATCH, '',
-#            '/Game/Gear/Melee/_Shared/_Design/EndGameParts/Balance/InvGenericPartExpansion_Melee',
-#            'GenericParts.Parts.Parts[0].Weight.BaseValueScale',
-#            200000)
-#
-# We *can*, at least, hit that value directly on RuntimeGenericPartList.  This works:
-#
-#    mod.reg_hotfix(Mod.PATCH, '',
-#            '/Game/Gear/Melee/_Shared/_Design/Balance/Balance_M_Sword_03_Rare',
-#            'RuntimeGenericPartList.PartList.PartList[0].Weight.BaseValueScale',
-#            200000)
-#
-# The annoying thing is that we'd have to figure out every single Balance that can be
-# enchanted, check to see if the list is hardcoded -- if so, we know for sure what
-# the list is, so we can alter weights.  If not, we need to figure out what object
-# provides the balance with enchantments and use that to figure out what indexes we
-# need to alter on the Balance.  Alternatively, could pull that info out with the SDK,
-# of course.  I'm not going to bother with that for the time being, though.  Class-
-# specific Enchantments are rare enough that I don't want to deal with it yet.
 
 mod.close()
