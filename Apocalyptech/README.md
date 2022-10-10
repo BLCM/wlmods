@@ -71,6 +71,7 @@ than a mod:
 
 ## Mod-Testing Mods
 
+- **Mountaineer** - Allows the player to climb (nearly) vertical surfaces.
 - **Super Buff: Goblin Pickaxe** - Absurdly OP Goblin Pickaxe buffs.
 - **Super Buff: Manual Transmission** - Absurdly OP Manual Transmission AR.
 - **Super Buff: Transistor** - Absurdly OP Transistor shield.
