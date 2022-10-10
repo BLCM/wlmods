@@ -7,6 +7,8 @@ See the individual mod folders for full READMEs.
 - **Early Overworld Abilities** - Allows the player to dispel barrier hexes,
   bypass red Dark Magic barriers, and see hidden bridges from the beginning of
   the game.
+- **Infinite Slide** - Makes the duration of your character's slide effectively
+  infinite.
 - **Movement Speed Cheats** - Move faster!
 - **Short Overworld Dungeons** - Shortens all Overworld dungeons (single-room
   only, and shorter enemy waves)
