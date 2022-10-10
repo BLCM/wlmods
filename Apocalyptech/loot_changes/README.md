@@ -22,6 +22,8 @@ See the individual mod folders for full READMEs.
 - **Randomized Boss Drops** - Boss/miniboss drops will be randomized, instead of locked
   to their usual unique drops.
 - **Randomized Mission Rewards** - Mission reward items will be randomized.
+- **Red Chest Timer Reset** - Prevents red chests from saving their open state to the
+  savegame, so they can be re-opened more quickly.
 - **Starting Gear** - Some alternate contents for the initial starting
   gear pickups/chests, in Snoring Valley.
 
