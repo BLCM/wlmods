@@ -75,6 +75,8 @@ than a mod:
 
 ## Mod-Testing Mods
 
+- **Guaranteed Gear Drops** - Enemies with a chance to drop gear will drop one
+  of each gear type (gun, melee weapon, ward, etc.)
 - **Mountaineer** - Allows the player to climb (nearly) vertical surfaces.
 - **Super Buff: Goblin Pickaxe** - Absurdly OP Goblin Pickaxe buffs.
 - **Super Buff: Manual Transmission** - Absurdly OP Manual Transmission AR.
