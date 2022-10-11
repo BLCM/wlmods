@@ -78,6 +78,7 @@ than a mod:
 - **Guaranteed Gear Drops** - Enemies with a chance to drop gear will drop one
   of each gear type (gun, melee weapon, ward, etc.)
 - **Mountaineer** - Allows the player to climb (nearly) vertical surfaces.
+- **Show Att Values** - Show arbitrary attribute values on the Chaos Mode screen.
 - **Super Buff: Goblin Pickaxe** - Absurdly OP Goblin Pickaxe buffs.
 - **Super Buff: Manual Transmission** - Absurdly OP Manual Transmission AR.
 - **Super Buff: Transistor** - Absurdly OP Transistor shield.
