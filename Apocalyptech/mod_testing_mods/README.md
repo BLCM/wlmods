@@ -14,6 +14,8 @@ See the individual mod folders for full READMEs.
 - **Super Buff: Manual Transmission** - Absurdly OP Manual Transmission AR.
 - **Super Buff: Transistor** - Absurdly OP Transistor shield.
 - **Testing Loot Drops** - Used to test drops and verify balance names.
+- **Visible BPChar Names** - Displays the BPChar names for NPCs and Enemies
+  in-game, instead of their usual names.
 
 Licenses
 ========
