@@ -38,7 +38,7 @@ mod = Mod('closer_destruction_rains.wlhotfix',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
         cats='maps, quest-changes, qol',
-        ss='https://raw.githubusercontent.com/BLCM/wlmods/master/Apocalyptech/gameplay_changes/closer_destruction_rains/screenshot.png',
+        ss='https://raw.githubusercontent.com/BLCM/wlmods/master/Apocalyptech/qol/closer_destruction_rains/screenshot.png',
         )
 
 map_base = '/Game/Maps/Overworld/Overworld_M_DestructionRainsFromTheHeavens.Overworld_M_DestructionRainsFromTheHeavens:PersistentLevel'
