@@ -117,7 +117,7 @@ only exception is Dread Lord, whose related mission is repeatable.
 
 ## The Godswell
 
-**Dry'l, Whose Heart Are The Sea / Dry'l, Whose Heart Is Fire**
+**Dry'l, Whose Chains Are The Sea / Dry'l, Whose Heart Is Fire**
  * 2x: Dry'l's Fury, Storm Surge
 
 ## Karnok's Wall
