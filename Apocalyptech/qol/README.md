@@ -5,6 +5,8 @@ See the individual mod folders for full READMEs.
 
 - **Always Visible Challenge Icons** - Makes challenge icons visible at all
   times
+- **Closer Destruction Rains From The Heavens** - Moves all three dungeons
+  from this sidequest next to the quest-giver.
 - **Mega TimeSaver XL** - Speeds up slow animations throughout the game.
 - **More Visible Scrolls** - Makes the scroll loot bars (and, incidentally,
   mission items) far more visible
