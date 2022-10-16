@@ -4,6 +4,9 @@ Apocalyptech's General Gameplay-Related WL Mods
 See the individual mod folders for full READMEs.
 
 - **Better Overworld Movement** - Allows sprinting and jumping in the Overworld
+- **Early Destruction Rains From The Heavens** - Allows the player to pick up
+  Destruction Rains From The Heavens right after Karnok's wall, like the other
+  Zone 3 side quests.
 - **Early Overworld Abilities** - Allows the player to dispel barrier hexes,
   bypass red Dark Magic barriers, and see hidden bridges from the beginning of
   the game.
