@@ -23,6 +23,11 @@ weren't actually intended to be mods themselves.
   trying to figure that out.  Note that technically most of that stuff unlocks
   based on either mission or objectives, not level, so there's a bit of
   hand-waving.
+- `quiet_bandit_camps.txt` - Tried to disable the horn-blowing sound effect
+  that plays when you approach the randomized overworld bandit camps.  Couldn't
+  get the attrs to change, though, in the end.  I think that hotfixes fire too
+  early, before the camps (and before even the camp's base classes) have been
+  loaded.
 
 Licenses
 ========
