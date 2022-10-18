@@ -67,6 +67,28 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_Overworld',
         1)
 mod.newline()
 
+# A bit of attempt at allowing Sliding.  The main statement *works* but does
+# nothing in-game.  If it's possible, it'll need more than just this
+if False:
+    mod.header('Allow Sliding on the BPChar')
+    mod.reg_hotfix(Mod.CHAR, 'BPChar_Overworld',
+            '/Game/Overworld/BPChar_Overworld.Default__BPChar_Overworld_C:CharMoveComp',
+            'SlidingData',
+            Mod.get_full_cond('/Game/PlayerCharacters/_Shared/_Design/Sliding/SlidingData_Shared', 'CharacterSlidingData'),
+            )
+    if False:
+        # These are set on the "main" bpchar.  Overworld is false/0, but maybe didn't
+        # want to set these?  Not sure what the camera would end up being like.
+        mod.reg_hotfix(Mod.CHAR, 'BPChar_Overworld',
+                '/Game/Overworld/BPChar_Overworld.Default__BPChar_Overworld_C',
+                'bUseCustomSlidingEyeHeight',
+                'true')
+        mod.reg_hotfix(Mod.CHAR, 'BPChar_Overworld',
+                '/Game/Overworld/BPChar_Overworld.Default__BPChar_Overworld_C',
+                'SlidingEyeHeight',
+                15)
+    mod.newline()
+
 # I'm not sure which of these parameters are *actually* necessary and which ones
 # aren't -- I basically just copied everything from the base BPChar_Player and
 # then tweaked to suit.  MaxSprintSpeed, bUseJumpGoals, and JumpGoals_* are
