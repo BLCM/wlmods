@@ -5,6 +5,8 @@ See the individual mod folders for full READMEs.
 
 - **Always Visible Challenge Icons** - Makes challenge icons visible at all
   times
+- **Cash 4 Teeth: Goblin Teeth Loot Bars** - Restores the missing loot bars
+  on goblin teeth, during the side mission Cash 4 Teeth.
 - **Closer Destruction Rains From The Heavens** - Moves all three dungeons
   from this sidequest next to the quest-giver.
 - **Mega TimeSaver XL** - Speeds up slow animations throughout the game.
