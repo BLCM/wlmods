@@ -1,15 +1,13 @@
 No Fixed Overworld Map Cameras
 ==============================
 
-This catchily-named mod prevents the Overworld camera from becoming fixed-view
-when approaching (or leaving) map entrances.  It does *not* remove the fixed
-camera segments which happen during quest interactions, etc.
+This catchily-named mod prevents the Overworld camera from becoming fixed-view when approaching (or leaving) map entrances.  It does *not* remove the fixed camera segments which happen during quest interactions, etc.
 
 Changelog
 =========
 
 **v1.0.0** - Oct 18, 2022
- - Initial release
+ * Initial release
  
 Licenses
 ========
