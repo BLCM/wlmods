@@ -12,6 +12,8 @@ See the individual mod folders for full READMEs.
   mission items) far more visible
 - **No Blacksmith Hammers** - Disables the loud automatic hammers in the
   Brighthoof blacksmith area (right next to the enchantment-reroll machine)
+- **No Fixed Overworld Map Cameras** - Disables the fixed-view cameras around
+  map entrances, on the Overworld.
 - **No Reload Notification** - Removes the "reload" notification when you're
   near the end of a magazine.
 - **Photo Mode Unlock** - Lets the camera in Photo Mode go extremely far, and
