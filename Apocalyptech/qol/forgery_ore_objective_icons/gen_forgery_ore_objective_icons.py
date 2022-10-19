@@ -36,7 +36,7 @@ mod = Mod('forgery_ore_objective_icons.wlhotfix',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
         cats='qol, quest-changes',
-        ss='https://raw.githubusercontent.com/BLCM/wlmods/master/Apocalyptech/qol/forgery_ore_objective_icons/ore.png',
+        ss='https://raw.githubusercontent.com/BLCM/wlmods/main/Apocalyptech/qol/forgery_ore_objective_icons/ore.jpg',
         )
 
 map_base = '/Game/Maps/Zone_1/Goblin/Goblin_M_SmithsCharade'
