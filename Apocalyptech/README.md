@@ -22,6 +22,8 @@ of the mods you'll find in here, though:
 - **Early Overworld Abilities** - Allows the player to dispel barrier hexes,
   bypass red Dark Magic barriers, and see hidden bridges from the beginning of
   the game.
+- **In The Belly Is A Beast: Abridged** - Skips most of the side mission "In The
+  Belly Is A Beast," and disables its dialogue.
 - **Infinite Slide** - Makes the duration of your character's slide effectively
   infinite.
 - **Movement Speed Cheats** - Move faster!
