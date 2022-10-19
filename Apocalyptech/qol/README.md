@@ -9,6 +9,8 @@ See the individual mod folders for full READMEs.
   on goblin teeth, during the side mission Cash 4 Teeth.
 - **Closer Destruction Rains From The Heavens** - Moves all three dungeons
   from this sidequest next to the quest-giver.
+- **Forgery: Ore Objective Icons** - Provides objective icons for the ore
+  sources in the side mission Forgery.
 - **Mega TimeSaver XL** - Speeds up slow animations throughout the game.
 - **More Visible Scrolls** - Makes the scroll loot bars (and, incidentally,
   mission items) far more visible
