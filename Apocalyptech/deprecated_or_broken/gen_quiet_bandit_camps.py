@@ -20,7 +20,7 @@
 # <https://www.gnu.org/licenses/>.
 
 import sys
-sys.path.append('../../../python_mod_helpers')
+sys.path.append('../../python_mod_helpers')
 from wlhotfixmod.wlhotfixmod import Mod, BVC
 
 # Couldn't get these attrs to change at all, in the end.  I suspect that they

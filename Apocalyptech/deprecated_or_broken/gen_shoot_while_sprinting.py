@@ -20,7 +20,7 @@
 # <https://www.gnu.org/licenses/>.
 
 import sys
-sys.path.append('../../../python_mod_helpers')
+sys.path.append('../../python_mod_helpers')
 from wlhotfixmod.wlhotfixmod import Mod, BVC
 
 # So!  There's a nice little boolean on the player BPChar called `bCanUseWeaponWhileSprinting`.
@@ -87,6 +87,16 @@ if False:
             13,
             165,
             85)
+
+# This works too!  Turns out we can alter True/False, after all.  Same issue as the previous,
+# method, though -- the initial char object is still False.
+if False:
+    mod.bytecode_hotfix(Mod.LEVEL, 'MatchAll',
+            '/Game/PlayerCharacters/Rogue/_Shared/_Design/SkillTree/Passives/Passive_13/Passive_Rogue_13',
+            'ExecuteUbergraph_Passive_Rogue_13',
+            42,
+            0,
+            1)
 
 # Various attempts to change the boolean that the ubergraph touches when the skill is deactivated.
 # None of these appear to work.
