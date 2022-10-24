@@ -28,6 +28,8 @@ weren't actually intended to be mods themselves.
   get the attrs to change, though, in the end.  I think that hotfixes fire too
   early, before the camps (and before even the camp's base classes) have been
   loaded.
+- `shoot_while_sprinting.txt` - A failed attempt to allow the player to shoot
+  while sprinting.
 
 Licenses
 ========
