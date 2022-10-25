@@ -279,8 +279,9 @@ for label, filename, desc, balances, replacement_pool in [
             ],
             contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
-            v='1.1.0',
+            v='1.2.0',
             cats='joke, gear-general',
+            videos='https://www.youtube.com/watch?v=KVyltuApLAg',
             )
 
     mod.header('Setting Weapon-Spawn Loot Pools')
@@ -412,7 +413,7 @@ for label, filename, desc, balances, replacement_pool in [
     mod.bytecode_hotfix(Mod.PATCH, '',
             ability_obj_base,
             'ExecuteUbergraph_Ability_AntGreatBow',
-            194,
+            226,
             0,
             2)
     mod.newline()
@@ -421,13 +422,13 @@ for label, filename, desc, balances, replacement_pool in [
     mod.bytecode_hotfix(Mod.PATCH, '',
             ability_obj_base,
             'ExecuteUbergraph_Ability_AntGreatBow',
-            318,
+            350,
             0,
             1)
     mod.bytecode_hotfix(Mod.PATCH, '',
             ability_obj_base,
             'ExecuteUbergraph_Ability_AntGreatBow',
-            333,
+            365,
             1,
             0)
     mod.newline()

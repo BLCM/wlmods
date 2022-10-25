@@ -1,12 +1,14 @@
 
 @title Morph-A-Gun™ 2000: World Drops Edition
-@version 1.1.0
+@version 1.2.0
 @author Apocalyptech
 @contact https://apocalyptech.com/contact.php
 @categories joke, gear-general
 
 @license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 @license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+@video https://www.youtube.com/watch?v=KVyltuApLAg
 
 ###
 ### Makes guns turn into different guns when fired!
@@ -735,9 +737,9 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Vladof/_Shared/_Design/
 ###
 
 # Break call to GetDamageType (so we get consistent "zero" results)
-SparkPatchEntry,(1,7,0,),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Ability_AntGreatBow.Ability_AntGreatBow_C,0,1,ExecuteUbergraph_Ability_AntGreatBow,1,194,1:0,1:2
+SparkPatchEntry,(1,7,0,),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Ability_AntGreatBow.Ability_AntGreatBow_C,0,1,ExecuteUbergraph_Ability_AntGreatBow,1,226,1:0,1:2
 
 # Use Replacement Pool for Non-Elemental Results
-SparkPatchEntry,(1,7,0,),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Ability_AntGreatBow.Ability_AntGreatBow_C,0,1,ExecuteUbergraph_Ability_AntGreatBow,1,318,1:0,1:1
-SparkPatchEntry,(1,7,0,),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Ability_AntGreatBow.Ability_AntGreatBow_C,0,1,ExecuteUbergraph_Ability_AntGreatBow,1,333,1:1,1:0
+SparkPatchEntry,(1,7,0,),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Ability_AntGreatBow.Ability_AntGreatBow_C,0,1,ExecuteUbergraph_Ability_AntGreatBow,1,350,1:0,1:1
+SparkPatchEntry,(1,7,0,),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Ability_AntGreatBow.Ability_AntGreatBow_C,0,1,ExecuteUbergraph_Ability_AntGreatBow,1,365,1:1,1:0
 

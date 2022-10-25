@@ -41,6 +41,10 @@ TODO
 Changelog
 =========
 
+**v1.2.0** - Oct 25, 2022
+ * Fixed non-elemental guns -- turns out that had been broken since the
+   DLC4 release!
+
 **v1.1.0** - Aug 12, 2022
  * Updated with new DLC4 gear
 
