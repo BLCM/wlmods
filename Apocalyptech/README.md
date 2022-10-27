@@ -106,6 +106,8 @@ than a mod:
   mission items) far more visible
 - **No Blacksmith Hammers** - Disables the loud automatic hammers in the
   Brighthoof blacksmith area (right next to the enchantment-reroll machine)
+- **No DLC Gear Unlocked Notices** - Disables the "New Gear Unlocked" messages
+  while in Dreamveil Overlook.
 - **No Fixed Overworld Map Cameras** - Disables the fixed-view cameras around
   map entrances, on the Overworld.
 - **No Reload Notification** - Removes the "reload" notification when you're
