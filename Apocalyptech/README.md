@@ -13,6 +13,9 @@ of the mods you'll find in here, though:
 
 ## Enemy Spawn Changes
 
+- **Less Annoying Goblins** - Various tweaks to make Goblin enemies a bit less
+  annoying to fight.
+
 ## Gameplay Changes
 
 - **Better Overworld Movement** - Allows sprinting and jumping in the Overworld
