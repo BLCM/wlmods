@@ -49,7 +49,8 @@ Changelog
 =========
 
 **v1.0.0** - Nov 2, 2022
- * Initial release
+ * Initial release, based on v1.0.0 of
+   [BL3's Quick Changes Everywhere](https://github.com/BLCM/bl3mods/wiki/Quick%20Changes%20Everywhere)
  
 Licenses
 ========
