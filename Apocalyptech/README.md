@@ -83,6 +83,8 @@ than a mod:
 
 ## Mod-Testing Mods
 
+- **Force Enemy Spawns** - Resource mod to attempt to force a configured enemy
+  type to spawn whenever possible.
 - **Guaranteed Gear Drops** - Enemies with a chance to drop gear will drop one
   of each gear type (gun, melee weapon, ward, etc.)
 - **Mountaineer** - Allows the player to climb (nearly) vertical surfaces.
