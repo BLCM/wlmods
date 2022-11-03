@@ -9,6 +9,12 @@ weren't actually intended to be mods themselves.
   AR kill count, and set the target to one higher than that current stat from
   my save.  No plans to make this into a full mod, but if anyone else is
   interested, this is how you'd do it.
+- `gen_true_qce.txt` - Generator script for a hypothetical joke *True* Quick
+  Changes Everywhere mod.  Never actually intended to be turned into a real mod;
+  the saved version here will generate a 30MB mod which adds 35k Quick Change
+  machines to Snoring Valley.  Nicely impressive-looking, though on my system
+  the level load takes about 40 minutes, and the in-game framerate isn't
+  pleasant.  :D
 
 ## Deprecated/Testing Mods
 
