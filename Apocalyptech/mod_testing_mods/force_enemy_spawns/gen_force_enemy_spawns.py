@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2022 Christopher J. Kucera
+# Copyright 2022-2023 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <https://apocalyptech.com/contact.php>
 #
@@ -20,42 +20,87 @@
 # <https://www.gnu.org/licenses/>.
 
 import sys
+import argparse
 import collections
 sys.path.append('../../../python_mod_helpers')
 from wldata.wldata import WLData
 from wlhotfixmod.wlhotfixmod import Mod, BVCF
 
+# Args, why not.
+parser = argparse.ArgumentParser(
+        description="Generation script for the WL Force Enemy Spawns mod",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+        epilog="""
+            Note that this generation script makes full use of the WLData library,
+            requiring access to both serialized data *and* the references database.
+            See the WLData docs up in the python_mod_helpers directory for more
+            information on all that.
+            """,
+        )
+parser.add_argument('-f', '--force',
+        type=str,
+        dest='initial_search',
+        #default='/Game/Enemies/Goblin/Suicide/_Design/Character/BPChar_Goblin_Suicide',
+        default='/Game/Enemies/Goblin/Barrel/_Design/Character/BPchar_GoblinBarrel',
+        #default='/Game/Enemies/Goblin/Badass/_Design/Character/BPChar_Goblin_Badass',
+        help="The BPChar or SpawnOption to force to spawn",
+        )
+parser.add_argument('-n', '--num-spawns',
+        type=int,
+        default=5,
+        help="Number of spawns to allow from each SpawnOption",
+        )
+parser.add_argument('-m', '--max-recursion',
+        type=int,
+        default=20,
+        help="""Maximum levels of recursion when processing SpawnOptions (the
+            default should be far more than enough for all cases)""",
+        )
+args = parser.parse_args()
+print(f'Generating mod for: {args.initial_search}')
+
+# Start mod generation
+initial_short = args.initial_search.rsplit('/', 1)[-1]
 mod = Mod('force_enemy_spawns.wlhotfix',
-        "Force Enemy Spawns",
+        f"Force Enemy Spawns: {initial_short}",
         'Apocalyptech',
         [
             "Resource mod which attemps to alter SpawnOptions objects so that wherever",
             "the configured character *can* spawn, they *will* spawn 100% of the time.",
+            "Note that Wonderlands spawn points sometimes have 'waves' built in, which",
+            "might spawn from different SpawnOptions at different times, which can",
+            "complicate this slightly.",
+            "",
             "Does not attempt to touch SpawnOptions objects which don't involve the",
             "specified char, since BL3/WL spawning points are often a bit touchy about",
             "which chars are allowed to spawn from them.",
             "",
-            "Note that this doesn't seem to always work great -- Badass Goblins, for",
-            "instance, don't really seem to show up like they should, if that's the",
-            "configured char.",
+            "The version stored on github is hardcoded to Goblin Tricksters (the barrel",
+            "ones).  To make it operate on some other enemy, you'll have to edit the",
+            "generation script and re-generate it.",
             "",
-            "The on-disk version here is hardcoded to Goblin Tricksters (the barrel ones).",
-            "To make it operate on some other enemy, you'll have to edit the generation",
-            "script and re-generate it.",
+            "This mod was generated to force the following, where possible:",
+            "",
+            f"    {args.initial_search}",
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.0.1',
         cats='resource',
         )
 
-max_level = 20
-#bpchar_name = '/Game/Enemies/Goblin/Suicide/_Design/Character/BPChar_Goblin_Suicide'
-bpchar_name = '/Game/Enemies/Goblin/Barrel/_Design/Character/BPchar_GoblinBarrel'
-#bpchar_name = '/Game/Enemies/Goblin/Badass/_Design/Character/BPChar_Goblin_Badass'
 data = WLData()
 
 def get_indexes_from_spawn(data, spawn_name, obj_to_match):
+    """
+    Looks through the SpawnOptions object `spawn_name` looking for Options
+    which spawn `obj_to_match`, which should be either a BPChar or SpawnOptions
+    name.  It will return a 2-element tuple: the first element will be a list
+    of Options indexes which matched on `obj_to_match`, and the second will
+    be a list of indexes which did *not* match.
+
+    Kind of a weird implementation, I know, but there it is.
+    """
     our_indexes = []
     other_indexes = []
     so = data.get_data(spawn_name)
@@ -83,7 +128,14 @@ def get_indexes_from_spawn(data, spawn_name, obj_to_match):
                             ))
     return our_indexes, other_indexes
 
-def ensure_spawn(mod, spawn_obj, our_indexes, other_indexes):
+def ensure_spawn(mod, args, spawn_obj, our_indexes, other_indexes):
+    """
+    Given a `mod` object, CLI args `args`, a SpawnOptions object name
+    `spawn_obj`, and two lists of indexes (`our_indexes` which is the
+    list of indexes we want to ensure spawning, and `other_indexes`
+    being the ones we want to suppress), write out the necessary
+    hotfixes to make that happen.
+    """
     zero = BVCF(bvc=0)
     mod.comment(spawn_obj)
     for to_set, indexes in [
@@ -91,12 +143,22 @@ def ensure_spawn(mod, spawn_obj, our_indexes, other_indexes):
             (0, other_indexes),
             ]:
         for index in indexes:
+            # I *think* we need to set ValueMode=Value in some situations, namely
+            # when options redirect to other spawnoptions.  For instance, index 8
+            # in SpawnOptions_CoVMix_Mansion1 redirects to SpawnOptions_CoVMix_MansionBadasses,
+            # and the the ValueMode the weight on that one is AttributeInitializationData.
+            # We're clearing out the AI in here, so I think that results in that
+            # option never getting rolled.  I'm sure that can happen in other
+            # circumstances as well.  The same attrs exist for the Alive struct, too,
+            # but I assume we can leave that one alone
             mod.reg_hotfix(Mod.LEVEL, 'MatchAll',
                     spawn_obj,
                     f'Options.Options[{index}].WeightParam',
                     f"""
                     (
+                        ValueType=Float,
                         DisabledValueModes=110,
+                        ValueMode=Value,
                         Range=(Value={to_set},Variance=0),
                         AttributeInitializer=None,
                         AttributeData=None,
@@ -107,17 +169,31 @@ def ensure_spawn(mod, spawn_obj, our_indexes, other_indexes):
             mod.reg_hotfix(Mod.LEVEL, 'MatchAll',
                     spawn_obj,
                     f'Options.Options[{index}].AliveLimitParam.Range',
-                    '(Value=5,Variance=0)',
+                    f'(Value={args.num_spawns},Variance=0)',
                     )
             mod.reg_hotfix(Mod.LEVEL, 'MatchAll',
                     spawn_obj,
                     f'Options.Options[{index}].AliveLimit',
-                    5,
+                    args.num_spawns,
                     )
     mod.newline()
 
-def process_refs(data, mod, seen_objects, search_name, max_level, level=0):
-    if level > max_level:
+def process_refs(data, mod, args, seen_objects, search_name, level=0):
+    """
+    Main routine to try and enforce spawning throughojut the game.  Requires
+    a data object `data`, a mod object `mod`, and CLI args `args`.  `seen_objects`
+    is a set which keeps track of which SpawnOptions objects we've already
+    processed, so we can avoid infinite loops, and `search_name` is the name
+    we're trying to lock spawns to.  `level` is used to keep track of the recursion
+    level, so we can fail out if need be, before Python does it for us.  (In
+    practice, we'll basically never run into that since the game itself would be
+    crashing if any circular dependencies existed.)
+
+    This makes use of the references database to figure out what's pointing at
+    `search_name`, and of course the serialized data to poke into the SpawnOptions
+    to know what to do.
+    """
+    if level > args.max_recursion:
         # Prevent too much recursion; in practice we should never hit this with our
         # default of 20
         return
@@ -132,13 +208,13 @@ def process_refs(data, mod, seen_objects, search_name, max_level, level=0):
             if len(other_indexes) == 0:
                 # Sometimes we get a bpchar which *only* has a single ref in it, and it's meant
                 # to be called from other spawnoptions.  Recurse in there!
-                process_refs(data, mod, seen_objects, obj_ref, max_level, level)
+                process_refs(data, mod, args, seen_objects, obj_ref, level)
             else:
-                ensure_spawn(mod, obj_ref, our_indexes, other_indexes)
-                process_refs(data, mod, seen_objects, obj_ref, max_level, level+1)
+                ensure_spawn(mod, args, obj_ref, our_indexes, other_indexes)
+                process_refs(data, mod, args, seen_objects, obj_ref, level+1)
 
 # Do the work!
 seen_objects = set()
-process_refs(data, mod, seen_objects, bpchar_name, max_level)
+process_refs(data, mod, args, seen_objects, args.initial_search)
 
 mod.close()
