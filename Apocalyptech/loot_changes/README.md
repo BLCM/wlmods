@@ -10,6 +10,7 @@ See the individual mod folders for full READMEs.
 - **Early Bloomer**- Unlock all weapon types, elements, manufacturers,
   enchantments, etc, from the very beginning of the game.
 - **Expanded Legendary Pools** - Adds all legendary/unique items to the world drop pools.
+- **Fix Broken Loot Patterns** - Fixes the loot drop pattern for Knight Mare.
 - **Guaranteed Boss Drops** - Bosses/minibosses will always drop from their unique-drop pools.
 - **Guaranteed Enchantments** - All dropped/looted gear will be enchanted, if the gear
   supports it.

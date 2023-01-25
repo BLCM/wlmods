@@ -19,10 +19,17 @@ Difficulty 4 drop.
 
 **Mod Compatibility Info:**
 
-If you use this mod along with Randomized Boss Drops, make sure that this mod
-appears *before* Randomized Boss Drops in your mod list.  (For OpenHotfixLoader,
-you can just rename the filenames to make sure that happens, though if you
-keep the filenames at their defaults, that should already be the case.)
+If you use this mod along with
+[Randomized Boss Drops](https://github.com/BLCM/wlmods/wiki/Randomized%20Boss%20Drops),
+make sure that this mod appears *before* Randomized Boss Drops in your mod
+list.  (For OpenHotfixLoader, you can just rename the filenames to make sure
+that happens, though if you keep the filenames at their defaults, that should
+already be the case.)
+
+This mod includes the functionality from
+[Fix Broken Loot Patterns](https://github.com/BLCM/wlmods/wiki/Fix%20Broken%20Loot%20Patterns),
+so there's no need to run both at the same time.  It won't hurt anything if
+you do, though.
 
 Changelog
 =========
