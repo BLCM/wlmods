@@ -24,18 +24,9 @@ import sys
 import argparse
 sys.path.append('../../../python_mod_helpers')
 from wldata.wldata import WLData
-from wlhotfixmod.wlhotfixmod import Mod, ItemPool, BVC, BVCF, LVL_CASE_NORM
+from wlhotfixmod.wlhotfixmod import Mod, LVL_CASE_NORM
 
 data = WLData()
-
-parser = argparse.ArgumentParser(
-        description='Mod-generation script for Customization Drop Rate',
-        )
-parser.add_argument('-v', '--verbose',
-        action='store_true',
-        help='Show verbose output while generating (mostly for Wheel of Fate processing)',
-        )
-args = parser.parse_args()
 
 for (label, filename, multiplier, desc) in [
         ('None', 'none', 0, [
@@ -70,7 +61,7 @@ for (label, filename, multiplier, desc) in [
             desc,
             contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
-            v='1.1.0',
+            v='1.2.0',
             cats='enemy-drops',
             )
 
@@ -204,77 +195,35 @@ for (label, filename, multiplier, desc) in [
         mod.newline()
 
         # Wheel of Fate
-        # There's just a big ol' mess of ItemPools and LootDefs in here.  What we're doing
-        # is looking for LootDefs in specific prefixes.  If 'Cosmetic' appears in the name,
-        # we'll look for LootPools in there which also have 'Cosmetic' in their names, and
-        # override the loot on those.  For non-'Cosmetic' LootDefs, we'll look for other
-        # `LootPool_`-prefixed pools in our dirs, to make a list of other contents that
-        # the cosmetic ones should defer to, instead.  The `ItemPool_`-prefixed ones that
-        # are directly referenced by LootDefs seem to be all stuff like Money + Moon Orbs,
-        # etc, so we ignore 'em.
+        # There's just a big ol' mess of ItemPools and LootDefs which make up the rewards for
+        # the Wheel of Fate, and they're confusing AF.  Previously this mod was attempting
+        # to do some shenanigans to replace the customization pools with an aggregate of all
+        # the other valid Wheel of Fate pools, which seems to work fine for chars who have
+        # been through at least one of the mirrors, but results in no rewards for early chars.
+        # It was also just an absolute mess, so I've decided to do a real simple hack instead:
+        # if the "customization" option is rolled, just turn it into a Gun roll instead.  So
+        # guns'll be slightly more likely with this mod active.  c'est la vie!
+        #
+        # For reference, here's the bytecode indicies for the hotfixable values for each of
+        # the results, and what they mean:
+        #
+        #    3312: 0 -> skull (armor)
+        #    3288: 1 -> shirt (customizations)
+        #    3264: 2 -> amulet
+        #    3240: 3 -> spells
+        #    3216: 4 -> melee
+        #    3336: 5 -> rings
+        #    3360: 6 -> wards
+        #    3384: 7 -> guns
         mod.header('Wheel of Fate')
-        prefixes = {
-                '/Game/PatchDLC/Indigo1/Common/InteractiveObjects/WheelOfFate/Data/',
-                '/Game/PatchDLC/Indigo1/Common/InteractiveObjects/WheelOfFate/Shared/Loot/',
-                '/Game/PatchDLC/Indigo2/InteractiveObjects/WheelOfFateLootData',
-                '/Game/PatchDLC/Indigo3/InteractiveObjects/WheelOfFateLootData',
-                '/Game/PatchDLC/Indigo4/InteractiveObjects/WheelOfFateLootData',
-                }
-        blocklist = {
-                'Refund',
-                'Eridium',
-                'Money',
-                }
-        for prefix in sorted(prefixes):
-            cosmetics = []
-            target_pools = []
-            for lootdef_name, lootdef in data.find_data(prefix, 'LootDef_'):
-                if 'Cosmetic' in lootdef_name:
-                    to_list = cosmetics
-                    extra_check = 'Cosmetic'
-                else:
-                    to_list = target_pools
-                    extra_check = 'LootPool'
-
-                for lootconf in lootdef[0]['DefaultLoot']:
-                    for attach in lootconf['ItemAttachments']:
-                        if 'ItemPool' in attach and 'export' not in attach['ItemPool']:
-                            pool_name = attach['ItemPool'][1]
-                            for loop_prefix in prefixes:
-                                if pool_name.startswith(loop_prefix):
-                                    on_blocklist = False
-                                    for block in blocklist:
-                                        if block in pool_name:
-                                            on_blocklist = True
-                                            break
-                                    if not on_blocklist:
-                                        if extra_check is None or extra_check in pool_name:
-                                            to_list.append(pool_name)
-                                    break
-
-            # Report on console (if instructed to)
-            if args.verbose:
-                print(cosmetics)
-                for pool in sorted(target_pools):
-                    print(f' - {pool}')
-                print('')
-
-            # Construct a replacement pool + quantity struct
-            replacement_pool = ItemPool('foo', pools=sorted(target_pools))
-            replacement_qty = BVCF(bvc=1)
-
-            # Hotfixes!
-            for pool_name in sorted(cosmetics):
-                mod.comment(pool_name)
-                mod.reg_hotfix(Mod.LEVEL, 'Ind_CaravanHub_01_P',
-                        pool_name,
-                        'BalancedItems',
-                        replacement_pool)
-                mod.reg_hotfix(Mod.LEVEL, 'Ind_CaravanHub_01_P',
-                        pool_name,
-                        'Quantity',
-                        replacement_qty)
-                mod.newline()
+        mod.bytecode_hotfix(Mod.LEVEL, 'Ind_CaravanHub_01_P',
+                '/Game/PatchDLC/Indigo1/Common/InteractiveObjects/WheelOfFate/IO_WheelOfFate',
+                'ExecuteUbergraph_IO_WheelOfFate',
+                3288,
+                1,
+                7,
+                )
+        mod.newline()
 
     mod.close()
 
