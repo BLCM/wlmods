@@ -434,44 +434,44 @@ Pangoblin,04/Very Rare,InvBalD_Shield_Pangolin_04_VeryRare,MATERIAL,1,1,1,Shield
 Afterburner,Named Ward,InvBalD_Shield_Afterburner,BODY,1,1,1,Shield_Part_Body_02_Pangolin,,
 Afterburner,Named Ward,InvBalD_Shield_Afterburner,RARITY,1,1,1,Shield_Part_Rarity_Pangolin_05_Legendary,,
 Afterburner,Named Ward,InvBalD_Shield_Afterburner,UNIQUE,1,1,1,Part_Shield_Aug_ANS_Afterburner,,
-Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,1,None,,
-Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,1,Part_Shield_Aug_Absorb,,
-Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,1,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,1,Part_Shield_Aug_Adrenaline,,
-Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,1,Part_Shield_Aug_Amp,,
-Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,1,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,1,Part_Shield_Aug_Capacity,,
-Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,1,Part_Shield_Aug_Healthy,,
-Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,1,Part_Shield_Aug_RechargeDelay,,
-Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,1,Part_Shield_Aug_RechargeRate,,
-Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,1,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,1,Part_Shield_Aug_Spike,,
-Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,1,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,1,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,n/a,None,,
+Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,n/a,Part_Shield_Aug_Absorb,,
+Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,n/a,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,n/a,Part_Shield_Aug_Adrenaline,,
+Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,n/a,Part_Shield_Aug_Amp,,
+Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,n/a,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,n/a,Part_Shield_Aug_Capacity,,
+Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,n/a,Part_Shield_Aug_Healthy,,
+Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,n/a,Part_Shield_Aug_RechargeDelay,,
+Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,n/a,Part_Shield_Aug_RechargeRate,,
+Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,n/a,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,n/a,Part_Shield_Aug_Spike,,
+Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,n/a,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Afterburner,Named Ward,InvBalD_Shield_Afterburner,AUGMENT,1,2,n/a,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
 Afterburner,Named Ward,InvBalD_Shield_Afterburner,ELEMENT,1,1,1,Shield_Part_Element_Fire,,
 Afterburner,Named Ward,InvBalD_Shield_Afterburner,MATERIAL,1,1,1,Part_Shield_Mat_ANS_Afterburner,,
 Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,BODY,1,1,1,Shield_Part_Body_03_Hyperion,,
 Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,RARITY,1,1,1,Shield_Part_Rarity_Hyperion_05_Legendary,,
 Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,UNIQUE,1,1,1,Part_Shield_Aug_ANS_AncientDeity,,
-Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,1,Part_Shield_Aug_Absorb,,
-Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,1,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,1,Part_Shield_Aug_Adrenaline,,
-Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,1,Part_Shield_Aug_Amp,,
-Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,1,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,1,Part_Shield_Aug_Capacity,,
-Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,1,Part_Shield_Aug_Fleet,,
-Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,1,Part_Shield_Aug_Healthy,,
-Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,1,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
-Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,1,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,1,Part_Shield_Aug_RechargeDelay,,
-Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,1,Part_Shield_Aug_RechargeRate,,
-Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,1,Part_Shield_Aug_Roid,,
-Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,1,Part_Shield_Aug_Spike,,
-Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,1,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,1,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,1,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,n/a,Part_Shield_Aug_Absorb,,
+Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,n/a,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,n/a,Part_Shield_Aug_Adrenaline,,
+Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,n/a,Part_Shield_Aug_Amp,,
+Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,n/a,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,n/a,Part_Shield_Aug_Capacity,,
+Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,n/a,Part_Shield_Aug_Fleet,,
+Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,n/a,Part_Shield_Aug_Healthy,,
+Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,n/a,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
+Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,n/a,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,n/a,Part_Shield_Aug_RechargeDelay,,
+Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,n/a,Part_Shield_Aug_RechargeRate,,
+Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,n/a,Part_Shield_Aug_Roid,,
+Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,n/a,Part_Shield_Aug_Spike,,
+Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,n/a,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,n/a,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,AUGMENT,1,2,n/a,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
 Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,ELEMENT,1,1,1,Shield_Part_Element_Cryo_AncientDeity,Part_Shield_Aug_ANS_AncientDeity,
 Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,ELEMENT,1,1,1,Shield_Part_Element_DarkMagic_AncientDeity,Part_Shield_Aug_ANS_AncientDeity,
 Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,ELEMENT,1,1,1,Shield_Part_Element_Fire_AncientDeity,Part_Shield_Aug_ANS_AncientDeity,
@@ -481,22 +481,22 @@ Ancient Deity,Named Ward,InvBalD_Shield_AncientDeity,MATERIAL,1,1,1,Part_Shield_
 Bad Egg,Named Ward,InvBalD_Shield_BadEgg,BODY,1,1,1,Shield_Part_Body_02_Pangolin,,
 Bad Egg,Named Ward,InvBalD_Shield_BadEgg,RARITY,1,1,1,Shield_Part_Rarity_Pangolin_05_Legendary,,
 Bad Egg,Named Ward,InvBalD_Shield_BadEgg,UNIQUE,1,1,1,Part_Shield_Aug_ANS_BadEgg,,
-Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,1,None,,
-Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,1,Part_Shield_Aug_Absorb,,
-Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,1,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,1,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,1,Part_Shield_Aug_Capacity,,
-Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,1,Part_Shield_Aug_Healthy,,
-Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,1,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
-Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,1,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,1,Part_Shield_Aug_RechargeDelay,,
-Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,1,Part_Shield_Aug_RechargeRate,,
-Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,1,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,1,Part_Shield_Aug_Roid,,
-Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,1,Part_Shield_Aug_Spike,,
-Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,1,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,1,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,n/a,None,,
+Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,n/a,Part_Shield_Aug_Absorb,,
+Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,n/a,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,n/a,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,n/a,Part_Shield_Aug_Capacity,,
+Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,n/a,Part_Shield_Aug_Healthy,,
+Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,n/a,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
+Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,n/a,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,n/a,Part_Shield_Aug_RechargeDelay,,
+Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,n/a,Part_Shield_Aug_RechargeRate,,
+Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,n/a,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,n/a,Part_Shield_Aug_Roid,,
+Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,n/a,Part_Shield_Aug_Spike,,
+Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,n/a,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Bad Egg,Named Ward,InvBalD_Shield_BadEgg,AUGMENT,1,2,n/a,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
 Bad Egg,Named Ward,InvBalD_Shield_BadEgg,ELEMENT,1,1,1,Shield_Part_Element_Normal,,"Part_Shield_Aug_Nova, Part_Shield_Aug_Resistance"
 Bad Egg,Named Ward,InvBalD_Shield_BadEgg,ELEMENT,1,1,1,Shield_Part_Element_Cryo,,
 Bad Egg,Named Ward,InvBalD_Shield_BadEgg,ELEMENT,1,1,1,Shield_Part_Element_DarkMagic,,
@@ -507,32 +507,32 @@ Bad Egg,Named Ward,InvBalD_Shield_BadEgg,MATERIAL,1,1,1,Part_Shield_Mat_ANS_BadE
 Body Rune,Named Ward,InvBalD_Shield_Rune_Body,BODY,1,1,1,Shield_Part_Body_01_Anshin,,
 Body Rune,Named Ward,InvBalD_Shield_Rune_Body,RARITY,1,1,1,Shield_Part_Rarity_Anshin_05_Legendary,,
 Body Rune,Named Ward,InvBalD_Shield_Rune_Body,UNIQUE,1,1,1,Part_Shield_Aug_ANS_Rune_Body,,
-Body Rune,Named Ward,InvBalD_Shield_Rune_Body,AUGMENT,1,1,1,None,,
-Body Rune,Named Ward,InvBalD_Shield_Rune_Body,AUGMENT,1,1,1,Part_Shield_Aug_Capacity,,
-Body Rune,Named Ward,InvBalD_Shield_Rune_Body,AUGMENT,1,1,1,Part_Shield_Aug_Healthy,,
+Body Rune,Named Ward,InvBalD_Shield_Rune_Body,AUGMENT,1,1,n/a,None,,
+Body Rune,Named Ward,InvBalD_Shield_Rune_Body,AUGMENT,1,1,n/a,Part_Shield_Aug_Capacity,,
+Body Rune,Named Ward,InvBalD_Shield_Rune_Body,AUGMENT,1,1,n/a,Part_Shield_Aug_Healthy,,
 Body Rune,Named Ward,InvBalD_Shield_Rune_Body,ELEMENT,1,1,1,Shield_Part_Element_Fire,,
 Body Rune,Named Ward,InvBalD_Shield_Rune_Body,MATERIAL,1,1,1,Part_Shield_Mat_ANS_Rune_Body,,
 Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,BODY,1,1,1,Shield_Part_Body_03_Hyperion,,
 Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,RARITY,1,1,1,Shield_Part_Rarity_Hyperion_05_Legendary,,
 Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,UNIQUE,1,1,1,Part_Shield_Aug_ANS_BroncoBuster,,
-Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,1,Part_Shield_Aug_Absorb,,
-Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,1,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,1,Part_Shield_Aug_Adrenaline,,
-Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,1,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,1,Part_Shield_Aug_Capacity,,
-Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,1,Part_Shield_Aug_Fleet,,
-Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,1,Part_Shield_Aug_Healthy,,
-Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,1,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
-Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,1,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,1,Part_Shield_Aug_RechargeDelay,,
-Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,1,Part_Shield_Aug_RechargeRate,,
-Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,1,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,1,Part_Shield_Aug_Roid,,
-Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,1,Part_Shield_Aug_Spike,,
-Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,1,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,1,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,1,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,n/a,Part_Shield_Aug_Absorb,,
+Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,n/a,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,n/a,Part_Shield_Aug_Adrenaline,,
+Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,n/a,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,n/a,Part_Shield_Aug_Capacity,,
+Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,n/a,Part_Shield_Aug_Fleet,,
+Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,n/a,Part_Shield_Aug_Healthy,,
+Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,n/a,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
+Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,n/a,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeDelay,,
+Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeRate,,
+Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,n/a,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,n/a,Part_Shield_Aug_Roid,,
+Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,n/a,Part_Shield_Aug_Spike,,
+Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,n/a,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,n/a,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,AUGMENT,1,1,n/a,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
 Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,ELEMENT,1,1,1,Shield_Part_Element_Normal,,"Part_Shield_Aug_Nova, Part_Shield_Aug_Resistance"
 Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,ELEMENT,1,1,1,Shield_Part_Element_Cryo,,
 Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,ELEMENT,1,1,1,Shield_Part_Element_DarkMagic,,
@@ -543,15 +543,15 @@ Bronco Buster,Named Ward,InvBalD_Shield_BroncoBuster,MATERIAL,1,1,1,Part_Shield_
 Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,BODY,1,1,1,Shield_Part_Body_01_Anshin,,
 Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,RARITY,1,1,1,Shield_Part_Rarity_Anshin_05_Legendary,,
 Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,UNIQUE,1,1,1,Part_Shield_Aug_ANS_Counterfeint,,
-Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,AUGMENT,2,2,1,Part_Shield_Aug_Adrenaline,,
-Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,AUGMENT,2,2,1,Part_Shield_Aug_Capacity,,
-Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,AUGMENT,2,2,1,Part_Shield_Aug_Fleet,,
-Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,AUGMENT,2,2,1,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
-Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,AUGMENT,2,2,1,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,AUGMENT,2,2,1,Part_Shield_Aug_RechargeDelay,,
-Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,AUGMENT,2,2,1,Part_Shield_Aug_RechargeRate,,
-Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,AUGMENT,2,2,1,Part_Shield_Aug_Roid,,
-Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,AUGMENT,2,2,1,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,AUGMENT,2,2,n/a,Part_Shield_Aug_Adrenaline,,
+Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,AUGMENT,2,2,n/a,Part_Shield_Aug_Capacity,,
+Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,AUGMENT,2,2,n/a,Part_Shield_Aug_Fleet,,
+Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,AUGMENT,2,2,n/a,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
+Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,AUGMENT,2,2,n/a,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,AUGMENT,2,2,n/a,Part_Shield_Aug_RechargeDelay,,
+Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,AUGMENT,2,2,n/a,Part_Shield_Aug_RechargeRate,,
+Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,AUGMENT,2,2,n/a,Part_Shield_Aug_Roid,,
+Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,AUGMENT,2,2,n/a,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
 Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,ELEMENT,1,1,1,Shield_Part_Element_Normal,,"Part_Shield_Aug_Nova, Part_Shield_Aug_Resistance"
 Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,ELEMENT,1,1,1,Shield_Part_Element_Cryo,,
 Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,ELEMENT,1,1,1,Shield_Part_Element_DarkMagic,,
@@ -562,49 +562,49 @@ Counterfeint,Named Ward,InvBalD_Shield_Counterfeint,MATERIAL,1,1,1,Part_Shield_M
 Crying Apple,Named Ward,InvBalD_Shield_CryingApple,BODY,1,1,1,Shield_Part_Body_01_Anshin,,
 Crying Apple,Named Ward,InvBalD_Shield_CryingApple,RARITY,1,1,1,Shield_Part_Rarity_Anshin_03_Rare,,
 Crying Apple,Named Ward,InvBalD_Shield_CryingApple,UNIQUE,1,1,1,Part_Shield_Aug_ANS_CryingApple,,
-Crying Apple,Named Ward,InvBalD_Shield_CryingApple,AUGMENT,1,1,1,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Crying Apple,Named Ward,InvBalD_Shield_CryingApple,AUGMENT,1,1,n/a,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
 Crying Apple,Named Ward,InvBalD_Shield_CryingApple,ELEMENT,1,1,1,Shield_Part_Element_Poison,,
 Crying Apple,Named Ward,InvBalD_Shield_CryingApple,MATERIAL,1,1,1,Shield_Part_Material_Anshin_03_Rare,,
 Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,BODY,1,1,1,Shield_Part_Body_02_Pangolin,,
 Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,RARITY,1,1,1,Shield_Part_Rarity_Pangolin_05_Legendary,,
 Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,UNIQUE,1,1,1,Part_Shield_Aug_ANS_CursedWit,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Absorb,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Absorb,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Absorb,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Adrenaline,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Adrenaline,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Adrenaline,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Amp,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Amp,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Amp,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Capacity,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Capacity,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Capacity,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Fleet,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Fleet,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Fleet,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_RechargeDelay,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_RechargeDelay,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_RechargeDelay,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_RechargeRate,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_RechargeRate,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_RechargeRate,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Roid,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Roid,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Roid,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Healthy,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Healthy,,
-Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,1,Part_Shield_Aug_Healthy,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Absorb,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Absorb,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Absorb,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Adrenaline,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Adrenaline,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Adrenaline,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Amp,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Amp,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Amp,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Capacity,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Capacity,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Capacity,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Fleet,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Fleet,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Fleet,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeDelay,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeDelay,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeDelay,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeRate,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeRate,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeRate,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Roid,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Roid,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Roid,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Healthy,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Healthy,,
+Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,AUGMENT,1,1,n/a,Part_Shield_Aug_Healthy,,
 Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,ELEMENT,1,1,1,Shield_Part_Element_Poison,,
 Cursed Wit,Named Ward,InvBalD_Shield_CursedWit,MATERIAL,1,1,1,Part_Shield_Mat_ANS_CursedWit,,
 Dusa's Visage,Named Ward,InvBalD_Shield_TwistedSisters,BODY,1,1,1,Shield_Part_Body_03_Hyperion,,
@@ -615,31 +615,31 @@ Dusa's Visage,Named Ward,InvBalD_Shield_TwistedSisters,MATERIAL,1,1,1,Shield_Par
 Full Battery,Named Ward,InvBalD_Shield_FullBattery,BODY,1,1,1,Shield_Part_Body_03_Hyperion,,
 Full Battery,Named Ward,InvBalD_Shield_FullBattery,RARITY,1,1,1,Shield_Part_Rarity_Hyperion_05_Legendary,,
 Full Battery,Named Ward,InvBalD_Shield_FullBattery,UNIQUE,1,1,1,Part_Shield_Aug_ANS_FullBattery,,
-Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,1,Part_Shield_Aug_Absorb,,
-Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,1,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,1,Part_Shield_Aug_Adrenaline,,
-Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,1,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,1,Part_Shield_Aug_Capacity,,
-Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,1,Part_Shield_Aug_Fleet,,
-Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,1,Part_Shield_Aug_Healthy,,
-Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,1,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
-Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,1,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,1,Part_Shield_Aug_RechargeDelay,,
-Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,1,Part_Shield_Aug_RechargeRate,,
-Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,1,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,1,Part_Shield_Aug_Roid,,
-Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,1,Part_Shield_Aug_Spike,,
-Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,1,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,1,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,1,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,n/a,Part_Shield_Aug_Absorb,,
+Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,n/a,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,n/a,Part_Shield_Aug_Adrenaline,,
+Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,n/a,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,n/a,Part_Shield_Aug_Capacity,,
+Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,n/a,Part_Shield_Aug_Fleet,,
+Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,n/a,Part_Shield_Aug_Healthy,,
+Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,n/a,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
+Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,n/a,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeDelay,,
+Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeRate,,
+Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,n/a,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,n/a,Part_Shield_Aug_Roid,,
+Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,n/a,Part_Shield_Aug_Spike,,
+Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,n/a,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,n/a,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Full Battery,Named Ward,InvBalD_Shield_FullBattery,AUGMENT,1,1,n/a,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
 Full Battery,Named Ward,InvBalD_Shield_FullBattery,ELEMENT,1,1,1,Shield_Part_Element_Shock,,
 Full Battery,Named Ward,InvBalD_Shield_FullBattery,MATERIAL,1,1,1,Part_Shield_Mat_ANS_FullBattery,,
 Hammer and Anvil,Named Ward,InvBalD_Shield_HammerAnvil,BODY,1,1,1,Shield_Part_Body_03_Hyperion,,
 Hammer and Anvil,Named Ward,InvBalD_Shield_HammerAnvil,RARITY,1,1,1,Shield_Part_Rarity_Hyperion_05_Legendary,,
 Hammer and Anvil,Named Ward,InvBalD_Shield_HammerAnvil,UNIQUE,1,1,1,Part_Shield_Aug_ANS_HammerAnvil,,
-Hammer and Anvil,Named Ward,InvBalD_Shield_HammerAnvil,AUGMENT,1,1,1,Part_Shield_Aug_Capacity,,
-Hammer and Anvil,Named Ward,InvBalD_Shield_HammerAnvil,AUGMENT,1,1,1,Part_Shield_Aug_Healthy,,
+Hammer and Anvil,Named Ward,InvBalD_Shield_HammerAnvil,AUGMENT,1,1,n/a,Part_Shield_Aug_Capacity,,
+Hammer and Anvil,Named Ward,InvBalD_Shield_HammerAnvil,AUGMENT,1,1,n/a,Part_Shield_Aug_Healthy,,
 Hammer and Anvil,Named Ward,InvBalD_Shield_HammerAnvil,MATERIAL,1,1,1,Part_Shield_Mat_ANS_HammerAnvil,,
 High Tolerance,Named Ward,InvBalD_Shield_ElementalAlements,BODY,1,1,1,Shield_Part_Body_03_Hyperion,,
 High Tolerance,Named Ward,InvBalD_Shield_ElementalAlements,RARITY,1,1,1,Shield_Part_Rarity_Hyperion_03_Rare,,
@@ -650,24 +650,24 @@ High Tolerance,Named Ward,InvBalD_Shield_ElementalAlements,MATERIAL,1,1,1,Shield
 Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,BODY,1,1,1,Shield_Part_Body_03_Hyperion,,
 Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,RARITY,1,1,1,Shield_Part_Rarity_Hyperion_05_Legendary,,
 Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,UNIQUE,1,1,1,Part_Shield_Aug_ANS_KineticFriction_Health,,
-Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,1,Part_Shield_Aug_Absorb,,
-Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,1,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,1,Part_Shield_Aug_Adrenaline,,
-Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,1,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,1,Part_Shield_Aug_Capacity,,
-Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,1,Part_Shield_Aug_Fleet,,
-Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,1,Part_Shield_Aug_Healthy,,
-Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,1,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
-Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,1,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,1,Part_Shield_Aug_RechargeDelay,,
-Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,1,Part_Shield_Aug_RechargeRate,,
-Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,1,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,1,Part_Shield_Aug_Roid,,
-Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,1,Part_Shield_Aug_Spike,,
-Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,1,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,1,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,1,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,n/a,Part_Shield_Aug_Absorb,,
+Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,n/a,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,n/a,Part_Shield_Aug_Adrenaline,,
+Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,n/a,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,n/a,Part_Shield_Aug_Capacity,,
+Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,n/a,Part_Shield_Aug_Fleet,,
+Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,n/a,Part_Shield_Aug_Healthy,,
+Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,n/a,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
+Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,n/a,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeDelay,,
+Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeRate,,
+Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,n/a,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,n/a,Part_Shield_Aug_Roid,,
+Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,n/a,Part_Shield_Aug_Spike,,
+Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,n/a,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,n/a,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,AUGMENT,1,1,n/a,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
 Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,ELEMENT,1,1,1,Shield_Part_Element_Normal,,"Part_Shield_Aug_Nova, Part_Shield_Aug_Resistance"
 Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,ELEMENT,1,1,1,Shield_Part_Element_Cryo,,
 Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,ELEMENT,1,1,1,Shield_Part_Element_DarkMagic,,
@@ -678,20 +678,20 @@ Kinetic Friction,Named Ward,InvBalD_Shield_KineticFriction_Health,MATERIAL,1,1,1
 Last Gasp,Named Ward,InvBalD_Shield_LastGasp,BODY,1,1,1,Shield_Part_Body_01_Anshin,,
 Last Gasp,Named Ward,InvBalD_Shield_LastGasp,RARITY,1,1,1,Shield_Part_Rarity_Anshin_05_Legendary,,
 Last Gasp,Named Ward,InvBalD_Shield_LastGasp,UNIQUE,1,1,1,Part_Shield_Aug_ANS_LastGasp,,
-Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,1,None,,
-Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,1,Part_Shield_Aug_Absorb,,
-Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,1,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,1,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,1,Part_Shield_Aug_Capacity,,
-Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,1,Part_Shield_Aug_Healthy,,
-Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,1,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
-Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,1,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,1,Part_Shield_Aug_RechargeDelay,,
-Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,1,Part_Shield_Aug_RechargeRate,,
-Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,1,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,1,Part_Shield_Aug_Spike,,
-Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,1,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,n/a,None,,
+Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,n/a,Part_Shield_Aug_Absorb,,
+Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,n/a,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,n/a,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,n/a,Part_Shield_Aug_Capacity,,
+Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,n/a,Part_Shield_Aug_Healthy,,
+Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,n/a,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
+Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,n/a,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,n/a,Part_Shield_Aug_RechargeDelay,,
+Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,n/a,Part_Shield_Aug_RechargeRate,,
+Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,n/a,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,n/a,Part_Shield_Aug_Spike,,
+Last Gasp,Named Ward,InvBalD_Shield_LastGasp,AUGMENT,1,2,n/a,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
 Last Gasp,Named Ward,InvBalD_Shield_LastGasp,ELEMENT,1,1,1,Shield_Part_Element_Normal,,"Part_Shield_Aug_Nova, Part_Shield_Aug_Resistance"
 Last Gasp,Named Ward,InvBalD_Shield_LastGasp,ELEMENT,1,1,1,Shield_Part_Element_Cryo,,
 Last Gasp,Named Ward,InvBalD_Shield_LastGasp,ELEMENT,1,1,1,Shield_Part_Element_DarkMagic,,
@@ -702,25 +702,25 @@ Last Gasp,Named Ward,InvBalD_Shield_LastGasp,MATERIAL,1,1,1,Part_Shield_Mat_ANS_
 Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,BODY,1,1,1,Shield_Part_Body_01_Anshin,,
 Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,RARITY,1,1,1,Shield_Part_Rarity_Anshin_05_Legendary,,
 Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,UNIQUE,1,1,1,Part_Shield_Aug_ANS_LichsAugur,,
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_Absorb,,
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_Adrenaline,,
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_Amp,,
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_Capacity,,
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_Fleet,,
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_Healthy,,
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_RechargeDelay,,
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_RechargeRate,,
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_Roid,,
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_Spike,,
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,1,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_Absorb,,
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_Adrenaline,,
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_Amp,,
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_Capacity,,
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_Fleet,,
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_Healthy,,
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_RechargeDelay,,
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_RechargeRate,,
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_Roid,,
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_Spike,,
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,AUGMENT,2,2,n/a,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
 Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,ELEMENT,1,1,1,Shield_Part_Element_Cryo,,
 Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,ELEMENT,1,1,1,Shield_Part_Element_DarkMagic,,
 Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,ELEMENT,1,1,1,Shield_Part_Element_Fire,,
@@ -731,66 +731,66 @@ Lich's Augur,Named Ward,InvBalD_Shield_LichsAugur,MATERIAL,1,1,1,Part_Shield_Mat
 Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,BODY,1,1,1,Shield_Part_Body_03_Hyperion,,
 Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,RARITY,1,1,1,Shield_Part_Rarity_Hyperion_05_Legendary,,
 Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,UNIQUE,1,1,1,Part_Shield_Aug_ANS_MacedWard,,
-Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,1,None,,
-Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,1,Part_Shield_Aug_Absorb,,
-Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,1,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,1,Part_Shield_Aug_Adrenaline,,
-Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,1,Part_Shield_Aug_Amp,,
-Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,1,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,1,Part_Shield_Aug_Capacity,,
-Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,1,Part_Shield_Aug_Fleet,,
-Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,1,Part_Shield_Aug_Healthy,,
-Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,1,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
-Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,1,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,1,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,1,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,n/a,None,,
+Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,n/a,Part_Shield_Aug_Absorb,,
+Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,n/a,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,n/a,Part_Shield_Aug_Adrenaline,,
+Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,n/a,Part_Shield_Aug_Amp,,
+Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,n/a,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,n/a,Part_Shield_Aug_Capacity,,
+Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,n/a,Part_Shield_Aug_Fleet,,
+Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,n/a,Part_Shield_Aug_Healthy,,
+Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,n/a,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
+Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,n/a,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,n/a,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,n/a,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,AUGMENT,1,2,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
 Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,ELEMENT,1,1,1,Shield_Part_Element_Normal,,"Part_Shield_Aug_Nova, Part_Shield_Aug_Resistance"
 Maced Wardu,Named Ward,InvBalD_Shield_MacedWard,MATERIAL,1,1,1,Part_Shield_Mat_ANS_MacedWard,,
 Master Rune,Named Ward,InvBalD_Shield_Rune_Master,BODY,1,1,1,Shield_Part_Body_01_Anshin,,
 Master Rune,Named Ward,InvBalD_Shield_Rune_Master,RARITY,1,1,1,Shield_Part_Rarity_Anshin_05_Legendary,,
 Master Rune,Named Ward,InvBalD_Shield_Rune_Master,UNIQUE,1,1,1,Part_Shield_Aug_ANS_Rune_Master,,
-Master Rune,Named Ward,InvBalD_Shield_Rune_Master,AUGMENT,1,1,1,None,,
-Master Rune,Named Ward,InvBalD_Shield_Rune_Master,AUGMENT,1,1,1,Part_Shield_Aug_Capacity,,
-Master Rune,Named Ward,InvBalD_Shield_Rune_Master,AUGMENT,1,1,1,Part_Shield_Aug_Healthy,,
+Master Rune,Named Ward,InvBalD_Shield_Rune_Master,AUGMENT,1,1,n/a,None,,
+Master Rune,Named Ward,InvBalD_Shield_Rune_Master,AUGMENT,1,1,n/a,Part_Shield_Aug_Capacity,,
+Master Rune,Named Ward,InvBalD_Shield_Rune_Master,AUGMENT,1,1,n/a,Part_Shield_Aug_Healthy,,
 Master Rune,Named Ward,InvBalD_Shield_Rune_Master,ELEMENT,1,1,1,Shield_Part_Element_Cryo,,
 Master Rune,Named Ward,InvBalD_Shield_Rune_Master,MATERIAL,1,1,1,Part_Shield_Mat_ANS_Rune_Master,,
 Mind Rune,Named Ward,InvBalD_Shield_Rune_Mind,BODY,1,1,1,Shield_Part_Body_01_Anshin,,
 Mind Rune,Named Ward,InvBalD_Shield_Rune_Mind,RARITY,1,1,1,Shield_Part_Rarity_Anshin_05_Legendary,,
 Mind Rune,Named Ward,InvBalD_Shield_Rune_Mind,UNIQUE,1,1,1,Part_Shield_Aug_ANS_Rune_Mind,,
-Mind Rune,Named Ward,InvBalD_Shield_Rune_Mind,AUGMENT,1,1,1,None,,
-Mind Rune,Named Ward,InvBalD_Shield_Rune_Mind,AUGMENT,1,1,1,Part_Shield_Aug_Capacity,,
-Mind Rune,Named Ward,InvBalD_Shield_Rune_Mind,AUGMENT,1,1,1,Part_Shield_Aug_Healthy,,
+Mind Rune,Named Ward,InvBalD_Shield_Rune_Mind,AUGMENT,1,1,n/a,None,,
+Mind Rune,Named Ward,InvBalD_Shield_Rune_Mind,AUGMENT,1,1,n/a,Part_Shield_Aug_Capacity,,
+Mind Rune,Named Ward,InvBalD_Shield_Rune_Mind,AUGMENT,1,1,n/a,Part_Shield_Aug_Healthy,,
 Mind Rune,Named Ward,InvBalD_Shield_Rune_Mind,ELEMENT,1,1,1,Shield_Part_Element_Cryo,,
 Mind Rune,Named Ward,InvBalD_Shield_Rune_Mind,MATERIAL,1,1,1,Part_Shield_Mat_ANS_Rune_Mind,,
 Rivote's Shield,Named Ward,InvBalD_Shield_RonRivote,BODY,1,1,1,Shield_Part_Body_03_Hyperion,,
 Rivote's Shield,Named Ward,InvBalD_Shield_RonRivote,RARITY,1,1,1,Shield_Part_Rarity_Hyperion_03_Rare,,
 Rivote's Shield,Named Ward,InvBalD_Shield_RonRivote,UNIQUE,1,1,1,Part_Shield_Aug_ANS_RonRivote,,
-Rivote's Shield,Named Ward,InvBalD_Shield_RonRivote,AUGMENT,2,2,1,Part_Shield_Aug_Fleet,,
-Rivote's Shield,Named Ward,InvBalD_Shield_RonRivote,AUGMENT,2,2,1,Part_Shield_Aug_Fleet,,
+Rivote's Shield,Named Ward,InvBalD_Shield_RonRivote,AUGMENT,2,2,n/a,Part_Shield_Aug_Fleet,,
+Rivote's Shield,Named Ward,InvBalD_Shield_RonRivote,AUGMENT,2,2,n/a,Part_Shield_Aug_Fleet,,
 Rivote's Shield,Named Ward,InvBalD_Shield_RonRivote,ELEMENT,1,1,1,Shield_Part_Element_Normal,,"Part_Shield_Aug_Nova, Part_Shield_Aug_Resistance"
 Rivote's Shield,Named Ward,InvBalD_Shield_RonRivote,MATERIAL,1,1,1,Shield_Part_Material_Hyperion_03_Rare,,
 Shamwai,Named Ward,InvBalD_Shield_Shamwai,BODY,1,1,1,Shield_Part_Body_01_Anshin,,
 Shamwai,Named Ward,InvBalD_Shield_Shamwai,RARITY,1,1,1,Shield_Part_Rarity_Anshin_05_Legendary,,
 Shamwai,Named Ward,InvBalD_Shield_Shamwai,UNIQUE,1,1,1,Part_Shield_Aug_ANS_Shamwai,,
-Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,1,None,,
-Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,1,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,1,Part_Shield_Aug_Adrenaline,,
-Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,1,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,1,Part_Shield_Aug_Capacity,,
-Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,1,Part_Shield_Aug_Fleet,,
-Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,1,Part_Shield_Aug_Healthy,,
-Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,1,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
-Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,1,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,1,Part_Shield_Aug_RechargeDelay,,
-Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,1,Part_Shield_Aug_RechargeRate,,
-Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,1,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,1,Part_Shield_Aug_Roid,,
-Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,1,Part_Shield_Aug_Spike,,
-Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,1,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,1,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,1,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,n/a,None,,
+Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,n/a,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,n/a,Part_Shield_Aug_Adrenaline,,
+Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,n/a,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,n/a,Part_Shield_Aug_Capacity,,
+Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,n/a,Part_Shield_Aug_Fleet,,
+Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,n/a,Part_Shield_Aug_Healthy,,
+Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,n/a,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
+Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,n/a,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,n/a,Part_Shield_Aug_RechargeDelay,,
+Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,n/a,Part_Shield_Aug_RechargeRate,,
+Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,n/a,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,n/a,Part_Shield_Aug_Roid,,
+Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,n/a,Part_Shield_Aug_Spike,,
+Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,n/a,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,n/a,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Shamwai,Named Ward,InvBalD_Shield_Shamwai,AUGMENT,1,2,n/a,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
 Shamwai,Named Ward,InvBalD_Shield_Shamwai,ELEMENT,1,1,1,Shield_Part_Element_Cryo,,
 Shamwai,Named Ward,InvBalD_Shield_Shamwai,ELEMENT,1,1,1,Shield_Part_Element_DarkMagic,,
 Shamwai,Named Ward,InvBalD_Shield_Shamwai,ELEMENT,1,1,1,Shield_Part_Element_Fire,,
@@ -800,51 +800,51 @@ Shamwai,Named Ward,InvBalD_Shield_Shamwai,MATERIAL,1,1,1,Part_Shield_Mat_ANS_Sha
 Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,BODY,1,1,1,Shield_Part_Body_01_Anshin,,
 Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,RARITY,1,1,1,Shield_Part_Rarity_Anshin_05_Legendary,,
 Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,UNIQUE,1,1,1,Part_Shield_Aug_ASH_Rune_Spirit,,
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Absorb,,
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Absorb,,
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Adrenaline,,
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Adrenaline,,
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Amp,,
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Amp,,
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Capacity,,
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Capacity,,
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Healthy,,
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Healthy,,
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_RechargeRate,,
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_RechargeRate,,
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,1,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Absorb,,
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Absorb,,
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Adrenaline,,
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Adrenaline,,
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Amp,,
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Amp,,
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Capacity,,
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Capacity,,
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Healthy,,
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Healthy,,
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_RechargeRate,,
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_RechargeRate,,
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,AUGMENT,2,2,n/a,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
 Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,ELEMENT,1,1,1,Shield_Part_Element_Shock,,
 Spirit Rune,Named Ward,InvBalD_Shield_SpiritRune,MATERIAL,1,1,1,Part_Shield_Mat_ASH_Rune_Spirit,,
 Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,BODY,1,1,1,Shield_Part_Body_03_Hyperion,,
 Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,RARITY,1,1,1,Shield_Part_Rarity_Hyperion_05_Legendary,,
 Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,UNIQUE,1,1,1,Part_Shield_Aug_ANS_KineticFriction_Shield,,
-Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,1,Part_Shield_Aug_Absorb,,
-Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,1,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,1,Part_Shield_Aug_Adrenaline,,
-Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,1,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,1,Part_Shield_Aug_Capacity,,
-Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,1,Part_Shield_Aug_Fleet,,
-Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,1,Part_Shield_Aug_Healthy,,
-Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,1,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
-Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,1,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,1,Part_Shield_Aug_RechargeDelay,,
-Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,1,Part_Shield_Aug_RechargeRate,,
-Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,1,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,1,Part_Shield_Aug_Roid,,
-Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,1,Part_Shield_Aug_Spike,,
-Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,1,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,1,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,1,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,n/a,Part_Shield_Aug_Absorb,,
+Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,n/a,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,n/a,Part_Shield_Aug_Adrenaline,,
+Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,n/a,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,n/a,Part_Shield_Aug_Capacity,,
+Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,n/a,Part_Shield_Aug_Fleet,,
+Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,n/a,Part_Shield_Aug_Healthy,,
+Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,n/a,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
+Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,n/a,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeDelay,,
+Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeRate,,
+Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,n/a,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,n/a,Part_Shield_Aug_Roid,,
+Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,n/a,Part_Shield_Aug_Spike,,
+Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,n/a,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,n/a,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,AUGMENT,1,1,n/a,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
 Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,ELEMENT,1,1,1,Shield_Part_Element_Normal,,"Part_Shield_Aug_Nova, Part_Shield_Aug_Resistance"
 Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,ELEMENT,1,1,1,Shield_Part_Element_Cryo,,
 Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,ELEMENT,1,1,1,Shield_Part_Element_DarkMagic,,
@@ -855,30 +855,30 @@ Static Charge,Named Ward,InvBalD_Shield_KineticFriction_Shield,MATERIAL,1,1,1,Pa
 Sweet Dreams,Named Ward,InvBalD_Shield_PowerNap,BODY,1,1,1,Shield_Part_Body_02_Pangolin,,
 Sweet Dreams,Named Ward,InvBalD_Shield_PowerNap,RARITY,1,1,1,Shield_Part_Rarity_Pangolin_03_Rare,,
 Sweet Dreams,Named Ward,InvBalD_Shield_PowerNap,UNIQUE,1,1,1,Part_Shield_Aug_ANS_PowerNap,,
-Sweet Dreams,Named Ward,InvBalD_Shield_PowerNap,AUGMENT,2,2,1,Part_Shield_Aug_Capacity,,
-Sweet Dreams,Named Ward,InvBalD_Shield_PowerNap,AUGMENT,2,2,1,Part_Shield_Aug_Capacity,,
+Sweet Dreams,Named Ward,InvBalD_Shield_PowerNap,AUGMENT,2,2,n/a,Part_Shield_Aug_Capacity,,
+Sweet Dreams,Named Ward,InvBalD_Shield_PowerNap,AUGMENT,2,2,n/a,Part_Shield_Aug_Capacity,,
 Sweet Dreams,Named Ward,InvBalD_Shield_PowerNap,ELEMENT,1,1,1,Shield_Part_Element_DarkMagic,,
 Sweet Dreams,Named Ward,InvBalD_Shield_PowerNap,MATERIAL,1,1,1,Shield_Part_Material_Pangolin_03_Rare,,
 Transistor,Named Ward,InvBalD_Shield_Transistor,BODY,1,1,1,Shield_Part_Body_03_Hyperion,,
 Transistor,Named Ward,InvBalD_Shield_Transistor,RARITY,1,1,1,Shield_Part_Rarity_Hyperion_05_Legendary,,
 Transistor,Named Ward,InvBalD_Shield_Transistor,UNIQUE,1,1,1,Part_Shield_Aug_ANS_Transistor,,
-Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,1,Part_Shield_Aug_Absorb,,
-Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,1,Part_Shield_Aug_Adrenaline,,
-Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,1,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,1,Part_Shield_Aug_Capacity,,
-Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,1,Part_Shield_Aug_Fleet,,
-Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,1,Part_Shield_Aug_Healthy,,
-Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,1,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
-Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,1,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,1,Part_Shield_Aug_RechargeDelay,,
-Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,1,Part_Shield_Aug_RechargeRate,,
-Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,1,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,1,Part_Shield_Aug_Roid,,
-Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,1,Part_Shield_Aug_Spike,,
-Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,1,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,1,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,1,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,n/a,Part_Shield_Aug_Absorb,,
+Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,n/a,Part_Shield_Aug_Adrenaline,,
+Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,n/a,Part_Shield_Aug_Brimming,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,n/a,Part_Shield_Aug_Capacity,,
+Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,n/a,Part_Shield_Aug_Fleet,,
+Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,n/a,Part_Shield_Aug_Healthy,,
+Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,n/a,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
+Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,n/a,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeDelay,,
+Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeRate,,
+Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,n/a,Part_Shield_Aug_Resistance,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,n/a,Part_Shield_Aug_Roid,,
+Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,n/a,Part_Shield_Aug_Spike,,
+Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,n/a,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,n/a,Part_Shield_Aug_Turtle,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Transistor,Named Ward,InvBalD_Shield_Transistor,AUGMENT,1,1,n/a,Part_Shield_Aug_Vagabond,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
 Transistor,Named Ward,InvBalD_Shield_Transistor,ELEMENT,1,1,1,Shield_Part_Element_Normal,,"Part_Shield_Aug_Nova, Part_Shield_Aug_Resistance"
 Transistor,Named Ward,InvBalD_Shield_Transistor,ELEMENT,1,1,1,Shield_Part_Element_Cryo,,
 Transistor,Named Ward,InvBalD_Shield_Transistor,ELEMENT,1,1,1,Shield_Part_Element_DarkMagic,,
@@ -889,73 +889,73 @@ Transistor,Named Ward,InvBalD_Shield_Transistor,MATERIAL,1,1,1,Part_Shield_Mat_A
 Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,BODY,1,1,1,Shield_Part_Body_01_Anshin,,
 Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,RARITY,1,1,1,Shield_Part_Rarity_Anshin_05_Legendary,,
 Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,UNIQUE,1,1,1,Part_Shield_Aug_ANS_TrickMirror,,
-Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,1,None,,
-Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,1,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,1,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,1,Part_Shield_Aug_Adrenaline,,
-Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,1,Part_Shield_Aug_Adrenaline,,
-Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,1,Part_Shield_Aug_Capacity,,
-Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,1,Part_Shield_Aug_Capacity,,
-Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,1,Part_Shield_Aug_Fleet,,
-Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,1,Part_Shield_Aug_Fleet,,
-Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,1,Part_Shield_Aug_Healthy,,
-Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,1,Part_Shield_Aug_Healthy,,
-Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,1,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
-Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,1,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
-Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,1,Part_Shield_Aug_RechargeDelay,,
-Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,1,Part_Shield_Aug_RechargeDelay,,
-Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,1,Part_Shield_Aug_RechargeRate,,
-Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,1,Part_Shield_Aug_RechargeRate,,
+Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,n/a,None,,
+Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,n/a,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,n/a,Part_Shield_Aug_Adaptive,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,n/a,Part_Shield_Aug_Adrenaline,,
+Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,n/a,Part_Shield_Aug_Adrenaline,,
+Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,n/a,Part_Shield_Aug_Capacity,,
+Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,n/a,Part_Shield_Aug_Capacity,,
+Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,n/a,Part_Shield_Aug_Fleet,,
+Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,n/a,Part_Shield_Aug_Fleet,,
+Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,n/a,Part_Shield_Aug_Healthy,,
+Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,n/a,Part_Shield_Aug_Healthy,,
+Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,n/a,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
+Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,n/a,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
+Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,n/a,Part_Shield_Aug_RechargeDelay,,
+Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,n/a,Part_Shield_Aug_RechargeDelay,,
+Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,n/a,Part_Shield_Aug_RechargeRate,,
+Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,AUGMENT,1,2,n/a,Part_Shield_Aug_RechargeRate,,
 Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,ELEMENT,1,1,1,Shield_Part_Element_Normal,,"Part_Shield_Aug_Nova, Part_Shield_Aug_Resistance"
 Trick Mirror,Named Ward,InvBalD_Shield_TrickMirror,MATERIAL,1,1,1,Part_Shield_Mat_ANS_TrickMirror,,
 Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,BODY,1,1,1,Shield_Part_Body_02_Pangolin,,
 Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,RARITY,1,1,1,Shield_Part_Rarity_Pangolin_05_Legendary,,
 Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,UNIQUE,1,1,1,Part_Shield_Aug_ANS_UndeadPAct,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Absorb,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Absorb,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Absorb,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Adrenaline,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Adrenaline,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Adrenaline,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Amp,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Amp,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Amp,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Capacity,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Capacity,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Capacity,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Fleet,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Fleet,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Fleet,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_RechargeDelay,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_RechargeDelay,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_RechargeDelay,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_RechargeRate,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_RechargeRate,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_RechargeRate,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Roid,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Roid,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Roid,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Healthy,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Healthy,,
-Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,1,Part_Shield_Aug_Healthy,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Absorb,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Absorb,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Absorb,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Adrenaline,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Adrenaline,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Adrenaline,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Amp,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Amp,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Amp,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Capacity,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Capacity,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Capacity,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Fleet,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Fleet,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Fleet,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Nova,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeDelay,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeDelay,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeDelay,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeRate,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeRate,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_RechargeRate,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Reflect,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Roid,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Roid,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Roid,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Knockback,Shield_Part_Body_02_Pangolin,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_TriggerHappy,,"Shield_Part_Rarity_Anshin_02_Uncommon, Shield_Part_Rarity_Hyperion_02_Uncommon, Shield_Part_Rarity_Pangolin_02_Uncommon"
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Healthy,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Healthy,,
+Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,AUGMENT,1,1,n/a,Part_Shield_Aug_Healthy,,
 Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,ELEMENT,1,1,1,Shield_Part_Element_Poison,,
 Undead Pact,Named Ward,InvBalD_Shield_UndeadPAct,MATERIAL,1,1,1,Part_Shield_Mat_ANS_UndeadPAct,,
 "(unfinished, no name)",Named Ward,InvBalD_Shield_Legendary_Vamp,BODY,1,1,1,Shield_Part_Body_01_Anshin,,
 "(unfinished, no name)",Named Ward,InvBalD_Shield_Legendary_Vamp,RARITY,1,1,1,Shield_Part_Rarity_Anshin_05_Legendary,,
 "(unfinished, no name)",Named Ward,InvBalD_Shield_Legendary_Vamp,UNIQUE,1,1,1,Part_Shield_Aug_ANS_LGD_ReRouter,,
-"(unfinished, no name)",Named Ward,InvBalD_Shield_Legendary_Vamp,AUGMENT,1,1,1,None,,
-"(unfinished, no name)",Named Ward,InvBalD_Shield_Legendary_Vamp,AUGMENT,1,1,1,Part_Shield_Aug_Capacity,,
-"(unfinished, no name)",Named Ward,InvBalD_Shield_Legendary_Vamp,AUGMENT,1,1,1,Part_Shield_Aug_Healthy,,
+"(unfinished, no name)",Named Ward,InvBalD_Shield_Legendary_Vamp,AUGMENT,1,1,n/a,None,,
+"(unfinished, no name)",Named Ward,InvBalD_Shield_Legendary_Vamp,AUGMENT,1,1,n/a,Part_Shield_Aug_Capacity,,
+"(unfinished, no name)",Named Ward,InvBalD_Shield_Legendary_Vamp,AUGMENT,1,1,n/a,Part_Shield_Aug_Healthy,,
 "(unfinished, no name)",Named Ward,InvBalD_Shield_Legendary_Vamp,ELEMENT,1,1,1,Shield_Part_Element_Normal,,"Part_Shield_Aug_Nova, Part_Shield_Aug_Resistance"
 "(unfinished, no name)",Named Ward,InvBalD_Shield_Legendary_Vamp,ELEMENT,1,1,0.1,Shield_Part_Element_Fire,,
 "(unfinished, no name)",Named Ward,InvBalD_Shield_Legendary_Vamp,ELEMENT,1,1,0.1,Shield_Part_Element_Cryo,,

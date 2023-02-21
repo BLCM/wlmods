@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2022 Christopher J. Kucera
+# Copyright 2019-2023 Christopher J. Kucera
 # <cj@apocalyptech.com>
-# <http://apocalyptech.com/contact.php>
+# <https://apocalyptech.com/contact.php>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -537,6 +537,10 @@ header_format = wb.add_format({
 reg_format = wb.add_format({
     'font_size': 11,
     })
+reg_format_right = wb.add_format({
+    'font_size': 11,
+    'align': 'right',
+    })
 fixed_format = wb.add_format({
     'font': 'Courier New',
     'font_size': 10,
@@ -699,6 +703,9 @@ cur_row += 1
 
 # Changelog
 changelog = [
+        ('Feb 21, 2023', [
+            "Correctly omit weights in situations where weights aren't actually used",
+            ]),
         ('Aug 15, 2022', [
             "Updated with GBX's new part expansion method, which pulls in Blightcaller parts properly",
             ]),
@@ -889,7 +896,7 @@ for (sheet_label, filename, filename_long, balances, man_col_name, type_col_name
             # Max Parts
             ws.set_column(5+fixed_offset, 5+fixed_offset, 9, reg_format)
             # Weight
-            ws.set_column(6+fixed_offset, 6+fixed_offset, 11, reg_format)
+            ws.set_column(6+fixed_offset, 6+fixed_offset, 11, reg_format_right)
             # Part
             ws.set_column(7+fixed_offset, 7+fixed_offset, 40, fixed_format)
             # Dependencies
@@ -947,7 +954,10 @@ for (sheet_label, filename, filename_long, balances, man_col_name, type_col_name
                         part_name = part.part_name
                         if verbose:
                             print(f' - Part: {part_name}')
-                        weight = data.process_bvc(part.weight)
+                        if category.select_multiple and not category.use_weight_with_mult:
+                            weight = 'n/a'
+                        else:
+                            weight = data.process_bvc(part.weight)
                         if verbose:
                             print(part.weight)
                             print(f'   Weight: {weight}')
@@ -1055,8 +1065,9 @@ for (sheet_label, filename, filename_long, balances, man_col_name, type_col_name
                             datarow_long.append(gun_type)
 
                         # A bit nicer to see ints if a weight is just .0
-                        if round(weight, 6) == int(weight):
-                            weight = int(weight)
+                        if weight != 'n/a':
+                            if round(weight, 6) == int(weight):
+                                weight = int(weight)
 
                         # The DLC6 patch introduced a "Mysterious Artifact," which looks identical to
                         # the "Mysterious Amulet" introduced in the DLC5 patch, and has the same "short" name.
