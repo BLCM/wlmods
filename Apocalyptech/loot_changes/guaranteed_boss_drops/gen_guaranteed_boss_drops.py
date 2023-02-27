@@ -37,7 +37,7 @@ mod = Mod('guaranteed_boss_drops.wlhotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.0.1',
         cats='enemy-drops, loot-system',
         )
 
@@ -391,6 +391,18 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_BoneArmy_Knightmare',
         1)
 mod.reg_hotfix(Mod.CHAR, 'BPChar_BoneArmy_Knightmare_Runnable',
         '/Game/Enemies/BoneArmy/_Unique/Knightmare/_Design/Character/BPChar_BoneArmy_Knightmare_Runnable.BPChar_BoneArmy_Knightmare_Runnable_C:AIBalanceState_GEN_VARIABLE',
+        'TimeToSpawnLootOver',
+        1)
+mod.newline()
+
+# Ditto, though it doesn't happen quite as often (or as noticeably) as Knight Mare
+mod.comment('Zomboss loot pattern')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_BoneArmy_ZombieQueen',
+        '/Game/Enemies/BoneArmy/_Unique/ZombieQueen/_Design/Character/BPChar_BoneArmy_ZombieQueen.BPChar_BoneArmy_ZombieQueen_C:AIBalanceState_GEN_VARIABLE',
+        'TimeToSpawnLootOver',
+        1)
+mod.reg_hotfix(Mod.CHAR, 'BPChar_BoneArmy_ZombieQueen_Runnable',
+        '/Game/Enemies/BoneArmy/_Unique/ZombieQueen/_Design/Character/BPChar_BoneArmy_ZombieQueen_Runnable.BPChar_BoneArmy_ZombieQueen_Runnable_C:AIBalanceState_GEN_VARIABLE',
         'TimeToSpawnLootOver',
         1)
 mod.newline()

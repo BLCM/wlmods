@@ -14,8 +14,8 @@ For a list of what drops you should expect from bosses, while using this mod, se
 
 The mod contains a few fixes as well, such as allowing some Chaos-Chamber-locked
 minibosses to drop their loot outside of the Chaos Chamber, fixing some
-details of Knight Mare's drop behavior, and fixing Imelda the Sand Witch's
-Difficulty 4 drop.
+details of Knight Mare and Zomboss's drop behavior, and fixing Imelda the Sand
+Witch's Difficulty 4 drop.
 
 **Mod Compatibility Info:**
 
@@ -33,6 +33,9 @@ you do, though.
 
 Changelog
 =========
+
+**v1.0.1** - Feb 27, 2023
+ * Added Zomboss loot-drop-pattern fix from Fix Broken Loot Patterns v1.1.0.
 
 **v1.0.0** - Oct 4, 2022
  * Initial release

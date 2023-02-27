@@ -1,6 +1,6 @@
 
 @title Guaranteed Boss Drops
-@version 1.0.0
+@version 1.0.1
 @author Apocalyptech
 @contact https://apocalyptech.com/contact.php
 @categories enemy-drops, loot-system
@@ -188,6 +188,10 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Troll_Jailer),/Game/Enemies/Troll/_Uniqu
 # Knight Mare loot pattern
 SparkCharacterLoadedEntry,(1,1,0,BPChar_BoneArmy_Knightmare),/Game/Enemies/BoneArmy/_Unique/Knightmare/_Design/Character/BPChar_BoneArmy_Knightmare.BPChar_BoneArmy_Knightmare_C:AIBalanceState_GEN_VARIABLE,TimeToSpawnLootOver,0,,1
 SparkCharacterLoadedEntry,(1,1,0,BPChar_BoneArmy_Knightmare_Runnable),/Game/Enemies/BoneArmy/_Unique/Knightmare/_Design/Character/BPChar_BoneArmy_Knightmare_Runnable.BPChar_BoneArmy_Knightmare_Runnable_C:AIBalanceState_GEN_VARIABLE,TimeToSpawnLootOver,0,,1
+
+# Zomboss loot pattern
+SparkCharacterLoadedEntry,(1,1,0,BPChar_BoneArmy_ZombieQueen),/Game/Enemies/BoneArmy/_Unique/ZombieQueen/_Design/Character/BPChar_BoneArmy_ZombieQueen.BPChar_BoneArmy_ZombieQueen_C:AIBalanceState_GEN_VARIABLE,TimeToSpawnLootOver,0,,1
+SparkCharacterLoadedEntry,(1,1,0,BPChar_BoneArmy_ZombieQueen_Runnable),/Game/Enemies/BoneArmy/_Unique/ZombieQueen/_Design/Character/BPChar_BoneArmy_ZombieQueen_Runnable.BPChar_BoneArmy_ZombieQueen_Runnable_C:AIBalanceState_GEN_VARIABLE,TimeToSpawnLootOver,0,,1
 
 # Imelda the Sand Witch (DLC2) Difficulty 4 Drop Fix
 SparkCharacterLoadedEntry,(1,1,0,BPChar_PettyRocker_Human_v3),/Game/PatchDLC/Indigo2/Enemies/Witch/_Shared/InteractiveObjects/ItemPool_Indigo2_Boss3.ItemPool_Indigo2_Boss3,BalancedItems.BalancedItems[0],0,,(InventoryBalanceData=/Game/PatchDLC/Indigo2/Gear/Pauldrons/_Shared/_Design/_Unique/MiasmaChain/Balance/Balance_Armor_MiasmaChain.Balance_Armor_MiasmaChain,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Indigo2/Gear/Pauldrons/_Shared/_Design/_Unique/MiasmaChain/Balance/Balance_Armor_MiasmaChain.Balance_Armor_MiasmaChain"',Weight=(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=GbxAttributeData'"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_06_Special.Att_RarityWeight_06_Special"',AttributeInitializer=None,BaseValueScale=1))
