@@ -12,6 +12,8 @@ See the individual mod folders for full READMEs.
 - **Guaranteed Gear Drops** - Enemies with a chance to drop gear will drop one
   of each gear type (gun, melee weapon, ward, etc.)
 - **Mountaineer** - Allows the player to climb (nearly) vertical surfaces.
+- **Quick Chaos Chamber Loot Room** - Replaces the "Normal" Chaos Chamber run with
+  a version which jumps right to the loot room, and gives you 1m crystals.
 - **Show Att Values** - Show arbitrary attribute values on the Chaos Mode screen.
 - **Super Buff: Goblin Pickaxe** - Absurdly OP Goblin Pickaxe buffs.
 - **Super Buff: Manual Transmission** - Absurdly OP Manual Transmission AR.
