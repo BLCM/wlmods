@@ -53,21 +53,24 @@ class _StreamingBlueprintPosition:
                 self.obj_name.split('.')[-2],
                 map_name,
                 ))
-        mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
-                self.obj_name,
-                'RelativeLocation',
-                '(X={:.6f},Y={:.6f},Z={:.6f})'.format(*self.location),
-                notify=True)
-        mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
-                self.obj_name,
-                'RelativeRotation',
-                '(Pitch={:.6f},Yaw={:.6f},Roll={:.6f})'.format(*self.rotation),
-                notify=True)
-        mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
-                self.obj_name,
-                'RelativeScale3D',
-                '(X={:.6f},Y={:.6f},Z={:.6f})'.format(*self.scale),
-                notify=True)
+        if self.location != (0,0,0):
+            mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
+                    self.obj_name,
+                    'RelativeLocation',
+                    '(X={:.6f},Y={:.6f},Z={:.6f})'.format(*self.location),
+                    notify=True)
+        if self.rotation != (0,0,0):
+            mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
+                    self.obj_name,
+                    'RelativeRotation',
+                    '(Pitch={:.6f},Yaw={:.6f},Roll={:.6f})'.format(*self.rotation),
+                    notify=True)
+        if self.scale != (1,1,1):
+            mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
+                    self.obj_name,
+                    'RelativeScale3D',
+                    '(X={:.6f},Y={:.6f},Z={:.6f})'.format(*self.scale),
+                    notify=True)
 
 class _StreamingBlueprintHelper:
     """
@@ -119,6 +122,7 @@ class _StreamingBlueprintHelper:
             '/game/lootables/_design/classes/eridian/bpio_lootable_eridian_redchest': 'Mesh_Chest1',
             '/game/lootables/_design/classes/eridian/bpio_lootable_eridian_whitechest': 'Mesh_Chest1',
             '/game/lootables/_design/classes/eridian/bpio_lootable_eridian_whitechestcrystal': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/global/bpio_lootable_daffodil_whitechest_01': 'Mesh_Chest1',
             '/game/lootables/_design/classes/global/bpio_lootable_global_whitecrate': 'Mesh_Chest1',
             '/game/lootables/_design/classes/jakobs/bpio_lootable_jakobs_redchest': 'Mesh_Chest1',
             '/game/lootables/_design/classes/jakobs/bpio_lootable_jakobs_whitechest': 'Mesh_Chest1',
