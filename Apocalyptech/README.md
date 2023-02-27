@@ -25,6 +25,10 @@ of the mods you'll find in here, though:
 - **Early Overworld Abilities** - Allows the player to dispel barrier hexes,
   bypass red Dark Magic barriers, and see hidden bridges from the beginning of
   the game.
+- **Fragile Containers** - Makes the majority of containers in the game
+  openable by taking damage from any source.
+- **Full Poems on Pickup** - The poet reads the whole poem on pickup, rather than
+  just the first line.
 - **In The Belly Is A Beast: Abridged** - Skips most of the side mission "In The
   Belly Is A Beast," and disables its dialogue.
 - **Infinite Slide** - Makes the duration of your character's slide effectively
