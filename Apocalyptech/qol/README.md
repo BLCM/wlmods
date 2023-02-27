@@ -11,6 +11,8 @@ See the individual mod folders for full READMEs.
   from this sidequest next to the quest-giver.
 - **Forgery: Ore Objective Icons** - Provides objective icons for the ore
   sources in the side mission Forgery.
+- **Gumbo No. 5: Veggie Objective Icons** - Provides objective icons for the
+  butt-slammable veggies in the side mission Gumbo No. 5.
 - **Mega TimeSaver XL** - Speeds up slow animations throughout the game.
 - **More Visible Scrolls** - Makes the scroll loot bars (and, incidentally,
   mission items) far more visible
