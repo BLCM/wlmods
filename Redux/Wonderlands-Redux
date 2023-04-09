@@ -3,8 +3,15 @@
 @author Redux
 @contact-discord -
 @categories major-pack, mode-balance, scaling, mayhem, element, quest-changes, economy, gameplay, event, char-overhaul, skill-system, char-other, gear-general, gear-anointments, gear-com, loot-system, enemy-drops, vendor, chests, quest-rewards, loot-sources, spawns, enemy, ui, maps, text, qol, qol-ui, inventory, bugfix, modpack
+@pakfile URL-here
+
+@video https://www.youtube.com/watch?v=dQw4w9WgXcQ
+@nexus NEXUS PAGE
 
 @license Creative Commons  Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
 @license-url https://creativecommons.org/licenses/by-nc-nd/4.0/
 
+@license The pakfile contents included here are owned by Gearbox/2K/whoever-technically-owns-that-stuff
+
+#Placeholder
 URL=https://raw.githubusercontent.com/BLCM/wlmods/main/DexManly/skilltree_changes/UnrestrictedSkilltrees.wlhotfix
