@@ -1,17 +1,157 @@
 @title Wonderlands Redux
-@version 0.0.1
+@version 1.0.0
 @author Redux
-@contact-discord -
+@contact-discord https://discord.gg/yp74FT2ueT
 @categories major-pack, mode-balance, scaling, mayhem, element, quest-changes, economy, gameplay, event, char-overhaul, skill-system, char-other, gear-general, gear-anointments, gear-com, loot-system, enemy-drops, vendor, chests, quest-rewards, loot-sources, spawns, enemy, ui, maps, text, qol, qol-ui, inventory, bugfix, modpack
-@pakfile URL-here
+@pakfile https://drive.google.com/file/d/1R6FTOFNsNd7SmFYTrTwbeReszrpG55sA/view?usp=share_link
 
-@video https://www.youtube.com/watch?v=dQw4w9WgXcQ
-@nexus NEXUS PAGE
+@video https://www.youtube.com/watch?v=f3a6WSA4Uik
+@nexus https://www.nexusmods.com/tinytinaswonderlands/mods/47
 
 @license Creative Commons  Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
 @license-url https://creativecommons.org/licenses/by-nc-nd/4.0/
 
 @license The pakfile contents included here are owned by Gearbox/2K/whoever-technically-owns-that-stuff
 
-#Placeholder
-URL=https://raw.githubusercontent.com/BLCM/wlmods/main/DexManly/skilltree_changes/UnrestrictedSkilltrees.wlhotfix
+### Redux is a massive Wonderlands Overhaul Mod. Everything from playthroughs, to Character Skills, to Endgame. 
+### It brings 100+ NEW dedicated sources, gen 2.0 pearlescents, respawnable totems, obsidian chests, chaos trials, raid boss RUSH, and action skill augments!
+### 
+### Detailed Video Install Guide: https://www.youtube.com/watch?v=f3a6WSA4Uik
+### 
+### Written Install Guide:
+### 
+### STEP 1:  BACK UP YOUR ENTIRE SAVE FOLDER
+### This is found in: ....\Documents\My Games\Tiny Tina's Wonderlands\Saved\SaveGames\<bunch of numbers and letters>
+### Copy the entire folder and save it elsewhere.
+###
+### STEP 2: Install Open Hotfix Loader as seen in the video tutorial (credit to Apple1417) or for a written guide at https://github.com/apple1417/OpenHotfixLoader#installation
+### 
+### STEP 3: Download "Wonderlands_Redux_AutoUpdate.wlhotfix", and put it into the newly created "ohl-mods" folder located at: .../TinyTinasWonderlands/OakGame/Binaries/Win64/Plugins/ohl-mods
+### The Hotfix should always update itself automatically after installation. You should only need to ever place the hotfix file in the mods folder once. 
+### 
+### STEP 4: Download and place the Patch file (Redux_99_P.pak) inside of the "Paks" folder located at: .../TinyTinasWonderlands/OakGame/Content/Paks
+### The Patch will NOT update automatically. Whenever a new version is available, the latest .pak file should be downloaded, and REPLACE the old version inside of the Paks folder.
+### 
+### Done! Launch the game and enjoy! 
+### Once you see the new Redux Loading Screen and in the main menu in the bottom right you see several 1000's of hotfixes, you're good to go.
+### 
+### Added Pearlescent Rarity. Pearls now have intrinsic traits built in, and can drop at Chaos Level 8+
+### Added Unique Rarity. All mission rewards & some other items have now been swapped to Unique in order to help them stand out at endgame
+### Legacy Hunts return. Signified by Athena's Mark, hunts can be summoned at the new Legacy Obelisks around the Wonderlands for lost souls
+### Added numerous NEW items, and also replaced a ton of base game items
+### Added Double Jumping. Double jumps can be performed by pressing the jump button again while in air
+### Added Dashing. Dashing replaces slamming, and can be performed by pressing the crouch button in any direction while airborn
+### Added Action Skill Augments. Augments are available at the capstone of each class tree
+### Added numerous new skills to class trees
+### Added a dialogue skip to most areas of the game
+### Sped up most animations in the game (Credit to Apocalyptech)
+### All Mirrors after Difficulty 1 will now teleport you straight to the boss fight
+### Lost Souls can now also drop from Overworld Encounters on Chaos 5+
+### Added a NEW Chest. The Obsidian Chest can be found hidden around the world, and contains only items from the Unique rarity, & Moon Orbs. However, the chest will only contain unique items once the player has beaten the "Fatebreaker" Main Quest. Each map contains a higher chance for certain item types. Find them all!
+### Chaos Levels now have a new cap
+### Chaos Trials have been overhauled with unique runs for each level, and are now required in order to unlock endgame rarities
+### Chaos Chamber spawn rates have been greatly increased
+### Added a raid boss rush game mode to the chaos chamber
+### Numerous Unique Enemies/Bosses now have a summoning stand near their spawn location which can be interacted with to make the enemy RESPAWN
+### Added over 100 Dedicated Drop sources to numerous unique enemies/bosses
+### Skill icons have been given a complete overhaul to help players better identify their locations in the respective trees. This is purely a visual change
+### Unique items can now World Drop if the player has completed the associated side mission tied to them
+### Myth Rank capstones have been re-worked with various perks being adjusted to better suit balance
+### Numerous Enchantments have been re-balanced
+### Replaced Loot Luck as a reward from Shrine and Crew Challenge
+### Part variation on Amulets, Rings, and Armor has been reduced
+### Enchantment rolling now costs a fixed value of 100
+### All Enchantments have been re-weighted to allow for better variety when rolling
+### All Enchantments have been unlocked, and can roll on all applicable item types
+### Numerous passive stats have been re-balanced
+### Chests can now also be opened via projectiles
+### Inventory size has been increased to 100 at SDU Max
+### Dedicated/World drop rates no longer rely on loot luck, and have been re-balanced
+### Most Unique items now describe their special ability and dedicated drop source on the item card
+### Golden Chest now costs Moon Orbs to open
+### Added Sprinting in the Overworld (Credit to Apocalyptech)
+### Removed the character model from inventory screens to reduce load times and screen clutter
+### Item names no longer have suffixes
+### Moon Orbs now have no cap to how many you can hold at once
+### Photo Mode has been improved
+### Increased Ammo drop weighting
+### Increased Class drop weighting on Armor
+### Less player screaming sounds
+### All item equip slots are available from level 1
+### All Action Skills are available from level 1
+### Increased the chance of Legendaries from rolling a 20 on Lucky Dice
+### Chaos Bunnies have had their loot spawn pattern changed to prevent loot clumping
+### Cosmetics have a new loot beam
+### Moon Orbs have a new loot beam
+### Reload Notification pops up less often
+### Respawning no longer takes money from the player
+### Changed the Critical Hit popup to a less intrusive sprite
+### The Maker now drops a massive amount of loot on death
+### Updated Dreamveil Overlook's texture on the world map
+### Wastard/Son of a Witch's bird has had a texture change for visibility purposes
+### Dreamveil Overlook now starts off scaling from level 30 and up
+### The Wheel of Fate now costs 15 Lost Souls to spin
+### Added a difficulty indicator to each of the mirror bosses
+### Some Non-Unique items now have different names
+### Some Non-Unique items now have different prefix names
+### Red Chests can now be farmed without having to wait out their respawn timers
+### The Main Menu has received a slight makeover
+### Sniper ammo SDU sizes have been increased to allow for more sniping diversity
+### Vendor economy has been adjusted slightly to ensure selling guns is a viable option for obtaining cash
+### Mission rewards now show up more often in vendors
+### Base slide speed has been increased
+### Sliding no longer slows the player down as the distance of the slide increases
+### Snipers have been adjusted to feel faster in hand
+### Various scopes have had their zoom size adjusted
+### Jumping out of a slide now thrusts the player further
+### Players can no longer trigger barrel traps in the Chaos Chamber
+### Increased the number of crystals gained from hidden switches in the Chaos Chamber
+### Fast Travel animations have been sped up
+### Removed the transition sound for certain fast travelling animations
+### Hex traps in the chaos chamber no longer slow players down
+### Some curses in the chaos chamber have been reworked
+### Cryo no longer slows players down
+### The loot room vending machines in the chaos chamber now each spawn with a random legendary inside
+### Various items have been re-worked/balanced
+### Increased the size of Hydras and Claw's & Graveborn's pet
+### Blightcaller's "Geist in the Shell" skill has been adjusted
+### Spore Warden's "Bounty of the Hunt" skill now also grants Accuracy
+### Spore Warden's "Bullseye" skill has been buffed
+### Spore Warden's "Quiver of Holding" skill has been buffed
+### Spore Warden's "Quiver of Holding" skill now also grants a bonus to the first shot in the magazine
+### Spore Warden's  "Headhunter" skill is now a Tier 4 skill
+### Spore Warden's  "Called Shot" has been reworked, and now grants bonuses faster. Additionally, it also now buffs Sniper Rifles
+### Spore Warden has received a new Tier 5 skill called "Free-Load" which grants Amp'd & Free shots every Nth shot
+### Spore Warden's Mushroom Pet now respawns and attacks faster
+### Spore Warden's "Barrage" skill has had the cooldown decreased
+### Spore Warden's "Blizzard" skill has had the cooldown decreased
+### Spore Warden's "Barrage" skill has been buffed
+### Spore Warden's "Barrage" and "Blizzard" skills now gain bonuses from Area of Effect buffs
+### Clawbringer's "Radiance" skill now also grants regeneration rate
+### Clawbringer's "Dedication" skill has been buffed
+### Clawbringer has received a new Tier 3 skill called "Dragon's Fury" which grants Ability Damage for each piece of equipped gear with matching elements
+### Clawbringer's "Blasthamuts Favor" skill has been removed
+### Clawbringer's "Storm Breath" skill now grants increased Lightning Damage based on other elemental damage boosts
+### Clawbringer has received a new Tier 5 skill called "Resistance is Futile" which allows the player to ignore Elemental Resistances on kill for a short time
+### Clawbringer's "Awe" skill has had the crit chance type reverted
+### Clawbringer's "Awe" skill has had the crit chance value reduced
+### Clawbringer's "Storm Smite" skill now generates more bolts, and can crit
+### Clawbringer's Wyvern Pet now respawns and attacks faster
+### Clawbringer's "Cleansing Flames" skill has had the cooldown decreased
+### Stabbomancer's "Swift Death" skill has been buffed
+### Stabbomancer's "Sneak Attack" skill has been buffed and now also grants movement speed
+### Stabbomancer's "A Thousand Cuts" skill has been buffed
+### Stabbomancer has received a new Tier 5 skill called "Stalker" which grants more Damage against enemies based on their missing health, and avoids aggro
+### Stabbomancer's "Executioner's Blade" skill now spawns the blade faster and deals damage faster
+### Stabbomancer's Class Feat has been buffed
+### Stabbomancer's "Ghost Blade" skill has had the cooldown decreased
+### Stabbomancer's "Ghost Blade" skill no longer penalizes the player for re-positioning it
+### Graveborn's Demi-Lich Pet has had it's spell casting cooldown reduced
+### Graveborn's "Punishment" skill has had the chance buffed
+### BrrZerker's "Feral Surge" skill has had the cooldown decreased
+### BrrZerker's "Feral Surge" skill has been buffed
+### Minor optimization changes
+### And so much more!
+
+URL=https://raw.githubusercontent.com/Wonderlands-Redux/ReduxDownloads/main/Redux.wlhotfix
+
